@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/base/',
   title: "Fuelup.cc",
   description: "Fuel China Community",
   themeConfig: {
@@ -51,3 +52,4 @@ export default defineConfig({
     ]
   }
 })
+
