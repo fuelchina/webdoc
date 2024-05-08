@@ -5,6 +5,7 @@ export default defineConfig({
   //base: '/webdoc/',
   title: "Fuelup.cc",
   description: "Fuel China Community",
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
