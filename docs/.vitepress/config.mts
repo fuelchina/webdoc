@@ -18,6 +18,7 @@ export default defineConfig({
          { text: "v0.0.3", link: "" },
         ],
       },
+      { text: '关于我们', link: '/team_member.md' },
     ],
 
     sidebar: {
