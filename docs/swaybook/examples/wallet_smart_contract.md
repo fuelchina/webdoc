@@ -24,7 +24,7 @@ wallet_abi = { path = "../wallet_abi/" }
 
 ## ABI 声明
 
-```sway
+```rust
 library;
 
 abi Wallet {
@@ -39,7 +39,7 @@ abi Wallet {
 
 ## ABI 实现
 
-```sway
+```rust
 contract;
 
 use std::{asset::transfer, call_frames::msg_asset_id, context::msg_amount,};

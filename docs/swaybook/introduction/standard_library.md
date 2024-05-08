@@ -13,7 +13,7 @@ Sway 标准库是可移植的 Sway 软件的基础，是广泛的 Sway 生态系
 
 可以使用 `use` 关键字从标准库中导入项目，就像从任何 Sway 项目中导入项目一样。例如：
 
-```sway
+```rust
 use std::storage::storage_vec::*;
 ```
 

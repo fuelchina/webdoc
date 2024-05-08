@@ -39,7 +39,7 @@ name = "my-fuel-project"
 
 以下是项目中唯一的 Sway 文件和主入口点 `src/main.sw` 的内容：
 
-```sway
+```rust
 contract;
 
 abi MyContract {
