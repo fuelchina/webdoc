@@ -8,8 +8,11 @@ hero:
   tagline: 与我们一起了解、加入、热爱、建设 Fuel ！
   actions:
     - theme: brand
-      text: 中文教程
-      link: /markdown-examples
+      text: swaybook 中文教程
+      link: /swaybook/introduction/index
+    - theme: alt
+      text: TypeScript SDK 中文教程
+      link: /typescript-sdk/index
     - theme: alt
       text: Awesome-Fuel
       link: "https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9"
