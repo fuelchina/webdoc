@@ -13,13 +13,13 @@ Sway 语言服务器 `forc-lsp` 用于向 IDE 暴露功能。[安装说明](../l
 
 ## Sway 格式化器 (`forc-fmt`)
 
-提供了一个官方的格式化器 `forc-fmt`。[安装说明](./getting_started.md)。您可以使用以下命令手动运行：
+提供了一个官方的格式化器 `forc-fmt`。[安装说明](./getting_started.md)。你可以使用以下命令手动运行：
 
 ```sh
 forc fmt
 ```
 
-[Visual Studio Code 插件](https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin) 将在保存时自动使用 `forc-fmt` 格式化 Sway 文件，但您可能需要明确将 Sway 插件设置为默认格式化器，如下所示：
+[Visual Studio Code 插件](https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin) 将在保存时自动使用 `forc-fmt` 格式化 Sway 文件，但你可能需要明确将 Sway 插件设置为默认格式化器，如下所示：
 
 ```json
 "[sway]": {

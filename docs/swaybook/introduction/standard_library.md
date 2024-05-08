@@ -5,7 +5,7 @@
 
 Sway 标准库是可移植的 Sway 软件的基础，是广泛的 Sway 生态系统的一组最小共享抽象。它提供了核心类型，如 `Result<T, E>` 和 `Option<T>`，以及对语言原语的库定义操作、本地资产管理、区块链上下文操作、访问控制、存储管理以及对其他 VM 类型的支持等功能。
 
-整个 Sway 标准库是一个名为 `std` 的 Forc 项目，可以直接在 [此处](https://github.com/FuelLabs/sway/tree/master/sway-lib-std) 获取。如果最新的 `master` 版本不兼容，请导航至相应的标记版本。您可以在 [此处](https://fuellabs.github.io/sway/master/std/) 找到最新的 `std` 文档。
+整个 Sway 标准库是一个名为 `std` 的 Forc 项目，可以直接在 [此处](https://github.com/FuelLabs/sway/tree/master/sway-lib-std) 获取。如果最新的 `master` 版本不兼容，请导航至相应的标记版本。你可以在 [此处](https://fuellabs.github.io/sway/master/std/) 找到最新的 `std` 文档。
 
 ## 使用标准库
 
@@ -21,7 +21,7 @@ use std::storage::storage_vec::*;
 
 ## 标准库预导入
 
-Sway 标准库包含各种内容。但是，如果您必须手动导入您使用的每个东西，那会非常冗长。但是，导入程序从未使用过的许多东西也不是好的做法。需要找到一个平衡。
+Sway 标准库包含各种内容。但是，如果你必须手动导入你使用的每个东西，那会非常冗长。但是，导入程序从未使用过的许多东西也不是好的做法。需要找到一个平衡。
 
 预导入是 Sway 自动导入到每个 Sway 程序中的内容列表。它尽可能保持小巧，并专注于几乎每个 Sway 程序都使用的内容。
 

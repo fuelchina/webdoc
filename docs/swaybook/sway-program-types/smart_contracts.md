@@ -11,7 +11,7 @@
 
 <!-- This section should explain best practices for ABIs -->
 <!-- ABI:example:start -->
-定义ABI声明为一个单独的库并将其导入到合约中被认为是一种良好的做法。这允许调用者只需直接导入ABI，并在其脚本中使用它来调用您的合约。
+定义ABI声明为一个单独的库并将其导入到合约中被认为是一种良好的做法。这允许调用者只需直接导入ABI，并在其脚本中使用它来调用你的合约。
 <!-- ABI:example:end -->
 
 让我们看看库中的ABI声明：
@@ -45,7 +45,7 @@ abi Wallet {
 
 ---
 
-在第一行中，我们声明了这个_应用程序二进制接口_（ABI）的名称，或ABI。我们将这个ABI命名为`Wallet`。要将此ABI导入到调用或实现的脚本中，您可以使用
+在第一行中，我们声明了这个_应用程序二进制接口_（ABI）的名称，或ABI。我们将这个ABI命名为`Wallet`。要将此ABI导入到调用或实现的脚本中，你可以使用
 
 ```rust
 use wallet_abi::Wallet;
@@ -116,7 +116,7 @@ impl Wallet for Contract {
 }
 ```
 
-您可能会再次注意到[特征](../advanced/traits.md)和ABI之间的相似之处。实际上，作为额外的奖励，您可以定义除ABI的接口表面之外的方法，就像一个特征。这些预先实现的ABI方法自动成为实现相应ABI的合约的一部分的接口。
+你可能会再次注意到[特征](../advanced/traits.md)和ABI之间的相似之处。实际上，作为额外的奖励，你可以定义除ABI的接口表面之外的方法，就像一个特征。这些预先实现的ABI方法自动成为实现相应ABI的合约的一部分的接口。
 
 请注意，ABI的上述实现遵循[检查、影响、交互](https://docs.soliditylang.org/en/v0.6.11/security-considerations.html#re-entrancy)模式。
 
@@ -146,7 +146,7 @@ fn main() {
 }
 ```
 
-主要的新概念是`abi cast`：`abi(AbiName, contract_address)`。这将返回一个`ContractCaller`类型，可用于调用合约。ABI的方法成为此合约调用者可用的方法：`send_funds`和`receive_funds`。然后，我们直接调用合约ABI方法，就像它只是一个常规方法一样。您还可以选择在主要参数列表之前的大括号中指定以下特殊参数：
+主要的新概念是`abi cast`：`abi(AbiName, contract_address)`。这将返回一个`ContractCaller`类型，可用于调用合约。ABI的方法成为此合约调用者可用的方法：`send_funds`和`receive_funds`。然后，我们直接调用合约ABI方法，就像它只是一个常规方法一样。你还可以选择在主要参数列表之前的大括号中指定以下特殊参数：
 
 1. `gas`：表示调用合约时转发的燃气的`u64`。
 2. `coins`：表示与此调用一起转发的硬币数量的`u64`。
