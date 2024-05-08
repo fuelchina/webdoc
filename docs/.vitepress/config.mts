@@ -18,32 +18,49 @@ export default defineConfig({
          { text: "v0.0.3", link: "" },
         ],
       },
+      { text: '关于我们', link: '/team_member.md' },
     ],
 
-    sidebar: [
-      {
-        text: 'Introduction',
-        collapsed: false,
-        items: [
-          { text: 'Getting Started', link: '/Introduction/Getting Started' },
-          { text: 'The Fuel Toolchain', link: '/Introduction/The Fuel Toolchain' },
-          { text: 'A Forc Project', link: '/Introduction/A Forc Project' },
-          { text: 'Standard Library', link: '/Introduction/Standard Library' }
-        ]
-      }
-      ,
-
-      {
-        text: 'Example',
-        collapsed: false,
-        items: [
-          { text: 'Counter', link: '/Introduction/Standard Library' },
-          { text: 'FizzBuzz', link: '/Introduction/A Forc Project' },
-          { text: 'Wallet Smart Contract', link: '/Introduction/The Fuel Toolchain' },
-          { text: 'Liquidity Pool Example', link: '/Introduction/Getting Started' }
-        ]
-      }
-    ],
+    sidebar: {
+      "/swaybook":[
+        {
+          text: '1. 简介',
+          collapsed: false,
+          items: [
+            { text: '1.0 简介', link: '/swaybook/introduction/index' },
+            { text: '1.1 入门指南', link: '/swaybook/introduction/getting_started' },
+            { text: '1.2 Fuel 工具链', link: '/swaybook/introduction/fuel_toolchain' },
+            { text: '1.3 Forc 项目', link: '/swaybook/introduction/forc_project' },
+            { text: '1.4 标准库', link: '/swaybook/introduction/standard_library' }
+          ]
+        }
+        ,
+  
+        {
+          text: '2. 示例',
+          collapsed: false,
+          items: [
+            { text: '2.0 示例', link: '/swaybook/examples/index' },
+            { text: '2.1 计数器', link: '/swaybook/examples/counter' },
+            { text: '2.2 菲兹巴兹', link: '/swaybook/examples/fizzbuzz' },
+            { text: '2.3 钱包智能合约', link: '/swaybook/examples/wallet_smart_contract' },
+            { text: '2.4 流动性池示例', link: '/swaybook/examples/liquidity_pool' }
+          ]
+        },
+        {
+          text: '3. Sway程序类型',
+          collapsed: false,
+          items: [
+            { text: '3.0 Sway程序类型', link: '/swaybook/sway-program-types/index' },
+            { text: '3.1 合约', link: '/swaybook/sway-program-types/smart_contracts' },
+            { text: '3.2 库', link: '/swaybook/sway-program-types/libraries' },
+            { text: '3.3 脚本', link: '/swaybook/sway-program-types/scripts' },
+            { text: '3.4 谓词', link: '/swaybook/sway-program-types/predicates' }
+          ]
+        }
+      ],
+      '/typescript-sdk': []
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
