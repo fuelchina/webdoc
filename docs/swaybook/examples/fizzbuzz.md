@@ -4,7 +4,7 @@
 
 诸如 `FizzBuzzResult` 这样的自定义结构体和枚举的格式将自动包含在 ABI JSON 中，以便离链代码可以处理返回数据的编码形式。
 
-```sway
+```rust
 contract;
 
 enum FizzBuzzResult {

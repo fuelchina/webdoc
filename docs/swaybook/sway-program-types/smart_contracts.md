@@ -16,7 +16,7 @@
 
 让我们看看库中的ABI声明：
 
-```sway
+```rust
 library;
 
 abi Wallet {
@@ -32,7 +32,7 @@ abi Wallet {
 
 ### ABI声明
 
-```sway
+```rust
 abi Wallet {
     #[storage(read, write), payable]
     fn receive_funds();
@@ -47,7 +47,7 @@ abi Wallet {
 
 在第一行中，我们声明了这个_应用程序二进制接口_（ABI）的名称，或ABI。我们将这个ABI命名为`Wallet`。要将此ABI导入到调用或实现的脚本中，您可以使用
 
-```sway
+```rust
 use wallet_abi::Wallet;
 ```
 
@@ -55,7 +55,7 @@ use wallet_abi::Wallet;
 
 在第二行中，
 
-```sway
+```rust
 #[storage(read, write), payable]
 fn receive_funds();
 ```
@@ -66,7 +66,7 @@ fn receive_funds();
 
 在第三行中，
 
-```sway
+```rust
 #[storage(read, write)]
 fn send_funds(amount_to_send: u64, recipient_address: Address);
 ```
@@ -81,7 +81,7 @@ fn send_funds(amount_to_send: u64, recipient_address: Address);
 
 通过使用`impl <ABI name> for Contract`语法实现合约的ABI。`for Contract`语法只能用于为合约实现ABI；为结构体实现方法应使用`impl Foo`语法。
 
-```sway
+```rust
 impl Wallet for Contract {
     #[storage(read, write), payable]
     fn receive_funds() {
@@ -126,7 +126,7 @@ impl Wallet for Contract {
 
 现在我们已经定义了接口并为我们的合约实现了它，我们需要知道如何实际地_调用_我们的合约。让我们看一下合约调用：
 
-```sway
+```rust
 script;
 
 use std::constants::ZERO_B256;

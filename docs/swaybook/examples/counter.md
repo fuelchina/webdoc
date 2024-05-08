@@ -7,7 +7,7 @@
 forc template --template-name counter my_counter_project
 ```
 
-```sway
+```rust
 contract;
 
 abi TestContract {
