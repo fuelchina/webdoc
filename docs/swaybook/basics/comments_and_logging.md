@@ -4,18 +4,18 @@
 
 Sway 中的注释以两个斜杠开始，一直持续到行尾。对于超出一行的注释，您需要//在每一行中包含注释。
 
-```rust
+```sway
 // hello world
 ```
 
-```rust
+```sway
 // let's make a couple of lines
 // commented.
 ```
 
 你还可以在包含代码的行的末尾放置注释。
 
-```rust
+```sway
 fn main() {
     let baz = 8; // Eight is a lucky number
 }
@@ -23,7 +23,7 @@ fn main() {
 
 你还可以进行块注释。
 
-```rust
+```sway
 fn main() {
     /*
     You can write on multiple lines
@@ -39,7 +39,7 @@ fn main() {
 `logging` 库提供了一个通用 `log` 函数，可以使用该函数导入 `use std::logging::log` 并用于记录任何类型的变量。每次调用 `log` 都会在 `receipts list` 中添加一个 `receipts`。
 `log` 可以生成两种类型的收据:`Log` 和 `LogData`。
 
-```rust
+```sway
 fn log_values(){
   // Generates a Log receipt
   log(42);

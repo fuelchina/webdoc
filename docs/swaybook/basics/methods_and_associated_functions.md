@@ -9,7 +9,7 @@
 要声明结构体或枚举的方法和关联函数，请使用`impl`块。这里，`impl`是实现的缩写。
 <!-- methods_af:example:end -->
 
-```rust
+```sway
 script;
 
 struct Foo {
@@ -51,7 +51,7 @@ Similarly to [free functions](functions.md), methods and associated functions ma
 
 For example:
 
-```rust
+```sway
 struct Coordinates {
     x: u64,
     y: u64,
@@ -67,7 +67,7 @@ impl Coordinates {
 
 当被调用时:
 
-```rust
+```sway
     let mut point = Coordinates { x: 1, y: 1 };
     point.move_right(5);
     assert(point.x == 6);
