@@ -12,12 +12,12 @@ Once a transaction has been submitted, you may want to extract information regar
 
 Firstly, we can extract this information from the result of a submitted transaction:
 
-<<< @/../../docs-snippets/src/guide/transactions/transaction-response.test.ts#transaction-response-1{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/transactions/transaction-response.test.ts#transaction-response-1{ts:line-numbers}
 
 We can also use the result of a transaction request to extract a transaction summary:
 
-<<< @/../../docs-snippets/src/guide/transactions/transaction-response.test.ts#transaction-response-2{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/transactions/transaction-response.test.ts#transaction-response-2{ts:line-numbers}
 
 Or we can build a transaction summary from a stored transaction ID:
 
-<<< @/../../docs-snippets/src/guide/transactions/transaction-response.test.ts#transaction-response-3{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/transactions/transaction-response.test.ts#transaction-response-3{ts:line-numbers}

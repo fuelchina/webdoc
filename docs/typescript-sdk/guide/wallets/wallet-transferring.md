@@ -6,17 +6,17 @@ This guide demonstrates how to transfer assets between accounts and contracts, a
 
 Transferring assets between wallets is really simple within the SDK.
 
-<<< @/../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-1{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-1{ts:line-numbers}
 
 After waiting the transaction to be processed, the assets are successfully moved to the recipient's wallet.
 
 It is also possible to specify the recipient's address as a string:
 
-<<< @/../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-2{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-2{ts:line-numbers}
 
 When transferring the base chain coin like ETH, you can omit the `assetId`:
 
-<<< @/../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-3{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-3{ts:line-numbers}
 
 ## Transferring To Contracts
 
@@ -24,11 +24,11 @@ Transferring assets from your wallet to a deployed contract is straightforward. 
 
 You can transfer assets to a deployed contract instance by using its `id`:
 
-<<< @/../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-4{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-4{ts:line-numbers}
 
 Alternatively, you can simply use the contract's string address in the [`Bech32`](../types/bech32) format:
 
-<<< @/../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-5{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/wallet-transferring.test.ts#wallet-transferring-5{ts:line-numbers}
 
 # Balances
 
