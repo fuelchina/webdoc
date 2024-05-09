@@ -16,7 +16,7 @@ Here are some examples:
 <!-- - [`stateConfig.json`](https://github.com/FuelLabs/fuels-ts/blob/master/.fuel-core/configs/stateConfig.json)
 - [`metadata.json`](https://github.com/FuelLabs/fuels-ts/blob/master/.fuel-core/configs/metadata.json) -->
 
-<<< @/../../../packages/account/src/test-utils/launchNodeAndGetWallets.test.ts#launchNode-custom-config{ts:line-numbers}
+<!-- <<< ../../../packages/account/src/test-utils/launchNodeAndGetWallets.test.ts#launchNode-custom-config{ts:line-numbers} -->
 
 ## Customization options
 
@@ -26,6 +26,6 @@ The `walletCount` option lets you specify how many wallets you want to generate.
 
 The `launchNodeOptions` option lets you specify some additional options for the node. The available options are:
 
-<<< @/../../../packages/account/src/test-utils/launchNode.ts#launchNode-launchNodeOptions{ts:line-numbers}
+<!-- <<< ../../../packages/account/src/test-utils/launchNode.ts#launchNode-launchNodeOptions{ts:line-numbers} -->
 
 > Note: You can see all the available fuel-core args by running `pnpm fuels core run -h`.

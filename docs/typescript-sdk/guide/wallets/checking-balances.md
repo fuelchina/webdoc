@@ -16,8 +16,8 @@ Each UTXO corresponds to a unique coin and has an associated amount. This model 
 
 To check the balance of a specific asset, you can use [`getBalance`](../../api/Account/Account.html#getbalance) method. This function aggregates the amounts of all unspent coins of the given asset in your wallet.
 
-<<< @/../../docs-snippets/src/guide/wallets/checking-balances.test.ts#checking-balances-1{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/checking-balances.test.ts#checking-balances-1{ts:line-numbers}
 
 To retrieve the balances of all assets in your wallet, use the [`getBalances`](../../api/Account/Account.html#getbalances) method, it returns an array of [`CoinQuantity`](../../api/Account/#coinquantity). This is useful for getting a comprehensive view of your holdings.
 
-<<< @/../../docs-snippets/src/guide/wallets/checking-balances.test.ts#checking-balances-2{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/wallets/checking-balances.test.ts#checking-balances-2{ts:line-numbers}

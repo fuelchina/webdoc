@@ -6,13 +6,13 @@ When working with contracts, it's crucial to be aware of the available contract 
 
 The [`Contract`](../../api/Program/Contract.md) class includes a method called `getBalance` that retrieves the available balance of a specific asset for a contract. This method is particularly useful for determining the remaining balance after sending assets to a contract and executing contract calls.
 
-<<< @/../../../packages/program/src/contract.ts#contract-balance-1{ts:line-numbers}
+<!-- <<< ../../../packages/program/src/contract.ts#contract-balance-1{ts:line-numbers} -->
 
 ## Checking Contract Balance
 
 Consider a simple contract that transfers a specified amount of a given asset to an address:
 
-<<< @/../../docs-snippets/test/fixtures/forc-projects/transfer-to-address/src/main.sw#contract-balance-2{rust:line-numbers}
+<!-- <<< ../../docs-snippets/test/fixtures/forc-projects/transfer-to-address/src/main.sw#contract-balance-2{rust:line-numbers} -->
 
 The `transfer` function has three parameters:
 
@@ -26,7 +26,7 @@ The `transfer` function calls the built-in Sway function `transfer_to_address`, 
 
 Let's execute this contract and use the `getBalance` method to validate the remaining asset amount the contract has left to spend.
 
-<<< @/../../docs-snippets/src/guide/contracts/contract-balance.test.ts#contract-balance-3{ts:line-numbers}
+<!-- <<< ../../docs-snippets/src/guide/contracts/contract-balance.test.ts#contract-balance-3{ts:line-numbers} -->
 
 In this example, we first forward an asset amount greater than the amount required for the transfer and then execute the contract call.
 

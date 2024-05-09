@@ -11,10 +11,10 @@ Transaction policies are rules that can govern how a transaction is processed, i
 
 The below snippet will show which transaction parameters set which policy:
 
-<<< @/../../docs-snippets/src/guide/transactions/transaction-policies.test.ts#transaction-policies-1{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/transactions/transaction-policies.test.ts#transaction-policies-1{ts:line-numbers}
 
 ## Retrieving Transaction Policies from a Transaction
 
 Policies used for a transaction can be retrieved from a transaction using a `TransactionResponse`. The below snippet will show how to retrieve the policies from a transaction:
 
-<<< @/../../docs-snippets/src/guide/transactions/transaction-policies.test.ts#transaction-policies-2{ts:line-numbers}
+<<< ../../docs-snippets/src/guide/transactions/transaction-policies.test.ts#transaction-policies-2{ts:line-numbers}

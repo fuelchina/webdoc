@@ -16,7 +16,7 @@ Upon execution, this function returns a promise that resolves to a transaction r
 
 Here is an illustration on how to use the `account.transfer` function:
 
-<<< @/../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-1{ts:line-numbers}
+<!-- <<< ../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-1{ts:line-numbers} -->
 
 In the previous example, we used the `transfer` method, which essentially creates a `ScriptTransactionRequest`, populates its data with the provided transfer information, and submits the transaction request to the node.
 
@@ -24,11 +24,11 @@ However, there may be times when you need the Transaction ID before actually sub
 
 This method also creates a `ScriptTransactionRequest` and populates it with the provided data, but instead of submitting it to the node, it returns the request.
 
-<<< @/../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-2{ts:line-numbers}
+<!-- <<< ../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-2{ts:line-numbers} -->
 
 It's important to be aware that once you have this transaction request, any modifications made to it will result in a new and distinct transaction. Consequently, this will lead to a different transaction ID. Therefore, make sure to not changing the transaction request if you expects the ID to remain the same.
 
-<<< @/../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-3{ts:line-numbers}
+<!-- <<< ../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-3{ts:line-numbers} -->
 
 ## Transferring Assets To Contracts
 
@@ -42,6 +42,6 @@ If you have the [Contract](../contracts/) instance of the deployed contract, you
 
 Here's an example demonstrating how to use `transferToContract`:
 
-<<< @/../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-4{ts:line-numbers}
+<!-- <<< ../../docs-snippets/src/guide/cookbook/transferring-assets.test.ts#transferring-assets-4{ts:line-numbers} -->
 
 Remember to always invoke the `waitForResult()` function on the transaction response. This ensures that the transaction has been successfully mined before proceeding.

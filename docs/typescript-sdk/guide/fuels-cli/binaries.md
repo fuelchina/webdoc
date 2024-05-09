@@ -14,7 +14,7 @@ Here's how to configure this explicitly:
 - [`useBuiltinForc`](./config-file.md#usebuiltinforc): `true`
 - [`useBuiltinFuelCore`](./config-file.md#usebuiltinfuelcore): `true`
 
-<<< @../../../demo-fuels/fuels.config.explicit-built-in.ts#config-built-in{ts:line-numbers}
+<!-- <<< @../../../demo-fuels/fuels.config.explicit-built-in.ts#config-built-in{ts:line-numbers} -->
 
 You can also call the `built-in` binaries directly:
 
@@ -58,4 +58,4 @@ Here's how to configure this explicitly:
 - [`useBuiltinForc`](./config-file.md#usebuiltinforc): `false`
 - [`useBuiltinFuelCore`](./config-file.md#usebuiltinfuelcore): `false`
 
-<<< @../../../demo-fuels/fuels.config.explicit-system.ts#config-system{ts:line-numbers}
+<!-- <<< @../../../demo-fuels/fuels.config.explicit-system.ts#config-system{ts:line-numbers} -->
