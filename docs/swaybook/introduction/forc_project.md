@@ -25,7 +25,7 @@ $ tree .
 `Forc.toml` 是 _清单文件_（类似于 Cargo 的 `Cargo.toml` 或 Node 的 `package.json`），定义了项目的元数据，如项目名称和依赖关系。
 <!-- forc_toml:example:end -->
 
-有关依赖关系管理的附加信息，请参阅：[这里](../forc/dependencies.md)。
+有关依赖管理的附录，请参阅：[这里](../forc/dependencies.md)。
 
 ```toml
 [project]
@@ -53,7 +53,7 @@ impl MyContract for Contract {
 }
 ```
 
-该项目是一个 _合约_，是四种不同项目类型之一。有关不同项目类型的附加信息，请参阅[这里](../sway-program-types/index.md)。
+该项目是一个 _合约_，是四种不同项目类型之一。有关不同项目类型的附录，请参阅[这里](../sway-program-types/index.md)。
 
 我们现在使用 `forc build` 编译项目，并传递 `--finalized-asm` 标志以查看生成的汇编代码：
 
