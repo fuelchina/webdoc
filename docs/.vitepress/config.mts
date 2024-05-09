@@ -56,6 +56,18 @@ export default defineConfig({
             { text: '3.3 脚本', link: '/swaybook/sway-program-types/scripts' },
             { text: '3.4 谓词', link: '/swaybook/sway-program-types/predicates' }
           ]
+        },
+        {
+          text: '4. Sway语言基础',
+          collapsed: false,
+          link: '/swaybook/basics/index',
+          items: [
+            { text: '4.6 结构体、元组和枚举', link: '/swaybook/basics/structs_tuples_and_enums' },
+            { text: '4.7 方法和函数', link: '/swaybook/basics/methods_and_associated_functions' },
+            { text: '4.8 常量', link: '/swaybook/basics/constants' },
+            { text: '4.9 评论和记录', link: '/swaybook/basics/comments_and_logging' },
+            { text: '4.10 控制流', link: '/swaybook/basics/control_flow' },
+          ]
         }
       ],
       '/typescript-sdk': [
