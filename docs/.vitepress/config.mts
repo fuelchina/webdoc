@@ -6,6 +6,11 @@ export default defineConfig({
   title: "Fuelup.cc",
   description: "Fuel China Community",
   ignoreDeadLinks: true,
+  markdown: {
+    languageAlias: {
+      'sway': 'rs'
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
