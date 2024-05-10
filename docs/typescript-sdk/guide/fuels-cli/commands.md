@@ -1,11 +1,6 @@
-<script setup>
-  import { data } from '../../versions.data'
-  const { fuels } = data
-</script>
+# 命令
 
-# Commands
-
-The `fuels` CLI consists of a couple commands.
+`fuels` CLI 包含几个命令。
 
 ## `fuels init`
 
@@ -14,44 +9,44 @@ npx fuels@{{fuels}} help init
 ```
 
 ```console
-Options:
-  -w, --workspace <path>          Relative dir path to Forc workspace
-  -c, --contracts <path|global>   Relative path/globals to  Contracts
-  -s, --scripts <path|global>     Relative path/globals to  Scripts
-  -p, --predicates <path|global>  Relative path/globals to  Predicates
-  -o, --output <path>             Relative dir path for Typescript generation
+选项:
+  -w, --workspace <路径>          Forc 工作空间的相对目录路径
+  -c, --contracts <路径|全局>     合约的相对路径/全局路径
+  -s, --scripts <路径|全局>       脚本的相对路径/全局路径
+  -p, --predicates <路径|全局>    谓词的相对路径/全局路径
+  -o, --output <路径>             生成 TypeScript 的相对目录路径
 ```
 
-Creating a sample `fuel.config.ts` file:
+创建一个示例 `fuel.config.ts` 文件：
 
 ```console-vue
 npx fuels@{{fuels}} init --contracts ./my-contracts/* --output ./src/sway-contracts-api
 ```
 
-Using [Forc workspaces](https://docs.fuel.network/docs/forc/workspaces/)? Try this instead:
+使用[Forc 工作空间](https://docs.fuel.network/docs/forc/workspaces/)？尝试这个：
 
 ```console-vue
 npx fuels@{{fuels}} init --workspace ./sway-programs --output ./src/sway-programs-api
 ```
 
-This will give you a minimal configuration:
+这将为您提供一个最小配置：
 
-<!-- <<< @../../../demo-fuels/fuels.config.ts#config{ts:line-numbers} -->
+<<< ../../demo-fuels/fuels.config.ts#config{ts:line-numbers}
 
-In a nutshell:
+简而言之：
 
 ```sh
 .
-├── sway-programs # <— forc workspace
+├── sway-programs # <— forc 工作空间
 ├── src
-│   └── sway-programs-api # <— output
+│   └── sway-programs-api # <— 输出
 ├── fuels.config.ts
 └── package.json
 ```
 
-### See more
+### 查看更多
 
-- [Forc workspaces](https://docs.fuel.network/docs/forc/workspaces/)
+- [Forc 工作空间](https://docs.fuel.network/docs/forc/workspaces/)
 
 ## `fuels build`
 
@@ -60,31 +55,31 @@ npx fuels@{{fuels}} help build
 ```
 
 ```console
-Options:
-  -p, --path <path>  Path to project root (default: "/Users/anderson/Code/fuel/fuels-ts/apps/docs")
-  -d, --deploy       Deploy contracts after build (auto-starts a `fuel-core` node if needed)
-  -h, --help         Display help
+选项:
+  -p, --path <路径>  项目根目录路径 (默认: "/Users/anderson/Code/fuel/fuels-ts/apps/docs")
+  -d, --deploy       构建后部署合约 (如有需要自动启动 `fuel-core` 节点)
+  -h, --help         显示帮助信息
 ```
 
-Examples:
+示例：
 
 ```console-vue
 npx fuels@{{fuels}} build
 ```
 
-1.  Build all Sway programs under your `workspace` using `forc` <sup>[1](#commands-for-wrapped-utiltities)</sup>
-1.  Generate types for them using `fuels-typegen` <sup>[2](#typegen)</sup>
+1. 使用 `forc` 构建您的 `workspace` 下的所有 Sway 程序 <sup>[1](#commands-for-wrapped-utiltities)</sup>
+1. 使用 `fuels-typegen` 为其生成类型 <sup>[2](#typegen)</sup>
 
 ```console-vue
 npx fuels@{{fuels}} build --deploy
 ```
 
-Using the `--deploy` flag will additionally:
+使用 `--deploy` 标志还会额外执行以下操作：
 
-1. Auto-start a short-lived `fuel-core` node if _needed_ ([docs](./config-file.md#autostartfuelcore))
-1. Run `deploy` on that node
+1. 如 _需要_ ，自动启动短暂的 `fuel-core` 节点 ([文档](./config-file.md#autostartfuelcore))
+1. 在该节点上运行 `deploy`
 
-> _This is useful when working with contracts because a contract's ID is generated only on deployment._
+> _在与合约一起工作时这很有用，因为合约的 ID 仅在部署时生成。_
 
 ## `fuels deploy`
 
@@ -92,14 +87,14 @@ Using the `--deploy` flag will additionally:
 npx fuels@{{fuels}} deploy
 ```
 
-> [!NOTE] Note
-> We recommend using the `fuels deploy` command only when you are deploying contracts to a local node.
-> If you are deploying contracts to a live network like the Testnet, we recommend using the [`forc deploy`](https://docs.fuel.network/docs/intro/quickstart-contract/#deploy-to-testnet) command instead.
+> [!NOTE] 注意
+> 我们建议仅在将合约部署到本地节点时使用 `fuels deploy` 命令。
+> 如果您要将合约部署到像测试网这样的实时网络，我们建议使用 [`forc deploy`](https://docs.fuel.network/docs/intro/quickstart-contract/#deploy-to-testnet) 命令。
 
-The `fuels deploy` command does two things:
+`fuels deploy` 命令执行两项操作：
 
-1. Deploy all Sway contracts under `workspace`.
-1. Saves their deployed IDs to:
+1. 部署 `workspace` 下的所有 Sway 合约。
+1. 将它们的部署 ID 保存到：
    - _`./src/sway-programs-api/contract-ids.json`_
 
 ```json
@@ -109,13 +104,29 @@ The `fuels deploy` command does two things:
 }
 ```
 
-Use it when instantiating your contracts:
+在实例化合约时使用它：
 
-<!-- <<< @../../../demo-fuels/src/index.test.ts#using-generated-files{ts:line-numbers} -->
+```ts
+import { SampleAbi__factory } from './sway-programs-api';
+import contractsIds from './sway-programs-api/contract-ids.json';
 
-For a complete example, see:
+/**
+ * Get IDs using:
+ *   contractsIds.<my-contract-name>
+ */
 
-- [Using Generated Types](./using-generated-types.md)
+const wallet = new Wallet.fromPrivateKey(process.env.PRIVATE_KEY);
+const contract = SampleAbi__factory.connect(contractsIds.sample, wallet);
+
+const { value } = await contract.functions.return_input(1337).dryRun();
+
+expect(value.toHex()).toEqual(toHex(1337));
+
+```
+
+完整示例，请参阅：
+
+- [使用生成的类型](./using-generated-types.md)
 
 ## `fuels dev`
 
@@ -123,49 +134,51 @@ For a complete example, see:
 npx fuels@{{fuels}} dev
 ```
 
-The `fuels dev` command does three things:
+`fuels dev` 命令执行三项操作：
 
-1. Auto-start a short-lived `fuel-core` node ([docs](./config-file.md#autostartfuelcore))
-1. Runs `build` and `deploy` once at the start
-1. Watches your Forc workspace and repeats previous step on every change
+1. 自动启动短暂的 `fuel-core` 节点 ([文档](./config-file.md#autostartfuelcore))
+1. 在启动时运行 `build` 和 `deploy`
+1. 监视您的 Forc 工作空间，并在每次更改时重复上一步
 
-> _In `dev` mode, every time you update a contract on your Forc `workspace`, we re-generate type definitions and factory classes for it, following your pre-configured [`output`](./config-file.md#output) directory. If it's part of another build system running in dev mode (i.e. `next dev`), you can expect it to re-build / auto-reload as well._
+> _在 `dev` 模式下，每当您在 Forc `workspace` 上更新合约时，我们都会重新生成类型定义和工厂类，并根据您预先配置的 [`output`](./config-file.md#output) 目录进行操作。如果它是另一个以开发模式运行的构建系统的一部分（即 `next dev`），则可以期望重新构建/自动重新加载。_
 
 ## `fuels typegen`
 
-Manually generates type definitions and factory classes from ABI JSON files.
+从 ABI JSON 文件手动生成类型定义和工厂类。
 
 ```console-vue
 npx fuels@{{fuels}} help typegen
 ```
 
 ```console
-Options:
-  -i, --inputs <path|glob...>  Input paths/globals to your Abi JSON files
-  -o, --output <dir>           Directory path for generated files
-  -c, --contract               Generate types for Contracts [default]
-  -s, --script                 Generate types for Scripts
-  -p, --predicate              Generate types for Predicates
-  -S, --silent                 Omit output messages
+选项:
+  -i, --inputs <路径|glob...>  ABI JSON 文件的输入路径/全局路径
+  -o, --output <目录>           生成文件的目录路径
+  -c, --contract               为合约生成类型 [默认]
+  -s, --script                 为脚本生成类型
+  -p, --predicate              为谓词生成类型
+  -S, --silent                 省略输出消息
 ```
 
-For more info, check:
+更多信息，请查看：
 
-- [Generating Types from ABI](./generating-types.md)
+- [从 ABI 生成类型](./generating-types.md)
 
 ## `fuels versions`
 
-Check for version incompatibilities between your [Fuel Toolchain](#the-fuel-toolchain) component versions, matching them against the ones supported by the Typescript SDK version that you have.
+检查您的 [Fuel 工具链](#the-fuel-toolchain) 组件版本之间的不兼容性，将其与您拥有的 Typescript SDK 版本支持的版本进行匹配。
 
 ```console-vue
 npx fuels@{{fuels}} versions
 ```
 
 ```
-You have all the right versions! ⚡
+您拥有所有正确的版本！ ⚡
 ┌───────────┬───────────┬─────────────────┐
-│           │ Supported │ Yours / System  │
-├───────────┼───────────┼─────────────────┤
+│           │ 支持的    │ 您的 / 系统     │
+├───────────┼───────────┼─────────────────
+
+┤
 │ Forc      │ 0.30.0    │ 0.30.0          │
 ├───────────┼───────────┼─────────────────┤
 │ Fuel-Core │ 0.14.0    │ 0.14.0          │
@@ -174,18 +187,18 @@ You have all the right versions! ⚡
 
 ## `fuels forc`
 
-Simple [wrapper](./binaries.md) around the `forc` binary.
+`forc` 二进制文件的简单[包装器](./binaries.md)。
 
-Check also:
+也请查看：
 
-- [Built-in Binaries](./binaries.md)
-- [`forc` documentation](https://docs.fuel.network/docs/forc/commands/)
+- [内置二进制文件](./binaries.md)
+- [`forc` 文档](https://docs.fuel.network/docs/forc/commands/)
 
 ## `fuels core`
 
-Simple [wrapper](./binaries.md) around the `fuel-core` binary.
+`fuel-core` 二进制文件的简单[包装器](./binaries.md)。
 
-Check also:
+也请查看：
 
-- [Built-in Binaries](./binaries.md)
-- [`fuel-core` documentation](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)
+- [内置二进制文件](./binaries.md)
+- [`fuel-core` 文档](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)

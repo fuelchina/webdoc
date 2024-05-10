@@ -25,16 +25,16 @@ describe('Provider', () => {
     // #region provider-definition
     // #import { Provider, FUEL_NETWORK_URL, WalletUnlocked };
 
-    // Create the provider
+    // 创建提供者
     const provider = await Provider.create(FUEL_NETWORK_URL);
 
-    // Querying the blockchain
+    // 查询区块链
     const { consensusParameters } = provider.getChain();
 
-    // Create a new wallet
+    // 创建一个新钱包
     const wallet = WalletUnlocked.generate({ provider });
 
-    // Get the balances of the wallet (this will be empty until we have assets)
+    // 获取钱包的余额(在我们拥有资产之前，这将是空的)
     const balances = await wallet.getBalances();
     // []
     // #endregion provider-definition
@@ -48,7 +48,7 @@ describe('Provider', () => {
 
   test('options: requestMiddleware', async () => {
     // #region options-requestMiddleware
-    // synchronous request middleware
+    // 同步请求中间件
     await Provider.create(FUEL_NETWORK_URL, {
       requestMiddleware: (request: RequestInit) => {
         request.credentials = 'omit';
@@ -57,7 +57,7 @@ describe('Provider', () => {
       },
     });
 
-    // asynchronous request middleware
+    // 同步请求中间件
     await Provider.create(FUEL_NETWORK_URL, {
       requestMiddleware: async (request: RequestInit) => {
         const credentials = await fetchSomeExternalCredentials();
@@ -73,7 +73,7 @@ describe('Provider', () => {
   it('options: timeout', async () => {
     // #region options-timeout
     await Provider.create(FUEL_NETWORK_URL, {
-      timeout: 30000, // will abort if request takes 30 seconds to complete
+      timeout: 30000, // 如果请求需要30秒才能完成，是否会中止
     });
     // #endregion options-timeout
   });
@@ -94,10 +94,10 @@ describe('Provider', () => {
     // #region options-fetch
     await Provider.create(FUEL_NETWORK_URL, {
       fetch: async (url: string, requestInit: RequestInit | undefined) => {
-        // do something
+        // 干一些事情
         await sleep(100);
 
-        // native fetch
+        // 原生 fetch 请求
         const response = await fetch(url, requestInit);
 
         const updatedResponse = decorateResponseWithCustomLogic(response);
@@ -114,14 +114,14 @@ describe('Provider', () => {
     // #region provider-getBaseAssetId
     // #import { Provider, FUEL_NETWORK_URL, ScriptTransactionRequest };
 
-    // Fetch the base asset ID using the provider
+    // 使用提供者获取基本资产ID
     const provider = await Provider.create(FUEL_NETWORK_URL);
     const baseAssetId = provider.getBaseAssetId();
     // 0x...
 
-    // Create a transaction request
+    // 创建事务请求
     const transactionRequest = new ScriptTransactionRequest();
-    // Use the base asset for an operation
+    // 为操作使用基本资产
     transactionRequest.addCoinOutput(recipientAddress, 100, baseAssetId);
     // #endregion provider-getBaseAssetId
 

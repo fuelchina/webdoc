@@ -1,24 +1,19 @@
-<script setup>
-  import { data } from '../../versions.data'
-  const { fuels } = data
-</script>
+# Fuels 脚手架
 
-# Fuels CLI
+快速构建全栈 Fuel dApps 的最佳路径。
 
-The quickest way to build full stack Fuel dApps.
+- [`fuels init`](./commands.md#fuels-init) — 创建一个新的 `fuels.config.ts` 文件
+- [`fuels build`](./commands.md#fuels-build) — 构建 `forc` 工作空间并为所有内容生成 TypeScript 类型
+- [`fuels deploy`](./commands.md#fuels-deploy) — 部署工作空间合约并将它们的 ID 保存到 JSON 文件中
+- [`fuels dev`](./commands.md#fuels-dev) — 在本地启动 Fuel Core _node_ 并在每次文件更改时执行 `build` + `deploy`
 
-- [`fuels init`](./commands.md#fuels-init) — Creates a new `fuels.config.ts` file
-- [`fuels build`](./commands.md#fuels-build) — Build `forc` workspace and generate Typescript types for everything
-- [`fuels deploy`](./commands.md#fuels-deploy) — Deploy workspace contracts and save their IDs to JSON file
-- [`fuels dev`](./commands.md#fuels-dev) — Start local Fuel Core _node_ and `build` + `deploy` on every file change
+## 入门指南
 
-## Getting started
-
-Imagine you have this file structure:
+假设您有以下文件结构：
 
 ```sh
-my-fuel-dapp # NextJS app or similar
-├── sway-programs # Forc's workspace
+my-fuel-dapp # NextJS app 或类似的应用
+├── sway-programs # Forc 工作空间
 │   ├── src
 │   ├── ...
 │   └── Forc.toml
@@ -27,13 +22,13 @@ my-fuel-dapp # NextJS app or similar
 ├── src
 │   ├── app
 │   ├── ...
-├   └── sway-programs-api # Type-safe generated API
+├   └── sway-programs-api # 类型安全的生成 API
 └── package.json
 ```
 
-## Installation
+## 安装
 
-Add it to your `my-fuel-dapp` project:
+将其添加到您的 `my-fuel-dapp` 项目中：
 
 ::: code-group
 
@@ -47,12 +42,12 @@ pnpm add fuels@{{fuels}}
 
 :::
 
-## Double-checking
+## 双重检查
 
 ```console-vue
 npx fuels@{{fuels}} -v
 ```
 
-## Next Step
+## 下一步
 
-Use [`pnpm fuels init`](./commands#init) to create a [`fuel.config.ts`](./config-file) file.
+使用 [`pnpm fuels init`](./commands#init) 来创建一个 [`fuel.config.ts`](./config-file) 文件。

@@ -1,55 +1,56 @@
+
 <!-- TODO: Replace plan-text by code-snippets -->
 
-# Using Generated Types
+# 使用生成的类型
 
-After generating types via:
+通过以下方式生成类型：
 
 ```console
 pnpm fuels typegen -i ./abis/*-abi.json -o ./types
 ```
 
-We can use these files like so:
+我们可以像这样使用这些文件：
 
-<!-- <<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-factory-connect{ts:line-numbers} -->
+<<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-factory-connect{ts:line-numbers}
 
-## Contract
+## 合约
 
-Let's use the Contract class to deploy a contract:
+让我们使用 Contract 类部署合约：
 
-<!-- <<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-factory-deploy{ts:line-numbers} -->
+<<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-factory-deploy{ts:line-numbers}
 
-### Autoloading of Storage Slots
+### 存储槽的自动加载
 
-Typegen tries to resolve, auto-load, and embed the [Storage Slots](../contracts/storage-slots.md) for your Contract within the `MyContract__factory` class. Still, you can override it alongside other options from [`DeployContractOptions`](https://github.com/FuelLabs/fuels-ts/blob/a64b67b9fb2d7f764ab9151a21d2266bf2df3643/packages/contract/src/contract-factory.ts#L19-L24), when calling the `deployContract` method:
+Typegen 会尝试解析、自动加载并嵌入您合约的[存储槽](../contracts/storage-slots.md)到 `MyContract__factory` 类中。但是，您可以在调用 `deployContract` 方法时覆盖它，以及其他 [`DeployContractOptions`](https://github.com/FuelLabs/fuels-ts/blob/a64b67b9fb2d7f764ab9151a21d2266bf2df3643/packages/contract/src/contract-factory.ts#L19-L24) 中的选项：
 
-<!-- <<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-storage-slots{ts:line-numbers} -->
+<<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-storage-slots{ts:line-numbers}
 
-## Script
+## 脚本
 
-After generating types via:
+通过以下方式生成类型：
 
 ```console
 pnpm fuels typegen -i ./abis/*-abi.json -o ./types --script
 ```
 
-We can use these files like so:
+我们可以像这样使用这些文件：
 
-<!-- <<< ../../demo-typegen/src/demo.test.ts#typegen-demo-script{ts:line-numbers} -->
+<<< ../../demo-typegen/src/demo.test.ts#typegen-demo-script{ts:line-numbers}
 
-## Predicate
+## 谓词
 
-After generating types via:
+通过以下方式生成类型：
 
 ```console
 pnpm fuels typegen -i ./abis/*-abi.json -o ./types --predicate
 ```
 
-We can use these files like so:
+我们可以像这样使用这些文件：
 
-<!-- <<< ../../demo-typegen/src/demo.test.ts#typegen-demo-predicate{ts:line-numbers} -->
+<<< ../../demo-typegen/src/demo.test.ts#typegen-demo-predicate{ts:line-numbers}
 
-See also:
+另请参阅：
 
-- [Generating Types for Contracts](./generating-types.md#generating-types-for-contracts)
-- [Generating Types for Scripts](./generating-types.md#generating-types-for-scripts)
-- [Generating Types for Predicates](./generating-types.md#generating-types-for-predicates)
+- [为合约生成类型](./generating-types.md#generating-types-for-contracts)
+- [为脚本生成类型](./generating-types.md#generating-types-for-scripts)
+- [为谓词生成类型](./generating-types.md#generating-types-for-predicates)

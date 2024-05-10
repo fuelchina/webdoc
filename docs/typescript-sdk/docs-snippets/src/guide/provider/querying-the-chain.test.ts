@@ -17,11 +17,11 @@ describe('querying the chain', () => {
       [100, assetIdA],
     ]);
 
-    // get single coin
+    // 得到一枚硬币
     const coin = await wallet.getCoins(baseAssetId);
     // [{ amount: bn(42), assetId: baseAssetId }]
 
-    // get all coins
+    // 获得所有硬币
     const coins = await wallet.getCoins();
     // [
     //   { amount: bn(42), assetId: baseAssetId }
@@ -103,7 +103,7 @@ describe('querying the chain', () => {
     // #region Provider-get-blocks
     // #import { Provider, FUEL_NETWORK_URL };
     const provider = await Provider.create(FUEL_NETWORK_URL);
-    // Force-producing some blocks to make sure that 10 blocks exist
+    // 强制生成一些区块，以确保存在10个区块
     await provider.produceBlocks(10);
     const blocks = await provider.getBlocks({
       last: 10,

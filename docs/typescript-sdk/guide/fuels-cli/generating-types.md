@@ -1,44 +1,44 @@
+
 <script setup>
   import { data } from '../../versions.data'
   const { fuels } = data
 </script>
 
-# Generating Types from ABI
+# 从 ABI 生成类型
 
-## Installation
+## 安装
 
-First we install `fuels` to our project:
+首先我们将 `fuels` 安装到我们的项目中：
 
 ```console-vue
 pnpm add fuels@{{fuels}}
 ```
 
-## Help
+## 帮助
 
-A first glance at the docs:
+首先看一下文档：
 
 ```console
 $ pnpm fuels typegen -h
 
-Usage: fuels typegen [options]
+使用方法: fuels typegen [选项]
 
-Generate Typescript from Sway ABI JSON files
+从 Sway ABI JSON 文件生成 TypeScript
 
-Options:
-  -i, --inputs <path|glob...>  Input paths/globals to your ABI JSON files
-  -o, --output <dir>           Directory path for generated files
-  -c, --contract               Generate types for Contracts [default]
-  -s, --script                 Generate types for Scripts
-  -p, --predicate              Generate types for Predicates
-  -S, --silent                 Omit output messages
-  -h, --help                   Display help
+选项:
+  -i, --inputs <路径|glob...>  ABI JSON 文件的输入路径/全局路径
+  -o, --output <目录>           生成文件的目录路径
+  -c, --contract               为合约生成类型 [默认]
+  -s, --script                 为脚本生成类型
+  -p, --predicate              为谓词生成类型
+  -S, --silent                 省略输出消息
+  -h, --help                   显示帮助信息
 ```
 
-## Generating Types for Contracts
+## 为合约生成类型
 
-You can generate types for a Sway contract using the command below:
+您可以使用以下命令为 Sway 合约生成类型：
 
-<!-- This section should have the command to generate types for a Sway contract -->
 <!-- gen_types:example:start -->
 
 ```console
@@ -47,28 +47,27 @@ pnpm fuels typegen -i ./abis/*-abi.json -o ./types
 
 <!-- gen_types:example:end -->
 
-<!-- This section should explain the flags used in the typegen command -->
 <!-- flags:example:start -->
 
-The path after the input flag `-i` should point to the file ending in `-abi.json` produced when the contract was built.
+输入标志 `-i` 后的路径应该指向在构建合约时生成的以 `-abi.json` 结尾的文件。
 
-The path after the output flag `-o` will be the the output directory for the generated types.
+输出标志 `-o` 后的路径将是生成类型的输出目录。
 
-You can omit the `--contract` option here since it's the default.
+您可以在这里省略 `--contract` 选项，因为它是默认值。
 
 <!-- flags:example:end -->
 
-## Generating Types for Scripts
+## 为脚本生成类型
 
-To generate types for a Sway script, use the `--script` flag:
+要为 Sway 脚本生成类型，请使用 `--script` 标志：
 
 ```console
 pnpm fuels typegen -i ./abis/*-abi.json -o ./types --script
 ```
 
-## Generating Types for Predicates
+## 为谓词生成类型
 
-To generate types for a Sway predicate, use the `--predicate` flag:
+要为 Sway 谓词生成类型，请使用 `--predicate` 标志：
 
 ```console
 pnpm fuels typegen -i ./abis/*-abi.json -o ./types --predicate
@@ -76,8 +75,8 @@ pnpm fuels typegen -i ./abis/*-abi.json -o ./types --predicate
 
 ---
 
-See also:
+另请参阅：
 
-- [Using Generated Contract Types](./using-generated-types.md#using-generated-contract-types)
-- [Using Generated Script Types](./using-generated-types.md#using-generated-script-types)
-- [Using Generated Predicate Types](./using-generated-types.md#using-generated-predicate-types)
+- [使用生成的合约类型](./using-generated-types.md#using-generated-contract-types)
+- [使用生成的脚本类型](./using-generated-types.md#using-generated-script-types)
+- [使用生成的谓词类型](./using-generated-types.md#using-generated-predicate-types)
