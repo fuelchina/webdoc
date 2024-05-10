@@ -1,22 +1,23 @@
+
 <script setup>
   import { data } from '../../versions.data'
   const { fuels } = data
 </script>
 
-# Built-In Binaries
+# 内置二进制文件
 
-`fuels` conveniently ships with `built-in` binaries for [`forc`](https://docs.fuel.network/docs/forc/commands/) and [`fuel-core`](https://docs.fuel.network/guides/running-a-node/running-a-local-node/).
+`fuels` 方便地附带了 [`forc`](https://docs.fuel.network/docs/forc/commands/) 和 [`fuel-core`](https://docs.fuel.network/guides/running-a-node/running-a-local-node/) 的 `built-in` 二进制文件。
 
-In case you haven't installed [The Fuel Toolchain](#the-fuel-toolchain) _yet_, these will be used.
+如果您尚未安装 [Fuel 工具链](#the-fuel-toolchain)，这些将会被使用。
 
-Here's how to configure this explicitly:
+以下是如何明确配置这一点：
 
 - [`useBuiltinForc`](./config-file.md#usebuiltinforc): `true`
 - [`useBuiltinFuelCore`](./config-file.md#usebuiltinfuelcore): `true`
 
-<!-- <<< @../../../demo-fuels/fuels.config.explicit-built-in.ts#config-built-in{ts:line-numbers} -->
+<<< ../../demo-fuels/fuels.config.explicit-built-in.ts#config-built-in{ts:line-numbers}
 
-You can also call the `built-in` binaries directly:
+您也可以直接调用 `built-in` 二进制文件：
 
 ```console-vue
 npx fuels@{{fuels}} help forc
@@ -30,18 +31,18 @@ npx fuels@{{fuels}} core --version
 npx fuels@{{fuels}} core run -h
 ```
 
-Check the docs for `forc` and `fuel-core`:
+查看 `forc` 和 `fuel-core` 的文档：
 
-- [Forc Commands](https://docs.fuel.network/docs/forc/commands/)
-- [Running a local Node using `fuel-core`](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)
+- [Forc 命令](https://docs.fuel.network/docs/forc/commands/)
+- [使用 `fuel-core` 运行本地节点](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)
 
-## The Fuel Toolchain
+## Fuel 工具链
 
-The Fuel Toolchain consists of several [components](https://docs.fuel.network/docs/sway/introduction/fuel_toolchain/).
+Fuel 工具链包括多个[组件](https://docs.fuel.network/docs/sway/introduction/fuel_toolchain/)。
 
-You can use [`fuel-up`](https://docs.fuel.network/docs/fuelup/installation/) to get it up and running.
+您可以使用 [`fuel-up`](https://docs.fuel.network/docs/fuelup/installation/) 将其启动并运行。
 
-Check if it's working correctly with:
+使用以下命令检查它是否正常工作：
 
 ```console
 forc --version
@@ -51,11 +52,11 @@ forc --version
 fuel-core --version
 ```
 
-The `forc` and `fuel-core` binaries will be available in your `system` and `fuels` automatically prioritize them instead of the `built-in` ones.
+`forc` 和 `fuel-core` 二进制文件将自动在您的 `system` 和 `fuels` 中可用，并优先使用它们，而不是 `built-in` 二进制文件。
 
-Here's how to configure this explicitly:
+以下是如何明确配置这一点：
 
 - [`useBuiltinForc`](./config-file.md#usebuiltinforc): `false`
 - [`useBuiltinFuelCore`](./config-file.md#usebuiltinfuelcore): `false`
 
-<!-- <<< @../../../demo-fuels/fuels.config.explicit-system.ts#config-system{ts:line-numbers} -->
+<<< ../../demo-fuels/fuels.config.explicit-system.ts#config-system{ts:line-numbers}
