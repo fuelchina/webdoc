@@ -172,7 +172,7 @@ fn main() {
 
 ```
 
-## Signature Recovery
+## 签名恢复
 
 ```sway
 script;
