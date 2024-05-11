@@ -160,7 +160,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/instantiating-wallets',
             },
             {
-              text: 'Private Keys',
+              text: '私钥',
               link: '/typescript-sdk/guide/wallets/private-keys',
             },
             {
