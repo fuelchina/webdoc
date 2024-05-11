@@ -196,7 +196,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/locking-and-unlocking',
             },
             {
-              text: 'Test Wallets',
+              text: '测试钱包',
               link: '/typescript-sdk/guide/wallets/test-wallets',
             },
           ],
