@@ -180,7 +180,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/wallet-transferring',
             },
             {
-              text: 'Signing',
+              text: '签名',
               link: '/typescript-sdk/guide/wallets/signing',
             },
             {
