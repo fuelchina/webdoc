@@ -164,7 +164,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/private-keys',
             },
             {
-              text: 'Mnemonic Wallet',
+              text: '助记词钱包',
               link: '/typescript-sdk/guide/wallets/mnemonic-wallet',
             },
             {
