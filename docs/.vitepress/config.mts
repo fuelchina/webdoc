@@ -67,6 +67,11 @@ export default defineConfig({
           collapsed: false,
           link: '/swaybook/basics/index',
           items: [
+            { text: '4.1 变量', link: '/swaybook/basics/variables' },
+            { text: '4.2 内置类型', link: '/swaybook/basics/built_in_types' },
+            { text: '4.3 常用库类型', link: '/swaybook/basics/commonly_used_library_types' },
+            { text: '4.4 区块链类型', link: '/swaybook/basics/blockchain_types' },
+            { text: '4.5 函数', link: '/swaybook/basics/functions' },
             { text: '4.6 结构体、元组和枚举', link: '/swaybook/basics/structs_tuples_and_enums' },
             { text: '4.7 方法和函数', link: '/swaybook/basics/methods_and_associated_functions' },
             { text: '4.8 常量', link: '/swaybook/basics/constants' },
