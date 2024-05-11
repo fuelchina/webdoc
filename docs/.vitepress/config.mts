@@ -172,7 +172,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/encrypting-and-decrypting',
             },
             {
-              text: 'Checking Balances',
+              text: '查询余额',
               link: '/typescript-sdk/guide/wallets/checking-balances',
             },
             {
