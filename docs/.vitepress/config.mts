@@ -11,7 +11,11 @@ export default defineConfig({
       'sway': 'rs'
     }
   },
+  head: [
+    ['link', { rel: 'icon', href: 'https://fuellabs.github.io/fuels-ts/favicon.ico', type: 'image/png' }],
+  ],
   themeConfig: {
+    logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
@@ -101,47 +105,47 @@ export default defineConfig({
           ],
         },
         {
-          text: 'fuels CLI',
+          text: 'Fuels 脚手架',
           link: '/typescript-sdk/guide/fuels-cli/',
           collapsed: true,
           items: [
             {
-              text: 'Config File',
-              link: '/typescript-sdk/guide/fuels-cli/config-file',
-            },
-            {
-              text: 'Commands',
-              link: '/typescript-sdk/guide/fuels-cli/commands',
-            },
-            {
-              text: 'Binaries',
-              link: '/typescript-sdk/guide/fuels-cli/binaries',
-            },
-            {
-              text: 'ABI Typegen',
+              text: 'ABI 类型生成器',
               link: '/typescript-sdk/guide/fuels-cli/abi-typegen',
             },
             {
-              text: 'Generating Types',
+              text: '内置二进制文件',
+              link: '/typescript-sdk/guide/fuels-cli/binaries',
+            },
+            {
+              text: '命令',
+              link: '/typescript-sdk/guide/fuels-cli/commands',
+            },
+            {
+              text: '配置文件',
+              link: '/typescript-sdk/guide/fuels-cli/config-file',
+            },
+            {
+              text: '生成类型',
               link: '/typescript-sdk/guide/fuels-cli/generating-types',
             },
             {
-              text: 'Using Generated Types',
+              text: '使用生成的类型',
               link: '/typescript-sdk/guide/fuels-cli/using-generated-types',
             },
           ],
         },
         {
-          text: 'Provider',
+          text: '提供者',
           link: '/typescript-sdk/guide/provider/',
           collapsed: true,
           items: [
             {
-              text: 'Provider Options',
+              text: '提供者选项',
               link: '/typescript-sdk/guide/provider/provider-options',
             },
             {
-              text: 'Querying the Chain',
+              text: '查询链',
               link: '/typescript-sdk/guide/provider/querying-the-chain',
             },
           ],

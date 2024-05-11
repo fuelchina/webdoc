@@ -1,9 +1,9 @@
-# Provider
+# 提供者
 
-The [`Provider`](../../api/Account/Provider.md) lets you connect to a Fuel node ([_*local*_](../../getting-started.md#connecting-to-a-local-node) or [_*external*_](../../getting-started.md#connecting-to-the-testnet)) and interact with it, encapsulating common client operations in the SDK. Those operations include querying the blockchain for network, block, and transaction-related info (and [more](../../api/Account/Provider.md)), as well as sending [transactions](../transactions/index.md) to the blockchain.
+[`Provider`](../../api/Account/Provider.md) 允许您连接到 Fuel 节点（[_*本地*_](../../getting-started.md#connecting-to-a-local-node)或[_*外部*_](../../getting-started.md#connecting-to-the-testnet)）并与其进行交互，封装了 SDK 中的常见客户端操作。这些操作包括查询区块链以获取网络、区块和与交易相关的信息（以及[更多](../../api/Account/Provider.md)），以及向区块链发送[交易](../transactions/index.md)。
 
-All higher-level abstractions (e.g. [`Wallet`](../wallets/index.md), [`Contract`](../contracts/index.md)) that interact with the blockchain go through the `Provider`, so it's used for various actions like getting a wallet's balance, deploying contracts, querying their state, etc.
+所有与区块链交互的高级抽象（例如[`Wallet`](../wallets/index.md)、[`Contract`](../contracts/index.md)等）都通过 `Provider` 进行，因此它用于各种操作，如获取钱包余额、部署合约、查询其状态等。
 
-<!-- <<< ../../docs-snippets/src/guide/provider/provider.test.ts#provider-definition{ts:line-numbers} -->
+<<< ../../docs-snippets/src/guide/provider/provider.test.ts#provider-definition{ts:line-numbers}
 
-You can find more examples of `Provider` usage [here](querying-the-chain.md).
+您可以在[这里](querying-the-chain.md)找到更多关于 `Provider` 使用的示例。
