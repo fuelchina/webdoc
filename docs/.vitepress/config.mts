@@ -151,12 +151,12 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Wallets',
+          text: '钱包',
           link: '/typescript-sdk/guide/wallets/',
           collapsed: true,
           items: [
             {
-              text: 'Instantiating Wallets',
+              text: '创建钱包',
               link: '/typescript-sdk/guide/wallets/instantiating-wallets',
             },
             {
