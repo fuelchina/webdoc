@@ -202,7 +202,7 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Contracts',
+          text: '合约',
           link: '/typescript-sdk/guide/contracts/',
           collapsed: true,
           items: [
