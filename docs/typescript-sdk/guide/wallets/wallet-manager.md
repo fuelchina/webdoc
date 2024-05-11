@@ -1,123 +1,123 @@
-# Wallet Manager
+# 钱包管理器
 
-The `WalletManager` is a robust tool designed for managing vaults of wallets. It offers robust management of vaults, including support for custom storage and powerful encryption of all held vaults.
+`WalletManager` 是一个强大的钱包管理工具，设计用于安全地管理和存储多个钱包的保险库。
 
-## Key Features
+## 主要特性
 
-### Managing Vaults with `WalletManager`
+### 使用 `WalletManager` 管理库
 
-This includes adding new wallets to specific vaults, retrieving all wallets from a vault, exporting specific vaults, and exporting private keys. The `WalletManager` class currently supports two types of vaults: `PrivateKeyVault` and `MnemonicVault`.
+这包括向特定保险库添加新钱包、从保险库中检索所有钱包、导出特定保险库以及导出私钥。`WalletManager`类目前支持两种类型的保险库：`PrivateKeyVault`和`MnemonicVault`。
 
-### Custom Storage Solutions
+### 自定义存储解决方案
 
-The `WalletManager` supports defining a custom storage solution, allowing you to specify how and where the encrypted vaults are saved. With support for custom storage, you can make the `WalletManager` to fit your specific needs and security requirements.
+`WalletManager` 支持定义自定义存储解决方案，允许你指定加密库的存储方式和位置。有了自定义存储的支持，你可以使 `WalletManager` 适应你的特定需求和安全要求。
 
-### Locking and Unlocking `WalletManager`
+### 锁定和解锁 `WalletManager`
 
-The `WalletManager` implements an automatic encryption mechanism, securely saving the wallet's held vaults. This not only preserves the state of your vaults but also ensures robust protection of the stored information. When needed, you can easily unlock and decrypt the vaults using the previously defined password.
+`WalletManager` 实现了自动加密机制，安全地保存钱包的保险库。这不仅保留了你的库的状态，还确保了对存储信息的强大保护。当需要时，你可以使用之前定义的密码轻松解锁和解密库。
 
-## Getting Started with `WalletManager`
+## `WalletManager` 入门
 
-This guide provides step-by-step instructions on how to use `WalletManager`.
+本指南提供了如何使用 `WalletManager` 的逐步说明。
 
-### Instantiating `WalletManager`
+### 实例化 `WalletManager`
 
-The `WalletManager` constructor accepts an optional object to define its storage. The storage describes how and where the `WalletManager` will store its vaults of wallets. If storage is not provided, the `WalletManager` uses a default one that does not persist data.
+`WalletManager` 构造函数接受一个可选对象来定义其存储。存储描述了 `WalletManager` 将如何以及在何处存储其钱包库。如果没有提供存储，`WalletManager` 使用一个不持久化数据的默认存储。
 
-For now, let's keep it simple and not worry about the storage. Later we will discuss it in more detail.
+现在，让我们简单点，不必考虑存储。稍后我们会更详细地讨论它。
 
-To instantiate a `WalletManager` you can simply:
+要实例化一个 WalletManager，你只需：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-1{ts:line-numbers}
 
-### Setting `WalletManager` Password
+### 设置 `WalletManager` 密码
 
-By default, a `WalletManager` instance is locked when created. Before using it, you need to unlock it by setting a password. You can do this by calling the `unlock` method.
+默认情况下，创建时 `WalletManager` 实例处于锁定状态。在使用之前，你需要通过调用 `unlock` 方法来设置密码来解锁它。
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-2{ts:line-numbers}
 
-Once your `WalletManager` is unlocked, it can manage your wallets.
+一旦你的 `WalletManager` 解锁，它就可以管理你的钱包了。
 
-### Managing Vaults with `WalletManager`
+### 使用 `WalletManager` 管理库
 
-A vault in `WalletManager` serves as a secure container for wallets. The `WalletManager` manages wallets by interacting with these vaults, supporting operations such as `getAccounts`, which returns public information about all wallets stored in the vault, and `exportAccount`, which exports a private key for a given wallet address.
+`WalletManager` 中的库充当钱包的安全容器。`WalletManager` 通过与这些库交互来管理钱包，支持诸如 `getAccounts`之类的操作，它返回存储在库中所有钱包的公共信息，以及 `exportAccount`，它导出给定钱包地址的私钥。
 
-To add a vault, we utilize the `addVault` method. Here's how we can create a private key vault and add a private key from a wallet we own:
+要添加一个库，我们使用 `addVault` 方法。以下是我们如何创建一个私钥库并添加一个我们拥有的钱包的私钥：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-3{ts:line-numbers}
 
-The `addVault` method requires an object with three properties: `type`, `secret`, and `title`. The `WalletManager` currently supports two types of vaults: `privateKeyVault` and `mnemonicVault`. For the `secret`, we use our wallet's private key, and for the `title`, we can provide a custom name.
+`addVault` 方法需要一个具有三个属性的对象：`type`、`secret` 和 `title`。`WalletManager` 目前支持两种类型的库：`privateKeyVault` 和 `mnemonicVault`。对于 `secret`，我们使用我们钱包的私钥，对于 `title`，我们可以提供一个自定义名称。
 
-By running this code, `WalletManager` creates a new vault instance of the type `privateKey` and adds one account (our wallet) to this newly created vault.
+运行此代码后，`WalletManager` 将创建一个新的 `privateKey` 类型的库实例，并将一个账户（我们的钱包）添加到这个新创建的库中。
 
-A key feature of the `WalletManager` is its ability to manage multiple vaults, even of the same type. This implies that if you run the `addVault` method again, with the same parameters, `WalletManager` will create another vault of the type `privateKey`, holding the same wallet. Here's an example:
+`WalletManager` 的一个关键特性是其能够管理多个库，甚至是同一类型的。这意味着如果你再次运行 `addVault` `方法，使用相同的参数，WalletManager` 将创建另一个 `privateKey` 类型的库，持有同一个钱包。以下是示例：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-4{ts:line-numbers}
 
-After executing this, you will find that your `WalletManager` is managing two `privateKey` vaults, both storing the same wallet.
+执行此操作后，你将发现你的 `WalletManager` 正在管理两个 `privateKey` 库，这两个库都存储着同一个钱包。
 
-Remember, both `title` and `secret` are optional when adding vaults, but providing a `title` makes it easier to manage your vaults and wallets. If you add a vault without providing a `secret`, this will result in one new account (wallet) being generated by the vault it self.
+记住，添加库时 `title` 和 `secret` 都是可选的，但提供 `title` 可以更方便地管理你的库和钱包。如果你在添加库时没有提供 `secret`，这将导致库本身生成一个新账户（钱包）。
 
-### Using The `WalletManager`
+### 使用 `WalletManager`
 
-With your `WalletManager` set up, you can now access your vaults and wallets. Here's how to retrieve the details of your vaults:
+设置好 `WalletManager` 后，你现在可以访问你的库和钱包。以下是如何检索你的库的详细信息：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-5{ts:line-numbers}
 
-This will output something like this:
+这将输出类似于：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-6{bash:line-numbers}
 
-As you can see, the `WalletManager` assigns unique `vaultIds` for each vault. The first vault you added has a `vaultId` of `0`, and the second one has a `vaultId` of `1`.
+如你所见，`WalletManager` 为每个库分配了唯一的 `vaultIds`。你添加的第一个库有一个 `vaultId` 为 `0`，第二个有一个 `vaultId` 为 `1`。
 
-Let's retrieve your wallet instance with the `getWallet` method:
+让我们使用 `getWallet` 方法检索你的钱包实例：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/getting-started-with-wallet-manager.test.ts#getting-started-with-wallet-manager-7{ts:line-numbers}
 
-This guide walked through the steps to instantiate a `WalletManager`, set up its first vault, and retrieve vault information. The following sections will explore more functionalities of `WalletManager`, and go deeper into the usage of its vaults and the details of its storage system.
+本指南介绍了如何实例化 `WalletManager`，设置它的第一个库，并检索库信息的步骤。接下来的部分将探索 `WalletManager` 的更多功能，并深入了解其库的使用和其存储系统的详细信息。
 
-## Locking and Unlocking `WalletManager`
+## 锁定和解锁 `WalletManager`
 
-This guide will walk you through the process of managing the lock state of your wallets using the `WalletManager`.
+本指南将向你介绍如何使用 `WalletManager` 管理你的钱包的锁定状态。
 
-### Initializing and Unlocking the `WalletManager`
+### 初始化和解锁 `WalletManager`
 
-As mentioned earlier, a `WalletManager` instance begins in a locked state. Before usage, you need to unlock it by providing a password via the unlock method.
+如前所述，`WalletManager` 实例一开始处于锁定状态。在使用之前，你需要通过 unlock 方法提供密码来解锁它。
 
 <<< ../../docs-snippets/src/guide/wallet-manager/locking-and-unlocking-wallet-manager.test.ts#locking-and-unlocking-wallet-manager-1{ts:line-numbers}
 
-### Locking the `WalletManager`
+### 锁定 `WalletManager`
 
-When you lock the `WalletManager` using the `lock` method, all its vaults and associated accounts (wallets) are cleared. This clearance is possible due to the encryption and saving of all data by the storage system. `WalletManager` frequently uses the storage system to preserve its state. Consequently, sensitive operations including exporting vaults, private keys, accessing wallets, and saving/loading the `WalletManager` state are not possible when it is locked.
+当你使用 `lock` 方法锁定 `WalletManager` `时，它所有的库和关联账户（钱包）都会被清除。由于存储系统对所有数据进行了加密和保存，这种清除是可能的。WalletManager` 频繁使用存储系统来保存其状态。因此，当它被锁定时，包括导出库、私钥、访问钱包和保存/加载 `WalletManager` 状态在内的敏感操作是不可能的。
 
 <<< ../../docs-snippets/src/guide/wallet-manager/locking-and-unlocking-wallet-manager.test.ts#locking-and-unlocking-wallet-manager-2{ts:line-numbers}
 
-Remember, it's crucial to lock your `WalletManager` when it's not in use to ensure the safety of your funds.
+记住，使用完毕后锁定你的 `WalletManager` 是确保资金安全的关键步骤。
 
-### Reaccessing Your Wallets by Unlocking the `WalletManager`
+### 通过解锁 `WalletManager` 重新访问你的钱包
 
-The `unlock` method requires the previously set password to unlock the `WalletManager` and all its vaults. The password decrypts the stored vaults, allowing `WalletManager` to load its saved data.
+`unlock` 方法需要之前设置的密码来解锁 `WalletManager` 及其所有库。密码解密了存储的库，允许 `WalletManager` 加载其保存的数据。
 
 <<< ../../docs-snippets/src/guide/wallet-manager/locking-and-unlocking-wallet-manager.test.ts#locking-and-unlocking-wallet-manager-3{ts:line-numbers}
 
-Providing an incorrect password will result in an error. However, when unlocked successfully, `WalletManager` is ready for use again.
+提供错误的密码将导致错误。然而，当成功解锁时，`WalletManager` 又可以再次使用了。
 
-### Verifying the Lock State
+### 验证锁定状态
 
-You can confirm the current lock state of the `WalletManager` by using the `isLocked` method:
+你可以使用 `isLocked` 方法来确认 `WalletManager` 的当前锁定状态：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/locking-and-unlocking-wallet-manager.test.ts#locking-and-unlocking-wallet-manager-4{ts:line-numbers}
 
-### Updating the Password
+### 更新密码
 
-To change the current password, invoke the `updatePassphrase` method, and provide both the old and new passwords:
+要更改当前密码，请调用 `updatePassphrase` 方法，并提供旧密码和新密码：
 
 <<< ../../docs-snippets/src/guide/wallet-manager/locking-and-unlocking-wallet-manager.test.ts#locking-and-unlocking-wallet-manager-5{ts:line-numbers}
 
-### Reminder: Always Lock Your `WalletManager`
+### 提醒： 始终锁定你的 `WalletManager`
 
-Always ensure you lock the `WalletManager` after completing operations. This step is critical for securing your wallets.
+始终确保在完成后锁定 `WalletManager`。这一步对于保护你的钱包至关重要。
 
 <<< ../../docs-snippets/src/guide/wallet-manager/locking-and-unlocking-wallet-manager.test.ts#locking-and-unlocking-wallet-manager-6{ts:line-numbers}
 
-By using `WalletManager` to manage lock and unlock states, you introduce an additional layer of security. Never forget to lock your `WalletManager` when it's not in use.
+通过使用 `WalletManager` 来管理锁定和解锁状态，你引入了额外的安全层。当不使用时，切勿忘记锁定你的 `WalletManager`。

@@ -188,7 +188,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/connectors',
             },
             {
-              text: 'Wallet Manager',
+              text: '钱包管理器',
               link: '/typescript-sdk/guide/wallets/wallet-manager',
             },
             {
