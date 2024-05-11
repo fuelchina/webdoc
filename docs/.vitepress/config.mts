@@ -192,7 +192,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/wallet-manager',
             },
             {
-              text: 'Locking and Unlocking',
+              text: '锁定和解锁',
               link: '/typescript-sdk/guide/wallets/locking-and-unlocking',
             },
             {
