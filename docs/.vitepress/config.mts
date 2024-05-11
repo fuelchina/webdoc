@@ -184,7 +184,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/signing',
             },
             {
-              text: 'Connectors',
+              text: '连接器',
               link: '/typescript-sdk/guide/wallets/connectors',
             },
             {
