@@ -176,7 +176,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/checking-balances',
             },
             {
-              text: 'Wallet Transferring',
+              text: '钱包转账',
               link: '/typescript-sdk/guide/wallets/wallet-transferring',
             },
             {
