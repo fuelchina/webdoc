@@ -168,7 +168,7 @@ export default defineConfig({
               link: '/typescript-sdk/guide/wallets/mnemonic-wallet',
             },
             {
-              text: 'Encrypting and Decrypting',
+              text: '加密和解密',
               link: '/typescript-sdk/guide/wallets/encrypting-and-decrypting',
             },
             {
