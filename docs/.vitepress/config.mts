@@ -75,7 +75,17 @@ export default defineConfig({
             { text: '4.7 方法和函数', link: '/swaybook/basics/methods_and_associated_functions' },
             { text: '4.8 常量', link: '/swaybook/basics/constants' },
             { text: '4.9 评论和记录', link: '/swaybook/basics/comments_and_logging' },
-            { text: '4.10 控制流', link: '/swaybook/basics/control_flow' },
+            { text: '4.10 控制流', link: '/swaybook/basics/control_flow' }
+          ]
+        },
+        {
+          text: '5. 使用 Sway 进行区块链开发',
+          collapsed: false,
+          link: '/swaybook/blockchain-development/index',
+          items: [
+            { text: '5.1 哈希和密码学', link: '/swaybook/blockchain-development/hashing_and_cryptography' },
+            { text: '5.2 合约存储', link: '/swaybook/blockchain-development/storage' },
+            { text: '5.3 纯度', link: '/swaybook/blockchain-development/purity' }
           ]
         }
       ],
