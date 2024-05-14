@@ -1,33 +1,34 @@
-# Signing
+# 签名
 
-## Signing Messages
+## 签名消息
 
-Signing messages with a wallet is a fundamental security practice in a blockchain environment. It verifies ownership and ensures the integrity of data. Here's how to use the `wallet.signMessage` method to sign messages:
+在区块链环境中，使用钱包对消息进行签名是一项基本的安全实践。它验证了所有权并确保了数据的完整性。以下是如何使用 `wallet.signMessage` 方法对消息进行签名：
 
 <<< ../../docs-snippets/src/guide/wallets/signing.test.ts#signing-1{ts:line-numbers}
 
-The `wallet.signMessage` method internally hashes the message using the SHA-256 algorithm, then signs the hashed message, returning the signature as a hex string.
+`wallet.signMessage` 方法在内部使用 SHA-256 算法对消息进行哈希处理，然后对哈希后的消息进行签名，并以十六进制字符串的形式返回签名。。
 
-The `hashMessage` helper gives us the hash of the original message. This is crucial to ensure that the hash used during signing matches the one used during the address recovery process.
 
-The `recoverAddress` method from the `Signer` class takes the hashed message and the signature to recover the signer's address. This confirms that the signature was created by the holder of the private key associated with that address, ensuring the authenticity and integrity of the signed message.
+`hashMessage` 辅助函数为我们提供了原始消息的哈希值。这在确保签名过程中使用的哈希值与恢复地址过程中的哈希值匹配方面至关重要。
 
-## Signing Transactions
+`Signer` 类的 `recoverAddress` 方法采用哈希消息和签名来恢复签名者的地址。这证实了签名是由与该地址相关联的私钥的持有者创建的，从而确保了签名消息的真实性和完整性。
 
-Signing a transaction involves using your wallet to sign the transaction ID (also known as [transaction hash](https://specs.fuel.network/master/identifiers/transaction-id.html)) to authorize the use of your resources. Here's how it works:
+## 签名交易
 
-1. `Generate a Signature`: Using the wallet to create a signature based on the transaction ID.
+签名交易涉及使用你的钱包对交易 ID(也称之为[交易哈希](https://specs.fuel.network/master/identifiers/transaction-id.html))进行签名，以授权使用你的资源。以下是它的工作原理：
 
-2. `Using the Signature on the transaction`: Place the signature in the transaction's `witnesses` array. Each Coin / Message input should have a matching `witnessIndex`. This index indicates your signature's location within the `witnesses` array.
+1. `生成签名`: 使用钱包根据交易ID创建签名。
 
-3. `Security Mechanism`: The transaction ID is derived from the transaction bytes (excluding the `witnesses`). If the transaction changes, the ID changes, making any previous signatures invalid. This ensures no unauthorized changes can be made after signing.
+2. `在交易中使用签名`: 将签名放入交易的 `witnesses` 数组中。每个 `Coin` 或 `Message` 输入都应该有一个匹配的 `witnessIndex`。这个索引表示签名在 `witnesses` 数组中的位置。
 
-The following code snippet exemplifies how a Transaction can be signed:
+3. `安全机制`: 交易 ID 源自交易字节（不包括 `witnesses`）。如果交易发生变化，ID 就会改变，使任何先前的签名无效。这确保在签名后无法进行未经授权的更改。
+
+以下代码片段展示了如何签名交易：
 
 <<< ../../docs-snippets/src/guide/wallets/signing.test.ts#signing-2{ts:line-numbers}
 
-Similar to the sign message example, the previous code used `Signer.recoverAddress` to get the wallet's address from the transaction ID and the signed data.
+与签名消息的示例类似，前面的代码使用了 `Signer.recoverAddress` 从交易 ID 和已签名的数据中获取钱包的地址。
 
-When using your wallet to submit a transaction with `wallet.sendTransaction()`, the SDK already handles these steps related to signing the transaction and adding the signature to the `witnesses` array. Because of that, you can skip this in most cases:
+当你使用钱包提交交易 `wallet.sendTransaction()` 时，SDK 已经处理了与签名交易相关的步骤，包括添加签名到 `witnesses` 数组。因此，在大多数情况下，你可以跳过这些手动签名步骤：
 
 <<< ../../docs-snippets/src/guide/wallets/signing.test.ts#signing-3{ts:line-numbers}

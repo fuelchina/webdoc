@@ -71,6 +71,11 @@ export default defineConfig({
           collapsed: false,
           link: '/swaybook/basics/index',
           items: [
+            { text: '4.1 变量', link: '/swaybook/basics/variables' },
+            { text: '4.2 内置类型', link: '/swaybook/basics/built_in_types' },
+            { text: '4.3 常用库类型', link: '/swaybook/basics/commonly_used_library_types' },
+            { text: '4.4 区块链类型', link: '/swaybook/basics/blockchain_types' },
+            { text: '4.5 函数', link: '/swaybook/basics/functions' },
             { text: '4.6 结构体、元组和枚举', link: '/swaybook/basics/structs_tuples_and_enums' },
             { text: '4.7 方法和函数', link: '/swaybook/basics/methods_and_associated_functions' },
             { text: '4.8 常量', link: '/swaybook/basics/constants' },
@@ -156,58 +161,58 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Wallets',
+          text: '钱包',
           link: '/typescript-sdk/guide/wallets/',
           collapsed: true,
           items: [
             {
-              text: 'Instantiating Wallets',
+              text: '创建钱包',
               link: '/typescript-sdk/guide/wallets/instantiating-wallets',
             },
             {
-              text: 'Private Keys',
+              text: '私钥',
               link: '/typescript-sdk/guide/wallets/private-keys',
             },
             {
-              text: 'Mnemonic Wallet',
+              text: '助记词钱包',
               link: '/typescript-sdk/guide/wallets/mnemonic-wallet',
             },
             {
-              text: 'Encrypting and Decrypting',
+              text: '加密和解密',
               link: '/typescript-sdk/guide/wallets/encrypting-and-decrypting',
             },
             {
-              text: 'Checking Balances',
+              text: '查询余额',
               link: '/typescript-sdk/guide/wallets/checking-balances',
             },
             {
-              text: 'Wallet Transferring',
+              text: '钱包转账',
               link: '/typescript-sdk/guide/wallets/wallet-transferring',
             },
             {
-              text: 'Signing',
+              text: '签名',
               link: '/typescript-sdk/guide/wallets/signing',
             },
             {
-              text: 'Connectors',
+              text: '连接器',
               link: '/typescript-sdk/guide/wallets/connectors',
             },
             {
-              text: 'Wallet Manager',
+              text: '钱包管理器',
               link: '/typescript-sdk/guide/wallets/wallet-manager',
             },
             {
-              text: 'Locking and Unlocking',
+              text: '锁定和解锁',
               link: '/typescript-sdk/guide/wallets/locking-and-unlocking',
             },
             {
-              text: 'Test Wallets',
+              text: '测试钱包',
               link: '/typescript-sdk/guide/wallets/test-wallets',
             },
           ],
         },
         {
-          text: 'Contracts',
+          text: '合约',
           link: '/typescript-sdk/guide/contracts/',
           collapsed: true,
           items: [
