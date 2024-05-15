@@ -515,6 +515,20 @@ export default defineConfig({
           ],
         },
       ],
+      "/sway-example": [
+        {
+          text: '示例',
+          collapsed: false,
+          items: [
+            { text: 'Solidity 备忘录', link: '/sway-example/index' },
+            // { text: '1.2 Fuel 工具链', link: '/swaybook/introduction/fuel_toolchain' },
+            // { text: '1.3 Forc 项目', link: '/swaybook/introduction/forc_project' },
+            // { text: '1.4 标准库', link: '/swaybook/introduction/standard_library' }
+          ]
+        },
+
+
+      ],
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
