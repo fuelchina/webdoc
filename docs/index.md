@@ -14,7 +14,7 @@ hero:
       text: TypeScript SDK 中文教程
       link: /typescript-sdk/index
     - theme: alt
-      text: 中文示例
+      text: Sway中文示例指南
       link: /sway-example/index
     - theme: alt
       text: Awesome-Fuel
