@@ -146,12 +146,12 @@ export default defineConfig({
           ],
         },
         {
-          text: '提供者',
+          text: 'Provider',
           link: '/typescript-sdk/guide/provider/',
           collapsed: true,
           items: [
             {
-              text: '提供者选项',
+              text: 'Provider选项',
               link: '/typescript-sdk/guide/provider/provider-options',
             },
             {

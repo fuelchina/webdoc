@@ -1,4 +1,4 @@
-# 提供者
+# Provider
 
 [`Provider`](../../api/Account/Provider.md) 允许您连接到 Fuel 节点（[_*本地*_](../../getting-started.md#connecting-to-a-local-node)或[_*外部*_](../../getting-started.md#connecting-to-the-testnet)）并与其进行交互，封装了 SDK 中的常见客户端操作。这些操作包括查询区块链以获取网络、区块和与交易相关的信息（以及[更多](../../api/Account/Provider.md)），以及向区块链发送[交易](../transactions/index.md)。
 
