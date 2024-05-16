@@ -11,7 +11,7 @@ const members = [
       { icon: 'twitter', link: 'https://twitter.com/YongxuPan' }
     ]
   },
-{
+  {
     avatar: 'https://avatars.githubusercontent.com/u/16284115?s=400&u=421bf4e971a70e62fd9426e265a12eefc4aed991&v=4',
     name: 'Ian Xu',
     title: 'DevRel & Developer',
@@ -19,7 +19,16 @@ const members = [
       { icon: 'github', link: 'https://github.com/panyongxu1002' },
       { icon: 'twitter', link: 'https://twitter.com/imxy007' }
     ]
-  }
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/84056084?v=4',
+    name: 'Finch Ren',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/BigBroFinch' },
+      { icon: 'twitter', link: 'https://twitter.com/FinchR1992' }
+    ]
+  },
 ]
 </script>
 
