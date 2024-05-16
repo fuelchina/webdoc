@@ -14,6 +14,9 @@ hero:
       text: TypeScript SDK 中文教程
       link: /typescript-sdk/index
     - theme: alt
+      text: Sway中文示例指南
+      link: /sway-example/index
+    - theme: alt
       text: Awesome-Fuel
       link: "https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9"
 

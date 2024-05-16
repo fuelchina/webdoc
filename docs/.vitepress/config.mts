@@ -146,12 +146,12 @@ export default defineConfig({
           ],
         },
         {
-          text: '提供者',
+          text: 'Provider',
           link: '/typescript-sdk/guide/provider/',
           collapsed: true,
           items: [
             {
-              text: '提供者选项',
+              text: 'Provider选项',
               link: '/typescript-sdk/guide/provider/provider-options',
             },
             {
@@ -514,6 +514,67 @@ export default defineConfig({
             },
           ],
         },
+      ],
+      "/sway-example": [
+        {
+          text: 'Solidity 备忘录',
+          collapsed: false,
+          link: '/sway-example/cheatsheet' 
+        },
+        {
+          text: '基础',
+          collapsed: true,
+          items: [
+            { text: '你好，Sway', link: '/sway-example/basic/hello-sway' },
+            { text: '导入', link: '/sway-example/basic/imports' },
+            { text: '错误处理', link: '/sway-example/basic/error-handling' },
+            { text: '账户类型', link: '/sway-example/basic/account-types' },
+            { text: '初始化', link: '/sway-example/basic/initialization' },
+            { text: '所有权', link: '/sway-example/basic/ownership' },
+            { text: '事件', link: '/sway-example/basic/events' },
+            { text: '代币', link: '/sway-example/basic/tokens' },
+            { text: '调用其他合约', link: '/sway-example/basic/contract-calls' },
+            { text: '变量', link: '/sway-example/basic/variables' },
+            { text: '原始数据类型', link: '/sway-example/basic/primitive-types' },
+            { text: '复合类型', link: '/sway-example/basic/compound-types' },
+            { text: '区块链类型', link: '/sway-example/basic/blockchain-types' },
+            { text: '函数', link: '/sway-example/basic/functions' },
+            { text: '结构体', link: '/sway-example/basic/structs' },
+            { text: '元组', link: '/sway-example/basic/tuples' },
+            { text: '枚举', link: '/sway-example/basic/enums' },
+            { text: '常量', link: '/sway-example/basic/constants' },
+            { text: '可配置常量', link: '/sway-example/basic/configurable-constants' },
+            { text: '选项', link: '/sway-example/basic/options' },
+            { text: '结果', link: '/sway-example/basic/results' },
+            { text: 'if语句', link: '/sway-example/basic/control-flow-if' },
+            { text: 'match语句', link: '/sway-example/basic/control-flow-match' },
+            { text: 'While循环', link: '/sway-example/basic/control-flow-while-loop' },
+            { text: '日志记录', link: '/sway-example/basic/logging' },
+            { text: '存储映射', link: '/sway-example/basic/storage-map' },
+            { text: '向量', link: '/sway-example/basic/vector' },
+            { text: '基础资产', link: '/sway-example/basic/base-asset' },
+
+          ]
+        },
+        {
+          text: '应用',
+          collapsed: true,
+          items: [
+            { text: '拥有权和msg_sender示例', link: '/sway-example/apps/ownership' },
+            { text: '钱包', link: '/sway-example/apps/wallet' },
+          ]
+        },
+        {
+          text: '去中心化金融',
+          collapsed: true,
+          items: [
+            { text: '闪电贷', link: '/sway-example/defi/flashloans' },
+            { text: 'Staking Contracts', link: '/sway-example/defi/staking-contract' },
+
+          ]
+        },
+
+
       ],
     },
     socialLinks: [
