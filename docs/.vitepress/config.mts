@@ -20,15 +20,15 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '资源', link: 'https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9' },
-      {
-        text: "版本",
-        items: [
-          { text: "v0.0.1", link: "" },
-          { text: "v0.0.2", link: "" },
-          { text: "v0.0.3", link: "" },
-        ],
-      },
-      { text: '关于我们', link: '/team_member.md' },
+      // {
+      //   text: "版本",
+      //   items: [
+      //     { text: "v0.0.1", link: "" },
+      //     { text: "v0.0.2", link: "" },
+      //     { text: "v0.0.3", link: "" },
+      //   ],
+      // },
+      { text: '贡献者们', link: '/team_member.md' },
     ],
 
     sidebar: {
@@ -519,7 +519,7 @@ export default defineConfig({
         {
           text: 'Solidity 备忘录',
           collapsed: false,
-          link: '/sway-example/cheatsheet' 
+          link: '/sway-example/cheatsheet'
         },
         {
           text: '基础',
@@ -578,9 +578,9 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-      { icon: 'twitter', link: '' },
-      { icon: 'discord', link: '' }
+      { icon: 'github', link: 'https://github.com/fuelchina' },
+      // { icon: 'twitter', link: '' },
+      // { icon: 'discord', link: '' }
     ]
   }
 })
