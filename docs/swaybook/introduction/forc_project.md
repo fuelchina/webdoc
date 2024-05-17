@@ -1,4 +1,3 @@
-```markdown
 # Forc 项目
 
 要使用 Forc 初始化一个新项目，请使用 `forc new` 命令：
