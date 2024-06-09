@@ -1,33 +1,31 @@
-# Configurable Constants
+# 可配置常量
 
-Sway introduces a powerful feature: configurable constants. When creating a contract, you can define constants, each assigned with a default value.
+Sway 引入了一项强大的功能：可配置常量。创建合同时，您可以定义常量，每个常量都分配有默认值。
 
-Before deploying the contract, you can then redefine the value for these constants, it can be all of them or as many as you need.
+在部署合约之前，您可以重新定义这些常量的值，可以是全部，也可以是您需要的任意数量的常量。
 
-This feature provides flexibility for dynamic contract environments. It allows a high level of customization, leading to more efficient and adaptable smart contracts.
+此功能为动态合约环境提供了灵活性。它允许高度定制，从而实现更高效、适应性更强的智能合约。
 
-## Defining Configurable Constants
+## 定义可配置常量
 
-Below is an example of a contract in which we declare four configurable constants:
-
+下面是一个合约示例，其中我们声明了四个可配置常量：
 <!-- <<< ../../docs-snippets/test/fixtures/forc-projects/echo-configurables/src/main.sw#configurable-constants-1{rust:line-numbers} -->
 
-In this contract, we have a function `echo_configurables` that returns the values of the configurable constants.
+在这个合约中，我们有一个`echo_configurables`返回可配置常量的值的函数。
 
-If each of these constants has new values that have been assigned to them, the function will return the updated values. Otherwise, the function will return the default values.
+如果每个常量都已分配新值，则该函数将返回更新后的值。否则，该函数将返回默认值。
 
-## Setting New Values For Configurable Constants
+## 为可配置常量设置新值
 
-During contract deployment, you can define new values for the configurable constants. This is achieved as follows:
-
+在合约部署过程中，你可以为可配置常量定义新值。具体实现如下：
 <!-- <<< ../../docs-snippets/src/guide/contracts/configurable-constants.test.ts#configurable-constants-2{ts:line-numbers} -->
 
-You can assign new values to any of these configurable constants.
+您可以为任何这些可配置常量分配新值。
 
-If you wish to assign a new value to just one constant, you can do the following:
+如果您希望为一个常量分配一个新值，您可以执行以下操作：
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/configurable-constants.test.ts#configurable-constants-3{ts:line-numbers} -->
 
-Please note that when assigning new values for a `Struct`, all properties of the `Struct` must be defined. Failing to do so will result in an error:
+请注意，当为`Struct` 分配新值时，必须定义该 `Struct` 的所有属性。如果不这样做，将导致错误:
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/configurable-constants.test.ts#configurable-constants-4{ts:line-numbers} -->

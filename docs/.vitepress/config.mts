@@ -217,59 +217,59 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              text: 'Methods',
+              text: '方法',
               link: '/typescript-sdk/guide/contracts/methods',
             },
             {
-              text: 'Call Parameters',
+              text: '调用参数',
               link: '/typescript-sdk/guide/contracts/call-parameters',
             },
             {
-              text: 'Contract Balance',
+              text: '合约余额',
               link: '/typescript-sdk/guide/contracts/contract-balance',
             },
             {
-              text: 'Cost Estimation',
+              text: '费用估算',
               link: '/typescript-sdk/guide/contracts/cost-estimation',
             },
             {
-              text: 'Dependency Estimation',
+              text: '依赖性估计',
               link: '/typescript-sdk/guide/contracts/dependency-estimation',
             },
             {
-              text: 'Variable Outputs',
+              text: '变量输出',
               link: '/typescript-sdk/guide/contracts/variable-outputs',
             },
             {
-              text: 'Logs',
+              text: '日志',
               link: '/typescript-sdk/guide/contracts/logs',
             },
             {
-              text: 'Inter-contract Calls',
+              text: '合约间调用',
               link: '/typescript-sdk/guide/contracts/inter-contract-calls',
             },
             {
-              text: 'Multi-contract calls',
+              text: '多合约调用',
               link: '/typescript-sdk/guide/contracts/multi-contract-calls',
             },
             {
-              text: 'Using different Wallets',
+              text: '使用不同的钱包',
               link: '/typescript-sdk/guide/contracts/using-different-wallets',
             },
             {
-              text: 'Transferring Assets',
+              text: '转移资产',
               link: '/typescript-sdk/guide/contracts/transferring-assets',
             },
             {
-              text: 'Deploying Contracts',
+              text: '部署合约',
               link: '/typescript-sdk/guide/contracts/deploying-contracts',
             },
             {
-              text: 'Storage Slots',
+              text: '存储槽',
               link: '/typescript-sdk/guide/contracts/storage-slots',
             },
             {
-              text: 'Configurable Constants',
+              text: '可配置常量',
               link: '/typescript-sdk/guide/contracts/configurable-constants',
             },
             {
