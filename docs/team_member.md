@@ -29,6 +29,15 @@ const members = [
       { icon: 'twitter', link: 'https://twitter.com/FinchR1992' }
     ]
   },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/58540575?s=400&u=fa72e490906630899bc4b074db0f9a7e88e65f23&v=4',
+    name: 'Sun',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/jiahao6635' },
+      { icon: 'twitter', link: 'https://x.com/shi_xiao0101' }
+    ]
+  },
 ]
 </script>
 

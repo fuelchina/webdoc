@@ -1,10 +1,11 @@
 # TypeScript SDK
 
-The TypeScript SDK supports common tasks like:
+TypeScript SDK 支持以下常见任务：
 
-- Deploying and calling contracts
-- Generating contract types with TypeChain
-- Building and sending transactions
-- Encoding and decoding contract ABI
+- 部署和调用合约
+- 使用 TypeChain 生成合约类型
+- 建立并发送交易
+- 编码和解码合约 ABI
 
-Refer [here](https://fuellabs.github.io/fuels-ts) for full documentation.
+
+请参阅 [此处](https://fuellabs.github.io/fuels-ts)获取完整文档。

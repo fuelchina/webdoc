@@ -1,13 +1,13 @@
-# Known Issues and Workarounds
+# 已知问题和解决方法
 
-## Known Issues
+## 已知的问题
 
-* [#870](https://github.com/FuelLabs/sway/issues/870): All `impl` blocks need to be defined before any of the functions they define can be called.  This includes sibling functions in the same `impl` declaration, i.e., functions in an `impl` can't call each other yet.
+* [#870](https://github.com/FuelLabs/sway/issues/870): 所有 `impl` 块都需要先定义，然后才能调用它们定义的任何函数。这包括同一 `impl` 声明中的同级函数，即 中的函数 `impl` 还不能互相调用。
 
-## Missing Features
+## 缺少的功能
 
-* [#1182](https://github.com/FuelLabs/sway/issues/1182) Arrays in a `storage` block are not yet supported. See the [Manual Storage Management](../blockchain-development/storage.md#manual-storage-management) section for details on how to use `store` and `get` from the standard library to manage storage slots directly. Note, however, that `StorageMap<K, V>` _does_ support arbitrary types for `K` and `V` without any limitations.
+* [#1182](https://github.com/FuelLabs/sway/issues/1182) 还不支持存储`存储块` 中的数组。 请参阅 [手动存储管理](../blockchain-development/storage.md#manual-storage-management) 部分，了解如何使用标准库中的 `store` 和 `get` 直接管理存储槽。但是请注意， `StorageMap<K, V>` _does_ 不支持任意类型的 `K` 和 `V` ，没有任何限制。
 
-## General
+## 普遍的
 
-* No compiler optimization passes have been implemented yet, therefore bytecode will be more expensive and larger than it would be in production. Note that eventually the optimizer will support zero-cost abstractions, avoiding the need for developers to go down to inline assembly to produce optimal code.
+* 目前尚未实现任何编译器优化过程，因此字节码将比生产时更昂贵且更大。请注意，优化器最终将支持零成本抽象，从而避免开发人员需要使用内联汇编来生成最佳代码。

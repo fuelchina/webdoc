@@ -92,7 +92,39 @@ export default defineConfig({
             { text: '5.2 合约存储', link: '/swaybook/blockchain-development/storage' },
             { text: '5.3 纯度', link: '/swaybook/blockchain-development/purity' }
           ]
-        }
+        },
+        {
+          text: '9. 应用程序前端',
+          collapsed: false,
+          link: '/swaybook/frontend/index',
+          items: [
+            { text: '9.1 TypeScript SDK', link: '/swaybook/frontend/typescript_sdk' },
+          ]
+        },
+        {
+          text: '10.  Sway LSP ',
+          collapsed: false,
+          link: '/swaybook/lsp/index',
+          items: [
+            { text: '10.1 安装', link: '/swaybook/lsp/installation' },
+            { text: '10.2 特点', link: '/swaybook/lsp/features' },
+          ]
+        },
+        {
+          text: '11.  Sway 参考 ',
+          collapsed: false,
+          link: '/swaybook/reference/index',
+          items: [
+            { text: '11.1 编译器内部函数', link: '/swaybook/reference/compiler_intrinsics' },
+            { text: '11.2 属性', link: '/swaybook/reference/attributes' },
+            { text: '11.3 风格指南', link: '/swaybook/reference/style_guide' },
+            { text: '11.4 已知问题和解决方法', link: '/swaybook/reference/known_issues_and_workarounds' },
+            { text: '11.5 与Solidity的区别', link: '/swaybook/reference/solidity_differences' },
+            { text: '11.6 与 Rust 的区别', link: '/swaybook/reference/rust_differences' },
+            { text: '11.7 为 Sway 做贡献', link: '/swaybook/reference/contributing_to_sway' },
+            { text: '11.8 关键字', link: '/swaybook/reference/keywords' },
+          ]
+        },
       ],
       '/typescript-sdk': [
         {

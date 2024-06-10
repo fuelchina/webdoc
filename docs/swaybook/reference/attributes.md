@@ -1,61 +1,60 @@
-# Attributes
+# 属性
 
-The Sway compiler supports a list of attributes that perform various operations that are useful for building, testing and documenting Sway programs. Below is a list of all available attributes:
+Sway 编译器支持一系列属性，这些属性可执行各种操作，这些操作对于构建、测试和记录 Sway 程序非常有用。以下是所有可用属性的列表：
 
-## Allow
+## 允许
 
-The `#[allow(...)]` attribute overrides checks so that violations will go unreported. The following checks can be disabled:
+该 `#[allow(...)]` 属性会覆盖检查，因此违规行为不会被报告。可以禁用以下检查：
 
-- `#[allow(dead_code)]` disable checks for dead code;
-- `#[allow(deprecated)]` disables checks for usage of deprecated structs, functions and other items.
+- `#[allow(dead_code)]` 禁用死代码检查；
+- `#[allow(deprecated)]` 禁用对已弃用的结构、函数和其他项目的使用情况的检查。
 
-## Doc
+## 文件
 
-The `#[doc(..)]` attribute specifies documentation.
+这 `#[doc(..)]` 属性指定文档
 
-Line doc comments beginning with exactly three slashes `///`, are interpreted as a special syntax for doc attributes. That is, they are equivalent to writing `#[doc("...")]` around the body of the comment, i.e., `/// Foo` turns into `#[doc("Foo")]`
+以三个斜杠开头的行文档注释 `///`, 被解释为文档属性的特殊语法。也就是说，它们相当于在 `#[doc("...")]` 注释正文周围书写，即 `/// Foo` 变成 `#[doc("Foo")]`
 
-Line comments beginning with `//!` are doc comments that apply to the module of the source file they are in. That is, they are equivalent to writing `#![doc("...")]` around the body of the comment. `//!` module level doc comments should be at the top of Sway files.
+以 开头的行注释 `//!` 是适用于其所在源文件模块的文档注释。也就是说，它们相当于在 `#![doc("...")]` 注释正文周围书写。 `//!` 模块级文档注释应位于 Sway 文件的顶部。
 
-Documentation can be generated from doc attributes using `forc doc`.
+可以使用 doc 属性生成文档 `forc doc`.
 
-## Inline
+## 排队
 
-The inline attribute suggests that a copy of the attributed function should be placed in the caller, rather than generating code to call the function where it is defined.
+inline 属性建议将被赋予属性的函数的副本放在调用者中，而不是在定义该函数的地方生成代码来调用它。
 
-> **Note**: The Sway compiler automatically inlines functions based on internal heuristics. Incorrectly inlining functions can make the program slower, so this attribute should be used with care.
+> **注意**: Sway 编译器会根据内部启发式方法自动内联函数。错误地内联函数会使程序变慢，因此应谨慎使用此属性。
 
-The `#[inline(never)]` attribute *suggests* that an inline expansion should never be performed.
+这 `#[inline(never)]` 属性 *表明* 永远不应执行内联扩展。
 
-The `#[inline(always)]` attribute *suggests* that an inline expansion should always be performed.
+这`#[inline(always)]` 属性 *表明* 应始终执行内联扩展。
 
-> **Note**: `#[inline(..)]` in every form is a hint, with no *requirements*
- on the language to place a copy of the attributed function in the caller.
+> **注意**: `#[inline(..)]` 每种形式都是一个提示，对语言没有 *要求*，将属性函数的副本放置在调用者中。
 
-## Payable
+## 应付
 
-The lack of `#[payable]` implies the method is non-payable. When calling an ABI method that is non-payable, the compiler emits an error if the amount of coins forwarded with the call is not guaranteed to be zero. Note that this is strictly a compile-time check and does not incur any runtime cost.
+缺少 `#[应付]` 意味着该方法不可应付。 在调用不可支付的ABI方法时，如果调用转发的代币数量不能保证为零，编译器将发出一个错误。 注意，这是严格的编译时检查，不会产生任何运行时成本。
 
-## Storage
+## 贮存
 
-In Sway, functions are pure by default but can be opted into impurity via the `storage` function attribute. The `storage` attribute may take `read` and/or `write` arguments indicating which type of access the function requires.
+在 Sway 中，函数默认为纯函数，但可以通过 `storage` 函数属性选择不纯函数。该 `storage` 属性可以采用 `read` 和/或 `write` 参数来指示函数需要哪种类型的访问。
 
-The `#[storage(read)]` attribute indicates that a function requires read access to the storage.
+该 `#[storage(read)]` 属性表明某个函数需要对存储进行读取访问。
 
-The `#[storage(write)]` attribute indicates that a function requires write access to the storage.
+该 `#[storage(write)]` 属性表明某个函数需要对存储进行写访问。
 
-More details in [Purity](../blockchain-development/purity.md).
+更多细节请参阅 [纯度](../blockchain-development/purity.md).
 
-## Test
+## 测试
 
-The `#[test]` attribute marks a function to be executed as a test.
+该 `#[test]` 属性标记要作为测试执行的函数。
 
-The `#[test(should_revert)]` attribute marks a function to be executed as a test that should revert.
+该 `#[test(should_revert)]` 属性将要执行的函数标记为应恢复的测试。
 
-More details in [Unit Testing](../testing/unit-testing.md).
+更多细节请参阅 [单元测试](../testing/unit-testing.md).
 
-## Deprecated
+## 已弃用
 
-The `#[deprecated]` attribute marks a item as deprecated and makes the compiler emit a warning for every usage of the deprecated item. This warning can be disabled using `#[allow(deprecated)]`.
+此 `#[deprecated]` 属性将某项标记为已弃用，并使编译器在每次使用已弃用项时发出警告。可以使用 禁用此警告 `#[allow(deprecated)]`.
 
-It is possible to improve the warning message with `#[deprecated(note = "your message")]`
+可以使用以下方法改进警告信息 `#[deprecated(note = "your message")]`

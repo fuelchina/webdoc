@@ -1,49 +1,49 @@
-# Features
+# 特征
 
-## Code Actions
+## 代码操作
 
-_Source:_ [code_actions](https://github.com/FuelLabs/sway/tree/master/sway-lsp/src/capabilities/code_actions)
+_来源:_ [code_actions](https://github.com/FuelLabs/sway/tree/master/sway-lsp/src/capabilities/code_actions)
 
-Quickly generate boilerplate code and code comments for functions, structs, and ABIs.
+快速生成函数、结构和 ABI 的样板代码和代码注释。
 
-## Completion
+## 达成
 
-_Source:_ [completion.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/completion.rs)
+_来源:_ [completion.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/completion.rs)
 
-Suggests code to follow partially written statements for functions and variables.
+建议代码遵循函数和变量的部分书写语句。
 
-## Diagnostics
+## 诊断
 
-_Source:_ [diagnostic.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/diagnostic.rs)
+_来源:_ [diagnostic.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/diagnostic.rs)
 
-Displays compiler warnings and errors inline.
+以内联方式显示编译器警告和错误。
 
-## Syntax Highlighting
+## 语法高亮
 
 _Source:_ [highlight.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/highlight.rs)
 
-Highlights code based on type and context.
+根据类型和上下文突出显示代码。
 
-## Hover
+## 徘徊
 
-_Source:_ [hover](https://github.com/FuelLabs/sway/tree/master/sway-lsp/src/capabilities/hover)
+_来源:_ [hover](https://github.com/FuelLabs/sway/tree/master/sway-lsp/src/capabilities/hover)
 
-Provides documentation, compiler diagnostics, and reference links when hovering over functions and variables.
+当鼠标悬停在函数和变量上时，提供文档、编译器诊断和参考链接。
 
-## Inlay Hints
+## 镶嵌提示
 
-_Source:_ [inlay_hints.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/inlay_hints.rs)
+_来源:_ [inlay_hints.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/inlay_hints.rs)
 
-Displays the implied type of a variable next to the variable name. Configurable in Settings.
+在变量名称旁边显示变量的隐含类型。可在“设置”中配置。
 
-## Rename
+## 改名
 
-_Source:_ [rename.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/rename.rs)
+_来源:_ [rename.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/rename.rs)
 
-Renames a symbol everywhere in the workspace.
+在工作区的任何位置重命名符号。
 
 ## Run
 
-_Source:_ [runnable.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/runnable.rs)
+_来源:_ [runnable.rs](https://github.com/FuelLabs/sway/blob/master/sway-lsp/src/capabilities/runnable.rs)
 
-Shows a button above a runnable function or test.
+在可运行的函数或测试上方显示一个按钮
