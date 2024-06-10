@@ -1,16 +1,15 @@
-# Compiler Intrinsics
+# 编译器内部函数
 
-The Sway compiler supports a list of intrinsics that perform various low level operations that are useful for building libraries. Compiler intrinsics should rarely be used but are preferred over `asm` blocks because they are type-checked and are safer overall. Below is a list of all available compiler intrinsics:
-
+Sway 编译器支持一系列内部函数，这些函数可执行各种低级操作，有助于构建库。编译器内部函数很少使用，但比asm块更受欢迎，因为它们经过类型检查，总体上更安全。以下是所有可用编译器内部函数的列表：
 ___
 
 ```sway
 __size_of_val<T>(val: T) -> u64
 ```
 
-**Description:** Return the size of type `T` in bytes.
+**描述:** 返回类型 `T` 的大小(以字节为单位)。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -18,9 +17,9 @@ ___
 __size_of<T>() -> u64
 ```
 
-**Description:** Return the size of type `T` in bytes.
+**描述:** 返回类型 `T` 的大小(以字节为单位)。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -28,9 +27,9 @@ ___
 __size_of_str_array<T>() -> u64
 ```
 
-**Description:** Return the size of type `T` in bytes. This intrinsic differs from `__size_of` in the case of "string arrays" where the actual length in bytes of the string is returned without padding the byte size to the next word alignment. When `T` is not a string `0` is returned.
+**描述:** 返回类型 `T` 的大小(以字节为单位)。 这个固有值不同于“字符串数组”情况下的 `__size_of` ，后者返回字符串的实际长度(以字节为单位)，而不会将字节大小填充到下一个单词对齐。当`T` 不是字符串时，返回 `0` 。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -38,9 +37,9 @@ ___
 __assert_is_str_array<T>()
 ```
 
-**Description:** Throws a compile error if type `T` is not a "string array".
+**描述:** `T` 如果类型不是“字符串数组”，则会引发编译错误。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -48,9 +47,9 @@ ___
 __to_str_array(s: str) -> str[N]
 ```
 
-**Description:** Converts a "string slice" to "string array" at compile time. Parameter "s" must be a string literal.
+**描述:** 在编译时将“字符串切片”转换为“字符串数组”。参数“s”必须是字符串文字。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -58,9 +57,9 @@ ___
 __is_reference_type<T>() -> bool
 ```
 
-**Description:** Returns `true` if `T` is a _reference type_ and `false` otherwise.
+**描述:** 如果 `T` 是一个引用类型，则返回`true`，否则返回 `false` 。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -68,9 +67,9 @@ ___
 __is_str_array<T>() -> bool
 ```
 
-**Description:** Returns `true` if `T` is a string array and `false` otherwise.
+**描述:** 如果 `T` 是一个引用类型，则返回`true`，否则返回 `false` 。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -78,9 +77,9 @@ ___
 __eq<T>(lhs: T, rhs: T) -> bool
 ```
 
-**Description:** Returns whether `lhs` and `rhs` are equal.
+**描述:** 返回 `lhs` 和 `rhs` '是否相等。
 
-**Constraints:** `T` is `bool`, `u8`, `u16`, `u32`, `u64`, `u256`, `b256` or `raw_ptr`.
+**限制:** `T` 是 `bool`, `u8`, `u16`, `u32`, `u64`, `u256`, `b256` 或  `raw_ptr`.
 
 ___
 
@@ -88,27 +87,27 @@ ___
 __gt<T>(lhs: T, rhs: T) -> bool
 ```
 
-**Description:** Returns whether `lhs` is greater than `rhs`.
+**描述:** 返回 `lhs` 和 `rhs` '是否相等。
 
-**Constraints:** `T` is `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`。
 ___
 
 ```sway
 __lt<T>(lhs: T, rhs: T) -> bool
 ```
 
-**Description:** Returns whether `lhs` is less than `rhs`.
+**描述:** Returns whether `lhs` is less than `rhs`.
 
-**Constraints:** `T` is `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`。
 ___
 
 ```sway
 __gtf<T>(index: u64, tx_field_id: u64) -> T
 ```
 
-**Description:** Returns transaction field with ID `tx_field_id` at index `index`, if applicable. This is a wrapper around FuelVM's [`gtf` instruction](https://fuellabs.github.io/fuel-specs/master/vm/instruction_set#gtf-get-transaction-fields). The resulting field is cast to `T`.
+**描述:** 如果适用，返回索引为`index`的事务字段ID为 `tx_field_id` 。 这是一个包装围绕FuelVM的 [`gtf` 指令](https://fuellabs.github.io/fuel-specs/master/vm/instruction_set#gtf-get-transaction-fields)。 结果字段被强制转换为 `T`。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -116,9 +115,9 @@ ___
 __addr_of<T>(val: T) -> raw_ptr
 ```
 
-**Description:** Returns the address in memory where `val` is stored.
+**描述:**  `val` 返回内存中存储的地址。
 
-**Constraints:** `T` is a reference type.
+**限制:** `T` 是一种引用类型。
 
 ___
 
@@ -126,9 +125,9 @@ ___
 __state_load_word(key: b256) -> u64
 ```
 
-**Description:** Reads and returns a single word from storage at key `key`.
+**描述:** 从键存储中读取并返回一个单词 `key`.
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -136,9 +135,9 @@ ___
 __state_load_quad(key: b256, ptr: raw_ptr, slots: u64) -> bool
 ```
 
-**Description:** Reads `slots` number of slots (`b256` each) from storage starting at key `key` and stores them in memory starting at address `ptr`. Returns a Boolean describing whether all the storage slots were previously set.
+**描述:** Reads `slots` number of slots (`b256` each) from storage starting at key `key` and stores them in memory starting at address `ptr`. Returns a Boolean describing whether all the storage slots were previously set.
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -146,9 +145,9 @@ ___
 __state_store_word(key: b256, val: u64) -> bool
 ```
 
-**Description:** Stores a single word `val` into storage at key `key`. Returns a Boolean describing whether the store slot was previously set.
+**描述:** Stores a single word `val` into storage at key `key`. Returns a Boolean describing whether the store slot was previously set.
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -156,9 +155,9 @@ ___
 __state_store_quad(key: b256, ptr: raw_ptr, slots: u64) -> bool
 ```
 
-**Description:** Stores `slots` number of slots (`b256` each) starting at address `ptr` in memory into storage starting at key `key`. Returns a Boolean describing whether the first storage slot was previously set.
+**描述:** `slots`将从内存中的地址开始的槽数  (每个`b256`) 存储`ptr`到从键开始的存储中`key`。 返回一个布尔值，描述第一个存储槽之前是否已设置。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -166,9 +165,9 @@ ___
 __log<T>(val: T)
 ```
 
-**Description:** Logs value `val`.
+**描述:** 记录值 `val`。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -176,9 +175,9 @@ ___
 __add<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Adds `lhs` and `rhs` and returns the result.
+**描述:** `lhs` 将和相加 `rhs` 并返回结果。
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`.
 
 ___
 
@@ -186,9 +185,9 @@ ___
 __sub<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Subtracts `rhs` from `lhs`.
+**描述:** 用 `rhs` 减去 `lhs`。
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`.
 
 ___
 
@@ -196,9 +195,9 @@ ___
 __mul<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Multiplies `lhs` by `rhs`.
+**描述:** 用 `lhs` 乘以 `rhs`。
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`.
 
 ___
 
@@ -206,9 +205,9 @@ ___
 __div<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Divides `lhs` by `rhs`.
+**描述:** 用 `lhs` 除以 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`.
 
 ___
 
@@ -216,9 +215,9 @@ ___
 __and<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Bitwise AND `lhs` and `rhs`.
+**描述:** 按位与 `lhs` 和 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
 
 ___
 
@@ -226,9 +225,9 @@ ___
 __or<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Bitwise OR `lhs` and `rhs`.
+**描述:** 按位或 `lhs` 与 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
 
 ___
 
@@ -236,45 +235,45 @@ ___
 __xor<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Bitwise XOR `lhs` and `rhs`.
+**描述:** 按位异或 `lhs` 和 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
 ___
 
 ```sway
 __mod<T>(lhs: T, rhs: T) -> T
 ```
 
-**Description:** Modulo of `lhs` by `rhs`.
+**描述:**  `lhs` 对进行模数运算 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`.
 ___
 
 ```sway
 __rsh<T>(lhs: T, rhs: u64) -> T
 ```
 
-**Description:** Logical right shift of `lhs` by `rhs`.
+**描述:**  `lhs` 将逻辑右移 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
 ___
 
 ```sway
 __lsh<T>(lhs: T, rhs: u64) -> T
 ```
 
-**Description:** Logical left shift of `lhs` by `rhs`.
+**描述:** `lhs` 将逻辑左移 `rhs`.
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
 ___
 
 ```sway
 __revert(code: u64)
 ```
 
-**Description:** Reverts with error code `code`.
+**描述:** 恢复错误代码 `code`.
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -282,9 +281,9 @@ ___
 __ptr_add(ptr: raw_ptr, offset: u64)
 ```
 
-**Description:** Adds `offset` to the raw value of pointer `ptr`.
+**描述:** 添加 `offset` 到指针的原始值 `ptr`.
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -292,9 +291,9 @@ ___
 __ptr_sub(ptr: raw_ptr, offset: u64)
 ```
 
-**Description:** Subtracts `offset` to the raw value of pointer `ptr`.
+**描述:** 减去 `offset` 指针的原始值 `ptr`.
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -302,9 +301,9 @@ ___
 __smo<T>(recipient: b256, data: T, coins: u64)
 ```
 
-**Description:** Sends a message `data` of arbitrary type `T` and `coins` amount of the base asset to address `recipient`.
+**描述:** `data` 向地址发送任意类型`T` 和 `coins` 数量的基础资产消息 `recipient`。
 
-**Constraints:** None.
+**限制:** 无。
 
 ___
 
@@ -312,7 +311,7 @@ ___
 __not(op: T) -> T
 ```
 
-**Description:** Bitwise NOT of `op`
+**描述:** 按位非 `op`
 
-**Constraints:** `T` is an integer type, i.e. `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
+**限制:** `T` 是整数类型，即 `u8`, `u16`, `u32`, `u64`, `u256`, `b256`.
 ___

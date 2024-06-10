@@ -1,27 +1,27 @@
-# Installation
+# 安装
 
-The Sway language server is contained in the [`forc-lsp`](../forc/plugins/forc_lsp.md) binary, which is installed as part of the [Fuel toolchain](../introduction/fuel_toolchain.md). Once installed, it can be used with a variety of IDEs. It must be installed for any of the IDE plugins to work.
+Sway 语言服务器包含在 [`forc-lsp`](../forc/plugins/forc_lsp.md) 二进制文件中, 作为 [Fuel 工具链](../introduction/fuel_toolchain.md).的一部分进行安装。安装后，它可以与各种 IDE 一起使用。必须安装它才能使任何 IDE 插件正常工作。
 
-> **Note**: There is no need to manually run `forc-lsp` (the plugin will automatically start it), however both `forc` and `forc-lsp` must be in your `$PATH`. To check if `forc` is in your `$PATH`, type `forc --help` in your terminal.
+> **注意**: 无需手动运行 `forc-lsp` (插件会自动启动它), 但是 `forc` 和 `forc-lsp` 必须在您的 `$PATH`中. 要检查 `forc` 是否在您的 `$PATH`中, 将`forc --help` 在终端中输入.
 
-## VS Code
+## VS 代码
 
-This is the best supported editor at the moment.
+这是目前支持最好的编辑器。
 
-You can install the latest release of the plugin from the [marketplace](https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin).
+您可以从[市场](https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin)安装最新版本的插件。
 
-Note that we only support the most recent version of VS Code.
+请注意，我们仅支持最新版本的 VS Code
 
 ## vim / neovim
 
-Follow the documentation for [sway.vim](https://github.com/FuelLabs/sway.vim) to install.
+按照 [sway.vim](https://github.com/FuelLabs/sway.vim)的文档进行安装。
 
 ## helix
 
-[Install helix](https://docs.helix-editor.com/install.html) and Sway LSP will work out of the box.
+[安装 helix](https://docs.helix-editor.com/install.html) 后 Sway LSP 即可开箱即用。
 
-Sway support is built into helix using [tree-sitter-sway](https://github.com/FuelLabs/tree-sitter-sway).
+使用 [tree-sitter-sway](https://github.com/FuelLabs/tree-sitter-sway)将摇摆支撑内置到螺旋中。
 
 ## Emacs
 
-Coming soon! Feel free to [contribute](https://github.com/FuelLabs/sway/issues/3527).
+即将推出！欢迎随意 [贡献](https://github.com/FuelLabs/sway/issues/3527)。
