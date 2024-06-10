@@ -5,36 +5,33 @@
   const jsonAbiUrl = `https://docs.fuel.network/docs/sway/introduction/sway_quickstart/`
 </script>
 
-# Deploying Contracts
+# 部署合约
 
-This guide walks you through deploying a contract using the SDK, covering loading contract artifacts, initializing a contract factory, and deploying the contract.
+本指南将引导您使用 SDK 部署合约，包括加载合约工件、初始化合约工厂以及部署合约。
 
-## 1. Obtaining Contract Artifacts
+## 1. 获取合约神器
 
-After writing a contract in Sway and compiling it with `forc build` (<a :href="indexUrl" target="_blank" rel="noreferrer">read more</a> on how to work with Sway), you will obtain two important artifacts: the compiled binary file and the JSON ABI file. These files are required for deploying a contract using the SDK.
+在 Sway 中编写合约并使用 `forc build` (<a :href="indexUrl" target="_blank" rel="noreferrer">阅读更多</a> 有关如何使用 Sway 的信息)进行编译后，您将获得两个重要的工件：编译后的二进制文件和 JSON ABI 文件。这些文件是使用 SDK 部署合约所必需的。
 
-## 2. Setting up the SDK Environment
+## 2. 设置 SDK 环境
 
-Before deploying a contract, set up the necessary environment by importing the required SDK components and initializing a wallet and a provider.
-
+在部署合约之前，通过导入所需的 SDK 组件并初始化钱包和提供商来设置必要的环境。
 <!-- <<< ../../docs-snippets/src/guide/contracts/deploying-contracts.test.ts#contract-setup-1{ts:line-numbers} -->
 
-## 3. Loading Contract Artifacts
+## 3.  加载合约工件
 
-Load the contract bytecode and JSON ABI, generated from the Sway source, into the SDK.
-
+将从 Sway 源生成的合约字节码和 JSON ABI 加载到 SDK 中。
 <!-- <<< ../../docs-snippets/src/guide/contracts/deploying-contracts.test.ts#contract-setup-2{ts:line-numbers} -->
 
-## 4. Deploying the Contract
+## 4. 部署合约
 
-Initialize a [`ContractFactory`](../../api/Contract/ContractFactory.md) with the bytecode, ABI, and wallet. Deploy the contract and use its methods.
+初始化一个 [`ContractFactory`](../../api/Contract/ContractFactory.md) ，包含字节码、ABI和钱包。部署契约并使用它的方法。
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/deploying-contracts.test.ts#contract-setup-3{ts:line-numbers} -->
 
-## 5. Executing a Contract Call
+## 5. 执行合约调用
 
-Now that the contract is deployed, you can interact with it. In the following steps, you'll learn how to execute contract calls.
-
+现在合约已部署，您可以与其进行交互。在以下步骤中，您将了解如何执行合约调用。
 <!-- <<< ../../docs-snippets/src/guide/contracts/deploying-contracts.test.ts#contract-setup-4{ts:line-numbers} -->
 
-For a more comprehensive TypeScript-backed Fuel usage, learn how to [generate types from ABI](../fuels-cli/generating-types.md)
+要更全面地了解 TypeScript 支持的 Fuel 用法，请了解如何 [从ABI生成类型](../fuels-cli/generating-types.md)

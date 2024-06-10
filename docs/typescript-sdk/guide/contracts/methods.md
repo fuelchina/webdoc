@@ -1,41 +1,41 @@
-# Interacting With Contracts
+# 合约交互
 
-There are 4 ways to interact with contracts: `get`, `dryRun`, `simulate`, `call`.
+合约交互的方式有4种: `get`, `dryRun`, `simulate`, `call`.
 
 ## `get`
 
-The `get` method should be used to read data from the blockchain without using resources. It can be used with an unfunded wallet or even without a wallet at all:
+`get` 方法应该用于从区块链读取数据而不使用资源。它可以与无资金钱包一起使用，甚至根本没有钱包。
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/interacting-with-contracts.test.ts#interacting-with-contracts-1{ts:line-numbers} -->
 
 ## `dryRun`
 
-The `dryRun` method should be used to dry-run a contract call. It does not spend resources and can be used with an unfunded wallet or even without a wallet at all:
+`dryRun` 方法应该用于试运行合约调用。它不消耗资源，可以在没有资金的钱包中使用，甚至在没有钱包的情况下也可以使用。
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/interacting-with-contracts.test.ts#interacting-with-contracts-2{ts:line-numbers} -->
 
 ## `simulate`
 
-The `simulate` method should be used to dry-run a contract call, ensuring that the wallet used has sufficient funds to cover the transaction fees, without consuming any resources.
+`simulate` 方法应用于试运行合约调用，确保所使用的钱包有足够的资金来支付交易费用，而不会消耗任何资源。
 
-A funded wallet it's required:
+需要一个有资金的钱包：
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/interacting-with-contracts.test.ts#interacting-with-contracts-3{ts:line-numbers} -->
 
 ## `call`
 
-The `call` method should be used to submit a real contract call transaction to the node.
+`call` 方法应该用来向节点提交真实的合约调用交易。
 
-Real resources are consumed, and any operations executed by the contract function will be processed on the blockchain.
+会消耗真实的资源，合约函数执行的任何操作都会在区块链上进行处理。
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/interacting-with-contracts.test.ts#interacting-with-contracts-4{ts:line-numbers} -->
 
 ## `isReadOnly` (utility)
 
-If you want to figure out whether a function is read-only, you can use the `isReadOnly` method:
+如果你想知道一个函数是否是只读，你可以使用该 `isReadOnly` 方法:
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/is-function-readonly.test.ts#is-function-readonly-1{ts:line-numbers} -->
 
-If the function is read-only, you can use the `get` method to retrieve onchain data without spending gas.
+如果该函数是只读，您可以使用该 `get` 方法检索链上数据而无需花费 gas。
 
-If the function is not read-only you will have to use the `call` method to submit a transaction onchain which incurs a gas fee.
+如果该函数不是只读，您将必须使用 `call` 方法在链上提交交易，这会产生 gas 费用。

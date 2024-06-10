@@ -1,25 +1,24 @@
-# Variable Outputs
+# 变量输出
 
-Sway includes robust functions for transferring assets to wallets and contracts.
+Sway 包含将资产转移到钱包和合约的强大功能。
 
-When using these transfer functions within your Sway projects, it is important to be aware that each call will require an [Output Variable](https://specs.fuel.network/master/tx-format/output.html#outputvariable) within the [Outputs](https://specs.fuel.network/master/tx-format/output.html) of the transaction.
+在 Sway 项目中使用这些传输函数时，请务必注意每次调用都需要交易 [输出](https://specs.fuel.network/master/tx-format/output.html) 中的一个[输出变量](https://specs.fuel.network/master/tx-format/output.html#outputvariable)
 
-For instance, if a contract function calls a Sway transfer function 3 times, it will require 3 Output Variables present within the list of outputs in your transaction.
-
-## Example: Sway functions that requires `Output Variable`
+例如，如果合约函数调用 Sway 传输函数 3 次，则它将需要交易输出列表中存在 3 个输出变量。
+## 示例：需要的 Sway 函数 `Output Variable`
 
 <!-- <<< ../../docs-snippets/test/fixtures/forc-projects/token/src/main.sw#variable-outputs-1{ts:line-numbers} -->
 
-## Adding Variable Outputs to the contract call
+## 在合约调用中添加变量输出
 
-When your contract invokes any of these functions, or if it calls a function that leads to another contract invoking these functions, you need to add the appropriate number of Output Variables.
+当您的合约调用其中任何函数时，或者它调用的函数导致另一个合约调用这些函数时，您需要添加适当数量的输出变量。
 
-This can be done as shown in the following example:
+可以按照以下示例所示进行操作：
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/variable-outputs.test.ts#variable-outputs-2{ts:line-numbers} -->
 
-In the TypeScript SDK, the Output Variables are automatically added to the transaction's list of outputs.
+在 TypeScript SDK 中，输出变量会自动添加到交易的输出列表中。
 
-This process is done by a brute-force strategy, performing sequential dry runs until no errors are returned. This method identifies the number of Output Variables required to process the transaction.
+此过程采用强力策略，执行连续试运行，直到没有返回错误。此方法确定处理交易所需的输出变量数量。
 
-However, this can significantly delay the transaction processing. Therefore, it is **highly recommended** to manually add the correct number of Output Variables before submitting the transaction.
+然而，这会显著延迟交易处理。因此，**强烈建议**在提交交易之前手动添加正确数量的输出变量。
