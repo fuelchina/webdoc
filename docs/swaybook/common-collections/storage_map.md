@@ -4,85 +4,105 @@
 
 <!-- This section should explain storage maps in Sway -->
 <!-- storage_map:example:start -->
-The type `StorageMap<K, V>` from the standard library stores a mapping of keys of type `K` to values of type `V` using a hashing function, which determines how it places these keys and values into _storage slots_. This is similar to [Rust's `HashMap<K, V>`](https://doc.rust-lang.org/std/collections/struct.HashMap.html) but with a few differences.
+标准库中的类型 `StorageMap<K, V>`”使用哈希函数存储类型为 `K` 的键到类型为 `V` 的值的映射，该函数决定如何将这些键和值放入 _存储槽_中。这类似于 [Rust的`HashMap<K, V>`](https://doc.rust-lang.org/std/collections/struct.HashMap.html) 但有一些区别。
 
-Storage maps are useful when you want to look up data not by using an index, as you can with vectors, but by using a key that can be of any type. For example, when building a ledger-based sub-currency smart contract, you could keep track of the balance of each wallet in a storage map in which each key is a wallet’s `Address` and the values are each wallet’s balance. Given an `Address`, you can retrieve its balance.
+当您不想使用索引（如使用向量）而是使用任意类型的键来查找数据时，存储映射非常有用。例如，在构建基于账本的子货币智能合约时，您可以在存储映射中跟踪每个钱包的余额，其中每个键都是钱包的，`Address`值是每个钱包的余额。给定一个`Address`，您可以检索其余额。
+与 类似`StorageVec<T>`, `StorageMap<K, V>` 只能在合约中使用，因为只有合约才被允许访问持久存储。
 
-Similarly to `StorageVec<T>`, `StorageMap<K, V>` can only be used in a contract because only contracts are allowed to access persistent storage.
-
-`StorageMap<T>` is included in the [standard library prelude](../introduction/standard_library.md#standard-library-prelude) which means that there is no need to import it manually.
+`StorageMap<T>` 包含在 [标准库前奏](../introduction/standard_library.md#standard-library-prelude) 中，这意味着无需手动导入它。
 <!-- storage_map:example:end -->
 
-## Creating a New Storage Map
+## 创建新的空存储映射
 
-To create a new empty storage map, we have to declare the map in a `storage` block as follows:
-
+要创建一个新的空存储映射，我们必须在一个`storage`块中声明该映射，如下所示：
 ```sway
-{{#include ../../../../examples/storage_map/src/main.sw:storage_map_decl}}
+    map: StorageMap<Address, u64> = StorageMap::<Address, u64> {},
 ```
 
 <!-- This section should explain how to implement storage maps in Sway -->
 <!-- use_storage_maps:example:start -->
-Just like any other storage variable, two things are required when declaring a `StorageMap`: a type annotation and an initializer. The initializer is just an empty struct of type `StorageMap` because `StorageMap<K, V>` itself is an empty struct! Everything that is interesting about `StorageMap<K, V>` is implemented in its methods.
+就像任何其他存储变量一样，声明时需要两个东西`StorageMap`：类型注释和初始化器。初始化器只是一个空类型的结构体，`StorageMap`因为`StorageMap<K, V>`它本身就是一个空结构体！所有有趣的东西都`StorageMap<K, V>`在其方法中实现。
 
-Storage maps, just like `Vec<T>` and `StorageVec<T>`, are implemented using generics which means that the `StorageMap<K, V>` type provided by the standard library can map keys of any type `K` to values of any type `V`. In the example above, we’ve told the Sway compiler that the `StorageMap<K, V>` in `map` will map keys of type `Address` to values of type `u64`.
+存储映射，就像 `Vec<T>` 和 `StorageVec<T>`, 一样，是使用泛型实现的，这意味着标准库提供的 `StorageMap<K, V>` 类型可以将任何类型 `K` 的键映射到任何类型 `V`的值。在上面的例子中，我们告诉Sway编译器`map`中的 `StorageMap<K, V>`  将把 `Address`类型的键映射到 `u64`类型的值。
 <!-- use_storage_maps:example:end -->
 
-## Updating a Storage Map
+## 更新存储映射
 
 <!-- This section should explain how to update storage maps in Sway -->
 <!-- update_storage_maps:example:start -->
-To insert key-value pairs into a storage map, we can use the `insert` method.
+要将键值对插入存储映射，我们可以使用此`insert`方法。
 <!-- update_storage_maps:example:end -->
 
-For example:
-
+例如:
 ```sway
-{{#include ../../../../examples/storage_map/src/main.sw:storage_map_insert}}
+    #[storage(write)]
+    fn insert_into_storage_map() {
+        let addr1 = Address::from(0x0101010101010101010101010101010101010101010101010101010101010101);
+        let addr2 = Address::from(0x0202020202020202020202020202020202020202020202020202020202020202);
+
+        storage.map.insert(addr1, 42);
+        storage.map.insert(addr2, 77);
+    }
 ```
 
-Note two details here. First, in order to use `insert`, we need to first access the storage map using the `storage` keyword. Second, because `insert` requires _writing_ into storage, a `#[storage(write)]` annotation is required on the ABI function that calls `insert`.
+这里要注意两个细节。首先，为了使用 `insert`, 我们需要先使用关键字访问存储映射 `storage` 。其次，由于 `insert` 需要 _写入_ 存储，因此  `#[storage(write)]` 需要在调用 的 ABI 函数上进行注释 `insert`。
 
-> **Note**
-> The storage annotation is also required for any private function defined in the contract that tries to insert into the map.
+> **注意**
+> 对于合同中定义的任何尝试插入到映射中的私有函数，也需要存储注释。
 
 <!-- markdownlint-disable-line MD028 -->
-> **Note**
-> There is no need to add the `mut` keyword when declaring a `StorageMap<K, V>`. All storage variables are mutable by default.
+> **注意**
+>  `mut` 声明时 无需添加关键字`StorageMap<K, V>`。所有存储变量默认都是可变的。
 
-## Accessing Values in a Storage Map
+## 访问存储映射中的值
 
 <!-- This section should explain how to access storage map values in Sway -->
 <!-- access_storage_maps:example:start -->
-We can get a value out of the storage map by providing its `key` to the `get` method.
+`key`我们可以通过将其提供给方法从存储图中获取一个值`get`。
 <!-- access_storage_maps:example:end -->
 
-For example:
+例如：
+
 
 ```sway
-{{#include ../../../../examples/storage_map/src/main.sw:storage_map_get}}
+    #[storage(read, write)]
+    fn get_from_storage_map() {
+        let addr1 = Address::from(0x0101010101010101010101010101010101010101010101010101010101010101);
+        let addr2 = Address::from(0x0202020202020202020202020202020202020202020202020202020202020202);
+
+        storage.map.insert(addr1, 42);
+        storage.map.insert(addr2, 77);
+
+        let value1 = storage.map.get(addr1).try_read().unwrap_or(0);
+    }
 ```
 
-Here, `value1` will have the value that's associated with the first address, and the result will be `42`. The `get` method returns an `Option<V>`; if there’s no value for that key in the storage map, `get` will return `None`. This program handles the `Option` by calling `unwrap_or` to set `value1` to zero if `map` doesn't have an entry for the key.
+这里， `value1` w将具有与第一个地址相关联的值，结果将是 `42`。 `get` '方法返回一个 `Option<V>`; 如果那个键在存储映射中没有值， `get`将返回 `None`。这个程序通过调用 `unwrap_or`来处理`Option` ，如果 `map`没有键的条目，则将`value1`设置为零。
 
-## Storage Maps with Multiple Keys
+## 具有多个键的映射
 
-Maps with multiple keys can be implemented using tuples as keys. For example:
-
+可以使用元组作为键来实现具有多个键的映射。例如：
 ```sway
-{{#include ../../../../examples/storage_map/src/main.sw:storage_map_tuple_key}}
+    map_two_keys: StorageMap<(b256, bool), b256> = StorageMap::<(b256, bool), b256> {},
 ```
 
-## Nested Storage Maps
+## 嵌套存储映射
 
-It is possible to nest storage maps as follows:
-
+可以按如下方式嵌套存储映射：
 ```sway
-{{#include ../../../../examples/storage_map/src/main.sw:storage_map_nested}}
+    nested_map: StorageMap<u64, StorageMap<u64, u64>> = StorageMap::<u64, StorageMap<u64, u64>> {},
 ```
 
-The nested map can then be accessed as follows:
-
+然后可以按如下方式访问嵌套映射：
 ```sway
-{{#include ../../../../examples/storage_map/src/main.sw:storage_map_nested_access}}
+    #[storage(read, write)]
+    fn access_nested_map() {
+        storage.nested_map.get(0).insert(1, 42);
+        storage.nested_map.get(2).insert(3, 24);
+
+        assert(storage.nested_map.get(0).get(1).read() == 42);
+        assert(storage.nested_map.get(0).get(0).try_read().is_none()); // Nothing inserted here
+        assert(storage.nested_map.get(2).get(3).read() == 24);
+        assert(storage.nested_map.get(2).get(2).try_read().is_none()); // Nothing inserted here
+    }
 ```
