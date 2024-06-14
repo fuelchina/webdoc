@@ -8,4 +8,4 @@ TypeScript SDK 支持以下常见任务：
 - 编码和解码合约 ABI
 
 
-请参阅 [此处](https://fuellabs.github.io/fuels-ts)获取完整文档。
+请参阅 [此处](https://fuelup.cc/typescript-sdk/)获取完整文档。
