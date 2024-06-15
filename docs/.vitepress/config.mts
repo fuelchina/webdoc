@@ -88,9 +88,45 @@ export default defineConfig({
           collapsed: false,
           link: '/swaybook/blockchain-development/index',
           items: [
-            { text: '5.1 哈希和密码学', link: '/swaybook/blockchain-development/hashing_and_cryptography' },
-            { text: '5.2 合约存储', link: '/swaybook/blockchain-development/storage' },
-            { text: '5.3 纯度', link: '/swaybook/blockchain-development/purity' }
+            {text: '5.1 哈希和密码学', link: '/swaybook/blockchain-development/hashing_and_cryptography'},
+            {text: '5.2 合约存储', link: '/swaybook/blockchain-development/storage'},
+            {text: '5.3 函数纯度', link: '/swaybook/blockchain-development/purity'},
+            {text: '5.4 标识符', link: '/swaybook/blockchain-development/identifiers'},
+            {text: '5.5 原生资产', link: '/swaybook/blockchain-development/native_assets'},
+            {text: '5.6 访问控制', link: '/swaybook/blockchain-development/access_control'},
+            {text: '5.7 调用合约', link: '/swaybook/blockchain-development/calling_contracts'}
+          ]
+        },
+        {
+          text: '6. 高级概念',
+          collapsed: false,
+          link: '/swaybook/advanced/index',
+          items: [
+            {text: '6.1 高级类型', link: '/swaybook/advanced/advanced_types'},
+            {text: '6.2 泛型类型', link: '/swaybook/advanced/generic_types'},
+            {text: '6.3 特征', link: '/swaybook/advanced/traits'},
+            {text: '6.4 关联类型', link: '/swaybook/advanced/associated_types'},
+            {text: '6.5 泛型和特征约束', link: '/swaybook/advanced/generics_and_trait_constraints'},
+            {text: '6.6 组装', link: '/swaybook/advanced/assembly'}
+          ]
+        },
+        {
+          text: '7. 常用集合',
+          collapsed: false,
+          link: '/swaybook/common-collections/index',
+          items: [
+            { text: '7.1 堆上的向量', link: '/swaybook/common-collections/vec' },
+            { text: '7.2 储存的向量', link: '/swaybook/common-collections/storage_vec' },
+            { text: '7.3 储存映射', link: '/swaybook/common-collections/storage_map' },
+          ]
+        },
+        {
+          text: '8.  测试 ',
+          collapsed: false,
+          link: '/swaybook/testing/index',
+          items: [
+            { text: '8.1 单元测试', link: '/swaybook/testing/unit-testing' },
+            { text: '8.2 使用Rust进行测试', link: '/swaybook/testing/testing-with-rust' },
           ]
         },
         {
@@ -115,14 +151,46 @@ export default defineConfig({
           collapsed: false,
           link: '/swaybook/reference/index',
           items: [
-            { text: '11.1 编译器内部函数', link: '/swaybook/reference/compiler_intrinsics' },
-            { text: '11.2 属性', link: '/swaybook/reference/attributes' },
-            { text: '11.3 风格指南', link: '/swaybook/reference/style_guide' },
-            { text: '11.4 已知问题和解决方法', link: '/swaybook/reference/known_issues_and_workarounds' },
-            { text: '11.5 与Solidity的区别', link: '/swaybook/reference/solidity_differences' },
-            { text: '11.6 与 Rust 的区别', link: '/swaybook/reference/rust_differences' },
-            { text: '11.7 为 Sway 做贡献', link: '/swaybook/reference/contributing_to_sway' },
-            { text: '11.8 关键字', link: '/swaybook/reference/keywords' },
+            {text: '11.1 编译器内部函数', link: '/swaybook/reference/compiler_intrinsics'},
+            {text: '11.2 属性', link: '/swaybook/reference/attributes'},
+            {text: '11.3 风格指南', link: '/swaybook/reference/style_guide'},
+            {text: '11.4 已知问题和解决方法', link: '/swaybook/reference/known_issues_and_workarounds'},
+            {text: '11.5 与Solidity的区别', link: '/swaybook/reference/solidity_differences'},
+            {text: '11.6 与 Rust 的区别', link: '/swaybook/reference/rust_differences'},
+            {text: '11.7 为 Sway 做贡献', link: '/swaybook/reference/contributing_to_sway'},
+            {text: '11.8 关键字', link: '/swaybook/reference/keywords'},
+          ]
+        },
+        {
+          text: '12. Forc参考 ',
+          collapsed: false,
+          link: '/swaybook/forc/index',
+          items: [
+            {text: '12.1 清单参考', link: '/swaybook/forc/manifest_reference'},
+            {text: '12.2 工作区', link: '/swaybook/forc/workspaces'},
+            {text: '12.3 依赖项', link: '/swaybook/forc/dependencies'},
+            {
+              text: '12.4 命令',
+              collapsed: false,
+              link: '/swaybook/forc/commands/index',
+              items: [
+                {text: '12.4.1 forc addr 2 line', link: '/swaybook/forc/commands/forc_addr2line'},
+                {text: '12.4.2 强制构建', link: '/swaybook/forc/commands/forc_build'},
+                {text: '12.4.3 强制检查', link: '/swaybook/forc/commands/forc_check'},
+                {text: '12.4.4 强制清理', link: '/swaybook/forc/commands/forc_clean'},
+                {text: '12.4.5 forc 补全', link: '/swaybook/forc/commands/forc_completions'},
+                {text: '12.4.6 forc 合约编号', link: '/swaybook/forc/commands/forc_contract-id'},
+                {text: '12.4.7 强制初始化', link: '/swaybook/forc/commands/forc_init'},
+                {text: '12.4.8 forc new', link: '/swaybook/forc/commands/forc_new'},
+                {text: '12.4.9 forc 解析字节码', link: '/swaybook/forc/commands/forc_parse-bytecode'},
+                {text: '12.4.10 forc 插件', link: '/swaybook/forc/commands/forc_plugins'},
+                {text: '12.4.11 forc 谓词根', link: '/swaybook/forc/commands/forc_predicate-root'},
+                {text: '12.4.12 forc 测试', link: '/swaybook/forc/commands/forc_test'},
+                {text: '12.4.13 强制更新', link: '/swaybook/forc/commands/forc_update'},
+                {text: '12.4.14 forc 模板 ', link: '/swaybook/forc/commands/forc_template'},
+              ]
+            },
+            {text: '12.5 与Solidity的区别', link: '/swaybook/forc/plugins/index'},
           ]
         },
       ],
