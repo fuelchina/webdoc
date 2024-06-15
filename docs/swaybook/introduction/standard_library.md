@@ -9,7 +9,7 @@ Sway 标准库是可移植的 Sway 软件的基础，是广泛的 Sway 生态系
 
 ## 使用标准库
 
-标准库对于使用 [`forc new`](../forc/commands/forc_new.md) 创建的所有 Forc 项目都是隐式可用的。换句话说，不需要手动指定 `std` 作为显式依赖项。Forc 将自动使用与其版本匹配的 `std` 版本。
+标准库对于使用 [`forc new`](../forc/commands/forc_new) 创建的所有 Forc 项目都是隐式可用的。换句话说，不需要手动指定 `std` 作为显式依赖项。Forc 将自动使用与其版本匹配的 `std` 版本。
 
 可以使用 `use` 关键字从标准库中导入项目，就像从任何 Sway 项目中导入项目一样。例如：
 

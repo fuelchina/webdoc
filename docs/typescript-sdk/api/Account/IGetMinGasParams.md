@@ -1,6 +1,6 @@
 # Interface: IGetMinGasParams
 
-[@fuel-ts/account](/api/Account/index.md).IGetMinGasParams
+[@fuel-ts/account](/api/Account/index).IGetMinGasParams
 
 ## Properties
 

@@ -1,6 +1,6 @@
 # Class: DateTime
 
-[@fuel-ts/utils](/api/Utils/index.md).DateTime
+[@fuel-ts/utils](/api/Utils/index).DateTime
 
 This class is used to represent a date and time in the Tai64 format.
 
@@ -43,7 +43,7 @@ now.getTime(); // 1681391398000
 
 ### constructor
 
-• **new DateTime**(`date`): [`DateTime`](/api/Utils/DateTime.md)
+• **new DateTime**(`date`): [`DateTime`](/api/Utils/DateTime)
 
 Hide the constructor to prevent direct instantiation.
 
@@ -55,7 +55,7 @@ Hide the constructor to prevent direct instantiation.
 
 #### Returns
 
-[`DateTime`](/api/Utils/DateTime.md)
+[`DateTime`](/api/Utils/DateTime)
 
 #### Overrides
 
@@ -1611,7 +1611,7 @@ ___
 
 ### fromTai64
 
-▸ **fromTai64**(`tai64`): [`DateTime`](/api/Utils/DateTime.md)
+▸ **fromTai64**(`tai64`): [`DateTime`](/api/Utils/DateTime)
 
 Generates a new DateTime instance from a Tai64 timestamp.
 
@@ -1623,7 +1623,7 @@ Generates a new DateTime instance from a Tai64 timestamp.
 
 #### Returns
 
-[`DateTime`](/api/Utils/DateTime.md)
+[`DateTime`](/api/Utils/DateTime)
 
 a new DateTime instance
 
@@ -1635,7 +1635,7 @@ ___
 
 ### fromUnixMilliseconds
 
-▸ **fromUnixMilliseconds**(`unixMilliseconds`): [`DateTime`](/api/Utils/DateTime.md)
+▸ **fromUnixMilliseconds**(`unixMilliseconds`): [`DateTime`](/api/Utils/DateTime)
 
 #### Parameters
 
@@ -1645,7 +1645,7 @@ ___
 
 #### Returns
 
-[`DateTime`](/api/Utils/DateTime.md)
+[`DateTime`](/api/Utils/DateTime)
 
 a new DateTime instance
 
@@ -1657,7 +1657,7 @@ ___
 
 ### fromUnixSeconds
 
-▸ **fromUnixSeconds**(`unixSeconds`): [`DateTime`](/api/Utils/DateTime.md)
+▸ **fromUnixSeconds**(`unixSeconds`): [`DateTime`](/api/Utils/DateTime)
 
 #### Parameters
 
@@ -1667,7 +1667,7 @@ ___
 
 #### Returns
 
-[`DateTime`](/api/Utils/DateTime.md)
+[`DateTime`](/api/Utils/DateTime)
 
 a new DateTime instance
 

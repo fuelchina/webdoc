@@ -1,6 +1,6 @@
 # 估算合约调用成本
 
-由[Provider](../../api/Account/Provider.md) 提供的 `getTransactionCost` 函数允许您估算特定合约调用的成本。 返回类型 `TransactionCost`, 是一个包含估算相关信息的对象:
+由[Provider](../../api/Account/Provider) 提供的 `getTransactionCost` 函数允许您估算特定合约调用的成本。 返回类型 `TransactionCost`, 是一个包含估算相关信息的对象:
 
 <!-- <<< ../../../packages/account/src/providers/provider.ts#cost-estimation-1{ts:line-numbers} -->
 

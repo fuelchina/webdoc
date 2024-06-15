@@ -2,7 +2,7 @@
 
 ## Classes
 
-- [DateTime](/api/Utils/DateTime.md)
+- [DateTime](/api/Utils/DateTime)
 
 ## Variables
 

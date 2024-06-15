@@ -1,6 +1,6 @@
 # Enumeration: Language
 
-[@fuel-ts/account](/api/Account/index.md).Language
+[@fuel-ts/account](/api/Account/index).Language
 
 ## Enumeration Members
 

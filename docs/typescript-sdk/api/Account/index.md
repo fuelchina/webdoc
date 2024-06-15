@@ -2,54 +2,54 @@
 
 ## Enumerations
 
-- [FuelConnectorEventTypes](/api/Account/FuelConnectorEventTypes.md)
-- [FuelConnectorMethods](/api/Account/FuelConnectorMethods.md)
-- [Language](/api/Account/Language.md)
-- [TransactionType](/api/Account/TransactionType.md)
+- [FuelConnectorEventTypes](/api/Account/FuelConnectorEventTypes)
+- [FuelConnectorMethods](/api/Account/FuelConnectorMethods)
+- [Language](/api/Account/Language)
+- [TransactionType](/api/Account/TransactionType)
 
 ## Classes
 
-- [Account](/api/Account/Account.md)
-- [BaseTransactionRequest](/api/Account/BaseTransactionRequest.md)
-- [BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md)
-- [CreateTransactionRequest](/api/Account/CreateTransactionRequest.md)
-- [Fuel](/api/Account/Fuel.md)
-- [FuelConnector](/api/Account/FuelConnector.md)
-- [HDWallet](/api/Account/HDWallet.md)
-- [LocalStorage](/api/Account/LocalStorage.md)
-- [MemoryStorage](/api/Account/MemoryStorage.md)
-- [Mnemonic](/api/Account/Mnemonic.md)
-- [MnemonicVault](/api/Account/MnemonicVault.md)
-- [Predicate](/api/Account/Predicate.md)
-- [PrivateKeyVault](/api/Account/PrivateKeyVault.md)
-- [Provider](/api/Account/Provider.md)
-- [ScriptTransactionRequest](/api/Account/ScriptTransactionRequest.md)
-- [Signer](/api/Account/Signer.md)
-- [StorageAbstract](/api/Account/StorageAbstract.md)
-- [TransactionResponse](/api/Account/TransactionResponse.md)
-- [Vault](/api/Account/Vault.md)
-- [Wallet](/api/Account/Wallet.md)
-- [WalletLocked](/api/Account/WalletLocked.md)
-- [WalletManager](/api/Account/WalletManager.md)
-- [WalletUnlocked](/api/Account/WalletUnlocked.md)
+- [Account](/api/Account/Account)
+- [BaseTransactionRequest](/api/Account/BaseTransactionRequest)
+- [BaseWalletUnlocked](/api/Account/BaseWalletUnlocked)
+- [CreateTransactionRequest](/api/Account/CreateTransactionRequest)
+- [Fuel](/api/Account/Fuel)
+- [FuelConnector](/api/Account/FuelConnector)
+- [HDWallet](/api/Account/HDWallet)
+- [LocalStorage](/api/Account/LocalStorage)
+- [MemoryStorage](/api/Account/MemoryStorage)
+- [Mnemonic](/api/Account/Mnemonic)
+- [MnemonicVault](/api/Account/MnemonicVault)
+- [Predicate](/api/Account/Predicate)
+- [PrivateKeyVault](/api/Account/PrivateKeyVault)
+- [Provider](/api/Account/Provider)
+- [ScriptTransactionRequest](/api/Account/ScriptTransactionRequest)
+- [Signer](/api/Account/Signer)
+- [StorageAbstract](/api/Account/StorageAbstract)
+- [TransactionResponse](/api/Account/TransactionResponse)
+- [Vault](/api/Account/Vault)
+- [Wallet](/api/Account/Wallet)
+- [WalletLocked](/api/Account/WalletLocked)
+- [WalletManager](/api/Account/WalletManager)
+- [WalletUnlocked](/api/Account/WalletUnlocked)
 
 ## Interfaces
 
-- [AssembleTransactionSummaryParams](/api/Account/AssembleTransactionSummaryParams.md)
-- [CalculateGasFeeParams](/api/Account/CalculateGasFeeParams.md)
-- [GenerateOptions](/api/Account/GenerateOptions.md)
-- [GetTransactionSummaryFromRequestParams](/api/Account/GetTransactionSummaryFromRequestParams.md)
-- [GetTransactionsSummariesParams](/api/Account/GetTransactionsSummariesParams.md)
-- [GetTransactionsSummariesReturns](/api/Account/GetTransactionsSummariesReturns.md)
-- [GetTransferOperationsParams](/api/Account/GetTransferOperationsParams.md)
-- [IAddAmountToAssetParams](/api/Account/IAddAmountToAssetParams.md)
-- [IGetMaxGasParams](/api/Account/IGetMaxGasParams.md)
-- [IGetMinGasParams](/api/Account/IGetMinGasParams.md)
-- [MintedAsset](/api/Account/MintedAsset.md)
-- [MnemonicVaultOptions](/api/Account/MnemonicVaultOptions.md)
-- [PkVaultOptions](/api/Account/PkVaultOptions.md)
-- [TargetObject](/api/Account/TargetObject.md)
-- [WalletManagerState](/api/Account/WalletManagerState.md)
+- [AssembleTransactionSummaryParams](/api/Account/AssembleTransactionSummaryParams)
+- [CalculateGasFeeParams](/api/Account/CalculateGasFeeParams)
+- [GenerateOptions](/api/Account/GenerateOptions)
+- [GetTransactionSummaryFromRequestParams](/api/Account/GetTransactionSummaryFromRequestParams)
+- [GetTransactionsSummariesParams](/api/Account/GetTransactionsSummariesParams)
+- [GetTransactionsSummariesReturns](/api/Account/GetTransactionsSummariesReturns)
+- [GetTransferOperationsParams](/api/Account/GetTransferOperationsParams)
+- [IAddAmountToAssetParams](/api/Account/IAddAmountToAssetParams)
+- [IGetMaxGasParams](/api/Account/IGetMaxGasParams)
+- [IGetMinGasParams](/api/Account/IGetMinGasParams)
+- [MintedAsset](/api/Account/MintedAsset)
+- [MnemonicVaultOptions](/api/Account/MnemonicVaultOptions)
+- [PkVaultOptions](/api/Account/PkVaultOptions)
+- [TargetObject](/api/Account/TargetObject)
+- [WalletManagerState](/api/Account/WalletManagerState)
 
 ## Type Aliases
 
@@ -213,7 +213,7 @@ ___
 
 ### BurnedAsset
 
-Ƭ **BurnedAsset**: [`MintedAsset`](/api/Account/MintedAsset.md)
+Ƭ **BurnedAsset**: [`MintedAsset`](/api/Account/MintedAsset)
 
 #### Defined in
 
@@ -329,7 +329,7 @@ A Fuel coin
 | `assetId` | `string` |
 | `blockCreated` | `BN` |
 | `id` | `string` |
-| `owner` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `owner` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 | `padPredicateData?` | (`policiesLenght`: `number`) => [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `predicate?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `predicateData?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
@@ -654,9 +654,9 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `connectors?` | [`FuelConnector`](/api/Account/FuelConnector.md)[] |
-| `storage?` | [`StorageAbstract`](/api/Account/StorageAbstract.md) \| ``null`` |
-| `targetObject?` | [`TargetObject`](/api/Account/TargetObject.md) |
+| `connectors?` | [`FuelConnector`](/api/Account/FuelConnector)[] |
+| `storage?` | [`StorageAbstract`](/api/Account/StorageAbstract) \| ``null`` |
+| `targetObject?` | [`TargetObject`](/api/Account/TargetObject) |
 
 #### Defined in
 
@@ -704,7 +704,7 @@ ___
 
 ### FuelEventArg
 
-Ƭ **FuelEventArg**&lt;`T`\>: `Extract`&lt;[`FuelConnectorEventTypes`](/api/Account/FuelConnectorEventTypes.md), { `type`: `T`  }\>[``"data"``]
+Ƭ **FuelEventArg**&lt;`T`\>: `Extract`&lt;[`FuelConnectorEventTypes`](/api/Account/FuelConnectorEventTypes), { `type`: `T`  }\>[``"data"``]
 
 Extract the event argument type from the event type.
 
@@ -756,7 +756,7 @@ ___
 
 ### GetOperationParams
 
-Ƭ **GetOperationParams**: { `abiMap?`: [`AbiMap`](/api/Account/index.md#abimap) ; `maxInputs`: `BN` ; `transactionType`: [`TransactionType`](/api/Account/TransactionType.md)  } & [`InputOutputParam`](/api/Account/index.md#inputoutputparam) & [`ReceiptParam`](/api/Account/index.md#receiptparam) & [`RawPayloadParam`](/api/Account/index.md#rawpayloadparam)
+Ƭ **GetOperationParams**: { `abiMap?`: [`AbiMap`](/api/Account/index.md#abimap) ; `maxInputs`: `BN` ; `transactionType`: [`TransactionType`](/api/Account/TransactionType)  } & [`InputOutputParam`](/api/Account/index.md#inputoutputparam) & [`ReceiptParam`](/api/Account/index.md#receiptparam) & [`RawPayloadParam`](/api/Account/index.md#rawpayloadparam)
 
 #### Defined in
 
@@ -859,8 +859,8 @@ A Fuel message
 | `data` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `messageId` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `nonce` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
-| `recipient` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
-| `sender` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `recipient` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
+| `sender` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Defined in
 
@@ -883,8 +883,8 @@ ___
 | `padPredicateData?` | (`policiesLenght`: `number`) => [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `predicate?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `predicateData?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
-| `recipient` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
-| `sender` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `recipient` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
+| `sender` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Defined in
 
@@ -909,8 +909,8 @@ Message Proof
 | `messageBlockHeader` | [`BlockHeader`](/api/Account/index.md#blockheader) |
 | `messageProof` | [`MerkleProof`](/api/Account/index.md#merkleproof) |
 | `nonce` | `string` |
-| `recipient` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
-| `sender` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `recipient` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
+| `sender` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Defined in
 
@@ -1190,7 +1190,7 @@ ___
 | `bytecode` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `configurableConstants?` | { `[name: string]`: `unknown`;  } |
 | `inputData?` | `T` |
-| `provider` | [`Provider`](/api/Account/Provider.md) |
+| `provider` | [`Provider`](/api/Account/Provider) |
 
 #### Defined in
 
@@ -1454,7 +1454,7 @@ ___
 
 ### TransactionCostParams
 
-Ƭ **TransactionCostParams**: [`EstimateTransactionParams`](/api/Account/index.md#estimatetransactionparams) & { `quantitiesToContract?`: [`CoinQuantity`](/api/Account/index.md#coinquantity)[] ; `resourcesOwner?`: [`AbstractAccount`](/api/Interfaces/AbstractAccount.md) ; `signatureCallback?`: (`request`: [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)) => `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>  }
+Ƭ **TransactionCostParams**: [`EstimateTransactionParams`](/api/Account/index.md#estimatetransactionparams) & { `quantitiesToContract?`: [`CoinQuantity`](/api/Account/index.md#coinquantity)[] ; `resourcesOwner?`: [`AbstractAccount`](/api/Interfaces/AbstractAccount) ; `signatureCallback?`: (`request`: [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)) => `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>  }
 
 #### Defined in
 
@@ -1464,7 +1464,7 @@ ___
 
 ### TransactionRequest
 
-Ƭ **TransactionRequest**: [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md) \| [`CreateTransactionRequest`](/api/Account/CreateTransactionRequest.md)
+Ƭ **TransactionRequest**: [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest) \| [`CreateTransactionRequest`](/api/Account/CreateTransactionRequest)
 
 #### Defined in
 
@@ -1550,7 +1550,7 @@ ___
 | `isTypeScript` | `boolean` |
 | `isTypeUpgrade` | `boolean` |
 | `isTypeUpload` | `boolean` |
-| `mintedAssets` | [`MintedAsset`](/api/Account/MintedAsset.md)[] |
+| `mintedAssets` | [`MintedAsset`](/api/Account/MintedAsset)[] |
 | `operations` | [`Operation`](/api/Account/index.md#operation)[] |
 | `receipts` | `TransactionResultReceipt`[] |
 | `status?` | `TransactionStatus` |
@@ -1639,7 +1639,7 @@ ___
 
 ### VaultsState
 
-Ƭ **VaultsState**: { `data?`: [`VaultConfig`](/api/Account/index.md#vaultconfig) ; `title?`: `string` ; `type`: `string` ; `vault`: [`Vault`](/api/Account/Vault.md)  }[]
+Ƭ **VaultsState**: { `data?`: [`VaultConfig`](/api/Account/index.md#vaultconfig) ; `title?`: `string` ; `type`: `string` ; `vault`: [`Vault`](/api/Account/Vault)  }[]
 
 #### Defined in
 
@@ -1674,7 +1674,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 | `publicKey` | `string` |
 | `vaultId?` | `number` |
 
@@ -1692,7 +1692,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `storage` | [`StorageAbstract`](/api/Account/StorageAbstract.md) |
+| `storage` | [`StorageAbstract`](/api/Account/StorageAbstract) |
 
 #### Defined in
 
@@ -1769,7 +1769,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [`IAddAmountToAssetParams`](/api/Account/IAddAmountToAssetParams.md) |
+| `params` | [`IAddAmountToAssetParams`](/api/Account/IAddAmountToAssetParams) |
 
 #### Returns
 
@@ -1906,7 +1906,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `inputs` | [`TransactionRequestInput`](/api/Account/index.md#transactionrequestinput)[] |
-| `owner` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `owner` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
@@ -1926,7 +1926,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [`CalculateGasFeeParams`](/api/Account/CalculateGasFeeParams.md) |
+| `params` | [`CalculateGasFeeParams`](/api/Account/CalculateGasFeeParams) |
 
 #### Returns
 
@@ -2035,7 +2035,7 @@ inform the Fuel Connector Manager that a new connector is available.
 
 | Name | Type |
 | :------ | :------ |
-| `connector` | [`FuelConnector`](/api/Account/FuelConnector.md) |
+| `connector` | [`FuelConnector`](/api/Account/FuelConnector) |
 
 #### Returns
 
@@ -2049,7 +2049,7 @@ ___
 
 ### extractBurnedAssetsFromReceipts
 
-▸ **extractBurnedAssetsFromReceipts**(`receipts`): [`MintedAsset`](/api/Account/MintedAsset.md)[]
+▸ **extractBurnedAssetsFromReceipts**(`receipts`): [`MintedAsset`](/api/Account/MintedAsset)[]
 
 #### Parameters
 
@@ -2059,7 +2059,7 @@ ___
 
 #### Returns
 
-[`MintedAsset`](/api/Account/MintedAsset.md)[]
+[`MintedAsset`](/api/Account/MintedAsset)[]
 
 #### Defined in
 
@@ -2069,7 +2069,7 @@ ___
 
 ### extractMintedAssetsFromReceipts
 
-▸ **extractMintedAssetsFromReceipts**(`receipts`): [`MintedAsset`](/api/Account/MintedAsset.md)[]
+▸ **extractMintedAssetsFromReceipts**(`receipts`): [`MintedAsset`](/api/Account/MintedAsset)[]
 
 #### Parameters
 
@@ -2079,7 +2079,7 @@ ___
 
 #### Returns
 
-[`MintedAsset`](/api/Account/MintedAsset.md)[]
+[`MintedAsset`](/api/Account/MintedAsset)[]
 
 #### Defined in
 
@@ -2267,7 +2267,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [`IGetMaxGasParams`](/api/Account/IGetMaxGasParams.md) |
+| `params` | [`IGetMaxGasParams`](/api/Account/IGetMaxGasParams) |
 
 #### Returns
 
@@ -2287,7 +2287,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [`IGetMinGasParams`](/api/Account/IGetMinGasParams.md) |
+| `params` | [`IGetMinGasParams`](/api/Account/IGetMinGasParams) |
 
 #### Returns
 
@@ -2494,7 +2494,7 @@ Event trigger when the current connector has changed.
 
 | Name | Type |
 | :------ | :------ |
-| `data` | [`FuelConnector`](/api/Account/FuelConnector.md) |
+| `data` | [`FuelConnector`](/api/Account/FuelConnector) |
 | `type` | [`currentConnector`](/api/Account/FuelConnectorEventTypes.md#currentconnector) |
 
 #### Defined in
@@ -2515,7 +2515,7 @@ Event trigger when the list of connectors has changed.
 
 | Name | Type |
 | :------ | :------ |
-| `data` | [`FuelConnector`](/api/Account/FuelConnector.md)[] |
+| `data` | [`FuelConnector`](/api/Account/FuelConnector)[] |
 | `type` | [`connectors`](/api/Account/FuelConnectorEventTypes.md#connectors) |
 
 #### Defined in

@@ -1,6 +1,6 @@
 # Interface: WalletManagerState
 
-[@fuel-ts/account](/api/Account/index.md).WalletManagerState
+[@fuel-ts/account](/api/Account/index).WalletManagerState
 
 ## Properties
 

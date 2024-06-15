@@ -39,5 +39,5 @@ stop();
 
 See also:
 
-1. [Setting up test wallets](../wallets/test-wallets.md)
-2. [Testing in TS](./testing-in-ts.md)
+1. [Setting up test wallets](../wallets/test-wallets)
+2. [Testing in TS](./testing-in-ts)

@@ -1,6 +1,6 @@
 # Class: InstructionSet
 
-[@fuel-ts/program](/api/Program/index.md).InstructionSet
+[@fuel-ts/program](/api/Program/index).InstructionSet
 
 A wrapper around fuel-asm to make dynamic instructions and convert to different formats
 
@@ -8,7 +8,7 @@ A wrapper around fuel-asm to make dynamic instructions and convert to different 
 
 ### constructor
 
-• **new InstructionSet**(`...args`): [`InstructionSet`](/api/Program/InstructionSet.md)
+• **new InstructionSet**(`...args`): [`InstructionSet`](/api/Program/InstructionSet)
 
 #### Parameters
 
@@ -18,7 +18,7 @@ A wrapper around fuel-asm to make dynamic instructions and convert to different 
 
 #### Returns
 
-[`InstructionSet`](/api/Program/InstructionSet.md)
+[`InstructionSet`](/api/Program/InstructionSet)
 
 #### Defined in
 

@@ -46,7 +46,7 @@ To call a method, simply use dot syntax: `foo.iz_baz_true()`.
 
 <!-- This section should explain how methods + assoc. fns can accept `ref mut` params -->
 <!-- ref_mut:example:start -->
-Similarly to [free functions](functions.md), methods and associated functions may accept `ref mut` parameters.
+Similarly to [free functions](functions), methods and associated functions may accept `ref mut` parameters.
 <!-- ref_mut:example:end -->
 
 For example:

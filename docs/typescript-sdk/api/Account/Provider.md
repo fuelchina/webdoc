@@ -1,6 +1,6 @@
 # Class: Provider
 
-[@fuel-ts/account](/api/Account/index.md).Provider
+[@fuel-ts/account](/api/Account/index).Provider
 
 A provider for connecting to a node
 
@@ -415,7 +415,7 @@ Returns the balance for the given owner for the given asset ID.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get coins for. |
+| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get coins for. |
 | `assetId` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of coins to get. |
 
 #### Returns
@@ -440,7 +440,7 @@ Returns balances for the given owner.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get coins for. |
+| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get coins for. |
 | `paginationArgs?` | `CursorPaginationArgs` | Pagination arguments. |
 
 #### Returns
@@ -517,7 +517,7 @@ ___
 
 ### getBlockWithTransactions
 
-▸ **getBlockWithTransactions**(`idOrHeight`): `Promise`&lt;``null`` \| [`Block`](/api/Account/index.md#block) & { `transactions`: `Partial`&lt;`Omit`&lt;`TransactionScript`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionCreate`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionMint`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpgrade`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpload`, ``"type"``\>\> & { `type`: [`TransactionType`](/api/Account/TransactionType.md)  }[]  }\>
+▸ **getBlockWithTransactions**(`idOrHeight`): `Promise`&lt;``null`` \| [`Block`](/api/Account/index.md#block) & { `transactions`: `Partial`&lt;`Omit`&lt;`TransactionScript`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionCreate`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionMint`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpgrade`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpload`, ``"type"``\>\> & { `type`: [`TransactionType`](/api/Account/TransactionType)  }[]  }\>
 
 Returns block matching the given ID or type, including transaction data.
 
@@ -529,7 +529,7 @@ Returns block matching the given ID or type, including transaction data.
 
 #### Returns
 
-`Promise`&lt;``null`` \| [`Block`](/api/Account/index.md#block) & { `transactions`: `Partial`&lt;`Omit`&lt;`TransactionScript`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionCreate`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionMint`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpgrade`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpload`, ``"type"``\>\> & { `type`: [`TransactionType`](/api/Account/TransactionType.md)  }[]  }\>
+`Promise`&lt;``null`` \| [`Block`](/api/Account/index.md#block) & { `transactions`: `Partial`&lt;`Omit`&lt;`TransactionScript`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionCreate`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionMint`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpgrade`, ``"type"``\>\> & `Partial`&lt;`Omit`&lt;`TransactionUpload`, ``"type"``\>\> & { `type`: [`TransactionType`](/api/Account/TransactionType)  }[]  }\>
 
 A promise that resolves to the block.
 
@@ -607,7 +607,7 @@ Returns coins for the given owner.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get coins for |
+| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get coins for |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of coins to get |
 | `paginationArgs?` | `CursorPaginationArgs` | Pagination arguments |
 
@@ -655,7 +655,7 @@ Returns the balance for the given contract for the given asset ID.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `contractId` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The contract ID to get the balance for. |
+| `contractId` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The contract ID to get the balance for. |
 | `assetId` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of coins to get. |
 
 #### Returns
@@ -793,7 +793,7 @@ Returns message for the given address.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get message from. |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get message from. |
 | `paginationArgs?` | `CursorPaginationArgs` | Pagination arguments. |
 
 #### Returns
@@ -852,7 +852,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | `undefined` |
+| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | `undefined` |
 | `transactionRequestLike` | [`TransactionRequestLike`](/api/Account/index.md#transactionrequestlike) | `undefined` |
 | `quantitiesToContract` | [`CoinQuantity`](/api/Account/index.md#coinquantity)[] | `[]` |
 
@@ -876,7 +876,7 @@ Returns resources for the given owner satisfying the spend query.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get resources for. |
+| `owner` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get resources for. |
 | `quantities` | [`CoinQuantityLike`](/api/Account/index.md#coinquantitylike)[] | The quantities to get. |
 | `excludedIds?` | `ExcludeResourcesOption` | IDs of excluded resources from the selection. |
 
@@ -951,7 +951,7 @@ ___
 
 ### getTransactionResponse
 
-▸ **getTransactionResponse**(`transactionId`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **getTransactionResponse**(`transactionId`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 #### Parameters
 
@@ -961,7 +961,7 @@ ___
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 #### Defined in
 
@@ -1014,7 +1014,7 @@ ___
 
 ### sendTransaction
 
-▸ **sendTransaction**(`transactionRequestLike`, `«destructured»?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **sendTransaction**(`transactionRequestLike`, `«destructured»?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Submits a transaction to the chain to be executed.
 
@@ -1030,7 +1030,7 @@ the transaction will be mutated and those dependencies will be added.
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response object.
 
@@ -1085,7 +1085,7 @@ ___
 
 ### create
 
-▸ **create**(`url`, `options?`): `Promise`&lt;[`Provider`](/api/Account/Provider.md)\>
+▸ **create**(`url`, `options?`): `Promise`&lt;[`Provider`](/api/Account/Provider)\>
 
 Creates a new instance of the Provider class. This is the recommended way to initialize a Provider.
 
@@ -1098,7 +1098,7 @@ Creates a new instance of the Provider class. This is the recommended way to ini
 
 #### Returns
 
-`Promise`&lt;[`Provider`](/api/Account/Provider.md)\>
+`Promise`&lt;[`Provider`](/api/Account/Provider)\>
 
 #### Defined in
 

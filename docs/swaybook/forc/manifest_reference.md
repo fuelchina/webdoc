@@ -8,7 +8,7 @@ The `Forc.toml` (the _manifest_ file) is a compulsory file for each package and 
   * `organization` — The organization of the project.
   * `license`— The project license.
   * `entry` — The entry point for the compiler to start parsing from.
-    * For the recommended way of selecting an entry point of large libraries please take a look at: [Libraries](./../sway-program-types/libraries.md)
+    * For the recommended way of selecting an entry point of large libraries please take a look at: [Libraries](./../sway-program-types/libraries)
   * `implicit-std` -  Controls whether provided `std` version (with the current `forc` version) will get added as a dependency _implicitly_. _Unless you know what you are doing, leave this as default._
   * `forc-version` - The minimum forc version required for this project to work properly.
 
@@ -54,7 +54,7 @@ The following fields can be provided with a dependency:
 * `tag` - The desired tag to fetch from the git repo
 * `rev` - The desired rev (i.e. commit hash) reference
 
-Please see [dependencies](./dependencies.md) for details
+Please see [dependencies](./dependencies) for details
 
 ## The `[network]` section
 
@@ -103,7 +103,7 @@ print-ir = false
 terse = true
 ```
 
-Since `release` and `debug` implicitly included in every manifest file, you can use them by just passing `--release` or by not passing anything (debug is default). For using a user defined build profile there is `--build-profile <profile name>` option available to the relevant commands. (For an example see [forc-build](../forc/commands/forc_build.md))
+Since `release` and `debug` implicitly included in every manifest file, you can use them by just passing `--release` or by not passing anything (debug is default). For using a user defined build profile there is `--build-profile <profile name>` option available to the relevant commands. (For an example see [forc-build](../forc/commands/forc_build))
 
 Note that providing the corresponding CLI options (like `--finalized-asm`) will override the selected build profile. For example if you pass both `--release` and `--finalized-asm`, release build profile is omitted and resulting build profile would have a structure like the following:
 

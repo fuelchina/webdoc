@@ -1,6 +1,6 @@
 # Enumeration: TransactionType
 
-[@fuel-ts/account](/api/Account/index.md).TransactionType
+[@fuel-ts/account](/api/Account/index).TransactionType
 
 ## Enumeration Members
 

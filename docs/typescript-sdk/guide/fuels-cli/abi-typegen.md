@@ -45,5 +45,5 @@ $ cat out/debug/my-test-abi.json
 
 另请参阅：
 
-- [生成类型](./generating-types.md)
-- [使用生成的类型](./using-generated-types.md)
+- [生成类型](./generating-types)
+- [使用生成的类型](./using-generated-types)

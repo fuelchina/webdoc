@@ -1,6 +1,6 @@
 # Class: BaseTransactionRequest
 
-[@fuel-ts/account](/api/Account/index.md).BaseTransactionRequest
+[@fuel-ts/account](/api/Account/index).BaseTransactionRequest
 
 Abstract class to define the functionalities of a transaction request transaction request.
 
@@ -8,9 +8,9 @@ Abstract class to define the functionalities of a transaction request transactio
 
 - **`BaseTransactionRequest`**
 
-  ↳ [`CreateTransactionRequest`](/api/Account/CreateTransactionRequest.md)
+  ↳ [`CreateTransactionRequest`](/api/Account/CreateTransactionRequest)
 
-  ↳ [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+  ↳ [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 ## Implements
 
@@ -20,7 +20,7 @@ Abstract class to define the functionalities of a transaction request transactio
 
 ### constructor
 
-• **new BaseTransactionRequest**(`baseTransactionRequest?`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+• **new BaseTransactionRequest**(`baseTransactionRequest?`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 Constructor for initializing a base transaction request.
 
@@ -32,7 +32,7 @@ Constructor for initializing a base transaction request.
 
 #### Returns
 
-[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 #### Defined in
 
@@ -122,7 +122,7 @@ ___
 
 ### type
 
-• `Abstract` **type**: [`TransactionType`](/api/Account/TransactionType.md)
+• `Abstract` **type**: [`TransactionType`](/api/Account/TransactionType)
 
 Type of the transaction
 
@@ -166,7 +166,7 @@ BaseTransactionRequestLike.witnesses
 
 ### addAccountWitnesses
 
-▸ **addAccountWitnesses**(`account`): `Promise`&lt;[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)\>
+▸ **addAccountWitnesses**(`account`): `Promise`&lt;[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)\>
 
 Helper function to add an external signature to the transaction.
 
@@ -174,11 +174,11 @@ Helper function to add an external signature to the transaction.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `account` | [`Account`](/api/Account/Account.md) \| [`Account`](/api/Account/Account.md)[] | The account/s to sign to the transaction. |
+| `account` | [`Account`](/api/Account/Account) \| [`Account`](/api/Account/Account)[] | The account/s to sign to the transaction. |
 
 #### Returns
 
-`Promise`&lt;[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)\>
+`Promise`&lt;[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)\>
 
 The transaction with the signature witness added.
 
@@ -236,7 +236,7 @@ ___
 
 ### addCoinOutput
 
-▸ **addCoinOutput**(`to`, `amount`, `assetId`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+▸ **addCoinOutput**(`to`, `amount`, `assetId`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 Adds a coin output to the transaction.
 
@@ -250,7 +250,7 @@ Adds a coin output to the transaction.
 
 #### Returns
 
-[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 #### Defined in
 
@@ -260,7 +260,7 @@ ___
 
 ### addCoinOutputs
 
-▸ **addCoinOutputs**(`to`, `quantities`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+▸ **addCoinOutputs**(`to`, `quantities`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 Adds multiple coin outputs to the transaction.
 
@@ -273,7 +273,7 @@ Adds multiple coin outputs to the transaction.
 
 #### Returns
 
-[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 #### Defined in
 
@@ -306,7 +306,7 @@ ___
 
 ### addResource
 
-▸ **addResource**(`resource`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+▸ **addResource**(`resource`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 Adds a single resource to the transaction by adding a coin/message input and a
 change output for the related assetId, if one it was not added yet.
@@ -319,7 +319,7 @@ change output for the related assetId, if one it was not added yet.
 
 #### Returns
 
-[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 This transaction.
 
@@ -331,7 +331,7 @@ ___
 
 ### addResources
 
-▸ **addResources**(`resources`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+▸ **addResources**(`resources`): [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 Adds multiple resources to the transaction by adding coin/message inputs and change
 outputs from the related assetIds.
@@ -344,7 +344,7 @@ outputs from the related assetIds.
 
 #### Returns
 
-[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+[`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
 This transaction.
 
@@ -388,7 +388,7 @@ quantities array.
 | :------ | :------ | :------ |
 | `quantities` | [`CoinQuantity`](/api/Account/index.md#coinquantity)[] | CoinQuantity Array. |
 | `baseAssetId` | `string` | The base asset to fund the transaction. |
-| `resourcesOwner?` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | - |
+| `resourcesOwner?` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) | - |
 
 #### Returns
 
@@ -637,7 +637,7 @@ Updates the witness for a given owner and signature.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get the coin input witness index for. |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get the coin input witness index for. |
 | `signature` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The signature to update the witness with. |
 
 #### Returns
@@ -658,7 +658,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `req` | [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md) |
+| `req` | [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest) |
 
 #### Returns
 

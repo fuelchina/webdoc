@@ -1,12 +1,12 @@
 # Class: Signer
 
-[@fuel-ts/account](/api/Account/index.md).Signer
+[@fuel-ts/account](/api/Account/index).Signer
 
 ## Constructors
 
 ### constructor
 
-• **new Signer**(`privateKey`): [`Signer`](/api/Account/Signer.md)
+• **new Signer**(`privateKey`): [`Signer`](/api/Account/Signer)
 
 Create a Signer instance from a given private key
 
@@ -18,7 +18,7 @@ Create a Signer instance from a given private key
 
 #### Returns
 
-[`Signer`](/api/Account/Signer.md)
+[`Signer`](/api/Account/Signer)
 
 A new Signer instance
 
@@ -30,7 +30,7 @@ A new Signer instance
 
 ### address
 
-• `Readonly` **address**: [`Address`](/api/Address/Address.md)
+• `Readonly` **address**: [`Address`](/api/Address/Address)
 
 #### Defined in
 
@@ -142,7 +142,7 @@ ___
 
 ### recoverAddress
 
-▸ **recoverAddress**(`data`, `signature`): [`Address`](/api/Address/Address.md)
+▸ **recoverAddress**(`data`, `signature`): [`Address`](/api/Address/Address)
 
 Recover the address from a signature performed with [`sign`](#sign).
 
@@ -155,7 +155,7 @@ Recover the address from a signature performed with [`sign`](#sign).
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 Address from signature
 

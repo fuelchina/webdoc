@@ -1,6 +1,6 @@
 # Class: FuelConnector
 
-[@fuel-ts/account](/api/Account/index.md).FuelConnector
+[@fuel-ts/account](/api/Account/index).FuelConnector
 
 FuelConnector
 
@@ -13,13 +13,13 @@ that should be implemented to be compatible with the Fuel SDK.
 
   ↳ **`FuelConnector`**
 
-  ↳↳ [`Fuel`](/api/Account/Fuel.md)
+  ↳↳ [`Fuel`](/api/Account/Fuel)
 
 ## Constructors
 
 ### constructor
 
-• **new FuelConnector**(`options?`): [`FuelConnector`](/api/Account/FuelConnector.md)
+• **new FuelConnector**(`options?`): [`FuelConnector`](/api/Account/FuelConnector)
 
 #### Parameters
 
@@ -29,7 +29,7 @@ that should be implemented to be compatible with the Fuel SDK.
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -53,7 +53,7 @@ ___
 
 ### events
 
-• **events**: typeof [`FuelConnectorEventTypes`](/api/Account/FuelConnectorEventTypes.md) = `FuelConnectorEventTypes`
+• **events**: typeof [`FuelConnectorEventTypes`](/api/Account/FuelConnectorEventTypes) = `FuelConnectorEventTypes`
 
 #### Defined in
 
@@ -269,7 +269,7 @@ ___
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **addListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -286,7 +286,7 @@ v0.1.26
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -714,7 +714,7 @@ ___
 
 ### off
 
-▸ **off**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **off**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Alias for `emitter.removeListener()`.
 
@@ -731,7 +731,7 @@ v10.0.0
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -745,7 +745,7 @@ ___
 
 ### on
 
-▸ **on**&lt;`E`, `D`\>(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **on**&lt;`E`, `D`\>(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Event listener for the connector.
 
@@ -765,7 +765,7 @@ Event listener for the connector.
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Overrides
 
@@ -779,7 +779,7 @@ ___
 
 ### once
 
-▸ **once**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **once**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -818,7 +818,7 @@ v0.3.0
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -851,7 +851,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **prependListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -879,7 +879,7 @@ v6.0.0
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -893,7 +893,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **prependOnceListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -919,7 +919,7 @@ v6.0.0
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -988,7 +988,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`event?`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **removeAllListeners**(`event?`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1010,7 +1010,7 @@ v0.1.26
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -1024,7 +1024,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **removeListener**(`eventName`, `listener`): [`FuelConnector`](/api/Account/FuelConnector)
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
 
@@ -1116,7 +1116,7 @@ v0.1.26
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
@@ -1190,7 +1190,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **setMaxListeners**(`n`): [`FuelConnector`](/api/Account/FuelConnector)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1211,7 +1211,7 @@ v0.3.5
 
 #### Returns
 
-[`FuelConnector`](/api/Account/FuelConnector.md)
+[`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 

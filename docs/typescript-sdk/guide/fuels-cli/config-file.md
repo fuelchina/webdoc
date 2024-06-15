@@ -141,7 +141,7 @@ Sway 脚本的相对目录路径列表。
 
 ## `useBuiltinForc`
 
-选择是否使用[内置](./binaries.md)的 `forc` 二进制文件。
+选择是否使用[内置](./binaries)的 `forc` 二进制文件。
 
 如果未提供，则默认使用 `system` 二进制文件。
 
@@ -151,11 +151,11 @@ Sway 脚本的相对目录路径列表。
 
 也可以参考：
 
-- [内置二进制文件](./binaries.md)
+- [内置二进制文件](./binaries)
 
 ## `useBuiltinFuelCore`
 
-选择是否使用[内置](./binaries.md)的 `fuel-core` 二进制文件。
+选择是否使用[内置](./binaries)的 `fuel-core` 二进制文件。
 
 如果未提供，则默认使用 `system` 二进制文件。
 
@@ -165,7 +165,7 @@ Sway 脚本的相对目录路径列表。
 
 也可以参考：
 
-- [内置二进制文件](./binaries.md)
+- [内置二进制文件](./binaries)
 
 ## 加载环境变量
 

@@ -1,6 +1,6 @@
 # Enumeration: FuelConnectorEventTypes
 
-[@fuel-ts/account](/api/Account/index.md).FuelConnectorEventTypes
+[@fuel-ts/account](/api/Account/index).FuelConnectorEventTypes
 
 ## Enumeration Members
 

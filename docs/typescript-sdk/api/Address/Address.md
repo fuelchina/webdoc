@@ -1,13 +1,13 @@
 # Class: Address
 
-[@fuel-ts/address](/api/Address/index.md).Address
+[@fuel-ts/address](/api/Address/index).Address
 
 `Address` provides a type safe wrapper for converting between different address formats
 ands comparing them for equality.
 
 ## Hierarchy
 
-- [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+- [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
   ↳ **`Address`**
 
@@ -15,7 +15,7 @@ ands comparing them for equality.
 
 ### constructor
 
-• **new Address**(`address`): [`Address`](/api/Address/Address.md)
+• **new Address**(`address`): [`Address`](/api/Address/Address)
 
 #### Parameters
 
@@ -25,11 +25,11 @@ ands comparing them for equality.
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[constructor](/api/Interfaces/AbstractAddress.md#constructor)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[constructor](/api/Interfaces/AbstractAddress.md#constructor)
 
 #### Defined in
 
@@ -57,7 +57,7 @@ Compares this the `bech32Address` property to another for direct equality
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `other` | [`Address`](/api/Address/Address.md) | Another address to compare against |
+| `other` | [`Address`](/api/Address/Address) | Another address to compare against |
 
 #### Returns
 
@@ -67,7 +67,7 @@ The equality of the comparison
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[equals](/api/Interfaces/AbstractAddress.md#equals)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[equals](/api/Interfaces/AbstractAddress.md#equals)
 
 #### Defined in
 
@@ -89,7 +89,7 @@ The `bech32Address` property
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[toAddress](/api/Interfaces/AbstractAddress.md#toaddress)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[toAddress](/api/Interfaces/AbstractAddress.md#toaddress)
 
 #### Defined in
 
@@ -129,7 +129,7 @@ The `bech32Address` property as a 256 bit hash string
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[toB256](/api/Interfaces/AbstractAddress.md#tob256)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[toB256](/api/Interfaces/AbstractAddress.md#tob256)
 
 #### Defined in
 
@@ -151,7 +151,7 @@ The `bech32Address` property as a byte array
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[toBytes](/api/Interfaces/AbstractAddress.md#tobytes)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[toBytes](/api/Interfaces/AbstractAddress.md#tobytes)
 
 #### Defined in
 
@@ -191,7 +191,7 @@ The `bech32Address` property as a 256 bit hash string
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[toHexString](/api/Interfaces/AbstractAddress.md#tohexstring)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[toHexString](/api/Interfaces/AbstractAddress.md#tohexstring)
 
 #### Defined in
 
@@ -213,7 +213,7 @@ The `bech32Address` property as a string
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[toJSON](/api/Interfaces/AbstractAddress.md#tojson)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[toJSON](/api/Interfaces/AbstractAddress.md#tojson)
 
 #### Defined in
 
@@ -235,7 +235,7 @@ The `bech32Address` property as a string
 
 #### Overrides
 
-[AbstractAddress](/api/Interfaces/AbstractAddress.md).[toString](/api/Interfaces/AbstractAddress.md#tostring)
+[AbstractAddress](/api/Interfaces/AbstractAddress).[toString](/api/Interfaces/AbstractAddress.md#tostring)
 
 #### Defined in
 
@@ -263,7 +263,7 @@ ___
 
 ### fromAddressOrString
 
-▸ **fromAddressOrString**(`address`): [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+▸ **fromAddressOrString**(`address`): [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 Takes an ambiguous string or address and creates an `Address`
 
@@ -271,11 +271,11 @@ Takes an ambiguous string or address and creates an `Address`
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
-[`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+[`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 a new `Address` instance
 
@@ -287,7 +287,7 @@ ___
 
 ### fromB256
 
-▸ **fromB256**(`b256Address`): [`Address`](/api/Address/Address.md)
+▸ **fromB256**(`b256Address`): [`Address`](/api/Address/Address)
 
 Takes a B256 Address and creates an `Address`
 
@@ -299,7 +299,7 @@ Takes a B256 Address and creates an `Address`
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 A new `Address` instance
 
@@ -311,7 +311,7 @@ ___
 
 ### fromDynamicInput
 
-▸ **fromDynamicInput**(`address`): [`Address`](/api/Address/Address.md)
+▸ **fromDynamicInput**(`address`): [`Address`](/api/Address/Address)
 
 Takes a dynamic string or `AbstractAddress` and creates an `Address`
 
@@ -323,11 +323,11 @@ Error - Unknown address if the format is not recognised
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 A new `Address` instance
 
@@ -339,7 +339,7 @@ ___
 
 ### fromEvmAddress
 
-▸ **fromEvmAddress**(`evmAddress`): [`Address`](/api/Address/Address.md)
+▸ **fromEvmAddress**(`evmAddress`): [`Address`](/api/Address/Address)
 
 Takes an Evm Address and returns back an `Address`
 
@@ -351,7 +351,7 @@ Takes an Evm Address and returns back an `Address`
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 A new `Address` instance
 
@@ -363,7 +363,7 @@ ___
 
 ### fromPublicKey
 
-▸ **fromPublicKey**(`publicKey`): [`Address`](/api/Address/Address.md)
+▸ **fromPublicKey**(`publicKey`): [`Address`](/api/Address/Address)
 
 Takes a Public Key, hashes it, and creates an `Address`
 
@@ -375,7 +375,7 @@ Takes a Public Key, hashes it, and creates an `Address`
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 A new `Address` instance
 
@@ -387,13 +387,13 @@ ___
 
 ### fromRandom
 
-▸ **fromRandom**(): [`Address`](/api/Address/Address.md)
+▸ **fromRandom**(): [`Address`](/api/Address/Address)
 
 Creates an `Address` with a randomized `bech32Address` property
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 A new `Address` instance
 
@@ -405,7 +405,7 @@ ___
 
 ### fromString
 
-▸ **fromString**(`address`): [`Address`](/api/Address/Address.md)
+▸ **fromString**(`address`): [`Address`](/api/Address/Address)
 
 Takes an ambiguous string and attempts to create an `Address`
 
@@ -417,7 +417,7 @@ Takes an ambiguous string and attempts to create an `Address`
 
 #### Returns
 
-[`Address`](/api/Address/Address.md)
+[`Address`](/api/Address/Address)
 
 A new `Address` instance
 

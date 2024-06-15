@@ -1,6 +1,6 @@
 # Interface: TargetObject
 
-[@fuel-ts/account](/api/Account/index.md).TargetObject
+[@fuel-ts/account](/api/Account/index).TargetObject
 
 Target Object that represents the global event bus used by Fuel Connector Manager.
 On browser the default target is the window or document. For other environments

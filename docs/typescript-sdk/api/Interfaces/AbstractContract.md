@@ -1,6 +1,6 @@
 # Class: AbstractContract
 
-[@fuel-ts/interfaces](/api/Interfaces/index.md).AbstractContract
+[@fuel-ts/interfaces](/api/Interfaces/index).AbstractContract
 
 ## Hierarchy
 
@@ -12,11 +12,11 @@
 
 ### constructor
 
-• **new AbstractContract**(): [`AbstractContract`](/api/Interfaces/AbstractContract.md)
+• **new AbstractContract**(): [`AbstractContract`](/api/Interfaces/AbstractContract)
 
 #### Returns
 
-[`AbstractContract`](/api/Interfaces/AbstractContract.md)
+[`AbstractContract`](/api/Interfaces/AbstractContract)
 
 #### Inherited from
 
@@ -26,7 +26,7 @@ AbstractProgram.constructor
 
 ### account
 
-• `Abstract` **account**: ``null`` \| [`AbstractAccount`](/api/Interfaces/AbstractAccount.md)
+• `Abstract` **account**: ``null`` \| [`AbstractAccount`](/api/Interfaces/AbstractAccount)
 
 #### Inherited from
 
@@ -40,7 +40,7 @@ ___
 
 ### id
 
-• `Abstract` **id**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+• `Abstract` **id**: [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 #### Defined in
 

@@ -1,6 +1,6 @@
 # Interface: CalculateGasFeeParams
 
-[@fuel-ts/account](/api/Account/index.md).CalculateGasFeeParams
+[@fuel-ts/account](/api/Account/index).CalculateGasFeeParams
 
 ## Properties
 

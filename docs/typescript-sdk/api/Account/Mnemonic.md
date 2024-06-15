@@ -1,12 +1,12 @@
 # Class: Mnemonic
 
-[@fuel-ts/account](/api/Account/index.md).Mnemonic
+[@fuel-ts/account](/api/Account/index).Mnemonic
 
 ## Constructors
 
 ### constructor
 
-• **new Mnemonic**(`wordlist?`): [`Mnemonic`](/api/Account/Mnemonic.md)
+• **new Mnemonic**(`wordlist?`): [`Mnemonic`](/api/Account/Mnemonic)
 
 #### Parameters
 
@@ -16,7 +16,7 @@
 
 #### Returns
 
-[`Mnemonic`](/api/Account/Mnemonic.md)
+[`Mnemonic`](/api/Account/Mnemonic)
 
 Mnemonic instance
 

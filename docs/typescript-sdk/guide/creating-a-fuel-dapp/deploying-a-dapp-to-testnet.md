@@ -3,7 +3,7 @@
 
 在本指南中，我们将使用 `npm create fuels` 创建的全栈 dApp 部署到 Fuel beta-5 测试网。
 
-> 请确保您已经使用 `npm create fuels` 创建了一个 dApp。如果没有，请按照[此指南](./index.md)进行操作。
+> 请确保您已经使用 `npm create fuels` 创建了一个 dApp。如果没有，请按照[此指南](./index)进行操作。
 
 将我们的 dApp 放入测试网的主要步骤有两个：
 

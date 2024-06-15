@@ -14,12 +14,12 @@ functionality described.
 - `as` - rename items in `use` statements, e.g., `use type::a as alias_name`
 - [`abi`](../sway-program-types/smart_contracts.md#the-abi-declaration) - defines a smart contract ABI in a syntactically similar way to traits
 - [`break`](../basics/control_flow.md#break-and-continue) - exit a loop immediately
-- [`const`](../basics/constants.md) - define constant items
+- [`const`](../basics/constants) - define constant items
 - [`continue`](../basics/control_flow.md#break-and-continue) - continue to the next loop iteration
 - `else` - used in conjunction with `if` conditions for control flow constructs
 - [`enum`](../basics/structs_tuples_and_enums.md#enums) - define an enumeration
 - `false` - Boolean false literal
-- [`fn`](../basics/functions.md)- define a function or the function pointer type
+- [`fn`](../basics/functions)- define a function or the function pointer type
 - [`if`](../basics/control_flow.md#if-expressions) - branch based on the result of a conditional expression
 - `impl` - implement inherent or trait functionality
 - `let` - bind a variable
@@ -71,10 +71,10 @@ functionality described.
 
 Keywords associated with defining the type of Sway program to compile
 
-- [`contract`](../sway-program-types/smart_contracts.md) - analogous to a deployed API with some database state
-- [`library`](../sway-program-types/libraries.md) - Sway code that defines new common behavior
-- [`predicate`](../sway-program-types/predicates.md) - programs that return a Boolean value and which represent ownership of some resource upon execution to true
-- [`script`](../sway-program-types/scripts.md) - a runnable bytecode on the chain, which executes once to preform a task
+- [`contract`](../sway-program-types/smart_contracts) - analogous to a deployed API with some database state
+- [`library`](../sway-program-types/libraries) - Sway code that defines new common behavior
+- [`predicate`](../sway-program-types/predicates) - programs that return a Boolean value and which represent ownership of some resource upon execution to true
+- [`script`](../sway-program-types/scripts) - a runnable bytecode on the chain, which executes once to preform a task
 
 ### Attribute Keywords
 

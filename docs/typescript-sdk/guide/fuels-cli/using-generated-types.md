@@ -21,7 +21,7 @@ pnpm fuels typegen -i ./abis/*-abi.json -o ./types
 
 ### 存储槽的自动加载
 
-Typegen 会尝试解析、自动加载并嵌入您合约的[存储槽](../contracts/storage-slots.md)到 `MyContract__factory` 类中。但是，您可以在调用 `deployContract` 方法时覆盖它，以及其他 [`DeployContractOptions`](https://github.com/FuelLabs/fuels-ts/blob/a64b67b9fb2d7f764ab9151a21d2266bf2df3643/packages/contract/src/contract-factory.ts#L19-L24) 中的选项：
+Typegen 会尝试解析、自动加载并嵌入您合约的[存储槽](../contracts/storage-slots)到 `MyContract__factory` 类中。但是，您可以在调用 `deployContract` 方法时覆盖它，以及其他 [`DeployContractOptions`](https://github.com/FuelLabs/fuels-ts/blob/a64b67b9fb2d7f764ab9151a21d2266bf2df3643/packages/contract/src/contract-factory.ts#L19-L24) 中的选项：
 
 <<< ../../demo-typegen/src/demo.test.ts#typegen-demo-contract-storage-slots{ts:line-numbers}
 

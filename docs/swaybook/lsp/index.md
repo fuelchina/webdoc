@@ -10,5 +10,5 @@ In this documentation, you will find detailed information about how to set up Sw
 
 Whether you are a beginner or an experienced Sway developer, this documentation aims to be your go-to resource for understanding and maximizing the capabilities of Sway LSP. So let's dive in and unlock the full potential of the Sway programming language with Sway LSP!
 
-- [Installation](./installation.md)
-- [Features](./features.md)
+- [Installation](./installation)
+- [Features](./features)

@@ -2,4 +2,4 @@
 
 ## Classes
 
-- [Script](/api/Script/Script.md)
+- [Script](/api/Script/Script)

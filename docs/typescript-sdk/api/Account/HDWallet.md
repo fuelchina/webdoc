@@ -1,12 +1,12 @@
 # Class: HDWallet
 
-[@fuel-ts/account](/api/Account/index.md).HDWallet
+[@fuel-ts/account](/api/Account/index).HDWallet
 
 ## Constructors
 
 ### constructor
 
-• **new HDWallet**(`config`): [`HDWallet`](/api/Account/HDWallet.md)
+• **new HDWallet**(`config`): [`HDWallet`](/api/Account/HDWallet)
 
 HDWallet is a implementation of the BIP-0044 and BIP-0032, Multi-Account Hierarchy for Deterministic Wallets
 
@@ -18,7 +18,7 @@ HDWallet is a implementation of the BIP-0044 and BIP-0032, Multi-Account Hierarc
 
 #### Returns
 
-[`HDWallet`](/api/Account/HDWallet.md)
+[`HDWallet`](/api/Account/HDWallet)
 
 #### Defined in
 
@@ -112,7 +112,7 @@ ___
 
 ### deriveIndex
 
-▸ **deriveIndex**(`index`): [`HDWallet`](/api/Account/HDWallet.md)
+▸ **deriveIndex**(`index`): [`HDWallet`](/api/Account/HDWallet)
 
 Derive the current HDWallet instance navigating only on the index.
 `Ex.: m/44'/0 -> Ex.: m/44'/1 -> m/44'/2`. [Learn more](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
@@ -125,7 +125,7 @@ Derive the current HDWallet instance navigating only on the index.
 
 #### Returns
 
-[`HDWallet`](/api/Account/HDWallet.md)
+[`HDWallet`](/api/Account/HDWallet)
 
 A new instance of HDWallet on the derived index
 
@@ -137,7 +137,7 @@ ___
 
 ### derivePath
 
-▸ **derivePath**(`path`): [`HDWallet`](/api/Account/HDWallet.md)
+▸ **derivePath**(`path`): [`HDWallet`](/api/Account/HDWallet)
 
 Derive the current HDWallet instance to the path. [Learn more](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
@@ -149,7 +149,7 @@ Derive the current HDWallet instance to the path. [Learn more](https://github.co
 
 #### Returns
 
-[`HDWallet`](/api/Account/HDWallet.md)
+[`HDWallet`](/api/Account/HDWallet)
 
 A new instance of HDWallet on the derived path
 
@@ -186,7 +186,7 @@ ___
 
 ### fromExtendedKey
 
-▸ **fromExtendedKey**(`extendedKey`): [`HDWallet`](/api/Account/HDWallet.md)
+▸ **fromExtendedKey**(`extendedKey`): [`HDWallet`](/api/Account/HDWallet)
 
 #### Parameters
 
@@ -196,7 +196,7 @@ ___
 
 #### Returns
 
-[`HDWallet`](/api/Account/HDWallet.md)
+[`HDWallet`](/api/Account/HDWallet)
 
 #### Defined in
 
@@ -206,7 +206,7 @@ ___
 
 ### fromSeed
 
-▸ **fromSeed**(`seed`): [`HDWallet`](/api/Account/HDWallet.md)
+▸ **fromSeed**(`seed`): [`HDWallet`](/api/Account/HDWallet)
 
 Create HDWallet instance from seed
 
@@ -218,7 +218,7 @@ Create HDWallet instance from seed
 
 #### Returns
 
-[`HDWallet`](/api/Account/HDWallet.md)
+[`HDWallet`](/api/Account/HDWallet)
 
 A new instance of HDWallet
 

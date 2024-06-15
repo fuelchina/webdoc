@@ -126,7 +126,7 @@ expect(value.toHex()).toEqual(toHex(1337));
 
 完整示例，请参阅：
 
-- [使用生成的类型](./using-generated-types.md)
+- [使用生成的类型](./using-generated-types)
 
 ## `fuels dev`
 
@@ -162,7 +162,7 @@ npx fuels@{{fuels}} help typegen
 
 更多信息，请查看：
 
-- [从 ABI 生成类型](./generating-types.md)
+- [从 ABI 生成类型](./generating-types)
 
 ## `fuels versions`
 
@@ -187,18 +187,18 @@ npx fuels@{{fuels}} versions
 
 ## `fuels forc`
 
-`forc` 二进制文件的简单[包装器](./binaries.md)。
+`forc` 二进制文件的简单[包装器](./binaries)。
 
 也请查看：
 
-- [内置二进制文件](./binaries.md)
+- [内置二进制文件](./binaries)
 - [`forc` 文档](https://docs.fuel.network/docs/forc/commands/)
 
 ## `fuels core`
 
-`fuel-core` 二进制文件的简单[包装器](./binaries.md)。
+`fuel-core` 二进制文件的简单[包装器](./binaries)。
 
 也请查看：
 
-- [内置二进制文件](./binaries.md)
+- [内置二进制文件](./binaries)
 - [`fuel-core` 文档](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)

@@ -1,20 +1,20 @@
 # Class: MemoryStorage
 
-[@fuel-ts/account](/api/Account/index.md).MemoryStorage
+[@fuel-ts/account](/api/Account/index).MemoryStorage
 
 ## Implements
 
-- [`StorageAbstract`](/api/Account/StorageAbstract.md)
+- [`StorageAbstract`](/api/Account/StorageAbstract)
 
 ## Constructors
 
 ### constructor
 
-• **new MemoryStorage**(): [`MemoryStorage`](/api/Account/MemoryStorage.md)
+• **new MemoryStorage**(): [`MemoryStorage`](/api/Account/MemoryStorage)
 
 #### Returns
 
-[`MemoryStorage`](/api/Account/MemoryStorage.md)
+[`MemoryStorage`](/api/Account/MemoryStorage)
 
 ## Properties
 
@@ -38,7 +38,7 @@
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[clear](/api/Account/StorageAbstract.md#clear)
+[StorageAbstract](/api/Account/StorageAbstract).[clear](/api/Account/StorageAbstract.md#clear)
 
 #### Defined in
 
@@ -68,7 +68,7 @@ ___
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[getItem](/api/Account/StorageAbstract.md#getitem)
+[StorageAbstract](/api/Account/StorageAbstract).[getItem](/api/Account/StorageAbstract.md#getitem)
 
 #### Defined in
 
@@ -92,7 +92,7 @@ ___
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[removeItem](/api/Account/StorageAbstract.md#removeitem)
+[StorageAbstract](/api/Account/StorageAbstract).[removeItem](/api/Account/StorageAbstract.md#removeitem)
 
 #### Defined in
 
@@ -117,7 +117,7 @@ ___
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[setItem](/api/Account/StorageAbstract.md#setitem)
+[StorageAbstract](/api/Account/StorageAbstract).[setItem](/api/Account/StorageAbstract.md#setitem)
 
 #### Defined in
 

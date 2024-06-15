@@ -1,18 +1,18 @@
 # Class: Contract
 
-[@fuel-ts/program](/api/Program/index.md).Contract
+[@fuel-ts/program](/api/Program/index).Contract
 
 `Contract` provides a way to interact with the contract program type.
 
 ## Implements
 
-- [`AbstractContract`](/api/Interfaces/AbstractContract.md)
+- [`AbstractContract`](/api/Interfaces/AbstractContract)
 
 ## Constructors
 
 ### constructor
 
-• **new Contract**(`id`, `abi`, `accountOrProvider`): [`Contract`](/api/Program/Contract.md)
+• **new Contract**(`id`, `abi`, `accountOrProvider`): [`Contract`](/api/Program/Contract)
 
 Creates an instance of the Contract class.
 
@@ -20,13 +20,13 @@ Creates an instance of the Contract class.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The contract's address. |
+| `id` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The contract's address. |
 | `abi` | `JsonAbi` \| `Interface`&lt;`JsonAbi`\> | The contract's ABI (JSON ABI or Interface instance). |
-| `accountOrProvider` | [`Provider`](/api/Account/Provider.md) \| [`Account`](/api/Account/Account.md) | The account or provider for interaction. |
+| `accountOrProvider` | [`Provider`](/api/Account/Provider) \| [`Account`](/api/Account/Account) | The account or provider for interaction. |
 
 #### Returns
 
-[`Contract`](/api/Program/Contract.md)
+[`Contract`](/api/Program/Contract)
 
 #### Defined in
 
@@ -36,13 +36,13 @@ Creates an instance of the Contract class.
 
 ### account
 
-• **account**: ``null`` \| [`Account`](/api/Account/Account.md)
+• **account**: ``null`` \| [`Account`](/api/Account/Account)
 
 The account associated with the contract, if available.
 
 #### Implementation of
 
-[AbstractContract](/api/Interfaces/AbstractContract.md).[account](/api/Interfaces/AbstractContract.md#account)
+[AbstractContract](/api/Interfaces/AbstractContract).[account](/api/Interfaces/AbstractContract.md#account)
 
 #### Defined in
 
@@ -52,7 +52,7 @@ ___
 
 ### functions
 
-• **functions**: [`InvokeFunctions`](/api/Program/InvokeFunctions.md) = `{}`
+• **functions**: [`InvokeFunctions`](/api/Program/InvokeFunctions) = `{}`
 
 A collection of functions available on the contract.
 
@@ -64,13 +64,13 @@ ___
 
 ### id
 
-• **id**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+• **id**: [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 The unique contract identifier.
 
 #### Implementation of
 
-[AbstractContract](/api/Interfaces/AbstractContract.md).[id](/api/Interfaces/AbstractContract.md#id)
+[AbstractContract](/api/Interfaces/AbstractContract).[id](/api/Interfaces/AbstractContract.md#id)
 
 #### Defined in
 
@@ -86,7 +86,7 @@ The contract's ABI interface.
 
 #### Implementation of
 
-[AbstractContract](/api/Interfaces/AbstractContract.md).[interface](/api/Interfaces/AbstractContract.md#interface)
+[AbstractContract](/api/Interfaces/AbstractContract).[interface](/api/Interfaces/AbstractContract.md#interface)
 
 #### Defined in
 
@@ -96,13 +96,13 @@ ___
 
 ### provider
 
-• **provider**: [`Provider`](/api/Account/Provider.md)
+• **provider**: [`Provider`](/api/Account/Provider)
 
 The provider for interacting with the contract.
 
 #### Implementation of
 
-[AbstractContract](/api/Interfaces/AbstractContract.md).[provider](/api/Interfaces/AbstractContract.md#provider)
+[AbstractContract](/api/Interfaces/AbstractContract).[provider](/api/Interfaces/AbstractContract.md#provider)
 
 #### Defined in
 
@@ -112,7 +112,7 @@ The provider for interacting with the contract.
 
 ### buildFunction
 
-▸ **buildFunction**(`func`): [`InvokeFunction`](/api/Program/InvokeFunction.md)&lt;`any`[], `any`\>
+▸ **buildFunction**(`func`): [`InvokeFunction`](/api/Program/InvokeFunction)&lt;`any`[], `any`\>
 
 Build a function invocation scope for the provided function fragment.
 
@@ -124,7 +124,7 @@ Build a function invocation scope for the provided function fragment.
 
 #### Returns
 
-[`InvokeFunction`](/api/Program/InvokeFunction.md)&lt;`any`[], `any`\>
+[`InvokeFunction`](/api/Program/InvokeFunction)&lt;`any`[], `any`\>
 
 A function that creates a FunctionInvocationScope.
 
@@ -160,7 +160,7 @@ ___
 
 ### multiCall
 
-▸ **multiCall**(`calls`): [`MultiCallInvocationScope`](/api/Program/MultiCallInvocationScope.md)&lt;`any`\>
+▸ **multiCall**(`calls`): [`MultiCallInvocationScope`](/api/Program/MultiCallInvocationScope)&lt;`any`\>
 
 Create a multi-call invocation scope for the provided function invocation scopes.
 
@@ -168,11 +168,11 @@ Create a multi-call invocation scope for the provided function invocation scopes
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `calls` | [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`any`[], `any`\>[] | An array of FunctionInvocationScopes to execute in a batch. |
+| `calls` | [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`any`[], `any`\>[] | An array of FunctionInvocationScopes to execute in a batch. |
 
 #### Returns
 
-[`MultiCallInvocationScope`](/api/Program/MultiCallInvocationScope.md)&lt;`any`\>
+[`MultiCallInvocationScope`](/api/Program/MultiCallInvocationScope)&lt;`any`\>
 
 A MultiCallInvocationScope instance.
 

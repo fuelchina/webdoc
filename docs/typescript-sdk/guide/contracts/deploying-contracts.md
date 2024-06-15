@@ -25,7 +25,7 @@
 
 ## 4. 部署合约
 
-初始化一个 [`ContractFactory`](../../api/Contract/ContractFactory.md) ，包含字节码、ABI和钱包。部署契约并使用它的方法。
+初始化一个 [`ContractFactory`](../../api/Contract/ContractFactory) ，包含字节码、ABI和钱包。部署契约并使用它的方法。
 
 <!-- <<< ../../docs-snippets/src/guide/contracts/deploying-contracts.test.ts#contract-setup-3{ts:line-numbers} -->
 
@@ -34,4 +34,4 @@
 现在合约已部署，您可以与其进行交互。在以下步骤中，您将了解如何执行合约调用。
 <!-- <<< ../../docs-snippets/src/guide/contracts/deploying-contracts.test.ts#contract-setup-4{ts:line-numbers} -->
 
-要更全面地了解 TypeScript 支持的 Fuel 用法，请了解如何 [从ABI生成类型](../fuels-cli/generating-types.md)
+要更全面地了解 TypeScript 支持的 Fuel 用法，请了解如何 [从ABI生成类型](../fuels-cli/generating-types)

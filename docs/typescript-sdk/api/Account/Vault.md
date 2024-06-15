@@ -1,6 +1,6 @@
 # Class: Vault&lt;TOptions\>
 
-[@fuel-ts/account](/api/Account/index.md).Vault
+[@fuel-ts/account](/api/Account/index).Vault
 
 ## Type parameters
 
@@ -10,14 +10,14 @@
 
 ## Implemented by
 
-- [`MnemonicVault`](/api/Account/MnemonicVault.md)
-- [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)
+- [`MnemonicVault`](/api/Account/MnemonicVault)
+- [`PrivateKeyVault`](/api/Account/PrivateKeyVault)
 
 ## Constructors
 
 ### constructor
 
-• **new Vault**&lt;`TOptions`\>(`_options`): [`Vault`](/api/Account/Vault.md)&lt;`TOptions`\>
+• **new Vault**&lt;`TOptions`\>(`_options`): [`Vault`](/api/Account/Vault)&lt;`TOptions`\>
 
 #### Type parameters
 
@@ -33,7 +33,7 @@
 
 #### Returns
 
-[`Vault`](/api/Account/Vault.md)&lt;`TOptions`\>
+[`Vault`](/api/Account/Vault)&lt;`TOptions`\>
 
 #### Defined in
 
@@ -73,7 +73,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `_address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `_address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
@@ -101,17 +101,17 @@ ___
 
 ### getWallet
 
-▸ **getWallet**(`_address`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **getWallet**(`_address`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `_address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Defined in
 

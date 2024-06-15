@@ -1,6 +1,6 @@
 # Class: InvocationResult&lt;T\>
 
-[@fuel-ts/program](/api/Program/index.md).InvocationResult
+[@fuel-ts/program](/api/Program/index).InvocationResult
 
 Represents the result of a function invocation, with decoded logs and gas usage.
 
@@ -14,15 +14,15 @@ Represents the result of a function invocation, with decoded logs and gas usage.
 
 - **`InvocationResult`**
 
-  ↳ [`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)
+  ↳ [`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)
 
-  ↳ [`InvocationCallResult`](/api/Program/InvocationCallResult.md)
+  ↳ [`InvocationCallResult`](/api/Program/InvocationCallResult)
 
 ## Constructors
 
 ### constructor
 
-• **new InvocationResult**&lt;`T`\>(`funcScopes`, `callResult`, `isMultiCall`): [`InvocationResult`](/api/Program/InvocationResult.md)&lt;`T`\>
+• **new InvocationResult**&lt;`T`\>(`funcScopes`, `callResult`, `isMultiCall`): [`InvocationResult`](/api/Program/InvocationResult)&lt;`T`\>
 
 Constructs an instance of InvocationResult.
 
@@ -42,7 +42,7 @@ Constructs an instance of InvocationResult.
 
 #### Returns
 
-[`InvocationResult`](/api/Program/InvocationResult.md)&lt;`T`\>
+[`InvocationResult`](/api/Program/InvocationResult)&lt;`T`\>
 
 #### Defined in
 

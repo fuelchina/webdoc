@@ -1,21 +1,21 @@
 # Class: StorageAbstract
 
-[@fuel-ts/account](/api/Account/index.md).StorageAbstract
+[@fuel-ts/account](/api/Account/index).StorageAbstract
 
 ## Implemented by
 
-- [`LocalStorage`](/api/Account/LocalStorage.md)
-- [`MemoryStorage`](/api/Account/MemoryStorage.md)
+- [`LocalStorage`](/api/Account/LocalStorage)
+- [`MemoryStorage`](/api/Account/MemoryStorage)
 
 ## Constructors
 
 ### constructor
 
-• **new StorageAbstract**(): [`StorageAbstract`](/api/Account/StorageAbstract.md)
+• **new StorageAbstract**(): [`StorageAbstract`](/api/Account/StorageAbstract)
 
 #### Returns
 
-[`StorageAbstract`](/api/Account/StorageAbstract.md)
+[`StorageAbstract`](/api/Account/StorageAbstract)
 
 ## Methods
 

@@ -9,11 +9,11 @@ Fuel 工具链由几个组件组成。
 
 ## Sway 语言服务器 (`forc-lsp`)
 
-Sway 语言服务器 `forc-lsp` 用于向 IDE 暴露功能。[安装说明](../lsp/installation.md)。
+Sway 语言服务器 `forc-lsp` 用于向 IDE 暴露功能。[安装说明](../lsp/installation)。
 
 ## Sway 格式化器 (`forc-fmt`)
 
-提供了一个官方的格式化器 `forc-fmt`。[安装说明](./getting_started.md)。你可以使用以下命令手动运行：
+提供了一个官方的格式化器 `forc-fmt`。[安装说明](./getting_started)。你可以使用以下命令手动运行：
 
 ```sh
 forc fmt

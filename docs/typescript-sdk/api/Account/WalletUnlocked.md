@@ -1,12 +1,12 @@
 # Class: WalletUnlocked
 
-[@fuel-ts/account](/api/Account/index.md).WalletUnlocked
+[@fuel-ts/account](/api/Account/index).WalletUnlocked
 
 `WalletUnlocked` provides the functionalities for an unlocked wallet.
 
 ## Hierarchy
 
-- [`BaseWalletUnlocked`](/api/Account/BaseWalletUnlocked.md)
+- [`BaseWalletUnlocked`](/api/Account/BaseWalletUnlocked)
 
   ↳ **`WalletUnlocked`**
 
@@ -14,7 +14,7 @@
 
 ### constructor
 
-• **new WalletUnlocked**(`privateKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+• **new WalletUnlocked**(`privateKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Creates a new BaseWalletUnlocked instance.
 
@@ -23,15 +23,15 @@ Creates a new BaseWalletUnlocked instance.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `privateKey` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The private key of the wallet. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[constructor](/api/Account/BaseWalletUnlocked.md#constructor)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[constructor](/api/Account/BaseWalletUnlocked.md#constructor)
 
 #### Defined in
 
@@ -41,11 +41,11 @@ Creates a new BaseWalletUnlocked instance.
 
 ### \_connector
 
-• `Protected` `Optional` **\_connector**: [`FuelConnector`](/api/Account/FuelConnector.md)
+• `Protected` `Optional` **\_connector**: [`FuelConnector`](/api/Account/FuelConnector)
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[_connector](/api/Account/BaseWalletUnlocked.md#_connector)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[_connector](/api/Account/BaseWalletUnlocked.md#_connector)
 
 #### Defined in
 
@@ -55,13 +55,13 @@ ___
 
 ### \_provider
 
-• `Protected` `Optional` **\_provider**: [`Provider`](/api/Account/Provider.md)
+• `Protected` `Optional` **\_provider**: [`Provider`](/api/Account/Provider)
 
 The provider used to interact with the network.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[_provider](/api/Account/BaseWalletUnlocked.md#_provider)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[_provider](/api/Account/BaseWalletUnlocked.md#_provider)
 
 #### Defined in
 
@@ -71,13 +71,13 @@ ___
 
 ### address
 
-• `Readonly` **address**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+• `Readonly` **address**: [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 The address associated with the account.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[address](/api/Account/BaseWalletUnlocked.md#address)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[address](/api/Account/BaseWalletUnlocked.md#address)
 
 #### Defined in
 
@@ -87,21 +87,21 @@ ___
 
 ### signer
 
-• **signer**: () => [`Signer`](/api/Account/Signer.md)
+• **signer**: () => [`Signer`](/api/Account/Signer)
 
 #### Type declaration
 
-▸ (): [`Signer`](/api/Account/Signer.md)
+▸ (): [`Signer`](/api/Account/Signer)
 
 A function that returns the wallet's signer.
 
 ##### Returns
 
-[`Signer`](/api/Account/Signer.md)
+[`Signer`](/api/Account/Signer)
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[signer](/api/Account/BaseWalletUnlocked.md#signer)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[signer](/api/Account/BaseWalletUnlocked.md#signer)
 
 #### Defined in
 
@@ -117,7 +117,7 @@ Default HDWallet path.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[defaultPath](/api/Account/BaseWalletUnlocked.md#defaultpath)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[defaultPath](/api/Account/BaseWalletUnlocked.md#defaultpath)
 
 #### Defined in
 
@@ -149,7 +149,7 @@ ___
 
 ### provider
 
-• `get` **provider**(): [`Provider`](/api/Account/Provider.md)
+• `get` **provider**(): [`Provider`](/api/Account/Provider)
 
 The provider used to interact with the network.
 
@@ -159,7 +159,7 @@ The provider used to interact with the network.
 
 #### Returns
 
-[`Provider`](/api/Account/Provider.md)
+[`Provider`](/api/Account/Provider)
 
 A Provider instance.
 
@@ -179,7 +179,7 @@ Sets the provider for the account.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `provider` | [`Provider`](/api/Account/Provider.md) | A Provider instance. |
+| `provider` | [`Provider`](/api/Account/Provider) | A Provider instance. |
 
 #### Returns
 
@@ -217,7 +217,7 @@ BaseWalletUnlocked.publicKey
 
 ### connect
 
-▸ **connect**(`provider`): [`Provider`](/api/Account/Provider.md)
+▸ **connect**(`provider`): [`Provider`](/api/Account/Provider)
 
 Changes the provider connection for the account.
 
@@ -225,17 +225,17 @@ Changes the provider connection for the account.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `provider` | [`Provider`](/api/Account/Provider.md) | A Provider instance. |
+| `provider` | [`Provider`](/api/Account/Provider) | A Provider instance. |
 
 #### Returns
 
-[`Provider`](/api/Account/Provider.md)
+[`Provider`](/api/Account/Provider)
 
 The updated Provider instance.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[connect](/api/Account/BaseWalletUnlocked.md#connect)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[connect](/api/Account/BaseWalletUnlocked.md#connect)
 
 #### Defined in
 
@@ -253,7 +253,7 @@ A helper that creates a transfer transaction request and returns it.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the destination. |
+| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the destination. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of the coins to transfer. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The transaction parameters (gasLimit, tip, maturity, maxFee, witnessLimit). |
@@ -266,7 +266,7 @@ A promise that resolves to the prepared transaction request.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[createTransfer](/api/Account/BaseWalletUnlocked.md#createtransfer)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[createTransfer](/api/Account/BaseWalletUnlocked.md#createtransfer)
 
 #### Defined in
 
@@ -290,7 +290,7 @@ ___
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[encrypt](/api/Account/BaseWalletUnlocked.md#encrypt)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[encrypt](/api/Account/BaseWalletUnlocked.md#encrypt)
 
 #### Defined in
 
@@ -325,7 +325,7 @@ A promise that resolves when the resources are added to the transaction.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[fund](/api/Account/BaseWalletUnlocked.md#fund)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[fund](/api/Account/BaseWalletUnlocked.md#fund)
 
 #### Defined in
 
@@ -353,7 +353,7 @@ A promise that resolves to the balance amount.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[getBalance](/api/Account/BaseWalletUnlocked.md#getbalance)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[getBalance](/api/Account/BaseWalletUnlocked.md#getbalance)
 
 #### Defined in
 
@@ -375,7 +375,7 @@ A promise that resolves to an array of Coins and their quantities.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[getBalances](/api/Account/BaseWalletUnlocked.md#getbalances)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[getBalances](/api/Account/BaseWalletUnlocked.md#getbalances)
 
 #### Defined in
 
@@ -403,7 +403,7 @@ A promise that resolves to an array of Coins.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[getCoins](/api/Account/BaseWalletUnlocked.md#getcoins)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[getCoins](/api/Account/BaseWalletUnlocked.md#getcoins)
 
 #### Defined in
 
@@ -425,7 +425,7 @@ A promise that resolves to an array of Messages.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[getMessages](/api/Account/BaseWalletUnlocked.md#getmessages)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[getMessages](/api/Account/BaseWalletUnlocked.md#getmessages)
 
 #### Defined in
 
@@ -454,7 +454,7 @@ A promise that resolves to an array of Resources.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[getResourcesToSpend](/api/Account/BaseWalletUnlocked.md#getresourcestospend)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[getResourcesToSpend](/api/Account/BaseWalletUnlocked.md#getresourcestospend)
 
 #### Defined in
 
@@ -464,13 +464,13 @@ ___
 
 ### lock
 
-▸ **lock**(): [`WalletLocked`](/api/Account/WalletLocked.md)
+▸ **lock**(): [`WalletLocked`](/api/Account/WalletLocked)
 
 Locks the wallet and returns an instance of WalletLocked.
 
 #### Returns
 
-[`WalletLocked`](/api/Account/WalletLocked.md)
+[`WalletLocked`](/api/Account/WalletLocked)
 
 An instance of WalletLocked.
 
@@ -500,7 +500,7 @@ The populated transaction request.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[populateTransactionWitnessesSignature](/api/Account/BaseWalletUnlocked.md#populatetransactionwitnessessignature)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[populateTransactionWitnessesSignature](/api/Account/BaseWalletUnlocked.md#populatetransactionwitnessessignature)
 
 #### Defined in
 
@@ -510,7 +510,7 @@ ___
 
 ### sendTransaction
 
-▸ **sendTransaction**(`transactionRequestLike`, `«destructured»?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **sendTransaction**(`transactionRequestLike`, `«destructured»?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Populates the witness signature for a transaction and sends it to the network using `provider.sendTransaction`.
 
@@ -523,13 +523,13 @@ Populates the witness signature for a transaction and sends it to the network us
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the TransactionResponse object.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[sendTransaction](/api/Account/BaseWalletUnlocked.md#sendtransaction)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[sendTransaction](/api/Account/BaseWalletUnlocked.md#sendtransaction)
 
 #### Defined in
 
@@ -557,7 +557,7 @@ A promise that resolves to the signature as a ECDSA 64 bytes string.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[signMessage](/api/Account/BaseWalletUnlocked.md#signmessage)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[signMessage](/api/Account/BaseWalletUnlocked.md#signmessage)
 
 #### Defined in
 
@@ -585,7 +585,7 @@ A promise that resolves to the signature as a ECDSA 64 bytes string.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[signTransaction](/api/Account/BaseWalletUnlocked.md#signtransaction)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[signTransaction](/api/Account/BaseWalletUnlocked.md#signtransaction)
 
 #### Defined in
 
@@ -614,7 +614,7 @@ A promise that resolves to the CallResult object.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[simulateTransaction](/api/Account/BaseWalletUnlocked.md#simulatetransaction)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[simulateTransaction](/api/Account/BaseWalletUnlocked.md#simulatetransaction)
 
 #### Defined in
 
@@ -624,7 +624,7 @@ ___
 
 ### transfer
 
-▸ **transfer**(`destination`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **transfer**(`destination`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Transfers coins to a destination address.
 
@@ -632,20 +632,20 @@ Transfers coins to a destination address.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the destination. |
+| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the destination. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of the coins to transfer. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The transaction parameters (gasLimit, maturity). |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[transfer](/api/Account/BaseWalletUnlocked.md#transfer)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[transfer](/api/Account/BaseWalletUnlocked.md#transfer)
 
 #### Defined in
 
@@ -655,7 +655,7 @@ ___
 
 ### transferToContract
 
-▸ **transferToContract**(`contractId`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **transferToContract**(`contractId`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Transfers coins to a contract address.
 
@@ -663,20 +663,20 @@ Transfers coins to a contract address.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `contractId` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the contract. |
+| `contractId` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the contract. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of the coins to transfer. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The optional transaction parameters. |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[transferToContract](/api/Account/BaseWalletUnlocked.md#transfertocontract)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[transferToContract](/api/Account/BaseWalletUnlocked.md#transfertocontract)
 
 #### Defined in
 
@@ -686,7 +686,7 @@ ___
 
 ### withdrawToBaseLayer
 
-▸ **withdrawToBaseLayer**(`recipient`, `amount`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **withdrawToBaseLayer**(`recipient`, `amount`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Withdraws an amount of the base asset to the base chain.
 
@@ -694,19 +694,19 @@ Withdraws an amount of the base asset to the base chain.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `recipient` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | Address of the recipient on the base chain. |
+| `recipient` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | Address of the recipient on the base chain. |
 | `amount` | `BigNumberish` | Amount of base asset. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The optional transaction parameters. |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 
 #### Inherited from
 
-[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked.md).[withdrawToBaseLayer](/api/Account/BaseWalletUnlocked.md#withdrawtobaselayer)
+[BaseWalletUnlocked](/api/Account/BaseWalletUnlocked).[withdrawToBaseLayer](/api/Account/BaseWalletUnlocked.md#withdrawtobaselayer)
 
 #### Defined in
 
@@ -716,7 +716,7 @@ ___
 
 ### fromEncryptedJson
 
-▸ **fromEncryptedJson**(`jsonWallet`, `password`, `provider?`): `Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked.md)\>
+▸ **fromEncryptedJson**(`jsonWallet`, `password`, `provider?`): `Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked)\>
 
 Create a Wallet Unlocked from an encrypted JSON.
 
@@ -726,11 +726,11 @@ Create a Wallet Unlocked from an encrypted JSON.
 | :------ | :------ | :------ |
 | `jsonWallet` | `string` | The encrypted JSON keystore. |
 | `password` | `string` | The password to decrypt the JSON. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-`Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked.md)\>
+`Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked)\>
 
 An unlocked wallet instance.
 
@@ -742,7 +742,7 @@ ___
 
 ### fromExtendedKey
 
-▸ **fromExtendedKey**(`extendedKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **fromExtendedKey**(`extendedKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet Unlocked from an extended key.
 
@@ -751,11 +751,11 @@ Create a Wallet Unlocked from an extended key.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `extendedKey` | `string` | The extended key. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An instance of WalletUnlocked.
 
@@ -767,7 +767,7 @@ ___
 
 ### fromMnemonic
 
-▸ **fromMnemonic**(`mnemonic`, `path?`, `passphrase?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **fromMnemonic**(`mnemonic`, `path?`, `passphrase?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet Unlocked from a mnemonic phrase.
 
@@ -778,11 +778,11 @@ Create a Wallet Unlocked from a mnemonic phrase.
 | `mnemonic` | `string` | The mnemonic phrase. |
 | `path?` | `string` | The derivation path (optional). |
 | `passphrase?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The passphrase for the mnemonic (optional). |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An instance of WalletUnlocked.
 
@@ -794,7 +794,7 @@ ___
 
 ### fromSeed
 
-▸ **fromSeed**(`seed`, `path?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **fromSeed**(`seed`, `path?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet Unlocked from a seed.
 
@@ -804,11 +804,11 @@ Create a Wallet Unlocked from a seed.
 | :------ | :------ | :------ |
 | `seed` | `string` | The seed phrase. |
 | `path?` | `string` | The derivation path (optional). |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An instance of WalletUnlocked.
 
@@ -820,7 +820,7 @@ ___
 
 ### generate
 
-▸ **generate**(`generateOptions?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **generate**(`generateOptions?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Generate a new Wallet Unlocked with a random key pair.
 
@@ -828,11 +828,11 @@ Generate a new Wallet Unlocked with a random key pair.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `generateOptions?` | [`GenerateOptions`](/api/Account/GenerateOptions.md) | Options to customize the generation process (optional). |
+| `generateOptions?` | [`GenerateOptions`](/api/Account/GenerateOptions) | Options to customize the generation process (optional). |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An instance of WalletUnlocked.
 

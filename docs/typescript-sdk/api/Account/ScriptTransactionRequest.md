@@ -1,12 +1,12 @@
 # Class: ScriptTransactionRequest
 
-[@fuel-ts/account](/api/Account/index.md).ScriptTransactionRequest
+[@fuel-ts/account](/api/Account/index).ScriptTransactionRequest
 
 `ScriptTransactionRequest` provides functionalities for creating a transaction request that uses a script.
 
 ## Hierarchy
 
-- [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md)
+- [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest)
 
   ↳ **`ScriptTransactionRequest`**
 
@@ -14,7 +14,7 @@
 
 ### constructor
 
-• **new ScriptTransactionRequest**(`scriptTransactionRequestLike?`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+• **new ScriptTransactionRequest**(`scriptTransactionRequestLike?`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Constructor for `ScriptTransactionRequest`.
 
@@ -26,11 +26,11 @@ Constructor for `ScriptTransactionRequest`.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 #### Overrides
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[constructor](/api/Account/BaseTransactionRequest.md#constructor)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[constructor](/api/Account/BaseTransactionRequest.md#constructor)
 
 #### Defined in
 
@@ -68,7 +68,7 @@ List of inputs
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[inputs](/api/Account/BaseTransactionRequest.md#inputs)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[inputs](/api/Account/BaseTransactionRequest.md#inputs)
 
 #### Defined in
 
@@ -84,7 +84,7 @@ Block until which tx cannot be included
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[maturity](/api/Account/BaseTransactionRequest.md#maturity)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[maturity](/api/Account/BaseTransactionRequest.md#maturity)
 
 #### Defined in
 
@@ -100,7 +100,7 @@ The maximum fee payable by this transaction using BASE_ASSET.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[maxFee](/api/Account/BaseTransactionRequest.md#maxfee)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[maxFee](/api/Account/BaseTransactionRequest.md#maxfee)
 
 #### Defined in
 
@@ -116,7 +116,7 @@ List of outputs
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[outputs](/api/Account/BaseTransactionRequest.md#outputs)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[outputs](/api/Account/BaseTransactionRequest.md#outputs)
 
 #### Defined in
 
@@ -156,7 +156,7 @@ Gas price for transaction
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[tip](/api/Account/BaseTransactionRequest.md#tip)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[tip](/api/Account/BaseTransactionRequest.md#tip)
 
 #### Defined in
 
@@ -172,7 +172,7 @@ Type of the transaction
 
 #### Overrides
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[type](/api/Account/BaseTransactionRequest.md#type)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[type](/api/Account/BaseTransactionRequest.md#type)
 
 #### Defined in
 
@@ -188,7 +188,7 @@ The maximum amount of witness data allowed for the transaction
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[witnessLimit](/api/Account/BaseTransactionRequest.md#witnesslimit)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[witnessLimit](/api/Account/BaseTransactionRequest.md#witnesslimit)
 
 #### Defined in
 
@@ -204,7 +204,7 @@ List of witnesses
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[witnesses](/api/Account/BaseTransactionRequest.md#witnesses)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[witnesses](/api/Account/BaseTransactionRequest.md#witnesses)
 
 #### Defined in
 
@@ -214,7 +214,7 @@ List of witnesses
 
 ### addAccountWitnesses
 
-▸ **addAccountWitnesses**(`account`): `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>
+▸ **addAccountWitnesses**(`account`): `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>
 
 Helper function to add an external signature to the transaction.
 
@@ -222,17 +222,17 @@ Helper function to add an external signature to the transaction.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `account` | [`Account`](/api/Account/Account.md) \| [`Account`](/api/Account/Account.md)[] | The account/s to sign to the transaction. |
+| `account` | [`Account`](/api/Account/Account) \| [`Account`](/api/Account/Account)[] | The account/s to sign to the transaction. |
 
 #### Returns
 
-`Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>
+`Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>
 
 The transaction with the signature witness added.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addAccountWitnesses](/api/Account/BaseTransactionRequest.md#addaccountwitnesses)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addAccountWitnesses](/api/Account/BaseTransactionRequest.md#addaccountwitnesses)
 
 #### Defined in
 
@@ -259,7 +259,7 @@ Adds a change output to the transaction.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addChangeOutput](/api/Account/BaseTransactionRequest.md#addchangeoutput)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addChangeOutput](/api/Account/BaseTransactionRequest.md#addchangeoutput)
 
 #### Defined in
 
@@ -286,7 +286,7 @@ assetId, if one it was not added yet.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addCoinInput](/api/Account/BaseTransactionRequest.md#addcoininput)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addCoinInput](/api/Account/BaseTransactionRequest.md#addcoininput)
 
 #### Defined in
 
@@ -296,7 +296,7 @@ ___
 
 ### addCoinOutput
 
-▸ **addCoinOutput**(`to`, `amount`, `assetId`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **addCoinOutput**(`to`, `amount`, `assetId`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Adds a coin output to the transaction.
 
@@ -310,11 +310,11 @@ Adds a coin output to the transaction.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addCoinOutput](/api/Account/BaseTransactionRequest.md#addcoinoutput)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addCoinOutput](/api/Account/BaseTransactionRequest.md#addcoinoutput)
 
 #### Defined in
 
@@ -324,7 +324,7 @@ ___
 
 ### addCoinOutputs
 
-▸ **addCoinOutputs**(`to`, `quantities`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **addCoinOutputs**(`to`, `quantities`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Adds multiple coin outputs to the transaction.
 
@@ -337,11 +337,11 @@ Adds multiple coin outputs to the transaction.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addCoinOutputs](/api/Account/BaseTransactionRequest.md#addcoinoutputs)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addCoinOutputs](/api/Account/BaseTransactionRequest.md#addcoinoutputs)
 
 #### Defined in
 
@@ -351,7 +351,7 @@ ___
 
 ### addContractInputAndOutput
 
-▸ **addContractInputAndOutput**(`contract`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **addContractInputAndOutput**(`contract`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Adds a contract input and output to the transaction request.
 
@@ -363,7 +363,7 @@ Adds a contract input and output to the transaction request.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 The current instance of the `ScriptTransactionRequest`.
 
@@ -392,7 +392,7 @@ asset against the message
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addMessageInput](/api/Account/BaseTransactionRequest.md#addmessageinput)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addMessageInput](/api/Account/BaseTransactionRequest.md#addmessageinput)
 
 #### Defined in
 
@@ -402,7 +402,7 @@ ___
 
 ### addResource
 
-▸ **addResource**(`resource`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **addResource**(`resource`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Adds a single resource to the transaction by adding a coin/message input and a
 change output for the related assetId, if one it was not added yet.
@@ -415,13 +415,13 @@ change output for the related assetId, if one it was not added yet.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 This transaction.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addResource](/api/Account/BaseTransactionRequest.md#addresource)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addResource](/api/Account/BaseTransactionRequest.md#addresource)
 
 #### Defined in
 
@@ -431,7 +431,7 @@ ___
 
 ### addResources
 
-▸ **addResources**(`resources`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **addResources**(`resources`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Adds multiple resources to the transaction by adding coin/message inputs and change
 outputs from the related assetIds.
@@ -444,13 +444,13 @@ outputs from the related assetIds.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 This transaction.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[addResources](/api/Account/BaseTransactionRequest.md#addresources)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[addResources](/api/Account/BaseTransactionRequest.md#addresources)
 
 #### Defined in
 
@@ -499,7 +499,7 @@ ___
 
 #### Overrides
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[calculateMaxGas](/api/Account/BaseTransactionRequest.md#calculatemaxgas)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[calculateMaxGas](/api/Account/BaseTransactionRequest.md#calculatemaxgas)
 
 #### Defined in
 
@@ -520,7 +520,7 @@ quantities array.
 | :------ | :------ | :------ |
 | `quantities` | [`CoinQuantity`](/api/Account/index.md#coinquantity)[] | CoinQuantity Array. |
 | `baseAssetId` | `string` | The base asset to fund the transaction. |
-| `resourcesOwner?` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | - |
+| `resourcesOwner?` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) | - |
 
 #### Returns
 
@@ -528,7 +528,7 @@ quantities array.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[fundWithFakeUtxos](/api/Account/BaseTransactionRequest.md#fundwithfakeutxos)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[fundWithFakeUtxos](/api/Account/BaseTransactionRequest.md#fundwithfakeutxos)
 
 #### Defined in
 
@@ -550,7 +550,7 @@ The base transaction details.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getBaseTransaction](/api/Account/BaseTransactionRequest.md#getbasetransaction)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getBaseTransaction](/api/Account/BaseTransactionRequest.md#getbasetransaction)
 
 #### Defined in
 
@@ -572,7 +572,7 @@ The change outputs.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getChangeOutputs](/api/Account/BaseTransactionRequest.md#getchangeoutputs)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getChangeOutputs](/api/Account/BaseTransactionRequest.md#getchangeoutputs)
 
 #### Defined in
 
@@ -594,7 +594,7 @@ The coin inputs.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getCoinInputs](/api/Account/BaseTransactionRequest.md#getcoininputs)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getCoinInputs](/api/Account/BaseTransactionRequest.md#getcoininputs)
 
 #### Defined in
 
@@ -616,7 +616,7 @@ The coin outputs.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getCoinOutputs](/api/Account/BaseTransactionRequest.md#getcoinoutputs)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getCoinOutputs](/api/Account/BaseTransactionRequest.md#getcoinoutputs)
 
 #### Defined in
 
@@ -639,7 +639,7 @@ CoinQuantity array.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getCoinOutputsQuantities](/api/Account/BaseTransactionRequest.md#getcoinoutputsquantities)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getCoinOutputsQuantities](/api/Account/BaseTransactionRequest.md#getcoinoutputsquantities)
 
 #### Defined in
 
@@ -703,7 +703,7 @@ Gets the Transaction Request by hashing the transaction.
 
 #### Overrides
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getTransactionId](/api/Account/BaseTransactionRequest.md#gettransactionid)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getTransactionId](/api/Account/BaseTransactionRequest.md#gettransactionid)
 
 #### Defined in
 
@@ -755,7 +755,7 @@ ___
 
 ### setData
 
-▸ **setData**(`abi`, `args`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **setData**(`abi`, `args`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 Sets the data for the transaction request.
 
@@ -768,7 +768,7 @@ Sets the data for the transaction request.
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 The current instance of the `ScriptTransactionRequest`.
 
@@ -817,7 +817,7 @@ ___
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[shiftPredicateData](/api/Account/BaseTransactionRequest.md#shiftpredicatedata)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[shiftPredicateData](/api/Account/BaseTransactionRequest.md#shiftpredicatedata)
 
 #### Defined in
 
@@ -840,7 +840,7 @@ The transaction as a JSON object.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[toJSON](/api/Account/BaseTransactionRequest.md#tojson)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[toJSON](/api/Account/BaseTransactionRequest.md#tojson)
 
 #### Defined in
 
@@ -862,7 +862,7 @@ The transaction script object.
 
 #### Overrides
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[toTransaction](/api/Account/BaseTransactionRequest.md#totransaction)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[toTransaction](/api/Account/BaseTransactionRequest.md#totransaction)
 
 #### Defined in
 
@@ -884,7 +884,7 @@ The transaction bytes.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[toTransactionBytes](/api/Account/BaseTransactionRequest.md#totransactionbytes)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[toTransactionBytes](/api/Account/BaseTransactionRequest.md#totransactionbytes)
 
 #### Defined in
 
@@ -908,7 +908,7 @@ ___
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[updatePredicateGasUsed](/api/Account/BaseTransactionRequest.md#updatepredicategasused)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[updatePredicateGasUsed](/api/Account/BaseTransactionRequest.md#updatepredicategasused)
 
 #### Defined in
 
@@ -939,7 +939,7 @@ If the witness does not exist.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[updateWitness](/api/Account/BaseTransactionRequest.md#updatewitness)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[updateWitness](/api/Account/BaseTransactionRequest.md#updatewitness)
 
 #### Defined in
 
@@ -957,7 +957,7 @@ Updates the witness for a given owner and signature.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address to get the coin input witness index for. |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address to get the coin input witness index for. |
 | `signature` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The signature to update the witness with. |
 
 #### Returns
@@ -966,7 +966,7 @@ Updates the witness for a given owner and signature.
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[updateWitnessByOwner](/api/Account/BaseTransactionRequest.md#updatewitnessbyowner)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[updateWitnessByOwner](/api/Account/BaseTransactionRequest.md#updatewitnessbyowner)
 
 #### Defined in
 
@@ -976,7 +976,7 @@ ___
 
 ### from
 
-▸ **from**(`obj`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+▸ **from**(`obj`): [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 #### Parameters
 
@@ -986,7 +986,7 @@ ___
 
 #### Returns
 
-[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 #### Defined in
 
@@ -1002,7 +1002,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `req` | [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest.md) |
+| `req` | [`BaseTransactionRequest`](/api/Account/BaseTransactionRequest) |
 
 #### Returns
 
@@ -1015,7 +1015,7 @@ ___
 
 #### Inherited from
 
-[BaseTransactionRequest](/api/Account/BaseTransactionRequest.md).[getPolicyMeta](/api/Account/BaseTransactionRequest.md#getpolicymeta)
+[BaseTransactionRequest](/api/Account/BaseTransactionRequest).[getPolicyMeta](/api/Account/BaseTransactionRequest.md#getpolicymeta)
 
 #### Defined in
 

@@ -1,6 +1,6 @@
 # Class: TransactionResponse
 
-[@fuel-ts/account](/api/Account/index.md).TransactionResponse
+[@fuel-ts/account](/api/Account/index).TransactionResponse
 
 Represents a response for a transaction.
 
@@ -8,7 +8,7 @@ Represents a response for a transaction.
 
 ### constructor
 
-• **new TransactionResponse**(`id`, `provider`, `abis?`): [`TransactionResponse`](/api/Account/TransactionResponse.md)
+• **new TransactionResponse**(`id`, `provider`, `abis?`): [`TransactionResponse`](/api/Account/TransactionResponse)
 
 Constructor for `TransactionResponse`.
 
@@ -17,12 +17,12 @@ Constructor for `TransactionResponse`.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | The transaction ID. |
-| `provider` | [`Provider`](/api/Account/Provider.md) | The provider. |
+| `provider` | [`Provider`](/api/Account/Provider) | The provider. |
 | `abis?` | [`JsonAbisFromAllCalls`](/api/Account/index.md#jsonabisfromallcalls) | - |
 
 #### Returns
 
-[`TransactionResponse`](/api/Account/TransactionResponse.md)
+[`TransactionResponse`](/api/Account/TransactionResponse)
 
 #### Defined in
 
@@ -87,7 +87,7 @@ ___
 
 ### provider
 
-• **provider**: [`Provider`](/api/Account/Provider.md)
+• **provider**: [`Provider`](/api/Account/Provider)
 
 Current provider
 
@@ -252,7 +252,7 @@ ___
 
 ### create
 
-▸ **create**(`id`, `provider`, `abis?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **create**(`id`, `provider`, `abis?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Async constructor for `TransactionResponse`. This method can be used to create
 an instance of `TransactionResponse` and wait for the transaction to be fetched
@@ -263,12 +263,12 @@ from the chain, ensuring that the `gqlTransaction` property is set.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | The transaction ID. |
-| `provider` | [`Provider`](/api/Account/Provider.md) | The provider. |
+| `provider` | [`Provider`](/api/Account/Provider) | The provider. |
 | `abis?` | [`JsonAbisFromAllCalls`](/api/Account/index.md#jsonabisfromallcalls) | - |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 #### Defined in
 

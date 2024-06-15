@@ -3,11 +3,11 @@
 
 智能合约与脚本或谓词没有太大的区别，因为它们都是通过[交易](https://fuellabs.github.io/fuel-specs/master/protocol/tx_format)部署到区块链上的一段字节码。智能合约与脚本或谓词的主要区别在于它们是可调用的且有状态的。换句话说，智能合约类似于部署了一些数据库状态的API。
 
-智能合约的接口，也称为合约，必须严格定义为[ABI声明](#the-abi-declaration)。参见[此合约](../examples/wallet_smart_contract.md)作为示例。
+智能合约的接口，也称为合约，必须严格定义为[ABI声明](#the-abi-declaration)。参见[此合约](../examples/wallet_smart_contract)作为示例。
 
 ## 智能合约的语法
 
-与任何Sway程序一样，程序始于声明其[程序类型](./index.md)。合约还必须定义或导入[ABI声明](#the-abi-declaration)并实现它。
+与任何Sway程序一样，程序始于声明其[程序类型](./index)。合约还必须定义或导入[ABI声明](#the-abi-declaration)并实现它。
 
 <!-- This section should explain best practices for ABIs -->
 <!-- ABI:example:start -->
@@ -60,7 +60,7 @@ use wallet_abi::Wallet;
 fn receive_funds();
 ```
 
-我们声明了一个名为`receive_funds`的ABI方法，当调用时，应将资金收到此钱包。请注意，我们只是定义了一个接口，所以没有_函数体_或函数的实现。我们只需要定义接口本身。在这方面，ABI声明类似于[特征声明](../advanced/traits.md)。这个特定的ABI方法不接受任何参数。
+我们声明了一个名为`receive_funds`的ABI方法，当调用时，应将资金收到此钱包。请注意，我们只是定义了一个接口，所以没有_函数体_或函数的实现。我们只需要定义接口本身。在这方面，ABI声明类似于[特征声明](../advanced/traits)。这个特定的ABI方法不接受任何参数。
 
 ---
 
@@ -116,13 +116,13 @@ impl Wallet for Contract {
 }
 ```
 
-你可能会再次注意到[特征](../advanced/traits.md)和ABI之间的相似之处。实际上，作为额外的奖励，你可以定义除ABI的接口表面之外的方法，就像一个特征。这些预先实现的ABI方法自动成为实现相应ABI的合约的一部分的接口。
+你可能会再次注意到[特征](../advanced/traits)和ABI之间的相似之处。实际上，作为额外的奖励，你可以定义除ABI的接口表面之外的方法，就像一个特征。这些预先实现的ABI方法自动成为实现相应ABI的合约的一部分的接口。
 
 请注意，ABI的上述实现遵循[检查、影响、交互](https://docs.soliditylang.org/en/v0.6.11/security-considerations.html#re-entrancy)模式。
 
 ## 从脚本中调用智能合约
 
->**注意**：在大多数情况下，应该使用[Rust SDK](../testing/testing-with-rust.md)或[TypeScript SDK](../frontend/typescript_sdk.md)来调用合约，这些SDK提供了更符合人体工程学的UI来与合约交互。但是，有时需要手动编写脚本来调用合约。
+>**注意**：在大多数情况下，应该使用[Rust SDK](../testing/testing-with-rust)或[TypeScript SDK](../frontend/typescript_sdk)来调用合约，这些SDK提供了更符合人体工程学的UI来与合约交互。但是，有时需要手动编写脚本来调用合约。
 
 现在我们已经定义了接口并为我们的合约实现了它，我们需要知道如何实际地_调用_我们的合约。让我们看一下合约调用：
 
