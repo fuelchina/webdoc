@@ -90,7 +90,7 @@ my-fuel-project
 
 ### `./fuels.config.ts`
 
-这是[`fuels` CLI](../fuels-cli/index.md)的配置文件，这个 CLI 和工具支持该项目的内部功能。它确保您的所有 Sway 程序持续编译并部署到本地的 Fuel 节点。您可以在[Fuels CLI 文档](../fuels-cli/config-file.md)中了解有关 `fuels.config.ts` 文件的更多信息。
+这是[`fuels` CLI](../fuels-cli/index)的配置文件，这个 CLI 和工具支持该项目的内部功能。它确保您的所有 Sway 程序持续编译并部署到本地的 Fuel 节点。您可以在[Fuels CLI 文档](../fuels-cli/config-file)中了解有关 `fuels.config.ts` 文件的更多信息。
 
 ### `./sway-programs/contract/src/main.sw`
 
@@ -234,7 +234,7 @@ impl Counter for Contract {
 
 - 现在您已经运行了一个基本的计数器 dApp，并且拥有了 `npm create fuels` 工作流，您可以开始使用 Fuel Stack 构建更复杂的 dApp。一个好的开始点是[Sway 应用程序仓库](https://github.com/FuelLabs/sway-applications)，那里有一些想法和参考代码。
 
-- 如果您想要将您的 dApp 部署到测试网，可以查看我们的[将 dApp 部署到测试网](./deploying-a-dapp-to-testnet.md)指南。
+- 如果您想要将您的 dApp 部署到测试网，可以查看我们的[将 dApp 部署到测试网](./deploying-a-dapp-to-testnet)指南。
 
 - 如果您有任何问题或需要帮助，请随时在[官方 Fuel 论坛](https://forum.fuel.network/)上与我们联系。
 

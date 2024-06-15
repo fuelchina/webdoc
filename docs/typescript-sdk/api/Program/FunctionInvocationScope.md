@@ -1,6 +1,6 @@
 # Class: FunctionInvocationScope&lt;TArgs, TReturn\>
 
-[@fuel-ts/program](/api/Program/index.md).FunctionInvocationScope
+[@fuel-ts/program](/api/Program/index).FunctionInvocationScope
 
 Represents a scope for invoking a function.
 
@@ -21,7 +21,7 @@ Represents a scope for invoking a function.
 
 ### constructor
 
-• **new FunctionInvocationScope**&lt;`TArgs`, `TReturn`\>(`program`, `func`, `args`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+• **new FunctionInvocationScope**&lt;`TArgs`, `TReturn`\>(`program`, `func`, `args`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Constructs an instance of FunctionInvocationScope.
 
@@ -42,7 +42,7 @@ Constructs an instance of FunctionInvocationScope.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 #### Overrides
 
@@ -180,7 +180,7 @@ ___
 
 ### transactionRequest
 
-• `Protected` **transactionRequest**: [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)
+• `Protected` **transactionRequest**: [`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)
 
 #### Inherited from
 
@@ -230,7 +230,7 @@ BaseInvocationScope.calls
 
 ### addCall
 
-▸ **addCall**(`funcScope`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **addCall**(`funcScope`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Adds a single call to the invocation scope.
 
@@ -242,7 +242,7 @@ Adds a single call to the invocation scope.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The current instance of the class.
 
@@ -258,7 +258,7 @@ ___
 
 ### addCalls
 
-▸ **addCalls**(`funcScopes`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **addCalls**(`funcScopes`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Adds multiple calls to the invocation scope.
 
@@ -270,7 +270,7 @@ Adds multiple calls to the invocation scope.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The current instance of the class.
 
@@ -286,7 +286,7 @@ ___
 
 ### addContracts
 
-▸ **addContracts**(`contracts`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **addContracts**(`contracts`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Adds contracts to the invocation scope.
 
@@ -294,11 +294,11 @@ Adds contracts to the invocation scope.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `contracts` | [`AbstractContract`](/api/Interfaces/AbstractContract.md)[] | An array of contracts to add. |
+| `contracts` | [`AbstractContract`](/api/Interfaces/AbstractContract)[] | An array of contracts to add. |
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The current instance of the class.
 
@@ -314,17 +314,17 @@ ___
 
 ### addSigners
 
-▸ **addSigners**(`signers`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **addSigners**(`signers`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `signers` | [`Account`](/api/Account/Account.md) \| [`Account`](/api/Account/Account.md)[] |
+| `signers` | [`Account`](/api/Account/Account) \| [`Account`](/api/Account/Account)[] |
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 #### Inherited from
 
@@ -338,7 +338,7 @@ ___
 
 ### addTransfer
 
-▸ **addTransfer**(`destination`, `amount`, `assetId`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **addTransfer**(`destination`, `amount`, `assetId`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Adds an asset transfer to an Account on the contract call transaction request.
 
@@ -346,13 +346,13 @@ Adds an asset transfer to an Account on the contract call transaction request.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the destination. |
+| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the destination. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId` | `string` | The asset ID of the coins to transfer. |
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The current instance of the class.
 
@@ -368,7 +368,7 @@ ___
 
 ### call
 
-▸ **call**&lt;`T`\>(): `Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)&lt;`T`, `void`\>\>
+▸ **call**&lt;`T`\>(): `Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)&lt;`T`, `void`\>\>
 
 Submits a transaction.
 
@@ -380,7 +380,7 @@ Submits a transaction.
 
 #### Returns
 
-`Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)&lt;`T`, `void`\>\>
+`Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)&lt;`T`, `void`\>\>
 
 The result of the function invocation.
 
@@ -396,7 +396,7 @@ ___
 
 ### callParams
 
-▸ **callParams**(`callParams`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **callParams**(`callParams`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Sets the call parameters for the function invocation.
 
@@ -412,7 +412,7 @@ If the function is not payable and forward is set.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The instance of FunctionInvocationScope.
 
@@ -444,7 +444,7 @@ ___
 
 ### dryRun
 
-▸ **dryRun**&lt;`T`\>(): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+▸ **dryRun**&lt;`T`\>(): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 Executes a transaction in dry run mode.
 
@@ -456,7 +456,7 @@ Executes a transaction in dry run mode.
 
 #### Returns
 
-`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 The result of the invocation call.
 
@@ -472,13 +472,13 @@ ___
 
 ### fundWithRequiredCoins
 
-▸ **fundWithRequiredCoins**(): `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>
+▸ **fundWithRequiredCoins**(): `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>
 
 Funds the transaction with the required coins.
 
 #### Returns
 
-`Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>
+`Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>
 
 The current instance of the class.
 
@@ -494,7 +494,7 @@ ___
 
 ### get
 
-▸ **get**&lt;`T`\>(): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+▸ **get**&lt;`T`\>(): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 #### Type parameters
 
@@ -504,7 +504,7 @@ ___
 
 #### Returns
 
-`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 #### Inherited from
 
@@ -536,11 +536,11 @@ ___
 
 ### getProvider
 
-▸ **getProvider**(): [`Provider`](/api/Account/Provider.md)
+▸ **getProvider**(): [`Provider`](/api/Account/Provider)
 
 #### Returns
 
-[`Provider`](/api/Account/Provider.md)
+[`Provider`](/api/Account/Provider)
 
 #### Inherited from
 
@@ -626,13 +626,13 @@ ___
 
 ### getTransactionRequest
 
-▸ **getTransactionRequest**(): `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>
+▸ **getTransactionRequest**(): `Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>
 
 Prepares and returns the transaction request object.
 
 #### Returns
 
-`Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest.md)\>
+`Promise`&lt;[`ScriptTransactionRequest`](/api/Account/ScriptTransactionRequest)\>
 
 The prepared transaction request.
 
@@ -668,7 +668,7 @@ ___
 
 ### setArguments
 
-▸ **setArguments**(`...args`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **setArguments**(`...args`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Sets the arguments for the function invocation.
 
@@ -680,7 +680,7 @@ Sets the arguments for the function invocation.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The instance of FunctionInvocationScope.
 
@@ -692,7 +692,7 @@ ___
 
 ### simulate
 
-▸ **simulate**&lt;`T`\>(): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+▸ **simulate**&lt;`T`\>(): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 Simulates a transaction.
 
@@ -704,7 +704,7 @@ Simulates a transaction.
 
 #### Returns
 
-`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 The result of the invocation call.
 
@@ -720,7 +720,7 @@ ___
 
 ### txParams
 
-▸ **txParams**(`txParams`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **txParams**(`txParams`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 Sets the transaction parameters.
 
@@ -732,7 +732,7 @@ Sets the transaction parameters.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 The current instance of the class.
 

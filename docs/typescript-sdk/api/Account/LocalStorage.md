@@ -1,16 +1,16 @@
 # Class: LocalStorage
 
-[@fuel-ts/account](/api/Account/index.md).LocalStorage
+[@fuel-ts/account](/api/Account/index).LocalStorage
 
 ## Implements
 
-- [`StorageAbstract`](/api/Account/StorageAbstract.md)
+- [`StorageAbstract`](/api/Account/StorageAbstract)
 
 ## Constructors
 
 ### constructor
 
-• **new LocalStorage**(`localStorage`): [`LocalStorage`](/api/Account/LocalStorage.md)
+• **new LocalStorage**(`localStorage`): [`LocalStorage`](/api/Account/LocalStorage)
 
 #### Parameters
 
@@ -20,7 +20,7 @@
 
 #### Returns
 
-[`LocalStorage`](/api/Account/LocalStorage.md)
+[`LocalStorage`](/api/Account/LocalStorage)
 
 #### Defined in
 
@@ -48,7 +48,7 @@
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[clear](/api/Account/StorageAbstract.md#clear)
+[StorageAbstract](/api/Account/StorageAbstract).[clear](/api/Account/StorageAbstract.md#clear)
 
 #### Defined in
 
@@ -72,7 +72,7 @@ ___
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[getItem](/api/Account/StorageAbstract.md#getitem)
+[StorageAbstract](/api/Account/StorageAbstract).[getItem](/api/Account/StorageAbstract.md#getitem)
 
 #### Defined in
 
@@ -96,7 +96,7 @@ ___
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[removeItem](/api/Account/StorageAbstract.md#removeitem)
+[StorageAbstract](/api/Account/StorageAbstract).[removeItem](/api/Account/StorageAbstract.md#removeitem)
 
 #### Defined in
 
@@ -121,7 +121,7 @@ ___
 
 #### Implementation of
 
-[StorageAbstract](/api/Account/StorageAbstract.md).[setItem](/api/Account/StorageAbstract.md#setitem)
+[StorageAbstract](/api/Account/StorageAbstract).[setItem](/api/Account/StorageAbstract.md#setitem)
 
 #### Defined in
 

@@ -1,6 +1,6 @@
 # Interface: GetTransferOperationsParams
 
-[@fuel-ts/account](/api/Account/index.md).GetTransferOperationsParams
+[@fuel-ts/account](/api/Account/index).GetTransferOperationsParams
 
 ## Hierarchy
 

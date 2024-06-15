@@ -1,6 +1,6 @@
 # Class: InvocationCallResult&lt;T\>
 
-[@fuel-ts/program](/api/Program/index.md).InvocationCallResult
+[@fuel-ts/program](/api/Program/index).InvocationCallResult
 
 Represents the result of an invocation call.
 
@@ -12,7 +12,7 @@ Represents the result of an invocation call.
 
 ## Hierarchy
 
-- [`InvocationResult`](/api/Program/InvocationResult.md)&lt;`T`\>
+- [`InvocationResult`](/api/Program/InvocationResult)&lt;`T`\>
 
   ↳ **`InvocationCallResult`**
 
@@ -20,7 +20,7 @@ Represents the result of an invocation call.
 
 ### constructor
 
-• **new InvocationCallResult**&lt;`T`\>(`funcScopes`, `callResult`, `isMultiCall`): [`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>
+• **new InvocationCallResult**&lt;`T`\>(`funcScopes`, `callResult`, `isMultiCall`): [`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>
 
 Constructs an instance of InvocationCallResult.
 
@@ -40,11 +40,11 @@ Constructs an instance of InvocationCallResult.
 
 #### Returns
 
-[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>
+[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>
 
 #### Overrides
 
-[InvocationResult](/api/Program/InvocationResult.md).[constructor](/api/Program/InvocationResult.md#constructor)
+[InvocationResult](/api/Program/InvocationResult).[constructor](/api/Program/InvocationResult.md#constructor)
 
 #### Defined in
 
@@ -68,7 +68,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[functionScopes](/api/Program/InvocationResult.md#functionscopes)
+[InvocationResult](/api/Program/InvocationResult).[functionScopes](/api/Program/InvocationResult.md#functionscopes)
 
 #### Defined in
 
@@ -82,7 +82,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[gasUsed](/api/Program/InvocationResult.md#gasused)
+[InvocationResult](/api/Program/InvocationResult).[gasUsed](/api/Program/InvocationResult.md#gasused)
 
 #### Defined in
 
@@ -96,7 +96,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[isMultiCall](/api/Program/InvocationResult.md#ismulticall)
+[InvocationResult](/api/Program/InvocationResult).[isMultiCall](/api/Program/InvocationResult.md#ismulticall)
 
 #### Defined in
 
@@ -110,7 +110,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[value](/api/Program/InvocationResult.md#value)
+[InvocationResult](/api/Program/InvocationResult).[value](/api/Program/InvocationResult.md#value)
 
 #### Defined in
 
@@ -132,7 +132,7 @@ The ABIs from all calls.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[getAbiFromAllCalls](/api/Program/InvocationResult.md#getabifromallcalls)
+[InvocationResult](/api/Program/InvocationResult).[getAbiFromAllCalls](/api/Program/InvocationResult.md#getabifromallcalls)
 
 #### Defined in
 
@@ -160,7 +160,7 @@ The decoded logs.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[getDecodedLogs](/api/Program/InvocationResult.md#getdecodedlogs)
+[InvocationResult](/api/Program/InvocationResult).[getDecodedLogs](/api/Program/InvocationResult.md#getdecodedlogs)
 
 #### Defined in
 
@@ -188,7 +188,7 @@ The decoded value.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[getDecodedValue](/api/Program/InvocationResult.md#getdecodedvalue)
+[InvocationResult](/api/Program/InvocationResult).[getDecodedValue](/api/Program/InvocationResult.md#getdecodedvalue)
 
 #### Defined in
 
@@ -198,7 +198,7 @@ ___
 
 ### build
 
-▸ **build**&lt;`T`\>(`funcScopes`, `callResult`, `isMultiCall`): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+▸ **build**&lt;`T`\>(`funcScopes`, `callResult`, `isMultiCall`): `Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 Builds an instance of InvocationCallResult.
 
@@ -218,7 +218,7 @@ Builds an instance of InvocationCallResult.
 
 #### Returns
 
-`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult.md)&lt;`T`\>\>
+`Promise`&lt;[`InvocationCallResult`](/api/Program/InvocationCallResult)&lt;`T`\>\>
 
 The invocation call result.
 

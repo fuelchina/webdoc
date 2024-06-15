@@ -6,7 +6,8 @@
 
 ## 构建并设置开发工作区
 
-有关安装和设置 Sway 工具链的说明，请参阅 [介绍](../introduction/index.md) 部分。
+有关安装和设置 Sway 工具链的说明，请参阅 [介绍](../introduction/index) 部分。
+
 
 ## 获取存储库
 

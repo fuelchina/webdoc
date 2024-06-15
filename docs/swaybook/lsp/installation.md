@@ -1,6 +1,6 @@
 # 安装
 
-Sway 语言服务器包含在 [`forc-lsp`](../forc/plugins/forc_lsp.md) 二进制文件中, 作为 [Fuel 工具链](../introduction/fuel_toolchain.md).的一部分进行安装。安装后，它可以与各种 IDE 一起使用。必须安装它才能使任何 IDE 插件正常工作。
+Sway 语言服务器包含在 [`forc-lsp`](../forc/plugins/forc_lsp) 二进制文件中, 作为 [Fuel 工具链](../introduction/fuel_toolchain).的一部分进行安装。安装后，它可以与各种 IDE 一起使用。必须安装它才能使任何 IDE 插件正常工作。
 
 > **注意**: 无需手动运行 `forc-lsp` (插件会自动启动它), 但是 `forc` 和 `forc-lsp` 必须在您的 `$PATH`中. 要检查 `forc` 是否在您的 `$PATH`中, 将`forc --help` 在终端中输入.
 

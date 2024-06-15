@@ -2,7 +2,7 @@
 
 ## Classes
 
-- [ContractFactory](/api/Contract/ContractFactory.md)
+- [ContractFactory](/api/Contract/ContractFactory)
 
 ## Type Aliases
 

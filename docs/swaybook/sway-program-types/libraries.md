@@ -5,7 +5,7 @@
 在Sway中，库是用于定义新的常见行为的文件。
 <!-- library:example:end -->
 
-最突出的例子是[Sway 标准库](../introduction/standard_library.md) 它对于使用 `forc new` 创建的所有 Forc 项目都是隐式可用的。
+最突出的例子是[Sway 标准库](../introduction/standard_library) 它对于使用 `forc new` 创建的所有 Forc 项目都是隐式可用的。
 
 ## 编写库
 
@@ -20,7 +20,7 @@ library;
 // library code
 ```
 
-学习库设计时可参考的一个不错的库是 [Sway 标准库](../introduction/standard_library.md)。 例如, 标准库提供了一个`enum Option<T>`的[实现](https://github.com/FuelLabs/sway/blob/master/sway-lib-std/src/option.sw)  这是一种通用类型，使用变体`Some(..)`表示值的存在或使用变体`None`表示值的不存在。 [实现`Option<T>`的Sway文件](https://github.com/FuelLabs/sway/blob/master/sway-lib-std/src/option.sw) 具有以下结构：
+学习库设计时可参考的一个不错的库是 [Sway 标准库](../introduction/standard_library)。 例如, 标准库提供了一个`enum Option<T>`的[实现](https://github.com/FuelLabs/sway/blob/master/sway-lib-std/src/option.sw)  这是一种通用类型，使用变体`Some(..)`表示值的存在或使用变体`None`表示值的不存在。 [实现`Option<T>`的Sway文件](https://github.com/FuelLabs/sway/blob/master/sway-lib-std/src/option.sw) 具有以下结构：
 
 - `library` 关键字:
 

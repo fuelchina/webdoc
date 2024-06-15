@@ -4,4 +4,4 @@ Forc stands for Fuel Orchestrator. Forc provides a variety of tools and commands
 
 If you are new to Forc, see the [Forc Project](https://docs.fuel.network/docs/sway/introduction/forc_project/) introduction section.
 
-For a comprehensive overview of the Forc CLI commands, see the [Commands](./commands/index.md) section.
+For a comprehensive overview of the Forc CLI commands, see the [Commands](./commands/index) section.

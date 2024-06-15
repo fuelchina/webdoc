@@ -1,6 +1,6 @@
 # Interface: GetTransactionSummaryFromRequestParams
 
-[@fuel-ts/account](/api/Account/index.md).GetTransactionSummaryFromRequestParams
+[@fuel-ts/account](/api/Account/index).GetTransactionSummaryFromRequestParams
 
 ## Properties
 
@@ -16,7 +16,7 @@ ___
 
 ### provider
 
-• **provider**: [`Provider`](/api/Account/Provider.md)
+• **provider**: [`Provider`](/api/Account/Provider)
 
 #### Defined in
 

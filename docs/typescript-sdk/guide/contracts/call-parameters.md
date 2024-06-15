@@ -9,7 +9,7 @@
 2. `gasLimit`
 <!-- call_params:example:end -->
 
-> **注意**: 调用合约时也可以设置交易参数。更多信息可参阅 [交易参数](../transactions/transaction-parameters.md).
+> **注意**: 调用合约时也可以设置交易参数。更多信息可参阅 [交易参数](../transactions/transaction-parameters).
 
 ## 前向参数
 
@@ -35,7 +35,7 @@
 
 ## 调用参数 `gasLimit` 与交易参数 `gasLimit`
 
-回调`gasLimit` 参数设置实际合约调用允许的最大 gas，而交易 `gasLimit` _(see [参见交易参数](../transactions/transaction-parameters.md))_ 设置整个交易允许的最大 gas，并限制 `gasLimit` 调用。 如果调用 `gasLimit` 设置为大于可用交易 gas 的值, 则将为合约调用执行分配整个可用交易 gas。
+回调`gasLimit` 参数设置实际合约调用允许的最大 gas，而交易 `gasLimit` _(see [参见交易参数](../transactions/transaction-parameters))_ 设置整个交易允许的最大 gas，并限制 `gasLimit` 调用。 如果调用 `gasLimit` 设置为大于可用交易 gas 的值, 则将为合约调用执行分配整个可用交易 gas。
 
 如果您没有为回调设置 `gasLimit` ，则交易 `gasLimit` 将被应用。
 

@@ -1,6 +1,6 @@
 # Interface: MintedAsset
 
-[@fuel-ts/account](/api/Account/index.md).MintedAsset
+[@fuel-ts/account](/api/Account/index).MintedAsset
 
 ## Properties
 

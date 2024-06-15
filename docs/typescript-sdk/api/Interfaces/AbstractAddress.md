@@ -1,6 +1,6 @@
 # Class: AbstractAddress
 
-[@fuel-ts/interfaces](/api/Interfaces/index.md).AbstractAddress
+[@fuel-ts/interfaces](/api/Interfaces/index).AbstractAddress
 
 ## Hierarchy
 
@@ -10,11 +10,11 @@
 
 ### constructor
 
-• **new AbstractAddress**(): [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+• **new AbstractAddress**(): [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 #### Returns
 
-[`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+[`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 ## Methods
 
@@ -26,7 +26,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `other` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `other` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 

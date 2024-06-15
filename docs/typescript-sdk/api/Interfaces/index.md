@@ -2,15 +2,15 @@
 
 ## Classes
 
-- [AbstractAccount](/api/Interfaces/AbstractAccount.md)
-- [AbstractAddress](/api/Interfaces/AbstractAddress.md)
-- [AbstractContract](/api/Interfaces/AbstractContract.md)
+- [AbstractAccount](/api/Interfaces/AbstractAccount)
+- [AbstractAddress](/api/Interfaces/AbstractAddress)
+- [AbstractContract](/api/Interfaces/AbstractContract)
 
 ## Type Aliases
 
 ### AddressLike
 
-Ƭ **AddressLike**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) \| [`AbstractAccount`](/api/Interfaces/AbstractAccount.md)
+Ƭ **AddressLike**: [`AbstractAddress`](/api/Interfaces/AbstractAddress) \| [`AbstractAccount`](/api/Interfaces/AbstractAccount)
 
 A simple type alias defined using the `type` keyword.
 
@@ -88,7 +88,7 @@ ___
 
 ### ContractIdLike
 
-Ƭ **ContractIdLike**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) \| [`AbstractContract`](/api/Interfaces/AbstractContract.md)
+Ƭ **ContractIdLike**: [`AbstractAddress`](/api/Interfaces/AbstractAddress) \| [`AbstractContract`](/api/Interfaces/AbstractContract)
 
 #### Defined in
 

@@ -1,6 +1,6 @@
 # Class: ScriptRequest&lt;TData, TResult\>
 
-[@fuel-ts/program](/api/Program/index.md).ScriptRequest
+[@fuel-ts/program](/api/Program/index).ScriptRequest
 
 `ScriptRequest` provides functionality to encode and decode script data and results.
 
@@ -15,7 +15,7 @@
 
 ### constructor
 
-• **new ScriptRequest**&lt;`TData`, `TResult`\>(`bytes`, `scriptDataEncoder`, `scriptResultDecoder`): [`ScriptRequest`](/api/Program/ScriptRequest.md)&lt;`TData`, `TResult`\>
+• **new ScriptRequest**&lt;`TData`, `TResult`\>(`bytes`, `scriptDataEncoder`, `scriptResultDecoder`): [`ScriptRequest`](/api/Program/ScriptRequest)&lt;`TData`, `TResult`\>
 
 Creates an instance of the ScriptRequest class.
 
@@ -36,7 +36,7 @@ Creates an instance of the ScriptRequest class.
 
 #### Returns
 
-[`ScriptRequest`](/api/Program/ScriptRequest.md)&lt;`TData`, `TResult`\>
+[`ScriptRequest`](/api/Program/ScriptRequest)&lt;`TData`, `TResult`\>
 
 #### Defined in
 

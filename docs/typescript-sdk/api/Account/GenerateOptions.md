@@ -1,6 +1,6 @@
 # Interface: GenerateOptions
 
-[@fuel-ts/account](/api/Account/index.md).GenerateOptions
+[@fuel-ts/account](/api/Account/index).GenerateOptions
 
 ## Properties
 
@@ -18,7 +18,7 @@ ___
 
 ### provider
 
-• `Optional` **provider**: [`Provider`](/api/Account/Provider.md)
+• `Optional` **provider**: [`Provider`](/api/Account/Provider)
 
 #### Defined in
 

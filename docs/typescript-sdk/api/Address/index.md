@@ -2,4 +2,4 @@
 
 ## Classes
 
-- [Address](/api/Address/Address.md)
+- [Address](/api/Address/Address)

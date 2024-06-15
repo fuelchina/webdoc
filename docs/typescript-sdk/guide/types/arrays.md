@@ -36,4 +36,4 @@ Similarly, passing an `Array` with an incorrect type will also result in an erro
 
 ## Vectors
 
-If your `Array` size is unknown until runtime, consider using the [Vectors](./vectors.md) type, which is more suitable for dynamic-sized collections.
+If your `Array` size is unknown until runtime, consider using the [Vectors](./vectors) type, which is more suitable for dynamic-sized collections.

@@ -1,6 +1,6 @@
 # Enumeration: FuelConnectorMethods
 
-[@fuel-ts/account](/api/Account/index.md).FuelConnectorMethods
+[@fuel-ts/account](/api/Account/index).FuelConnectorMethods
 
 ## Enumeration Members
 

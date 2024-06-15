@@ -2,19 +2,19 @@
 
 ## Classes
 
-- [Contract](/api/Program/Contract.md)
-- [FunctionInvocationResult](/api/Program/FunctionInvocationResult.md)
-- [FunctionInvocationScope](/api/Program/FunctionInvocationScope.md)
-- [InstructionSet](/api/Program/InstructionSet.md)
-- [InvocationCallResult](/api/Program/InvocationCallResult.md)
-- [InvocationResult](/api/Program/InvocationResult.md)
-- [MultiCallInvocationScope](/api/Program/MultiCallInvocationScope.md)
-- [ScriptRequest](/api/Program/ScriptRequest.md)
+- [Contract](/api/Program/Contract)
+- [FunctionInvocationResult](/api/Program/FunctionInvocationResult)
+- [FunctionInvocationScope](/api/Program/FunctionInvocationScope)
+- [InstructionSet](/api/Program/InstructionSet)
+- [InvocationCallResult](/api/Program/InvocationCallResult)
+- [InvocationResult](/api/Program/InvocationResult)
+- [MultiCallInvocationScope](/api/Program/MultiCallInvocationScope)
+- [ScriptRequest](/api/Program/ScriptRequest)
 
 ## Interfaces
 
-- [InvokeFunction](/api/Program/InvokeFunction.md)
-- [InvokeFunctions](/api/Program/InvokeFunctions.md)
+- [InvokeFunction](/api/Program/InvokeFunction)
+- [InvokeFunctions](/api/Program/InvokeFunctions)
 
 ## Type Aliases
 
@@ -72,7 +72,7 @@ Represents a contract call.
 | :------ | :------ |
 | `amount?` | `BigNumberish` |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
-| `contractId` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `contractId` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 | `data` | [`BytesLike`](/api/Interfaces/index.md#byteslike) |
 | `encoding?` | `EncodingVersion` |
 | `externalContractsAbis?` | `Record`&lt;`string`, `JsonAbi`\> |

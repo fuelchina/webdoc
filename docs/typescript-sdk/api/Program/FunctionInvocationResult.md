@@ -1,6 +1,6 @@
 # Class: FunctionInvocationResult&lt;T, TTransactionType\>
 
-[@fuel-ts/program](/api/Program/index.md).FunctionInvocationResult
+[@fuel-ts/program](/api/Program/index).FunctionInvocationResult
 
 Represents the result of a function invocation with transaction details.
 
@@ -13,7 +13,7 @@ Represents the result of a function invocation with transaction details.
 
 ## Hierarchy
 
-- [`InvocationResult`](/api/Program/InvocationResult.md)&lt;`T`\>
+- [`InvocationResult`](/api/Program/InvocationResult)&lt;`T`\>
 
   ↳ **`FunctionInvocationResult`**
 
@@ -21,7 +21,7 @@ Represents the result of a function invocation with transaction details.
 
 ### constructor
 
-• **new FunctionInvocationResult**&lt;`T`, `TTransactionType`\>(`funcScopes`, `transactionResponse`, `transactionResult`, `program`, `isMultiCall`): [`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)&lt;`T`, `TTransactionType`\>
+• **new FunctionInvocationResult**&lt;`T`, `TTransactionType`\>(`funcScopes`, `transactionResponse`, `transactionResult`, `program`, `isMultiCall`): [`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)&lt;`T`, `TTransactionType`\>
 
 Constructs an instance of FunctionInvocationResult.
 
@@ -37,18 +37,18 @@ Constructs an instance of FunctionInvocationResult.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `funcScopes` | [`InvocationScopeLike`](/api/Program/index.md#invocationscopelike) \| [`InvocationScopeLike`](/api/Program/index.md#invocationscopelike)[] | The function scopes. |
-| `transactionResponse` | [`TransactionResponse`](/api/Account/TransactionResponse.md) | The transaction response. |
+| `transactionResponse` | [`TransactionResponse`](/api/Account/TransactionResponse) | The transaction response. |
 | `transactionResult` | `TransactionResult`&lt;`TTransactionType`\> | The transaction result. |
 | `program` | `AbstractProgram` | The program. |
 | `isMultiCall` | `boolean` | Whether it's a multi-call. |
 
 #### Returns
 
-[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)&lt;`T`, `TTransactionType`\>
+[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)&lt;`T`, `TTransactionType`\>
 
 #### Overrides
 
-[InvocationResult](/api/Program/InvocationResult.md).[constructor](/api/Program/InvocationResult.md#constructor)
+[InvocationResult](/api/Program/InvocationResult).[constructor](/api/Program/InvocationResult.md#constructor)
 
 #### Defined in
 
@@ -62,7 +62,7 @@ Constructs an instance of FunctionInvocationResult.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[functionScopes](/api/Program/InvocationResult.md#functionscopes)
+[InvocationResult](/api/Program/InvocationResult).[functionScopes](/api/Program/InvocationResult.md#functionscopes)
 
 #### Defined in
 
@@ -76,7 +76,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[gasUsed](/api/Program/InvocationResult.md#gasused)
+[InvocationResult](/api/Program/InvocationResult).[gasUsed](/api/Program/InvocationResult.md#gasused)
 
 #### Defined in
 
@@ -90,7 +90,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[isMultiCall](/api/Program/InvocationResult.md#ismulticall)
+[InvocationResult](/api/Program/InvocationResult).[isMultiCall](/api/Program/InvocationResult.md#ismulticall)
 
 #### Defined in
 
@@ -130,7 +130,7 @@ ___
 
 ### transactionResponse
 
-• `Readonly` **transactionResponse**: [`TransactionResponse`](/api/Account/TransactionResponse.md)
+• `Readonly` **transactionResponse**: [`TransactionResponse`](/api/Account/TransactionResponse)
 
 #### Defined in
 
@@ -154,7 +154,7 @@ ___
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[value](/api/Program/InvocationResult.md#value)
+[InvocationResult](/api/Program/InvocationResult).[value](/api/Program/InvocationResult.md#value)
 
 #### Defined in
 
@@ -176,7 +176,7 @@ The ABIs from all calls.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[getAbiFromAllCalls](/api/Program/InvocationResult.md#getabifromallcalls)
+[InvocationResult](/api/Program/InvocationResult).[getAbiFromAllCalls](/api/Program/InvocationResult.md#getabifromallcalls)
 
 #### Defined in
 
@@ -204,7 +204,7 @@ The decoded logs.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[getDecodedLogs](/api/Program/InvocationResult.md#getdecodedlogs)
+[InvocationResult](/api/Program/InvocationResult).[getDecodedLogs](/api/Program/InvocationResult.md#getdecodedlogs)
 
 #### Defined in
 
@@ -232,7 +232,7 @@ The decoded value.
 
 #### Inherited from
 
-[InvocationResult](/api/Program/InvocationResult.md).[getDecodedValue](/api/Program/InvocationResult.md#getdecodedvalue)
+[InvocationResult](/api/Program/InvocationResult).[getDecodedValue](/api/Program/InvocationResult.md#getdecodedvalue)
 
 #### Defined in
 
@@ -242,7 +242,7 @@ ___
 
 ### build
 
-▸ **build**&lt;`T`, `TTransactionType`\>(`funcScope`, `transactionResponse`, `isMultiCall`, `program`): `Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)&lt;`T`, `TTransactionType`\>\>
+▸ **build**&lt;`T`, `TTransactionType`\>(`funcScope`, `transactionResponse`, `isMultiCall`, `program`): `Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)&lt;`T`, `TTransactionType`\>\>
 
 Builds an instance of FunctionInvocationResult.
 
@@ -258,13 +258,13 @@ Builds an instance of FunctionInvocationResult.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `funcScope` | [`InvocationScopeLike`](/api/Program/index.md#invocationscopelike) \| [`InvocationScopeLike`](/api/Program/index.md#invocationscopelike)[] | The function scope. |
-| `transactionResponse` | [`TransactionResponse`](/api/Account/TransactionResponse.md) | The transaction response. |
+| `transactionResponse` | [`TransactionResponse`](/api/Account/TransactionResponse) | The transaction response. |
 | `isMultiCall` | `boolean` | Whether it's a multi-call. |
 | `program` | `AbstractProgram` | The program. |
 
 #### Returns
 
-`Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult.md)&lt;`T`, `TTransactionType`\>\>
+`Promise`&lt;[`FunctionInvocationResult`](/api/Program/FunctionInvocationResult)&lt;`T`, `TTransactionType`\>\>
 
 The function invocation result.
 

@@ -18,7 +18,7 @@ Or using our `bn` utility function.
 
 ## Contract calls
 
-Generally, we will need to convert `u64` and `u256` numbers to a `BN` object when passing them to a Sway program from JavaScript. More information on this can be found [here](../types/numbers.md).
+Generally, we will need to convert `u64` and `u256` numbers to a `BN` object when passing them to a Sway program from JavaScript. More information on this can be found [here](../types/numbers).
 
 <<< ../../docs-snippets/src/guide/utilities/unit-conversion.test.ts#contract-calls-1{ts:line-numbers}
 
@@ -70,4 +70,4 @@ We can also format numbers in other units of measure by specifying the `units` v
 
 ## See also
 
-- [Sway Numbers](../types/numbers.md)
+- [Sway Numbers](../types/numbers)

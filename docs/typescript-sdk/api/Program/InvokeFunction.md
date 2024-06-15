@@ -1,6 +1,6 @@
 # Interface: InvokeFunction&lt;TArgs, TReturn\>
 
-[@fuel-ts/program](/api/Program/index.md).InvokeFunction
+[@fuel-ts/program](/api/Program/index).InvokeFunction
 
 Represents a function that can be invoked.
 
@@ -15,7 +15,7 @@ Represents a function that can be invoked.
 
 ### InvokeFunction
 
-▸ **InvokeFunction**(`...args`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+▸ **InvokeFunction**(`...args`): [`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 #### Parameters
 
@@ -25,7 +25,7 @@ Represents a function that can be invoked.
 
 #### Returns
 
-[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope.md)&lt;`TArgs`, `TReturn`\>
+[`FunctionInvocationScope`](/api/Program/FunctionInvocationScope)&lt;`TArgs`, `TReturn`\>
 
 #### Defined in
 

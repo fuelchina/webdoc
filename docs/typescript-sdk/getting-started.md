@@ -121,7 +121,7 @@ export default App;
 
 ---
 
-在下面的示例中，我们将一个 [Provider](./guide/provider/index.md) 连接到最新的测试网，并从私钥创建一个新钱包。
+在下面的示例中，我们将一个 [Provider](./guide/provider/index) 连接到最新的测试网，并从私钥创建一个新钱包。
 
 > **注意：** 在测试网上创建的新钱包将没有任何资产！您可以使用[水龙头](https://faucet-beta-5.fuel.network/)为您的钱包提供资金。
 

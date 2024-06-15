@@ -1,10 +1,10 @@
 # 合约余额
 
-在处理合同时，在支付昂贵的操作费用时，了解资产的可用合同余额是至关重要的。本指南将解释[Contract](../../api/Program/Contract.md)类中的`getBalance`方法，它允许您检查合约的可用余额。
+在处理合同时，在支付昂贵的操作费用时，了解资产的可用合同余额是至关重要的。本指南将解释[Contract](../../api/Program/Contract)类中的`getBalance`方法，它允许您检查合约的可用余额。
 
 ## 方法`getBalance` 
 
-此类[`Contract`](../../api/Program/Contract.md) 包含一个名为的方法 `getBalance` 用于检索合约中特定资产的可用余额。 此方法对于确定将资产发送到合约并执行合约调用后的剩余余额特别有用。
+此类[`Contract`](../../api/Program/Contract) 包含一个名为的方法 `getBalance` 用于检索合约中特定资产的可用余额。 此方法对于确定将资产发送到合约并执行合约调用后的剩余余额特别有用。
 
 <!-- <<< ../../../packages/program/src/contract.ts#contract-balance-1{ts:line-numbers} -->
 

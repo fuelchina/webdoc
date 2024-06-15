@@ -1,6 +1,6 @@
 # Interface: IAddAmountToAssetParams
 
-[@fuel-ts/account](/api/Account/index.md).IAddAmountToAssetParams
+[@fuel-ts/account](/api/Account/index).IAddAmountToAssetParams
 
 ## Properties
 

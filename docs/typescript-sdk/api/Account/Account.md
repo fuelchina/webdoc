@@ -1,26 +1,26 @@
 # Class: Account
 
-[@fuel-ts/account](/api/Account/index.md).Account
+[@fuel-ts/account](/api/Account/index).Account
 
 `Account` provides an abstraction for interacting with accounts or wallets on the network.
 
 ## Hierarchy
 
-- [`AbstractAccount`](/api/Interfaces/AbstractAccount.md)
+- [`AbstractAccount`](/api/Interfaces/AbstractAccount)
 
   ↳ **`Account`**
 
-  ↳↳ [`BaseWalletUnlocked`](/api/Account/BaseWalletUnlocked.md)
+  ↳↳ [`BaseWalletUnlocked`](/api/Account/BaseWalletUnlocked)
 
-  ↳↳ [`WalletLocked`](/api/Account/WalletLocked.md)
+  ↳↳ [`WalletLocked`](/api/Account/WalletLocked)
 
-  ↳↳ [`Predicate`](/api/Account/Predicate.md)
+  ↳↳ [`Predicate`](/api/Account/Predicate)
 
 ## Constructors
 
 ### constructor
 
-• **new Account**(`address`, `provider?`, `connector?`): [`Account`](/api/Account/Account.md)
+• **new Account**(`address`, `provider?`, `connector?`): [`Account`](/api/Account/Account)
 
 Creates a new Account instance.
 
@@ -28,17 +28,17 @@ Creates a new Account instance.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the account. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
-| `connector?` | [`FuelConnector`](/api/Account/FuelConnector.md) | - |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the account. |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
+| `connector?` | [`FuelConnector`](/api/Account/FuelConnector) | - |
 
 #### Returns
 
-[`Account`](/api/Account/Account.md)
+[`Account`](/api/Account/Account)
 
 #### Overrides
 
-[AbstractAccount](/api/Interfaces/AbstractAccount.md).[constructor](/api/Interfaces/AbstractAccount.md#constructor)
+[AbstractAccount](/api/Interfaces/AbstractAccount).[constructor](/api/Interfaces/AbstractAccount.md#constructor)
 
 #### Defined in
 
@@ -48,7 +48,7 @@ Creates a new Account instance.
 
 ### \_connector
 
-• `Protected` `Optional` **\_connector**: [`FuelConnector`](/api/Account/FuelConnector.md)
+• `Protected` `Optional` **\_connector**: [`FuelConnector`](/api/Account/FuelConnector)
 
 #### Defined in
 
@@ -58,7 +58,7 @@ ___
 
 ### \_provider
 
-• `Protected` `Optional` **\_provider**: [`Provider`](/api/Account/Provider.md)
+• `Protected` `Optional` **\_provider**: [`Provider`](/api/Account/Provider)
 
 The provider used to interact with the network.
 
@@ -70,13 +70,13 @@ ___
 
 ### address
 
-• `Readonly` **address**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+• `Readonly` **address**: [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 The address associated with the account.
 
 #### Overrides
 
-[AbstractAccount](/api/Interfaces/AbstractAccount.md).[address](/api/Interfaces/AbstractAccount.md#address)
+[AbstractAccount](/api/Interfaces/AbstractAccount).[address](/api/Interfaces/AbstractAccount.md#address)
 
 #### Defined in
 
@@ -86,7 +86,7 @@ The address associated with the account.
 
 ### provider
 
-• `get` **provider**(): [`Provider`](/api/Account/Provider.md)
+• `get` **provider**(): [`Provider`](/api/Account/Provider)
 
 The provider used to interact with the network.
 
@@ -96,7 +96,7 @@ The provider used to interact with the network.
 
 #### Returns
 
-[`Provider`](/api/Account/Provider.md)
+[`Provider`](/api/Account/Provider)
 
 A Provider instance.
 
@@ -116,7 +116,7 @@ Sets the provider for the account.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `provider` | [`Provider`](/api/Account/Provider.md) | A Provider instance. |
+| `provider` | [`Provider`](/api/Account/Provider) | A Provider instance. |
 
 #### Returns
 
@@ -134,7 +134,7 @@ AbstractAccount.provider
 
 ### connect
 
-▸ **connect**(`provider`): [`Provider`](/api/Account/Provider.md)
+▸ **connect**(`provider`): [`Provider`](/api/Account/Provider)
 
 Changes the provider connection for the account.
 
@@ -142,11 +142,11 @@ Changes the provider connection for the account.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `provider` | [`Provider`](/api/Account/Provider.md) | A Provider instance. |
+| `provider` | [`Provider`](/api/Account/Provider) | A Provider instance. |
 
 #### Returns
 
-[`Provider`](/api/Account/Provider.md)
+[`Provider`](/api/Account/Provider)
 
 The updated Provider instance.
 
@@ -166,7 +166,7 @@ A helper that creates a transfer transaction request and returns it.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the destination. |
+| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the destination. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of the coins to transfer. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The transaction parameters (gasLimit, tip, maturity, maxFee, witnessLimit). |
@@ -210,7 +210,7 @@ A promise that resolves when the resources are added to the transaction.
 
 #### Overrides
 
-[AbstractAccount](/api/Interfaces/AbstractAccount.md).[fund](/api/Interfaces/AbstractAccount.md#fund)
+[AbstractAccount](/api/Interfaces/AbstractAccount).[fund](/api/Interfaces/AbstractAccount.md#fund)
 
 #### Defined in
 
@@ -323,7 +323,7 @@ A promise that resolves to an array of Resources.
 
 #### Overrides
 
-[AbstractAccount](/api/Interfaces/AbstractAccount.md).[getResourcesToSpend](/api/Interfaces/AbstractAccount.md#getresourcestospend)
+[AbstractAccount](/api/Interfaces/AbstractAccount).[getResourcesToSpend](/api/Interfaces/AbstractAccount.md#getresourcestospend)
 
 #### Defined in
 
@@ -333,7 +333,7 @@ ___
 
 ### sendTransaction
 
-▸ **sendTransaction**(`transactionRequestLike`, `«destructured»?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **sendTransaction**(`transactionRequestLike`, `«destructured»?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Sends a transaction to the network.
 
@@ -346,13 +346,13 @@ Sends a transaction to the network.
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 
 #### Overrides
 
-[AbstractAccount](/api/Interfaces/AbstractAccount.md).[sendTransaction](/api/Interfaces/AbstractAccount.md#sendtransaction)
+[AbstractAccount](/api/Interfaces/AbstractAccount).[sendTransaction](/api/Interfaces/AbstractAccount.md#sendtransaction)
 
 #### Defined in
 
@@ -425,7 +425,7 @@ A promise that resolves to the call result.
 
 #### Overrides
 
-[AbstractAccount](/api/Interfaces/AbstractAccount.md).[simulateTransaction](/api/Interfaces/AbstractAccount.md#simulatetransaction)
+[AbstractAccount](/api/Interfaces/AbstractAccount).[simulateTransaction](/api/Interfaces/AbstractAccount.md#simulatetransaction)
 
 #### Defined in
 
@@ -435,7 +435,7 @@ ___
 
 ### transfer
 
-▸ **transfer**(`destination`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **transfer**(`destination`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Transfers coins to a destination address.
 
@@ -443,14 +443,14 @@ Transfers coins to a destination address.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the destination. |
+| `destination` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the destination. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of the coins to transfer. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The transaction parameters (gasLimit, maturity). |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 
@@ -462,7 +462,7 @@ ___
 
 ### transferToContract
 
-▸ **transferToContract**(`contractId`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **transferToContract**(`contractId`, `amount`, `assetId?`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Transfers coins to a contract address.
 
@@ -470,14 +470,14 @@ Transfers coins to a contract address.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `contractId` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the contract. |
+| `contractId` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the contract. |
 | `amount` | `BigNumberish` | The amount of coins to transfer. |
 | `assetId?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The asset ID of the coins to transfer. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The optional transaction parameters. |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 
@@ -512,7 +512,7 @@ ___
 
 ### withdrawToBaseLayer
 
-▸ **withdrawToBaseLayer**(`recipient`, `amount`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+▸ **withdrawToBaseLayer**(`recipient`, `amount`, `txParams?`): `Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 Withdraws an amount of the base asset to the base chain.
 
@@ -520,13 +520,13 @@ Withdraws an amount of the base asset to the base chain.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `recipient` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | Address of the recipient on the base chain. |
+| `recipient` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | Address of the recipient on the base chain. |
 | `amount` | `BigNumberish` | Amount of base asset. |
 | `txParams` | [`TxParamsType`](/api/Account/index.md#txparamstype) | The optional transaction parameters. |
 
 #### Returns
 
-`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse.md)\>
+`Promise`&lt;[`TransactionResponse`](/api/Account/TransactionResponse)\>
 
 A promise that resolves to the transaction response.
 

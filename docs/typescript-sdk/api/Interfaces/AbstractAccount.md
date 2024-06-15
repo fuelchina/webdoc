@@ -1,6 +1,6 @@
 # Class: AbstractAccount
 
-[@fuel-ts/interfaces](/api/Interfaces/index.md).AbstractAccount
+[@fuel-ts/interfaces](/api/Interfaces/index).AbstractAccount
 
 ## Hierarchy
 
@@ -10,17 +10,17 @@
 
 ### constructor
 
-• **new AbstractAccount**(): [`AbstractAccount`](/api/Interfaces/AbstractAccount.md)
+• **new AbstractAccount**(): [`AbstractAccount`](/api/Interfaces/AbstractAccount)
 
 #### Returns
 
-[`AbstractAccount`](/api/Interfaces/AbstractAccount.md)
+[`AbstractAccount`](/api/Interfaces/AbstractAccount)
 
 ## Properties
 
 ### address
 
-• `Abstract` **address**: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md)
+• `Abstract` **address**: [`AbstractAddress`](/api/Interfaces/AbstractAddress)
 
 #### Defined in
 

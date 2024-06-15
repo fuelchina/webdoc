@@ -48,7 +48,7 @@ Predicates are used to define the conditions under which a transaction can be ex
 
 <<< ../../docs-snippets/src/guide/transactions/transaction-request.test.ts#transaction-request-5{ts:line-numbers}
 
-> **Note**: For more information on predicates, including information on configuring them, funding them and using them to unlock funds, please refer to the [predicate guide](../predicates/index.md).
+> **Note**: For more information on predicates, including information on configuring them, funding them and using them to unlock funds, please refer to the [predicate guide](../predicates/index).
 
 ### Adding a Witness and Signing a Transaction Request
 
@@ -56,7 +56,7 @@ The SDK provides a way of either modifying the witnesses for a transaction reque
 
 <<< ../../docs-snippets/src/guide/transactions/transaction-request.test.ts#transaction-request-6{ts:line-numbers}
 
-A more complex example of adding multiple witnesses to a transaction request can be seen in the multiple signers guide [here](../cookbook/transactions-with-multiple-signers.md), which validates the signatures inside the script itself.
+A more complex example of adding multiple witnesses to a transaction request can be seen in the multiple signers guide [here](../cookbook/transactions-with-multiple-signers), which validates the signatures inside the script itself.
 
 > **Note**: Once `addAccountWitnesses` has been called, any additional modifications to the transaction request will invalidate the signature as the transaction ID changes. Therefore, it is recommended to add witnesses last.
 

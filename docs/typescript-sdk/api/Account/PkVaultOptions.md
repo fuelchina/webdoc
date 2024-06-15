@@ -1,6 +1,6 @@
 # Interface: PkVaultOptions
 
-[@fuel-ts/account](/api/Account/index.md).PkVaultOptions
+[@fuel-ts/account](/api/Account/index).PkVaultOptions
 
 ## Properties
 

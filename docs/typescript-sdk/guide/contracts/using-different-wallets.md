@@ -1,6 +1,6 @@
 # 使用不同的钱包或提供商进行调用
 
-本指南演示了如何通过在实例化时传递[`Account`](../../api/Account/Account.md) 或 [`Provider`](../../api/Account/Provider.md) 来使用不同的钱包和提供商进行合约调用。
+本指南演示了如何通过在实例化时传递[`Account`](../../api/Account/Account) 或 [`Provider`](../../api/Account/Provider) 来使用不同的钱包和提供商进行合约调用。
 
 ## 更换钱包
 

@@ -1,6 +1,6 @@
 # Interface: GetTransactionsSummariesReturns
 
-[@fuel-ts/account](/api/Account/index.md).GetTransactionsSummariesReturns
+[@fuel-ts/account](/api/Account/index).GetTransactionsSummariesReturns
 
 ## Properties
 

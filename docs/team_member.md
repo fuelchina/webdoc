@@ -38,6 +38,15 @@ const members = [
       { icon: 'twitter', link: 'https://x.com/shi_xiao0101' }
     ]
   },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/4446580?v=4',
+    name: 'King',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/lispking' },
+      { icon: 'twitter', link: 'https://x.com/lispking' }
+    ]
+  },
 ]
 </script>
 

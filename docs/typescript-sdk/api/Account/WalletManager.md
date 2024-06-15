@@ -1,6 +1,6 @@
 # Class: WalletManager
 
-[@fuel-ts/account](/api/Account/index.md).WalletManager
+[@fuel-ts/account](/api/Account/index).WalletManager
 
 WalletManager is a upper package to manage multiple vaults like mnemonic and privateKeys.
 
@@ -17,7 +17,7 @@ WalletManager is a upper package to manage multiple vaults like mnemonic and pri
 
 ### constructor
 
-• **new WalletManager**(`options?`): [`WalletManager`](/api/Account/WalletManager.md)
+• **new WalletManager**(`options?`): [`WalletManager`](/api/Account/WalletManager)
 
 #### Parameters
 
@@ -27,7 +27,7 @@ WalletManager is a upper package to manage multiple vaults like mnemonic and pri
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Overrides
 
@@ -81,7 +81,7 @@ ___
 
 ### storage
 
-• `Readonly` **storage**: [`StorageAbstract`](/api/Account/StorageAbstract.md)
+• `Readonly` **storage**: [`StorageAbstract`](/api/Account/StorageAbstract)
 
 Storage
 
@@ -95,7 +95,7 @@ ___
 
 ### Vaults
 
-▪ `Static` **Vaults**: (typeof [`MnemonicVault`](/api/Account/MnemonicVault.md) \| typeof [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md))[]
+▪ `Static` **Vaults**: (typeof [`MnemonicVault`](/api/Account/MnemonicVault) \| typeof [`PrivateKeyVault`](/api/Account/PrivateKeyVault))[]
 
 Vaults
 
@@ -192,7 +192,7 @@ node_modules/.pnpm/@types+node@18.15.3/node_modules/@types/node/events.d.ts:327
 
 ### #deserializeVaults
 
-▸ **#deserializeVaults**(`vaults`): { `title`: `undefined` \| `string` ; `type`: `string` ; `vault`: [`MnemonicVault`](/api/Account/MnemonicVault.md) \| [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)  }[]
+▸ **#deserializeVaults**(`vaults`): { `title`: `undefined` \| `string` ; `type`: `string` ; `vault`: [`MnemonicVault`](/api/Account/MnemonicVault) \| [`PrivateKeyVault`](/api/Account/PrivateKeyVault)  }[]
 
 Deserialize all vaults to state
 
@@ -206,7 +206,7 @@ Deserialize all vaults to state
 
 #### Returns
 
-{ `title`: `undefined` \| `string` ; `type`: `string` ; `vault`: [`MnemonicVault`](/api/Account/MnemonicVault.md) \| [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)  }[]
+{ `title`: `undefined` \| `string` ; `type`: `string` ; `vault`: [`MnemonicVault`](/api/Account/MnemonicVault) \| [`PrivateKeyVault`](/api/Account/PrivateKeyVault)  }[]
 
 #### Defined in
 
@@ -264,7 +264,7 @@ ___
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **addListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -281,7 +281,7 @@ v0.1.26
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -431,7 +431,7 @@ Export specific account privateKey
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
@@ -454,7 +454,7 @@ the format of the return depends on the Vault type.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`Vault`](/api/Account/Vault.md)&lt;{ `secret?`: `string`  }\> |
+| `T` | extends [`Vault`](/api/Account/Vault)&lt;{ `secret?`: `string`  }\> |
 
 #### Parameters
 
@@ -515,7 +515,7 @@ ___
 
 ### getVaultClass
 
-▸ **getVaultClass**(`type`): typeof [`MnemonicVault`](/api/Account/MnemonicVault.md) \| typeof [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)
+▸ **getVaultClass**(`type`): typeof [`MnemonicVault`](/api/Account/MnemonicVault) \| typeof [`PrivateKeyVault`](/api/Account/PrivateKeyVault)
 
 Return a instantiable Class reference from `WalletManager.Vaults` supported list.
 
@@ -527,7 +527,7 @@ Return a instantiable Class reference from `WalletManager.Vaults` supported list
 
 #### Returns
 
-typeof [`MnemonicVault`](/api/Account/MnemonicVault.md) \| typeof [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)
+typeof [`MnemonicVault`](/api/Account/MnemonicVault) \| typeof [`PrivateKeyVault`](/api/Account/PrivateKeyVault)
 
 #### Defined in
 
@@ -553,7 +553,7 @@ ___
 
 ### getWallet
 
-▸ **getWallet**(`address`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **getWallet**(`address`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet instance for the specific account
 
@@ -561,11 +561,11 @@ Create a Wallet instance for the specific account
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Defined in
 
@@ -676,7 +676,7 @@ ___
 
 ### off
 
-▸ **off**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **off**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Alias for `emitter.removeListener()`.
 
@@ -693,7 +693,7 @@ v10.0.0
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -707,7 +707,7 @@ ___
 
 ### on
 
-▸ **on**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **on**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -748,7 +748,7 @@ v0.1.101
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -762,7 +762,7 @@ ___
 
 ### once
 
-▸ **once**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **once**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -801,7 +801,7 @@ v0.3.0
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -815,7 +815,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **prependListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -843,7 +843,7 @@ v6.0.0
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -857,7 +857,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **prependOnceListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -883,7 +883,7 @@ v6.0.0
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -952,7 +952,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`event?`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **removeAllListeners**(`event?`): [`WalletManager`](/api/Account/WalletManager)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -974,7 +974,7 @@ v0.1.26
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -988,7 +988,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **removeListener**(`eventName`, `listener`): [`WalletManager`](/api/Account/WalletManager)
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
 
@@ -1080,7 +1080,7 @@ v0.1.26
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 
@@ -1133,7 +1133,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`WalletManager`](/api/Account/WalletManager.md)
+▸ **setMaxListeners**(`n`): [`WalletManager`](/api/Account/WalletManager)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1154,7 +1154,7 @@ v0.3.5
 
 #### Returns
 
-[`WalletManager`](/api/Account/WalletManager.md)
+[`WalletManager`](/api/Account/WalletManager)
 
 #### Inherited from
 

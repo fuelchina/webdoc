@@ -1,26 +1,26 @@
 # Class: MnemonicVault
 
-[@fuel-ts/account](/api/Account/index.md).MnemonicVault
+[@fuel-ts/account](/api/Account/index).MnemonicVault
 
 ## Implements
 
-- [`Vault`](/api/Account/Vault.md)&lt;[`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions.md)\>
+- [`Vault`](/api/Account/Vault)&lt;[`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions)\>
 
 ## Constructors
 
 ### constructor
 
-• **new MnemonicVault**(`options`): [`MnemonicVault`](/api/Account/MnemonicVault.md)
+• **new MnemonicVault**(`options`): [`MnemonicVault`](/api/Account/MnemonicVault)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions.md) |
+| `options` | [`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions) |
 
 #### Returns
 
-[`MnemonicVault`](/api/Account/MnemonicVault.md)
+[`MnemonicVault`](/api/Account/MnemonicVault)
 
 #### Defined in
 
@@ -74,7 +74,7 @@ ___
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[type](/api/Account/Vault.md#type)
+[Vault](/api/Account/Vault).[type](/api/Account/Vault.md#type)
 
 #### Defined in
 
@@ -92,12 +92,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 | `publicKey` | `string` |
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[addAccount](/api/Account/Vault.md#addaccount)
+[Vault](/api/Account/Vault).[addAccount](/api/Account/Vault.md#addaccount)
 
 #### Defined in
 
@@ -113,7 +113,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
@@ -121,7 +121,7 @@ ___
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[exportAccount](/api/Account/Vault.md#exportaccount)
+[Vault](/api/Account/Vault).[exportAccount](/api/Account/Vault.md#exportaccount)
 
 #### Defined in
 
@@ -131,15 +131,15 @@ ___
 
 ### getAccounts
 
-▸ **getAccounts**(): { `address`: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) = wallet.address; `publicKey`: `string` = wallet.publicKey }[]
+▸ **getAccounts**(): { `address`: [`AbstractAddress`](/api/Interfaces/AbstractAddress) = wallet.address; `publicKey`: `string` = wallet.publicKey }[]
 
 #### Returns
 
-{ `address`: [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) = wallet.address; `publicKey`: `string` = wallet.publicKey }[]
+{ `address`: [`AbstractAddress`](/api/Interfaces/AbstractAddress) = wallet.address; `publicKey`: `string` = wallet.publicKey }[]
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[getAccounts](/api/Account/Vault.md#getaccounts)
+[Vault](/api/Account/Vault).[getAccounts](/api/Account/Vault.md#getaccounts)
 
 #### Defined in
 
@@ -169,21 +169,21 @@ ___
 
 ### getWallet
 
-▸ **getWallet**(`address`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **getWallet**(`address`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[getWallet](/api/Account/Vault.md#getwallet)
+[Vault](/api/Account/Vault).[getWallet](/api/Account/Vault.md#getwallet)
 
 #### Defined in
 
@@ -193,15 +193,15 @@ ___
 
 ### serialize
 
-▸ **serialize**(): [`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions.md)
+▸ **serialize**(): [`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions)
 
 #### Returns
 
-[`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions.md)
+[`MnemonicVaultOptions`](/api/Account/MnemonicVaultOptions)
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[serialize](/api/Account/Vault.md#serialize)
+[Vault](/api/Account/Vault).[serialize](/api/Account/Vault.md#serialize)
 
 #### Defined in
 

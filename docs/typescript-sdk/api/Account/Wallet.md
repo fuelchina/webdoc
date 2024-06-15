@@ -1,6 +1,6 @@
 # Class: Wallet
 
-[@fuel-ts/account](/api/Account/index.md).Wallet
+[@fuel-ts/account](/api/Account/index).Wallet
 
 `Wallet` provides methods to create locked and unlocked wallet instances.
 
@@ -8,21 +8,21 @@
 
 ### constructor
 
-• **new Wallet**(): [`Wallet`](/api/Account/Wallet.md)
+• **new Wallet**(): [`Wallet`](/api/Account/Wallet)
 
 #### Returns
 
-[`Wallet`](/api/Account/Wallet.md)
+[`Wallet`](/api/Account/Wallet)
 
 ## Properties
 
 ### fromEncryptedJson
 
-▪ `Static` **fromEncryptedJson**: (`jsonWallet`: `string`, `password`: `string`, `provider?`: [`Provider`](/api/Account/Provider.md)) => `Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked.md)\> = `WalletUnlocked.fromEncryptedJson`
+▪ `Static` **fromEncryptedJson**: (`jsonWallet`: `string`, `password`: `string`, `provider?`: [`Provider`](/api/Account/Provider)) => `Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked)\> = `WalletUnlocked.fromEncryptedJson`
 
 #### Type declaration
 
-▸ (`jsonWallet`, `password`, `provider?`): `Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked.md)\>
+▸ (`jsonWallet`, `password`, `provider?`): `Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked)\>
 
 Create a Wallet Unlocked from an encrypted JSON.
 
@@ -32,11 +32,11 @@ Create a Wallet Unlocked from an encrypted JSON.
 | :------ | :------ | :------ |
 | `jsonWallet` | `string` | The encrypted JSON keystore. |
 | `password` | `string` | The password to decrypt the JSON. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 ##### Returns
 
-`Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked.md)\>
+`Promise`&lt;[`WalletUnlocked`](/api/Account/WalletUnlocked)\>
 
 An unlocked wallet instance.
 
@@ -48,11 +48,11 @@ ___
 
 ### fromExtendedKey
 
-▪ `Static` **fromExtendedKey**: (`extendedKey`: `string`, `provider?`: [`Provider`](/api/Account/Provider.md)) => [`WalletUnlocked`](/api/Account/WalletUnlocked.md) = `WalletUnlocked.fromExtendedKey`
+▪ `Static` **fromExtendedKey**: (`extendedKey`: `string`, `provider?`: [`Provider`](/api/Account/Provider)) => [`WalletUnlocked`](/api/Account/WalletUnlocked) = `WalletUnlocked.fromExtendedKey`
 
 #### Type declaration
 
-▸ (`extendedKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ (`extendedKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet Unlocked from an extended key.
 
@@ -61,11 +61,11 @@ Create a Wallet Unlocked from an extended key.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `extendedKey` | `string` | The extended key. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 ##### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An unlocked wallet instance.
 
@@ -77,11 +77,11 @@ ___
 
 ### fromMnemonic
 
-▪ `Static` **fromMnemonic**: (`mnemonic`: `string`, `path?`: `string`, `passphrase?`: [`BytesLike`](/api/Interfaces/index.md#byteslike), `provider?`: [`Provider`](/api/Account/Provider.md)) => [`WalletUnlocked`](/api/Account/WalletUnlocked.md) = `WalletUnlocked.fromMnemonic`
+▪ `Static` **fromMnemonic**: (`mnemonic`: `string`, `path?`: `string`, `passphrase?`: [`BytesLike`](/api/Interfaces/index.md#byteslike), `provider?`: [`Provider`](/api/Account/Provider)) => [`WalletUnlocked`](/api/Account/WalletUnlocked) = `WalletUnlocked.fromMnemonic`
 
 #### Type declaration
 
-▸ (`mnemonic`, `path?`, `passphrase?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ (`mnemonic`, `path?`, `passphrase?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet Unlocked from a mnemonic phrase.
 
@@ -92,11 +92,11 @@ Create a Wallet Unlocked from a mnemonic phrase.
 | `mnemonic` | `string` | The mnemonic phrase. |
 | `path?` | `string` | The derivation path (optional). |
 | `passphrase?` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The passphrase for the mnemonic (optional). |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 ##### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An unlocked wallet instance.
 
@@ -108,11 +108,11 @@ ___
 
 ### fromSeed
 
-▪ `Static` **fromSeed**: (`seed`: `string`, `path?`: `string`, `provider?`: [`Provider`](/api/Account/Provider.md)) => [`WalletUnlocked`](/api/Account/WalletUnlocked.md) = `WalletUnlocked.fromSeed`
+▪ `Static` **fromSeed**: (`seed`: `string`, `path?`: `string`, `provider?`: [`Provider`](/api/Account/Provider)) => [`WalletUnlocked`](/api/Account/WalletUnlocked) = `WalletUnlocked.fromSeed`
 
 #### Type declaration
 
-▸ (`seed`, `path?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ (`seed`, `path?`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Create a Wallet Unlocked from a seed.
 
@@ -122,11 +122,11 @@ Create a Wallet Unlocked from a seed.
 | :------ | :------ | :------ |
 | `seed` | `string` | The seed phrase. |
 | `path?` | `string` | The derivation path (optional). |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 ##### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An unlocked wallet instance.
 
@@ -138,11 +138,11 @@ ___
 
 ### generate
 
-▪ `Static` **generate**: (`generateOptions?`: [`GenerateOptions`](/api/Account/GenerateOptions.md)) => [`WalletUnlocked`](/api/Account/WalletUnlocked.md) = `WalletUnlocked.generate`
+▪ `Static` **generate**: (`generateOptions?`: [`GenerateOptions`](/api/Account/GenerateOptions)) => [`WalletUnlocked`](/api/Account/WalletUnlocked) = `WalletUnlocked.generate`
 
 #### Type declaration
 
-▸ (`generateOptions?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ (`generateOptions?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Generate a new Wallet Unlocked with a random key pair.
 
@@ -150,11 +150,11 @@ Generate a new Wallet Unlocked with a random key pair.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `generateOptions?` | [`GenerateOptions`](/api/Account/GenerateOptions.md) | Options to customize the generation process (optional). |
+| `generateOptions?` | [`GenerateOptions`](/api/Account/GenerateOptions) | Options to customize the generation process (optional). |
 
 ##### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An unlocked wallet instance.
 
@@ -166,7 +166,7 @@ An unlocked wallet instance.
 
 ### fromAddress
 
-▸ **fromAddress**(`address`, `provider?`): [`WalletLocked`](/api/Account/WalletLocked.md)
+▸ **fromAddress**(`address`, `provider?`): [`WalletLocked`](/api/Account/WalletLocked)
 
 Creates a locked wallet instance from an address and a provider.
 
@@ -174,12 +174,12 @@ Creates a locked wallet instance from an address and a provider.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) | The address of the wallet. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) | The address of the wallet. |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-[`WalletLocked`](/api/Account/WalletLocked.md)
+[`WalletLocked`](/api/Account/WalletLocked)
 
 A locked wallet instance.
 
@@ -191,7 +191,7 @@ ___
 
 ### fromPrivateKey
 
-▸ **fromPrivateKey**(`privateKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **fromPrivateKey**(`privateKey`, `provider?`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 Creates an unlocked wallet instance from a private key and a provider.
 
@@ -200,11 +200,11 @@ Creates an unlocked wallet instance from a private key and a provider.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `privateKey` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The private key of the wallet. |
-| `provider?` | [`Provider`](/api/Account/Provider.md) | A Provider instance (optional). |
+| `provider?` | [`Provider`](/api/Account/Provider) | A Provider instance (optional). |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 An unlocked wallet instance.
 

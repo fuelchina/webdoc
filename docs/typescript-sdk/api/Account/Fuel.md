@@ -1,6 +1,6 @@
 # Class: Fuel
 
-[@fuel-ts/account](/api/Account/index.md).Fuel
+[@fuel-ts/account](/api/Account/index).Fuel
 
 FuelConnector
 
@@ -9,7 +9,7 @@ that should be implemented to be compatible with the Fuel SDK.
 
 ## Hierarchy
 
-- [`FuelConnector`](/api/Account/FuelConnector.md)
+- [`FuelConnector`](/api/Account/FuelConnector)
 
   ↳ **`Fuel`**
 
@@ -17,7 +17,7 @@ that should be implemented to be compatible with the Fuel SDK.
 
 ### constructor
 
-• **new Fuel**(`config?`): [`Fuel`](/api/Account/Fuel.md)
+• **new Fuel**(`config?`): [`Fuel`](/api/Account/Fuel)
 
 #### Parameters
 
@@ -27,11 +27,11 @@ that should be implemented to be compatible with the Fuel SDK.
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Overrides
 
-[FuelConnector](/api/Account/FuelConnector.md).[constructor](/api/Account/FuelConnector.md#constructor)
+[FuelConnector](/api/Account/FuelConnector).[constructor](/api/Account/FuelConnector.md#constructor)
 
 #### Defined in
 
@@ -41,7 +41,7 @@ that should be implemented to be compatible with the Fuel SDK.
 
 ### \_connectors
 
-• `Private` **\_connectors**: [`FuelConnector`](/api/Account/FuelConnector.md)[] = `[]`
+• `Private` **\_connectors**: [`FuelConnector`](/api/Account/FuelConnector)[] = `[]`
 
 #### Defined in
 
@@ -51,7 +51,7 @@ ___
 
 ### \_currentConnector
 
-• `Private` `Optional` **\_currentConnector**: ``null`` \| [`FuelConnector`](/api/Account/FuelConnector.md)
+• `Private` `Optional` **\_currentConnector**: ``null`` \| [`FuelConnector`](/api/Account/FuelConnector)
 
 #### Defined in
 
@@ -71,7 +71,7 @@ ___
 
 ### \_storage
 
-• `Private` `Optional` **\_storage**: ``null`` \| [`StorageAbstract`](/api/Account/StorageAbstract.md) = `null`
+• `Private` `Optional` **\_storage**: ``null`` \| [`StorageAbstract`](/api/Account/StorageAbstract) = `null`
 
 #### Defined in
 
@@ -81,7 +81,7 @@ ___
 
 ### \_targetObject
 
-• `Private` **\_targetObject**: ``null`` \| [`TargetObject`](/api/Account/TargetObject.md) = `null`
+• `Private` **\_targetObject**: ``null`` \| [`TargetObject`](/api/Account/TargetObject) = `null`
 
 #### Defined in
 
@@ -123,7 +123,7 @@ ___
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[connected](/api/Account/FuelConnector.md#connected)
+[FuelConnector](/api/Account/FuelConnector).[connected](/api/Account/FuelConnector.md#connected)
 
 #### Defined in
 
@@ -133,11 +133,11 @@ ___
 
 ### events
 
-• **events**: typeof [`FuelConnectorEventTypes`](/api/Account/FuelConnectorEventTypes.md) = `FuelConnectorEventTypes`
+• **events**: typeof [`FuelConnectorEventTypes`](/api/Account/FuelConnectorEventTypes) = `FuelConnectorEventTypes`
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[events](/api/Account/FuelConnector.md#events)
+[FuelConnector](/api/Account/FuelConnector).[events](/api/Account/FuelConnector.md#events)
 
 #### Defined in
 
@@ -151,7 +151,7 @@ ___
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[installed](/api/Account/FuelConnector.md#installed)
+[FuelConnector](/api/Account/FuelConnector).[installed](/api/Account/FuelConnector.md#installed)
 
 #### Defined in
 
@@ -165,7 +165,7 @@ ___
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[metadata](/api/Account/FuelConnector.md#metadata)
+[FuelConnector](/api/Account/FuelConnector).[metadata](/api/Account/FuelConnector.md#metadata)
 
 #### Defined in
 
@@ -179,7 +179,7 @@ ___
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[name](/api/Account/FuelConnector.md#name)
+[FuelConnector](/api/Account/FuelConnector).[name](/api/Account/FuelConnector.md#name)
 
 #### Defined in
 
@@ -203,7 +203,7 @@ ___
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[captureRejectionSymbol](/api/Account/FuelConnector.md#capturerejectionsymbol)
+[FuelConnector](/api/Account/FuelConnector).[captureRejectionSymbol](/api/Account/FuelConnector.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -219,7 +219,7 @@ Sets or gets the default captureRejection value for all emitters.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[captureRejections](/api/Account/FuelConnector.md#capturerejections)
+[FuelConnector](/api/Account/FuelConnector).[captureRejections](/api/Account/FuelConnector.md#capturerejections)
 
 #### Defined in
 
@@ -243,7 +243,7 @@ ___
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[defaultMaxListeners](/api/Account/FuelConnector.md#defaultmaxlisteners)
+[FuelConnector](/api/Account/FuelConnector).[defaultMaxListeners](/api/Account/FuelConnector.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -265,7 +265,7 @@ regular `'error'` listener is installed.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[errorMonitor](/api/Account/FuelConnector.md#errormonitor)
+[FuelConnector](/api/Account/FuelConnector).[errorMonitor](/api/Account/FuelConnector.md#errormonitor)
 
 #### Defined in
 
@@ -275,7 +275,7 @@ node_modules/.pnpm/@types+node@18.15.3/node_modules/@types/node/events.d.ts:327
 
 ### \_getProvider
 
-▸ **_getProvider**(`providerOrNetwork?`): `Promise`&lt;[`Provider`](/api/Account/Provider.md)\>
+▸ **_getProvider**(`providerOrNetwork?`): `Promise`&lt;[`Provider`](/api/Account/Provider)\>
 
 Return a Fuel Provider instance with extends features to work with
 connectors.
@@ -284,11 +284,11 @@ connectors.
 
 | Name | Type |
 | :------ | :------ |
-| `providerOrNetwork?` | [`Provider`](/api/Account/Provider.md) \| [`Network`](/api/Account/index.md#network) |
+| `providerOrNetwork?` | [`Provider`](/api/Account/Provider) \| [`Network`](/api/Account/index.md#network) |
 
 #### Returns
 
-`Promise`&lt;[`Provider`](/api/Account/Provider.md)\>
+`Promise`&lt;[`Provider`](/api/Account/Provider)\>
 
 #### Defined in
 
@@ -311,7 +311,7 @@ The accounts addresses strings
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[accounts](/api/Account/FuelConnector.md#accounts)
+[FuelConnector](/api/Account/FuelConnector).[accounts](/api/Account/FuelConnector.md#accounts)
 
 #### Defined in
 
@@ -340,7 +340,7 @@ Return true if the ABI was added successfully.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[addABI](/api/Account/FuelConnector.md#addabi)
+[FuelConnector](/api/Account/FuelConnector).[addABI](/api/Account/FuelConnector.md#addabi)
 
 #### Defined in
 
@@ -377,7 +377,7 @@ True if the asset was added successfully
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[addAsset](/api/Account/FuelConnector.md#addasset)
+[FuelConnector](/api/Account/FuelConnector).[addAsset](/api/Account/FuelConnector.md#addasset)
 
 #### Defined in
 
@@ -414,7 +414,7 @@ True if the asset was added successfully
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[addAssets](/api/Account/FuelConnector.md#addassets)
+[FuelConnector](/api/Account/FuelConnector).[addAssets](/api/Account/FuelConnector.md#addassets)
 
 #### Defined in
 
@@ -432,7 +432,7 @@ Add a new connector to the list of connectors.
 
 | Name | Type |
 | :------ | :------ |
-| `connector` | [`FuelConnector`](/api/Account/FuelConnector.md) |
+| `connector` | [`FuelConnector`](/api/Account/FuelConnector) |
 
 #### Returns
 
@@ -446,7 +446,7 @@ ___
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **addListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -463,11 +463,11 @@ v0.1.26
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[addListener](/api/Account/FuelConnector.md#addlistener)
+[FuelConnector](/api/Account/FuelConnector).[addListener](/api/Account/FuelConnector.md#addlistener)
 
 #### Defined in
 
@@ -501,7 +501,7 @@ Return true if the network was added successfully
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[addNetwork](/api/Account/FuelConnector.md#addnetwork)
+[FuelConnector](/api/Account/FuelConnector).[addNetwork](/api/Account/FuelConnector.md#addnetwork)
 
 #### Defined in
 
@@ -523,7 +523,7 @@ Array of assets metadata from the connector vinculated to the all accounts from 
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[assets](/api/Account/FuelConnector.md#assets)
+[FuelConnector](/api/Account/FuelConnector).[assets](/api/Account/FuelConnector.md#assets)
 
 #### Defined in
 
@@ -589,7 +589,7 @@ boolean - connection status.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[connect](/api/Account/FuelConnector.md#connect)
+[FuelConnector](/api/Account/FuelConnector).[connect](/api/Account/FuelConnector.md#connect)
 
 #### Defined in
 
@@ -599,13 +599,13 @@ ___
 
 ### connectors
 
-▸ **connectors**(): `Promise`&lt;[`FuelConnector`](/api/Account/FuelConnector.md)[]\>
+▸ **connectors**(): `Promise`&lt;[`FuelConnector`](/api/Account/FuelConnector)[]\>
 
 Return the list of connectors with the status of installed and connected.
 
 #### Returns
 
-`Promise`&lt;[`FuelConnector`](/api/Account/FuelConnector.md)[]\>
+`Promise`&lt;[`FuelConnector`](/api/Account/FuelConnector)[]\>
 
 #### Defined in
 
@@ -630,7 +630,7 @@ The current account selected otherwise null.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[currentAccount](/api/Account/FuelConnector.md#currentaccount)
+[FuelConnector](/api/Account/FuelConnector).[currentAccount](/api/Account/FuelConnector.md#currentaccount)
 
 #### Defined in
 
@@ -640,13 +640,13 @@ ___
 
 ### currentConnector
 
-▸ **currentConnector**(): `undefined` \| ``null`` \| [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **currentConnector**(): `undefined` \| ``null`` \| [`FuelConnector`](/api/Account/FuelConnector)
 
 Return the current selected connector.
 
 #### Returns
 
-`undefined` \| ``null`` \| [`FuelConnector`](/api/Account/FuelConnector.md)
+`undefined` \| ``null`` \| [`FuelConnector`](/api/Account/FuelConnector)
 
 #### Defined in
 
@@ -668,7 +668,7 @@ Return the current network selected inside the connector.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[currentNetwork](/api/Account/FuelConnector.md#currentnetwork)
+[FuelConnector](/api/Account/FuelConnector).[currentNetwork](/api/Account/FuelConnector.md#currentnetwork)
 
 #### Defined in
 
@@ -709,7 +709,7 @@ The connection status.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[disconnect](/api/Account/FuelConnector.md#disconnect)
+[FuelConnector](/api/Account/FuelConnector).[disconnect](/api/Account/FuelConnector.md#disconnect)
 
 #### Defined in
 
@@ -776,7 +776,7 @@ v0.1.26
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[emit](/api/Account/FuelConnector.md#emit)
+[FuelConnector](/api/Account/FuelConnector).[emit](/api/Account/FuelConnector.md#emit)
 
 #### Defined in
 
@@ -814,7 +814,7 @@ v6.0.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[eventNames](/api/Account/FuelConnector.md#eventnames)
+[FuelConnector](/api/Account/FuelConnector).[eventNames](/api/Account/FuelConnector.md#eventnames)
 
 #### Defined in
 
@@ -833,7 +833,7 @@ status.
 
 | Name | Type |
 | :------ | :------ |
-| `connector` | [`FuelConnector`](/api/Account/FuelConnector.md) & { `_latestUpdate?`: `number`  } |
+| `connector` | [`FuelConnector`](/api/Account/FuelConnector) & { `_latestUpdate?`: `number`  } |
 
 #### Returns
 
@@ -882,7 +882,7 @@ The ABI if it exists, otherwise return null.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[getABI](/api/Account/FuelConnector.md#getabi)
+[FuelConnector](/api/Account/FuelConnector).[getABI](/api/Account/FuelConnector.md#getabi)
 
 #### Defined in
 
@@ -892,7 +892,7 @@ ___
 
 ### getConnector
 
-▸ **getConnector**(`connector`): ``null`` \| [`FuelConnector`](/api/Account/FuelConnector.md)
+▸ **getConnector**(`connector`): ``null`` \| [`FuelConnector`](/api/Account/FuelConnector)
 
 Get a connector from the list of connectors.
 
@@ -900,11 +900,11 @@ Get a connector from the list of connectors.
 
 | Name | Type |
 | :------ | :------ |
-| `connector` | `string` \| [`FuelConnector`](/api/Account/FuelConnector.md) |
+| `connector` | `string` \| [`FuelConnector`](/api/Account/FuelConnector) |
 
 #### Returns
 
-``null`` \| [`FuelConnector`](/api/Account/FuelConnector.md)
+``null`` \| [`FuelConnector`](/api/Account/FuelConnector)
 
 #### Defined in
 
@@ -929,7 +929,7 @@ v1.0.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[getMaxListeners](/api/Account/FuelConnector.md#getmaxlisteners)
+[FuelConnector](/api/Account/FuelConnector).[getMaxListeners](/api/Account/FuelConnector.md#getmaxlisteners)
 
 #### Defined in
 
@@ -939,7 +939,7 @@ ___
 
 ### getProvider
 
-▸ **getProvider**(`providerOrNetwork?`): `Promise`&lt;[`Provider`](/api/Account/Provider.md)\>
+▸ **getProvider**(`providerOrNetwork?`): `Promise`&lt;[`Provider`](/api/Account/Provider)\>
 
 Return a Fuel Provider instance with extends features to work with
 connectors.
@@ -952,11 +952,11 @@ getProvider is deprecated and is going to be removed in the future, use getWalle
 
 | Name | Type |
 | :------ | :------ |
-| `providerOrNetwork?` | [`Provider`](/api/Account/Provider.md) \| [`Network`](/api/Account/index.md#network) |
+| `providerOrNetwork?` | [`Provider`](/api/Account/Provider) \| [`Network`](/api/Account/index.md#network) |
 
 #### Returns
 
-`Promise`&lt;[`Provider`](/api/Account/Provider.md)\>
+`Promise`&lt;[`Provider`](/api/Account/Provider)\>
 
 #### Defined in
 
@@ -966,13 +966,13 @@ ___
 
 ### getStorage
 
-▸ **getStorage**(): `undefined` \| [`StorageAbstract`](/api/Account/StorageAbstract.md)
+▸ **getStorage**(): `undefined` \| [`StorageAbstract`](/api/Account/StorageAbstract)
 
 Return the storage used.
 
 #### Returns
 
-`undefined` \| [`StorageAbstract`](/api/Account/StorageAbstract.md)
+`undefined` \| [`StorageAbstract`](/api/Account/StorageAbstract)
 
 #### Defined in
 
@@ -982,7 +982,7 @@ ___
 
 ### getTargetObject
 
-▸ **getTargetObject**(`targetObject?`): ``null`` \| [`TargetObject`](/api/Account/TargetObject.md)
+▸ **getTargetObject**(`targetObject?`): ``null`` \| [`TargetObject`](/api/Account/TargetObject)
 
 Return the target object to listen for global events.
 
@@ -990,11 +990,11 @@ Return the target object to listen for global events.
 
 | Name | Type |
 | :------ | :------ |
-| `targetObject?` | [`TargetObject`](/api/Account/TargetObject.md) |
+| `targetObject?` | [`TargetObject`](/api/Account/TargetObject) |
 
 #### Returns
 
-``null`` \| [`TargetObject`](/api/Account/TargetObject.md)
+``null`` \| [`TargetObject`](/api/Account/TargetObject)
 
 #### Defined in
 
@@ -1004,7 +1004,7 @@ ___
 
 ### getWallet
 
-▸ **getWallet**(`address`, `providerOrNetwork?`): `Promise`&lt;[`Account`](/api/Account/Account.md)\>
+▸ **getWallet**(`address`, `providerOrNetwork?`): `Promise`&lt;[`Account`](/api/Account/Account)\>
 
 Return a Fuel Wallet Locked instance with extends features to work with
 connectors.
@@ -1013,12 +1013,12 @@ connectors.
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
-| `providerOrNetwork?` | [`Provider`](/api/Account/Provider.md) \| [`Network`](/api/Account/index.md#network) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
+| `providerOrNetwork?` | [`Provider`](/api/Account/Provider) \| [`Network`](/api/Account/index.md#network) |
 
 #### Returns
 
-`Promise`&lt;[`Account`](/api/Account/Account.md)\>
+`Promise`&lt;[`Account`](/api/Account/Account)\>
 
 #### Defined in
 
@@ -1046,7 +1046,7 @@ Returns true if the abi exists or false if not.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[hasABI](/api/Account/FuelConnector.md#hasabi)
+[FuelConnector](/api/Account/FuelConnector).[hasABI](/api/Account/FuelConnector.md#hasabi)
 
 #### Defined in
 
@@ -1099,7 +1099,7 @@ The connection status.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[isConnected](/api/Account/FuelConnector.md#isconnected)
+[FuelConnector](/api/Account/FuelConnector).[isConnected](/api/Account/FuelConnector.md#isconnected)
 
 #### Defined in
 
@@ -1129,7 +1129,7 @@ v3.2.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[listenerCount](/api/Account/FuelConnector.md#listenercount)
+[FuelConnector](/api/Account/FuelConnector).[listenerCount](/api/Account/FuelConnector.md#listenercount)
 
 #### Defined in
 
@@ -1167,7 +1167,7 @@ v0.1.26
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[listeners](/api/Account/FuelConnector.md#listeners)
+[FuelConnector](/api/Account/FuelConnector).[listeners](/api/Account/FuelConnector.md#listeners)
 
 #### Defined in
 
@@ -1189,7 +1189,7 @@ Return all the networks added to the connector.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[networks](/api/Account/FuelConnector.md#networks)
+[FuelConnector](/api/Account/FuelConnector).[networks](/api/Account/FuelConnector.md#networks)
 
 #### Defined in
 
@@ -1199,7 +1199,7 @@ ___
 
 ### off
 
-▸ **off**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **off**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Alias for `emitter.removeListener()`.
 
@@ -1216,11 +1216,11 @@ v10.0.0
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[off](/api/Account/FuelConnector.md#off)
+[FuelConnector](/api/Account/FuelConnector).[off](/api/Account/FuelConnector.md#off)
 
 #### Defined in
 
@@ -1230,7 +1230,7 @@ ___
 
 ### on
 
-▸ **on**&lt;`E`, `D`\>(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **on**&lt;`E`, `D`\>(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Event listener for the connector.
 
@@ -1250,11 +1250,11 @@ Event listener for the connector.
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[on](/api/Account/FuelConnector.md#on)
+[FuelConnector](/api/Account/FuelConnector).[on](/api/Account/FuelConnector.md#on)
 
 #### Defined in
 
@@ -1264,7 +1264,7 @@ ___
 
 ### once
 
-▸ **once**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **once**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -1303,11 +1303,11 @@ v0.3.0
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[once](/api/Account/FuelConnector.md#once)
+[FuelConnector](/api/Account/FuelConnector).[once](/api/Account/FuelConnector.md#once)
 
 #### Defined in
 
@@ -1330,7 +1330,7 @@ Always true.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[ping](/api/Account/FuelConnector.md#ping)
+[FuelConnector](/api/Account/FuelConnector).[ping](/api/Account/FuelConnector.md#ping)
 
 #### Defined in
 
@@ -1349,7 +1349,7 @@ status. If no connector is provided it will ping the current connector.
 
 | Name | Type |
 | :------ | :------ |
-| `connector?` | [`FuelConnector`](/api/Account/FuelConnector.md) |
+| `connector?` | [`FuelConnector`](/api/Account/FuelConnector) |
 
 #### Returns
 
@@ -1363,7 +1363,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **prependListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -1391,11 +1391,11 @@ v6.0.0
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[prependListener](/api/Account/FuelConnector.md#prependlistener)
+[FuelConnector](/api/Account/FuelConnector).[prependListener](/api/Account/FuelConnector.md#prependlistener)
 
 #### Defined in
 
@@ -1405,7 +1405,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **prependOnceListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -1431,11 +1431,11 @@ v6.0.0
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[prependOnceListener](/api/Account/FuelConnector.md#prependoncelistener)
+[FuelConnector](/api/Account/FuelConnector).[prependOnceListener](/api/Account/FuelConnector.md#prependoncelistener)
 
 #### Defined in
 
@@ -1490,7 +1490,7 @@ v9.4.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[rawListeners](/api/Account/FuelConnector.md#rawlisteners)
+[FuelConnector](/api/Account/FuelConnector).[rawListeners](/api/Account/FuelConnector.md#rawlisteners)
 
 #### Defined in
 
@@ -1500,7 +1500,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`event?`): [`Fuel`](/api/Account/Fuel.md)
+▸ **removeAllListeners**(`event?`): [`Fuel`](/api/Account/Fuel)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1522,11 +1522,11 @@ v0.1.26
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[removeAllListeners](/api/Account/FuelConnector.md#removealllisteners)
+[FuelConnector](/api/Account/FuelConnector).[removeAllListeners](/api/Account/FuelConnector.md#removealllisteners)
 
 #### Defined in
 
@@ -1536,7 +1536,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel.md)
+▸ **removeListener**(`eventName`, `listener`): [`Fuel`](/api/Account/Fuel)
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
 
@@ -1628,11 +1628,11 @@ v0.1.26
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[removeListener](/api/Account/FuelConnector.md#removelistener)
+[FuelConnector](/api/Account/FuelConnector).[removeListener](/api/Account/FuelConnector.md#removelistener)
 
 #### Defined in
 
@@ -1689,7 +1689,7 @@ Return true if the network was added successfully
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[selectNetwork](/api/Account/FuelConnector.md#selectnetwork)
+[FuelConnector](/api/Account/FuelConnector).[selectNetwork](/api/Account/FuelConnector.md#selectnetwork)
 
 #### Defined in
 
@@ -1723,7 +1723,7 @@ The transaction id
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[sendTransaction](/api/Account/FuelConnector.md#sendtransaction)
+[FuelConnector](/api/Account/FuelConnector).[sendTransaction](/api/Account/FuelConnector.md#sendtransaction)
 
 #### Defined in
 
@@ -1749,7 +1749,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`Fuel`](/api/Account/Fuel.md)
+▸ **setMaxListeners**(`n`): [`Fuel`](/api/Account/Fuel)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1770,11 +1770,11 @@ v0.3.5
 
 #### Returns
 
-[`Fuel`](/api/Account/Fuel.md)
+[`Fuel`](/api/Account/Fuel)
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[setMaxListeners](/api/Account/FuelConnector.md#setmaxlisteners)
+[FuelConnector](/api/Account/FuelConnector).[setMaxListeners](/api/Account/FuelConnector.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1867,7 +1867,7 @@ Message signature
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[signMessage](/api/Account/FuelConnector.md#signmessage)
+[FuelConnector](/api/Account/FuelConnector).[signMessage](/api/Account/FuelConnector.md#signmessage)
 
 #### Defined in
 
@@ -1897,7 +1897,7 @@ Transaction signature
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[signTransaction](/api/Account/FuelConnector.md#signtransaction)
+[FuelConnector](/api/Account/FuelConnector).[signTransaction](/api/Account/FuelConnector.md#signtransaction)
 
 #### Defined in
 
@@ -1951,7 +1951,7 @@ boolean - connection status.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[version](/api/Account/FuelConnector.md#version)
+[FuelConnector](/api/Account/FuelConnector).[version](/api/Account/FuelConnector.md#version)
 
 #### Defined in
 
@@ -2005,7 +2005,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[getEventListeners](/api/Account/FuelConnector.md#geteventlisteners)
+[FuelConnector](/api/Account/FuelConnector).[getEventListeners](/api/Account/FuelConnector.md#geteventlisteners)
 
 #### Defined in
 
@@ -2049,7 +2049,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[listenerCount](/api/Account/FuelConnector.md#listenercount-1)
+[FuelConnector](/api/Account/FuelConnector).[listenerCount](/api/Account/FuelConnector.md#listenercount-1)
 
 #### Defined in
 
@@ -2135,7 +2135,7 @@ that iterates `eventName` events emitted by the `emitter`
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[on](/api/Account/FuelConnector.md#on-1)
+[FuelConnector](/api/Account/FuelConnector).[on](/api/Account/FuelConnector.md#on-1)
 
 #### Defined in
 
@@ -2245,7 +2245,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[once](/api/Account/FuelConnector.md#once-1)
+[FuelConnector](/api/Account/FuelConnector).[once](/api/Account/FuelConnector.md#once-1)
 
 #### Defined in
 
@@ -2267,7 +2267,7 @@ node_modules/.pnpm/@types+node@18.15.3/node_modules/@types/node/events.d.ts:194
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[once](/api/Account/FuelConnector.md#once-1)
+[FuelConnector](/api/Account/FuelConnector).[once](/api/Account/FuelConnector.md#once-1)
 
 #### Defined in
 
@@ -2308,7 +2308,7 @@ v15.4.0
 
 #### Inherited from
 
-[FuelConnector](/api/Account/FuelConnector.md).[setMaxListeners](/api/Account/FuelConnector.md#setmaxlisteners-1)
+[FuelConnector](/api/Account/FuelConnector).[setMaxListeners](/api/Account/FuelConnector.md#setmaxlisteners-1)
 
 #### Defined in
 

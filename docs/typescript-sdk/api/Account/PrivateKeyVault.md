@@ -1,16 +1,16 @@
 # Class: PrivateKeyVault
 
-[@fuel-ts/account](/api/Account/index.md).PrivateKeyVault
+[@fuel-ts/account](/api/Account/index).PrivateKeyVault
 
 ## Implements
 
-- [`Vault`](/api/Account/Vault.md)&lt;[`PkVaultOptions`](/api/Account/PkVaultOptions.md)\>
+- [`Vault`](/api/Account/Vault)&lt;[`PkVaultOptions`](/api/Account/PkVaultOptions)\>
 
 ## Constructors
 
 ### constructor
 
-• **new PrivateKeyVault**(`options?`): [`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)
+• **new PrivateKeyVault**(`options?`): [`PrivateKeyVault`](/api/Account/PrivateKeyVault)
 
 If privateKey vault is initialized with a secretKey, it creates
 one account with the fallowing secret
@@ -19,11 +19,11 @@ one account with the fallowing secret
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`PkVaultOptions`](/api/Account/PkVaultOptions.md) |
+| `options` | [`PkVaultOptions`](/api/Account/PkVaultOptions) |
 
 #### Returns
 
-[`PrivateKeyVault`](/api/Account/PrivateKeyVault.md)
+[`PrivateKeyVault`](/api/Account/PrivateKeyVault)
 
 #### Defined in
 
@@ -47,7 +47,7 @@ ___
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[type](/api/Account/Vault.md#type)
+[Vault](/api/Account/Vault).[type](/api/Account/Vault.md#type)
 
 #### Defined in
 
@@ -65,12 +65,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 | `publicKey` | `string` |
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[addAccount](/api/Account/Vault.md#addaccount)
+[Vault](/api/Account/Vault).[addAccount](/api/Account/Vault.md#addaccount)
 
 #### Defined in
 
@@ -86,7 +86,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
@@ -94,7 +94,7 @@ ___
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[exportAccount](/api/Account/Vault.md#exportaccount)
+[Vault](/api/Account/Vault).[exportAccount](/api/Account/Vault.md#exportaccount)
 
 #### Defined in
 
@@ -112,7 +112,7 @@ ___
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[getAccounts](/api/Account/Vault.md#getaccounts)
+[Vault](/api/Account/Vault).[getAccounts](/api/Account/Vault.md#getaccounts)
 
 #### Defined in
 
@@ -136,7 +136,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 | `publicKey` | `string` |
 
 #### Defined in
@@ -147,21 +147,21 @@ ___
 
 ### getWallet
 
-▸ **getWallet**(`address`): [`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+▸ **getWallet**(`address`): [`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress.md) |
+| `address` | `string` \| [`AbstractAddress`](/api/Interfaces/AbstractAddress) |
 
 #### Returns
 
-[`WalletUnlocked`](/api/Account/WalletUnlocked.md)
+[`WalletUnlocked`](/api/Account/WalletUnlocked)
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[getWallet](/api/Account/Vault.md#getwallet)
+[Vault](/api/Account/Vault).[getWallet](/api/Account/Vault.md#getwallet)
 
 #### Defined in
 
@@ -171,15 +171,15 @@ ___
 
 ### serialize
 
-▸ **serialize**(): [`PkVaultOptions`](/api/Account/PkVaultOptions.md)
+▸ **serialize**(): [`PkVaultOptions`](/api/Account/PkVaultOptions)
 
 #### Returns
 
-[`PkVaultOptions`](/api/Account/PkVaultOptions.md)
+[`PkVaultOptions`](/api/Account/PkVaultOptions)
 
 #### Implementation of
 
-[Vault](/api/Account/Vault.md).[serialize](/api/Account/Vault.md#serialize)
+[Vault](/api/Account/Vault).[serialize](/api/Account/Vault.md#serialize)
 
 #### Defined in
 

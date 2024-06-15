@@ -1,6 +1,6 @@
 # Interface: IGetMaxGasParams
 
-[@fuel-ts/account](/api/Account/index.md).IGetMaxGasParams
+[@fuel-ts/account](/api/Account/index).IGetMaxGasParams
 
 ## Properties
 

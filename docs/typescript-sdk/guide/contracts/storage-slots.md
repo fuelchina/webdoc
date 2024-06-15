@@ -13,4 +13,4 @@
 
 ## 自动加载存储槽
 
-使用 [Typegen](../fuels-cli/generating-types.md) 自动生成的代码 [load](../fuels-cli/using-generated-types.md#autoloading-of-storage-slots) 为您提供存储槽。
+使用 [Typegen](../fuels-cli/generating-types) 自动生成的代码 [load](../fuels-cli/using-generated-types.md#autoloading-of-storage-slots) 为您提供存储槽。

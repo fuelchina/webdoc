@@ -1,6 +1,6 @@
 # Class: Script&lt;TInput, TOutput\>
 
-[@fuel-ts/script](/api/Script/index.md).Script
+[@fuel-ts/script](/api/Script/index).Script
 
 `Script` provides a typed interface for interacting with the script program type.
 
@@ -21,7 +21,7 @@
 
 ### constructor
 
-• **new Script**&lt;`TInput`, `TOutput`\>(`bytecode`, `abi`, `account`): [`Script`](/api/Script/Script.md)&lt;`TInput`, `TOutput`\>
+• **new Script**&lt;`TInput`, `TOutput`\>(`bytecode`, `abi`, `account`): [`Script`](/api/Script/Script)&lt;`TInput`, `TOutput`\>
 
 Create a new instance of the Script class.
 
@@ -38,11 +38,11 @@ Create a new instance of the Script class.
 | :------ | :------ | :------ |
 | `bytecode` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | The compiled bytecode of the script. |
 | `abi` | `JsonAbi` | The ABI interface for the script. |
-| `account` | [`Account`](/api/Account/Account.md) | The account associated with the script. |
+| `account` | [`Account`](/api/Account/Account) | The account associated with the script. |
 
 #### Returns
 
-[`Script`](/api/Script/Script.md)&lt;`TInput`, `TOutput`\>
+[`Script`](/api/Script/Script)&lt;`TInput`, `TOutput`\>
 
 #### Overrides
 
@@ -56,7 +56,7 @@ AbstractScript.constructor
 
 ### account
 
-• **account**: [`Account`](/api/Account/Account.md)
+• **account**: [`Account`](/api/Account/Account)
 
 The account associated with the script.
 
@@ -122,7 +122,7 @@ ___
 
 ### provider
 
-• **provider**: [`Provider`](/api/Account/Provider.md)
+• **provider**: [`Provider`](/api/Account/Provider)
 
 The provider used for interacting with the network.
 
@@ -138,7 +138,7 @@ ___
 
 ### script
 
-• **script**: [`ScriptRequest`](/api/Program/ScriptRequest.md)&lt;`InputValue`&lt;`void`\>[], `Result`&lt;`TOutput`\>\>
+• **script**: [`ScriptRequest`](/api/Program/ScriptRequest)&lt;`InputValue`&lt;`void`\>[], `Result`&lt;`TOutput`\>\>
 
 The script request object.
 
@@ -150,7 +150,7 @@ The script request object.
 
 ### setConfigurableConstants
 
-▸ **setConfigurableConstants**(`configurables`): [`Script`](/api/Script/Script.md)&lt;`TInput`, `TOutput`\>
+▸ **setConfigurableConstants**(`configurables`): [`Script`](/api/Script/Script)&lt;`TInput`, `TOutput`\>
 
 Set the configurable constants of the script.
 
@@ -166,7 +166,7 @@ Will throw an error if the script has no configurable constants to be set or if 
 
 #### Returns
 
-[`Script`](/api/Script/Script.md)&lt;`TInput`, `TOutput`\>
+[`Script`](/api/Script/Script)&lt;`TInput`, `TOutput`\>
 
 This instance of the `Script`.
 

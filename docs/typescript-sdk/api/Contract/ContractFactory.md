@@ -1,6 +1,6 @@
 # Class: ContractFactory
 
-[@fuel-ts/contract](/api/Contract/index.md).ContractFactory
+[@fuel-ts/contract](/api/Contract/index).ContractFactory
 
 `ContractFactory` provides utilities for deploying and configuring contracts.
 
@@ -8,7 +8,7 @@
 
 ### constructor
 
-• **new ContractFactory**(`bytecode`, `abi`, `accountOrProvider?`): [`ContractFactory`](/api/Contract/ContractFactory.md)
+• **new ContractFactory**(`bytecode`, `abi`, `accountOrProvider?`): [`ContractFactory`](/api/Contract/ContractFactory)
 
 Create a ContractFactory instance.
 
@@ -18,11 +18,11 @@ Create a ContractFactory instance.
 | :------ | :------ | :------ | :------ |
 | `bytecode` | [`BytesLike`](/api/Interfaces/index.md#byteslike) | `undefined` | The bytecode of the contract. |
 | `abi` | `JsonAbi` \| `Interface`&lt;`JsonAbi`\> | `undefined` | The contract's ABI (Application Binary Interface). |
-| `accountOrProvider` | ``null`` \| [`Provider`](/api/Account/Provider.md) \| [`Account`](/api/Account/Account.md) | `null` | An account or provider to be associated with the factory. |
+| `accountOrProvider` | ``null`` \| [`Provider`](/api/Account/Provider) \| [`Account`](/api/Account/Account) | `null` | An account or provider to be associated with the factory. |
 
 #### Returns
 
-[`ContractFactory`](/api/Contract/ContractFactory.md)
+[`ContractFactory`](/api/Contract/ContractFactory)
 
 #### Defined in
 
@@ -32,7 +32,7 @@ Create a ContractFactory instance.
 
 ### account
 
-• **account**: ``null`` \| [`Account`](/api/Account/Account.md)
+• **account**: ``null`` \| [`Account`](/api/Account/Account)
 
 #### Defined in
 
@@ -62,7 +62,7 @@ ___
 
 ### provider
 
-• **provider**: ``null`` \| [`Provider`](/api/Account/Provider.md)
+• **provider**: ``null`` \| [`Provider`](/api/Account/Provider)
 
 #### Defined in
 
@@ -72,7 +72,7 @@ ___
 
 ### connect
 
-▸ **connect**(`provider`): [`ContractFactory`](/api/Contract/ContractFactory.md)
+▸ **connect**(`provider`): [`ContractFactory`](/api/Contract/ContractFactory)
 
 Connect the factory to a provider.
 
@@ -80,11 +80,11 @@ Connect the factory to a provider.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `provider` | [`Provider`](/api/Account/Provider.md) | The provider to be associated with the factory. |
+| `provider` | [`Provider`](/api/Account/Provider) | The provider to be associated with the factory. |
 
 #### Returns
 
-[`ContractFactory`](/api/Contract/ContractFactory.md)
+[`ContractFactory`](/api/Contract/ContractFactory)
 
 A new ContractFactory instance.
 
@@ -115,7 +115,7 @@ The CreateTransactionRequest object for deploying the contract.
 | Name | Type |
 | :------ | :------ |
 | `contractId` | `string` |
-| `transactionRequest` | [`CreateTransactionRequest`](/api/Account/CreateTransactionRequest.md) |
+| `transactionRequest` | [`CreateTransactionRequest`](/api/Account/CreateTransactionRequest) |
 
 #### Defined in
 
@@ -125,7 +125,7 @@ ___
 
 ### deployContract
 
-▸ **deployContract**(`deployContractOptions?`): `Promise`&lt;[`Contract`](/api/Program/Contract.md)\>
+▸ **deployContract**(`deployContractOptions?`): `Promise`&lt;[`Contract`](/api/Program/Contract)\>
 
 Deploy a contract with the specified options.
 
@@ -137,7 +137,7 @@ Deploy a contract with the specified options.
 
 #### Returns
 
-`Promise`&lt;[`Contract`](/api/Program/Contract.md)\>
+`Promise`&lt;[`Contract`](/api/Program/Contract)\>
 
 A promise that resolves to the deployed contract instance.
 

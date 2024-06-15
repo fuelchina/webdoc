@@ -1,6 +1,6 @@
 # Interface: MnemonicVaultOptions
 
-[@fuel-ts/account](/api/Account/index.md).MnemonicVaultOptions
+[@fuel-ts/account](/api/Account/index).MnemonicVaultOptions
 
 ## Properties
 
