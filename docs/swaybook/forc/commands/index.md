@@ -1,2 +1,2 @@
 <!-- markdownlint-disable MD041 -->
-Here are a list of commands available to forc:
+以下是 forc 可用的命令列表：

@@ -6,8 +6,9 @@ Sway 从根本上来说是一种区块链语言。因此，它具有一些您在
 
 - [哈希和密码学](./hashing_and_cryptography)
 - [合约存储](./storage)
-- [Function Purity](./purity)
-- [Identifiers](./identifiers)
-- [Native Assets](./native_assets)
-- [Access Control](./access_control)
-- [Calling Contracts](./calling_contracts)
+- [函数纯度](./purity)
+- [标识符](./identifiers)
+- [原生资产](./native_assets)
+- [访问控制](./access_control)
+- [调用合约](./calling_contracts)
+

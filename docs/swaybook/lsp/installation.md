@@ -8,13 +8,13 @@ Sway 语言服务器包含在 [`forc-lsp`](../forc/plugins/forc_lsp) 二进制�
 
 这是目前支持最好的编辑器。
 
-您可以从[市场](https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin)安装最新版本的插件。
+[您可以从市场](https://marketplace.visualstudio.com/items?itemName=FuelLabs.sway-vscode-plugin)安装最新版本的插件。
 
 请注意，我们仅支持最新版本的 VS Code
 
 ## vim / neovim
 
-按照 [sway.vim](https://github.com/FuelLabs/sway.vim)的文档进行安装。
+[按照sway.vim](https://github.com/FuelLabs/sway.vim)的文档进行安装。
 
 ## helix
 
