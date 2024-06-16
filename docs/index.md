@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Fuelup.cc"
-  text: "Fuel 中文爱好者社区"
+  name: "Fuel 中文社区"
+  text: "汇聚 Fuel BUIDLer"
   tagline: 与我们一起了解、加入、热爱、建设 Fuel ！
   actions:
     - theme: brand

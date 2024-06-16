@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   //base: '/webdoc/',
-  title: "Fuelup.cc",
+  title: "Fuel 中文社区",
   description: "Fuel China Community",
   ignoreDeadLinks: true,
   markdown: {
@@ -15,8 +15,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: 'https://fuellabs.github.io/fuels-ts/favicon.ico', type: 'image/png' }],
   ],
   themeConfig: {
-    logo: '/logo.svg',
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/fuel_logo.png',
     nav: [
       { text: '主页', link: '/' },
       { text: '资源', link: 'https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9' },
@@ -42,12 +41,13 @@ export default defineConfig({
             { text: '1.2 Fuel 工具链', link: '/swaybook/introduction/fuel_toolchain' },
             { text: '1.3 Forc 项目', link: '/swaybook/introduction/forc_project' },
             { text: '1.4 标准库', link: '/swaybook/introduction/standard_library' }
-          ]
+          ],
+
         },
         {
           text: '2. 示例',
           collapsed: false,
-          link: '/swaybook/examples/index' ,
+          link: '/swaybook/examples/' ,
           items: [
             { text: '2.1 计数器', link: '/swaybook/examples/counter' },
             { text: '2.2 菲兹巴兹', link: '/swaybook/examples/fizzbuzz' },
@@ -58,7 +58,7 @@ export default defineConfig({
         {
           text: '3. Sway程序类型',
           collapsed: false,
-          link: '/swaybook/sway-program-types/index',
+          link: '/swaybook/sway-program-types/',
           items: [
             { text: '3.1 合约', link: '/swaybook/sway-program-types/smart_contracts' },
             { text: '3.2 库', link: '/swaybook/sway-program-types/libraries' },
@@ -69,7 +69,7 @@ export default defineConfig({
         {
           text: '4. Sway语言基础',
           collapsed: false,
-          link: '/swaybook/basics/index',
+          link: '/swaybook/basics/',
           items: [
             { text: '4.1 变量', link: '/swaybook/basics/variables' },
             { text: '4.2 内置类型', link: '/swaybook/basics/built_in_types' },
@@ -86,7 +86,7 @@ export default defineConfig({
         {
           text: '5. 使用 Sway 进行区块链开发',
           collapsed: false,
-          link: '/swaybook/blockchain-development/index',
+          link: '/swaybook/blockchain-development/',
           items: [
             {text: '5.1 哈希和密码学', link: '/swaybook/blockchain-development/hashing_and_cryptography'},
             {text: '5.2 合约存储', link: '/swaybook/blockchain-development/storage'},
@@ -100,7 +100,7 @@ export default defineConfig({
         {
           text: '6. 高级概念',
           collapsed: false,
-          link: '/swaybook/advanced/index',
+          link: '/swaybook/advanced/',
           items: [
             {text: '6.1 高级类型', link: '/swaybook/advanced/advanced_types'},
             {text: '6.2 泛型类型', link: '/swaybook/advanced/generic_types'},
@@ -113,7 +113,7 @@ export default defineConfig({
         {
           text: '7. 常用集合',
           collapsed: false,
-          link: '/swaybook/common-collections/index',
+          link: '/swaybook/common-collections/',
           items: [
             { text: '7.1 堆上的向量', link: '/swaybook/common-collections/vec' },
             { text: '7.2 储存的向量', link: '/swaybook/common-collections/storage_vec' },
@@ -123,7 +123,7 @@ export default defineConfig({
         {
           text: '8.  测试 ',
           collapsed: false,
-          link: '/swaybook/testing/index',
+          link: '/swaybook/testing/',
           items: [
             { text: '8.1 单元测试', link: '/swaybook/testing/unit-testing' },
             { text: '8.2 使用Rust进行测试', link: '/swaybook/testing/testing-with-rust' },
@@ -132,7 +132,7 @@ export default defineConfig({
         {
           text: '9. 应用程序前端',
           collapsed: false,
-          link: '/swaybook/frontend/index',
+          link: '/swaybook/frontend/',
           items: [
             { text: '9.1 TypeScript SDK', link: '/swaybook/frontend/typescript_sdk' },
           ]
@@ -140,7 +140,7 @@ export default defineConfig({
         {
           text: '10.  Sway LSP ',
           collapsed: false,
-          link: '/swaybook/lsp/index',
+          link: '/swaybook/lsp/',
           items: [
             { text: '10.1 安装', link: '/swaybook/lsp/installation' },
             { text: '10.2 特点', link: '/swaybook/lsp/features' },
@@ -149,7 +149,7 @@ export default defineConfig({
         {
           text: '11.  Sway 参考 ',
           collapsed: false,
-          link: '/swaybook/reference/index',
+          link: '/swaybook/reference/',
           items: [
             {text: '11.1 编译器内部函数', link: '/swaybook/reference/compiler_intrinsics'},
             {text: '11.2 属性', link: '/swaybook/reference/attributes'},
@@ -164,7 +164,7 @@ export default defineConfig({
         {
           text: '12. Forc参考 ',
           collapsed: false,
-          link: '/swaybook/forc/index',
+          link: '/swaybook/forc/',
           items: [
             {text: '12.1 清单参考', link: '/swaybook/forc/manifest_reference'},
             {text: '12.2 工作区', link: '/swaybook/forc/workspaces'},
