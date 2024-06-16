@@ -18,7 +18,7 @@ export default defineConfig({
     logo: 'https://avatars.githubusercontent.com/u/168461719',
     nav: [
       { text: '主页', link: '/' },
-      { text: '资源', link: 'https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9' },
+      { text: 'Awesome-Fuel', link: 'https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9' },
       // {
       //   text: "版本",
       //   items: [
