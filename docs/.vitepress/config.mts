@@ -15,7 +15,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: 'https://fuellabs.github.io/fuels-ts/favicon.ico', type: 'image/png' }],
   ],
   themeConfig: {
-    logo: '../fuel_logo.png',
+    logo: 'https://avatars.githubusercontent.com/u/168461719',
     nav: [
       { text: '主页', link: '/' },
       { text: '资源', link: 'https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9' },
@@ -678,9 +678,8 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/fuelchina' },
-      // { icon: 'twitter', link: '' },
-      // { icon: 'discord', link: '' }
+      { icon: 'github', link: 'https://github.com/fuelchina/webdoc' },
+      { icon: 'twitter', link: 'https://x.com/fuelchina' },
     ]
   }
 })
