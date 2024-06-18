@@ -1,14 +1,14 @@
-# Dependencies
+# 依赖项
 
-Forc has a dependency management system which can pull packages using git and `ipfs`. This allows users to build and share Forc libraries.
+Forc 有一个依赖管理系统，可以使用 git 和 提取包 `ipfs`。这允许用户构建和共享 Forc 库。
 
-## Adding a dependency
+## 添加依赖项
 
-If your `Forc.toml` doesn't already have a `[dependencies]` table, add one. Below, list the package name alongside its source. Currently, `forc` supports `git`, `ipfs` and `path` sources.
+如果您 `Forc.toml` 还没有 `[dependencies]` 表格，请添加一个。下面列出软件包名称及其来源。目前，`forc` 支持 `git`和 `ipfs` 来源`path` 。
 
-If a `git` source is specified, `forc` will fetch the git repository at the given URL and then search for a `Forc.toml` for a package with the given name anywhere inside the git repository.
+如果 `git` 指定了源， `forc` 将在给定的 URL 处获取 git 存储库，然后在 git 存储库内的任何位置搜索 `Forc.toml` 具有给定名称的包。
 
-The following example adds a library dependency named `custom_lib`. For git dependencies you may optionally specify a `branch`, `tag`, or `rev` (i.e. commit hash) reference.
+以下示例添加了一个名为 的库依赖项 `custom_lib`。 对于 git 依赖项，您可以选择指定`branch`, `tag`, 或 `rev` (即提交哈希) 引用。
 
 ```toml
 [dependencies]
@@ -17,24 +17,24 @@ custom_lib = { git = "https://github.com/FuelLabs/custom_lib", branch = "master"
 # custom_lib = { git = "https://github.com/FuelLabs/custom_lib", rev = "87f80bdf323e2d64e213895d0a639ad468f4deff" }
 ```
 
-Depending on a local library using `path`:
+取决于使用本地库 `path`:
 
 ```toml
 [dependencies]
 custom_lib = { path = "../custom_lib" }
 ```
 
-For `ipfs` sources, `forc` will fetch the specified `cid` using either a local `ipfs` node or a public gateway. `forc` automatically tries to connect to local `ipfs` node. If it fails, it defaults to using `https://ipfs.io/` as a gateway.
+对于 `ipfs` 源， `forc` 将使用本地 `ipfs`'节点或公共网关获取指定的`cid` 。 `forc` 自动尝试连接到本地 `ipfs` 节点。如果失败，它默认使用 `https://ipfs.io/` 作为网关。
 
-The following example adds a dependency with an `ipfs` source.
+以下示例添加了与`ipfs` 源的依赖关系。
 
 ```toml
 [dependencies]
 custom_lib = { ipfs = "QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG" }
 ```
 
-Once the package is added, running `forc build` will automatically download added dependencies.
+一旦添加了包，运行 `forc build` 就会自动下载添加的依赖项。
 
-## Updating dependencies
+## 更新依赖项
 
-To update dependencies in your Forc directory you can run `forc update`. For `path` and `ipfs` dependencies this will have no effect. For `git` dependencies with a `branch` reference, this will update the project to use the latest commit for the given branch.
+要更新 Forc 目录中的依赖项，您可以运行 `forc update`。对于 `path` 和 `ipfs` 依赖项，这不会产生任何效果。对于 `git` 具有引用的依赖项 `branch` ，这将更新项目以使用给定分支的最新提交。
