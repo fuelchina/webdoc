@@ -20,6 +20,14 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: 'Awesome-Fuel', link: 'https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9' },
       // {
+      //   text: "示例",
+      //   items: [
+      //     { text: "构建市场dApp", link: "/sway-market" },
+      //     // { text: "v0.0.2", link: "" },
+      //     // { text: "v0.0.3", link: "" },
+      //   ],
+      // },
+      // {
       //   text: "版本",
       //   items: [
       //     { text: "v0.0.1", link: "" },
@@ -676,6 +684,25 @@ export default defineConfig({
 
 
       ],
+      "/sway-applications" : [
+        {
+          text: '构建市场dApp',
+          link: '/sway-applications/market/index',
+          collapsed: true,
+          items: [
+            { text: '基础条件', link: '/sway-applications/market/prerequisites' },
+            { text: '项目导入', link: '/sway-applications/market/imports' },
+            { text: '定义商品结构', link: '/sway-applications/market/structs' },
+            { text: '定义存储块', link: '/sway-applications/market/storage' },
+            { text: '定义错误处理', link: '/sway-applications/market/errors' },
+            { text: '定义合约函数', link: '/sway-applications/market/functions' },
+            
+            
+
+
+          ]
+        },
+      ]
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/fuelchina/webdoc' },

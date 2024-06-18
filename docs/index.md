@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Sway Example 中文教程
       link: /sway-example/index
+    - theme: alt
+      text: Sway applications 中文教程
+      link: /sway-applications/market/index
 
 features:
   - icon: 🎉
