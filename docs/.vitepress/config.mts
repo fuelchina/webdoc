@@ -696,10 +696,11 @@ export default defineConfig({
             { text: '定义存储块', link: '/sway-applications/market/storage' },
             { text: '定义错误处理', link: '/sway-applications/market/errors' },
             { text: '定义合约函数', link: '/sway-applications/market/functions' },
-            
-            
+            { text: '合约检查站', link: '/sway-applications/market/checkpoint' },
+            { text: '合约测试', link: '/sway-applications/market/test' },
+            { text: '构建前端', link: '/sway-applications/market/typescript_frontend' },
 
-
+            
           ]
         },
       ]

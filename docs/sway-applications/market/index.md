@@ -2,7 +2,10 @@
 
 如果您熟悉 JavaScript 并对区块链基础知识有基本的了解，您可以快速掌握如何使用 Sway 在 Fuel 上构建全栈去中心化应用程序。一旦您掌握了 Sway 的基本知识，您就可以开始构建自己的 dapp。
 
-在本教程 [仓库地址](https://github.com/fuelchina/sway-applications/tree/main/sway-marketplace) 中，我们将为类似于亚马逊的在线市场制定 Sway 合约，其中：
+在本教程 [仓库地址](https://github.com/fuelchina/sway-applications/tree/main/sway-marketplace) 中，遇到问题？一个有用的初始步骤是使代码与存储库的代码保持一致，并解决任何差异。
+
+
+. 🔍我们将为类似于亚马逊的在线市场制定 Sway 合约，其中：
 
   1. 卖家可以列出产品。
   2. 买家可以购买这些产品。
