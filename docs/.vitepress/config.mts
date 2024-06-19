@@ -172,7 +172,7 @@ export default defineConfig({
             {
               text: '12.4 命令',
               collapsed: false,
-              link: '/swaybook/forc/commands/index',
+              link: '/swaybook/forc/commands/',
               items: [
                 {text: '12.4.1 forc addr 2 line', link: '/swaybook/forc/commands/forc_addr2line'},
                 {text: '12.4.2 强制构建', link: '/swaybook/forc/commands/forc_build'},
@@ -190,7 +190,31 @@ export default defineConfig({
                 {text: '12.4.14 forc 模板 ', link: '/swaybook/forc/commands/forc_template'},
               ]
             },
-            {text: '12.5 与Solidity的区别', link: '/swaybook/forc/plugins/index'},
+            {
+              text: '12.5 插件',
+              collapsed: false,
+              link: '/swaybook/forc/plugins/',
+              items: [
+                {
+                  text: '12.5.1 forc 客户端',
+                  collapsed: false,
+                  link: '/swaybook/forc/plugins/forc_client/',
+                  items: [
+                    {text: '12.5.1.1 强制部署', link: '/swaybook/forc/plugins/forc_client/forc_deploy'},
+                    {text: '12.5.1.2 强制运行', link: '/swaybook/forc/plugins/forc_client/forc_run'},
+                    {text: '12.5.1.3 强制提交', link: '/swaybook/forc/plugins/forc_client/forc_submit'},
+
+                  ]
+                },
+                {text: '12.5.2 强制加密', link: '/swaybook/forc/plugins/forc_crypto'},
+                {text: '12.5.3 强制调试', link: '/swaybook/forc/plugins/forc_debug'},
+                {text: '12.5.4 forc文档', link: '/swaybook/forc/plugins/forc_doc'},
+                {text: '12.5.5 forc探索', link: '/swaybook/forc/plugins/forc_explore'},
+                {text: '12.5.6 forc 格式', link: '/swaybook/forc/plugins/forc_fmt'},
+                {text: '12.5.7 forc lsp', link: '/swaybook/forc/plugins/forc_lsp'},
+              ]
+
+            },
           ]
         },
       ],

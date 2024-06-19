@@ -1,38 +1,39 @@
-# Manifest Reference
+# 清单参考
 
-The `Forc.toml` (the _manifest_ file) is a compulsory file for each package and it is written in [TOML] format. `Forc.toml` consists of the following fields:
+ `Forc.toml` (the _清单_ 文件) 是每个包的必备文件，采用 [TOML] 格式编写。 `Forc.toml` 由以下字段组成：
 
-* [`[project]`](#the-project-section) — Defines a sway project.
-  * `name` — The name of the project.
-  * `authors` — The authors of the project.
-  * `organization` — The organization of the project.
-  * `license`— The project license.
-  * `entry` — The entry point for the compiler to start parsing from.
-    * For the recommended way of selecting an entry point of large libraries please take a look at: [Libraries](./../sway-program-types/libraries)
-  * `implicit-std` -  Controls whether provided `std` version (with the current `forc` version) will get added as a dependency _implicitly_. _Unless you know what you are doing, leave this as default._
-  * `forc-version` - The minimum forc version required for this project to work properly.
+* [`[project]`](#the-project-section) — 定义一个 sway 项目。
+  * `name` —  项目的名称。
+  * `authors` — 该项目的作者。
+  * `organization` — 项目的组织。
+  * `license`—  项目许可证。
+  * `entry` —  编译器开始解析的入口点。
+    * 有关选择大型图书馆入口点的推荐方法，请参阅： [图书馆](./../sway-program-types/libraries)
+  * `implicit-std` -  控制是否隐式添加提供的`std` 版本 (带有当前' `forc` 版本) 作为依赖项。 _除非您知道自己在做什么，否则请将其保留为默认值。_
+  * `forc-version` - 本项目正常运行所需的最低 forc 版本。
 
-* [`[dependencies]`](#the-dependencies-section) — Defines the dependencies.
-* `[network]` — Defines a network for forc to interact with.
-  * `url` — URL of the network.
 
-* [`[build-profile]`](#the-build-profile-section) - Defines the build profiles.
+* [`[dependencies]`](#the-dependencies-section) — 定义依赖关系。
+* `[network]` — 定义一个与 forc 交互的网络。
+  * `url` — 网络的 URL。
 
-* [`[patch]`](#the-patch-section) - Defines the patches.
 
-* [`[contract-dependencies]`](#the-contract-dependencies-section) - Defines the contract dependencies.
+* [`[build-profile]`](#the-build-profile-section) - 定义构建配置文件。
 
-## The `[project]` section
+* [`[patch]`](#the-patch-section) - 定义补丁。
 
-An example `Forc.toml` is shown below. Under `[project]` the following fields are optional:
+* [`[contract-dependencies]`](#the-contract-dependencies-section) - 定义合同依赖关系。
+
+## 这 `[project]` 部分
+
+ `Forc.toml` 下面是一个示例。 `[project]` 以下字段是可选的：
 
 * `authors`
 * `organization`
 
-Also for the following fields, a default value is provided so omitting them is allowed:
-
-* `entry` - (default : `main.sw` )
-* `implicit-std` - (default : `true` )
+此外，对于以下字段，提供了默认值，因此允许省略它们：
+* `entry` - (默认 : `main.sw` )
+* `implicit-std` - (默认 : `true` )
 
 ```toml
 [project]
@@ -43,44 +44,43 @@ license = "Apache-2.0"
 name = "wallet_contract"
 ```
 
-## The `[dependencies]` section
+## 这 `[dependencies]` 部分
 
-The following fields can be provided with a dependency:
+可以为以下字段提供依赖关系：
 
-* `version` - Desired version of the dependency
-* `path` - The path of the dependency (if it is local)
-* `git` - The URL of the git repo hosting the dependency
-* `branch` - The desired branch to fetch from the git repo
-* `tag` - The desired tag to fetch from the git repo
-* `rev` - The desired rev (i.e. commit hash) reference
 
-Please see [dependencies](./dependencies) for details
+* `version` - 所需的依赖版本
+* `path` - 依赖项的路径（如果是本地的）
+* `git` - 托管依赖项的 git repo 的 URL
+* `branch` - 需要从 git repo 中获取的分支
+* `tag` - 需要从 git repo 中获取的标签
+* `rev` - 所需的修订版本（即提交哈希）参考
 
-## The `[network]` section
+请参阅 [依赖项](./dependencies) 了解详细信息
 
-For the following fields, a default value is provided so omitting them is allowed:
+## 这`[network]` 部分
 
-* `URL` - (default: _<http://127.0.0.1:4000>_)
+对于以下字段，提供了默认值，因此允许省略它们：
+* `URL` - (默认值: _<http://127.0.0.1:4000>_)
 
-## The `[build-profile.*]` section
+## 这 `[build-profile.*]` 部分
 
-The `[build-profile]` tables provide a way to customize compiler settings such as debug options.
+这些 `[build-profile]` 表提供了一种自定义编译器设置（例如调试选项）的方法。
 
-The following fields can be provided for a build-profile:
+可以为构建配置文件提供以下字段：
+* `print-ast` -  是否打印出生成的 AST，默认为 false。
+* `print-dca-graph` - 是否打印出计算出的死代码分析（DCA）图（GraphViz DOT 格式），默认为 false。
+* `print-dca-graph-url-format` -  生成的 DOT 文件中使用的 URL 格式，VS Code 的一个示例为： `vscode://file/{path}:{line}:{col}`.
+* `print-ir` - 是否编译为字节码（false）或打印出生成的 IR（true），默认为 false。
+* `print-finalized-asm` - 是否编译为字节码（false）或打印出生成的 ASM（true），默认为 false。
+* `print-intermediate-asm` - 是否编译为字节码（false）或打印出生成的 ASM（true），默认为 false。
+* `terse` -  简洁模式。有限的警告和错误输出，默认为 false。
+* `time_phases` - 是否输出编译过程各部分所用的时间，默认为false。
+* `include_tests` -  是否在解析、类型检查和代码生成中包含测试函数。通过调用 `forc test`将其设置为true，但默认为false。
+* `json_abi_with_callpaths` -  是否生成 JSON ABI 而 `callpaths` 不是结构和枚举的名称，默认为 false。此选项可以通过使用完整路径而不是名称来帮助防止结构或枚举定义发生冲突。
+* `error_on_warnings` - 是否将错误视为警告，默认为 false。
 
-* `print-ast` - Whether to print out the generated AST or not, defaults to false.
-* `print-dca-graph` - Whether to print out the computed Dead Code Analysis (DCA) graph (in GraphViz DOT format), defaults to false.
-* `print-dca-graph-url-format` - The URL format to be used in the generated DOT file, an example for VS Code would be: `vscode://file/{path}:{line}:{col}`.
-* `print-ir` - Whether to compile to bytecode (false) or to print out the generated IR (true), defaults to false.
-* `print-finalized-asm` - Whether to compile to bytecode (false) or to print out the generated ASM (true), defaults to false.
-* `print-intermediate-asm` - Whether to compile to bytecode (false) or to print out the generated ASM (true), defaults to false.
-* `terse` - Terse mode. Limited warning and error output, defaults to false.
-* `time_phases` - Whether to output the time elapsed over each part of the compilation process, defaults to false.
-* `include_tests` -  Whether or not to include test functions in parsing, type-checking, and code generation. This is set to true by invocations like `forc test`, but defaults to false.
-* `json_abi_with_callpaths` - Whether to generate a JSON ABI with `callpaths` instead of names for structs and enums, defaults to false. This option can help prevent conflicting struct or enum definitions by using the full path instead of the name.
-* `error_on_warnings` - Whether to treat errors as warnings, defaults to false.
-
-There are two default `[build-profile]` available with every manifest file. These are `debug` and `release` profiles. If you want to override these profiles, you can provide them explicitly in the manifest file like the following example:
+ `[build-profile]` 每个清单文件都有两个默认可用配置文件。它们是 `debug` 和 `release` 配置文件。如果您想要覆盖这些配置文件，您可以在清单文件中明确提供它们，如以下示例所示：
 
 ```toml
 [project]
@@ -103,9 +103,9 @@ print-ir = false
 terse = true
 ```
 
-Since `release` and `debug` implicitly included in every manifest file, you can use them by just passing `--release` or by not passing anything (debug is default). For using a user defined build profile there is `--build-profile <profile name>` option available to the relevant commands. (For an example see [forc-build](../forc/commands/forc_build))
+由于 `release` 和 `debug` 隐式包含在每个清单文件中，因此您可以通过传递 `--release` 或不传递任何内容来使用它们（默认为调试）。对于使用用户定义的构建配置文件， `--build-profile <profile name>` 相关命令有可用的选项。 (有关示例，请参阅 [forc-build](../forc/commands/forc_build))
 
-Note that providing the corresponding CLI options (like `--finalized-asm`) will override the selected build profile. For example if you pass both `--release` and `--finalized-asm`, release build profile is omitted and resulting build profile would have a structure like the following:
+请注意，提供相应的 CLI 选项 (如 `--finalized-asm`) 将覆盖所选的构建配置文件。例如，如果您同时传递 `--release` 和 `--finalized-asm`, 则将省略发布构建配置文件，并且生成的构建配置文件将具有如下结构：
 
 ```toml
 print-ast = false
@@ -120,9 +120,9 @@ error-on-warnings = false
 experimental-private-modules = false
 ```
 
-## The `[patch]` section
+## 这 `[patch]` 部分
 
-The [patch] section of `Forc.toml` can be used to override dependencies with other copies. The example provided below patches `https://github.com/fuellabs/sway` with the `test` branch of the same repo.
+ [patch] 部分 `Forc.toml` 可用于使用其他副本覆盖依赖项。下面提供的示例 `https://github.com/fuellabs/sway` 使用 `test` 同一 repo 的分支进行修补。
 
 ```toml
 [project]
@@ -138,14 +138,14 @@ name = "wallet_contract"
 std = { git = "https://github.com/fuellabs/sway", branch = "test" }
 ```
 
-In the example above, `std` is patched with the `test` branch from `std` repo. You can also patch git dependencies with dependencies defined with a path.
+在上面的例子中, `std` 使用 `test` 来自 `std` repo的分支进行修补。您还可以使用路径定义的依赖项来修补 git 依赖项。
 
 ```toml
 [patch.'https://github.com/fuellabs/sway']
 std = { path = "/path/to/local_std_version" }
 ```
 
-Just like `std` or `core` you can also patch dependencies you declared with a git repo.
+就像 `std` 或 `core` 一样，你也可以用git repo来修补你声明的依赖项。
 
 ```toml
 [project]
@@ -162,17 +162,17 @@ foo = { git = "https://github.com/foo/foo", branch = "master" }
 foo = { git = "https://github.com/foo/foo", branch = "test" }
 ```
 
-Note that each key after the `[patch]` is a URL of the source that is being patched.
+请注意，后面的每个键 `[patch]` 都是正在修补的源的 URL。
 
-## The `[contract-dependencies]` section
+## 这 `[contract-dependencies]` 部分
 
-The `[contract-dependencies]` table can be used to declare contract dependencies for a Sway contract or script. Contract dependencies are the set of contracts that our contract or script may interact with. Declaring `[contract-dependencies]` makes it easier to refer to contracts in your Sway source code without having to manually update IDs each time a new version is deployed. Instead, we can use forc to pin and update contract dependencies just like we do for regular library dependencies.
+该 `[contract-dependencies]` 表可用于声明 Sway 合约或脚本的合约依赖关系。合约依赖关系是我们的合约或脚本可能与之交互的合约集。声明后，您 `[contract-dependencies]`可以更轻松地在 Sway 源代码中引用合约，而无需在每次部署新版本时手动更新 ID。相反，我们可以使用 forc 来固定和更新合约依赖关系，就像我们对常规库依赖关系所做的那样。
 
-Contracts declared under `[contract-dependencies]` are built and pinned just like regular `[dependencies]` however rather than importing each contract dependency's entire public namespace we instead import their respective contract IDs as `CONTRACT_ID` constants available via each contract dependency's namespace root. This means you can use a contract dependency's ID as if it were declared as a `pub const` in the root of the contract dependency package as demonstrated in the example below.
+在 下声明的合约的 `[contract-dependencies]` 构建和固定与常规合约一样 `[dependencies]` ，但是我们不是导入每个合约依赖项的整个公共命名空间，而是将其各自的合约 ID 作为 `CONTRACT_ID`常量导入，这些常量可通过每个合约依赖项的命名空间根获得。这意味着您可以使用合约依赖项的 ID，就像在合约依赖项 `pub const` 包的根目录中声明为 一样，如下例所示。
 
-Entries under `[contract-dependencies]` can be declared in the same way that `[dependencies]` can be declared. That is, they can refer to the `path` or `git` source of another contract. Note that entries under `[contract-dependencies]` must refer to contracts and will otherwise produce an error.
+下的条目 `[contract-dependencies]` 可以像 `[dependencies]` 声明一样声明。 也就是说，它们可以引用另一个合约的 `path` 或 `git` 源。请注意，`[contract-dependencies]` 下的条目必须指向合同，否则会产生错误。
 
-Example `Forc.toml`:
+例子 `Forc.toml`:
 
 ```toml
 [project]
@@ -186,7 +186,7 @@ name = "wallet_contract"
 foo = { path = "../foo" }
 ```
 
-Example usage:
+使用示例:
 
 ```sway
 script;
@@ -196,11 +196,11 @@ fn main() {
 }
 ```
 
-Because the ID of a contract is computed deterministically, rebuilding the same contract would always result in the same contract ID. Since two contracts with same contract ID cannot be deployed on the blockchain, a "salt" factor is needed to modify the contract ID. For each contract dependency declared under `[contract-dependencies]`, `salt` can be specified. An example is shown below:
+由于合约的 ID 是确定性计算的，因此重建相同的合约将始终产生相同的合约 ID。由于两个具有相同合约 ID 的合约无法部署在区块链上，因此需要一个“盐”因子来修改合约 ID。对于 下声明的每个合约依赖项 `[contract-dependencies]`, `salt` 都可以指定。下面显示了一个示例：
 
 ```toml
 [contract-dependencies]
 foo = { path = "../foo", salt = "0x1000000000000000000000000000000000000000000000000000000000000000" }
 ```
 
-For contract dependencies that do not specify any value for `salt`, a default of all zeros for `salt` is implicitly applied.
+对于没有为 `salt`指定任何值的合约依赖， `salt` 默认为全零。
