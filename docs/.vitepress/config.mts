@@ -711,9 +711,9 @@ export default defineConfig({
       "/sway-applications" : [
         {
           text: '构建市场dApp',
-          link: '/sway-applications/market/index',
-          collapsed: true,
+          collapsed: false,
           items: [
+            { text: '简介', link: '/sway-applications/market/index', },
             { text: '基础条件', link: '/sway-applications/market/prerequisites' },
             { text: '项目导入', link: '/sway-applications/market/imports' },
             { text: '定义商品结构', link: '/sway-applications/market/structs' },
