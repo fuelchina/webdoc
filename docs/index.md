@@ -9,16 +9,16 @@ hero:
   actions:
     - theme: brand
       text: SwayBook 中文教程
-      link: /swaybook/introduction/index
+      link: /swaybook/introduction
     - theme: alt
       text: TypeScript SDK 中文教程
-      link: /typescript-sdk/index
+      link: /typescript-sdk/get-start
     - theme: alt
       text: Sway Example 中文教程
-      link: /sway-example/index
+      link: /sway-example/
     - theme: alt
-      text: Sway applications 中文教程
-      link: /sway-applications/market/index
+      text: Sway 实战案例
+      link: /sway-applications/
 
 features:
   - icon: 🎉

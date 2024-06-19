@@ -1,5 +1,5 @@
 <script setup>
-  import { data } from './versions.data'
+  import { data } from '../versions.data'
   const { forc, fuels, fuelCore } = data
   const url = `https://docs.fuel.network/docs/forc/`
   const logoSrc = './fuel-logo.png'
