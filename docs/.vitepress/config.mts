@@ -43,7 +43,7 @@ export default defineConfig({
         {
           text: '1. 简介',
           collapsed: false,
-          link: '/swaybook/introduction/index',
+          link: '/swaybook/introduction/',
           items: [
             { text: '1.1 入门指南', link: '/swaybook/introduction/getting_started' },
             { text: '1.2 Fuel 工具链', link: '/swaybook/introduction/fuel_toolchain' },
@@ -228,8 +228,19 @@ export default defineConfig({
       ],
       '/typescript-sdk': [
         {
-          text: '入门指南',
-          link: '/typescript-sdk/getting-started.md',
+          text: 'Geting Started',
+          link: '/typescript-sdk/get-start',
+          collapsed: true,
+          items: [
+            {
+              text: '概述',
+              link: '/typescript-sdk/get-start/',
+            },
+            {
+              text: '入门指南',
+              link: '/typescript-sdk/get-start/getting-started',
+            },
+          ]
         },
         {
           text: '创建一个 Fuel dApp',
@@ -711,8 +722,8 @@ export default defineConfig({
       "/sway-applications" : [
         {
           text: '构建市场dApp',
-          link: '/sway-applications/market/index',
-          collapsed: true,
+          link: '/sway-applications/market/',
+          collapsed: false,
           items: [
             { text: '基础条件', link: '/sway-applications/market/prerequisites' },
             { text: '项目导入', link: '/sway-applications/market/imports' },
@@ -723,8 +734,6 @@ export default defineConfig({
             { text: '合约检查站', link: '/sway-applications/market/checkpoint' },
             { text: '合约测试', link: '/sway-applications/market/test' },
             { text: '构建前端', link: '/sway-applications/market/typescript_frontend' },
-
-            
           ]
         },
       ]

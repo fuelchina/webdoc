@@ -4,8 +4,8 @@
 
 我们可以连接到一个 _*本地*_ 或者一个 _*外部*_ 节点：
 
-> 1. _运行一个[本地节点](../../getting-started.md#connecting-to-a-local-node)_
-> 1. _连接到一个[外部节点](../../getting-started.md#connecting-to-the-testnet)_
+> 1. _运行一个[本地节点](../../get-start/getting-started.md#connecting-to-a-local-node)_
+> 1. _连接到一个[外部节点](../../get-start/getting-started.md#connecting-to-the-testnet)_
 
 让我们看一下下面的一些示例。
 

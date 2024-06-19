@@ -1,5 +1,5 @@
 <script setup>
-  import { data } from './versions.data'
+  import { data } from '../versions.data'
   const { fuels } = data
 </script>
 
@@ -144,8 +144,8 @@ export default App;
 
 首先，您需要在您的机器上运行一个本地节点。我们推荐以下方法之一：
 
-- [测试工具](./guide/testing/index.md#wallet-test-utilities) 可以帮助您以编程方式启动一个短暂的节点。
-- 直接运行 [fuel-core](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)，或通过 CLI [fuels](./guide/fuels-cli/commands.md#fuels-core)。
+- [测试工具](../guide/testing/index.md#wallet-test-utilities) 可以帮助您以编程方式启动一个短暂的节点。
+- 直接运行 [fuel-core](https://docs.fuel.network/guides/running-a-node/running-a-local-node/)，或通过 CLI [fuels](../guide/fuels-cli/commands.md#fuels-core)。
 
 在以下示例中，我们创建了一个提供程序以连接到本地节点并签署消息。
 
