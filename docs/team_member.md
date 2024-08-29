@@ -47,6 +47,15 @@ const members = [
       { icon: 'twitter', link: 'https://x.com/lispking' }
     ]
   },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/562589?v=4',
+    name: 'Ourai L.',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/ourai' },
+      { icon: 'twitter', link: 'https://x.com/fxxkol' }
+    ]
+  },
 ]
 </script>
 
