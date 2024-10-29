@@ -13,6 +13,23 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'icon', href: 'https://fuellabs.github.io/fuels-ts/favicon.ico', type: 'image/png' }],
+    ['style', {}, `#app > div > header::before {
+  content: "Fuel 已上线主网，最新的中文文档还在翻译中，敬请期待！";
+  display: block;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  background-color: #00ea82;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#app > div > header + div {
+  padding-top: calc(var(--vp-nav-height) + 36px);
+}
+`],
   ],
   themeConfig: {
     logo: 'https://avatars.githubusercontent.com/u/168461719',
