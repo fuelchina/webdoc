@@ -6,7 +6,7 @@ In Sway, the [`Address`](../../api/Address/Address) type serves as a type-safe w
 
 The SDK defines the [AbstractAddress](../../api/Interfaces/AbstractAddress) class, which provides a set of utility functions for easy manipulation and conversion between address formats.
 
-<!-- <<< ../../../packages/interfaces/src/index.ts#address-1{ts:line-numbers} -->
+<!-- <<< ../../../packages/interfaces/src/index.md.ts#address-1{ts:line-numbers} -->
 
 ## Address Class
 

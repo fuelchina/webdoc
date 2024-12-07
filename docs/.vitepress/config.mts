@@ -742,7 +742,7 @@ export default defineConfig({
           link: '/sway-applications/market/',
           collapsed: false,
           items: [
-            { text: '简介', link: '/sway-applications/market/index', },
+            { text: '简介', link: '/sway-applications/market/index.md', },
             { text: '基础条件', link: '/sway-applications/market/prerequisites' },
             { text: '项目导入', link: '/sway-applications/market/imports' },
             { text: '定义商品结构', link: '/sway-applications/market/structs' },
@@ -754,6 +754,53 @@ export default defineConfig({
             { text: '构建前端', link: '/sway-applications/market/typescript_frontend' },
           ]
         },
+      ],
+      "/fuel-book" : [
+        {
+          text: 'Fuel Book',
+          link: '/fuel-book/about',
+          collapsed: false,
+          items: [
+            { text: '关于Fuel', link: '/fuel-book/about/index.md', },
+            {
+              text: '为什么要使用Fuel',
+              link: '/fuel-book/why-fuel/index.md',
+              items: [
+                {text: '开始', link: '/fuel-book/why-fuel/beginnings'},
+                {text: '问题', link: '/fuel-book/why-fuel/the-problem'},
+                {text: 'Fuel怎样解决问题', link: '/fuel-book/why-fuel/the-fuel-way'},
+                {text: '所以，什么是Fuel', link: '/fuel-book/why-fuel/what-is-fuel'},
+                {text: '在Fuel上开始构建 - 快速开始', link: '/fuel-book/why-fuel/building-on-fuel'},
+              ]
+            },
+            {
+              text: 'Fuel的架构',
+              link: '/fuel-book/the-architecture/index.md',
+              items: [
+                {text: '关于FuelVM', link: '/fuel-book/the-architecture/the-fuelVM'},
+                {text: 'Fuel网络上的交易', link: '/fuel-book/the-architecture/transactions-on-fuel'},
+                {text: 'Fuel的区块', link: '/fuel-book/the-architecture/fuel-blocks'},
+                {text: 'Fuel的区块构建', link: '/fuel-book/the-architecture/block-building-in-fuel'},
+                {text: 'Fuel与以太坊', link: '/fuel-book/the-architecture/fuel-and-ethereum'},
+                {text: 'Fuel的安全', link: '/fuel-book/the-architecture/security-on-fuel'},
+              ]
+            },
+            {
+              text: 'Fuel的未来',
+              link: '/fuel-book/fuel\'s-future/index.md',
+              items: [
+                {text: '链接各个L2和各个L3的网络', link: '/fuel-book/fuel\'s-future/network-of-interconnection'},
+                {text: '去中心化的区块构建', link: '/fuel-book/fuel\'s-future/decentralized-block-building'},
+                {text: 'SNAP快速最终性的小工具', link: '/fuel-book/fuel\'s-future/SNAP-fast-finality-gadget'},
+                {text: '状态重现技术', link: '/fuel-book/fuel\'s-future/state-rehydration'},
+                {text: '数据流', link: '/fuel-book/fuel\'s-future/data-streaming'},
+              ]
+            },
+            { text: '总结', link: '/fuel-book/conclusion/index.md', },
+            { text: '术语表', link: '/fuel-book/glossary/index.md', },
+          ]
+        },
+
       ]
     },
     socialLinks: [

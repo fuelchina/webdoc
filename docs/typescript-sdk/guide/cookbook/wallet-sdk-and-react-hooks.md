@@ -43,7 +43,7 @@ In order to make use of the React hooks provided by the Fuel Wallet SDK, we need
 
 Go to your `pages/index.tsx` file and replace the contents with the following:
 
-<!-- <<< ../../demo-wallet-sdk-react/pages/index.tsx#wallet-sdk-react-ui{tsx:line-numbers} -->
+<!-- <<< ../../demo-wallet-sdk-react/pages/index.md.tsx#wallet-sdk-react-ui{tsx:line-numbers} -->
 
 Let's break down what's happening here.
 
