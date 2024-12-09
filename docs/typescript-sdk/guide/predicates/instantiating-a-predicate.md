@@ -2,7 +2,7 @@
 
 A predicate in Sway can be as simple as the following:
 
-<!-- <<< ../../docs-snippets/test/fixtures/forc-projects/return-true-predicate/src/main.sw#predicate-index-1{rust:line-numbers} -->
+<!-- <<< ../../docs-snippets/test/fixtures/forc-projects/return-true-predicate/src/main.sw#predicate-index.md-1{rust:line-numbers} -->
 
 In this minimal example, the `main` function does not accept any parameters and simply returns true.
 
@@ -10,7 +10,7 @@ Just like contracts in Sway, once you've created a predicate, you can compile it
 
 After compiling, you will obtain the binary of the predicate and its JSON ABI (Application Binary Interface). Using these, you can instantiate a predicate in TypeScript as shown in the code snippet below:
 
-<!-- <<< ../../docs-snippets/src/guide/predicates/index.test.ts#predicate-index-2{ts:line-numbers} -->
+<!-- <<< ../../docs-snippets/src/guide/predicates/index.md.test.ts#predicate-index.md-2{ts:line-numbers} -->
 
 The created [`Predicate`](../../api/Account/Predicate) instance, among other things, has three important properties: the predicate `bytes` (byte code), the `chainId`, and the predicate `address`.
 

@@ -15,7 +15,7 @@ describe(__filename, () => {
   );
 
   it('should successfully instantiate a predicate', async () => {
-    // #region predicate-index-2
+    // #region predicate-index.md-2
     // #import { Predicate, Provider, FUEL_NETWORK_URL };
 
     const provider = await Provider.create(FUEL_NETWORK_URL);
@@ -25,7 +25,7 @@ describe(__filename, () => {
       abi: jsonAbi,
     };
     const predicate = new Predicate(predicateParams);
-    // #endregion predicate-index-2
+    // #endregion predicate-index.md-2
 
     expect(predicate).toBeTruthy();
   });

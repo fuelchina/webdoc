@@ -19,7 +19,10 @@ hero:
     - theme: alt
       text: Sway 实战案例
       link: /sway-applications/
-
+    - theme: alt
+      text: FuelBook 中文教程
+      link: /fuel-book/about
+      
 features:
   - icon: 🎉
     title: 并行执行

@@ -1,6 +1,6 @@
 /**
  * NOTE: These tests are a copy of the ones at:
- *  - /apps/demo-typegen/src/index.test.ts
+ *  - /apps/demo-typegen/src/index.md.test.ts
  *
  * It ensures that built code is fully working.
  */
