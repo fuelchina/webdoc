@@ -11,3 +11,4 @@ Sway LSP 建立在 [语言服务器协议](https://microsoft.github.io/language-
 无论您是初学者还是经验丰富的 Sway 开发人员，本文档旨在成为您了解和最大化 Sway LSP 功能的首选资源。所以让我们深入研究并使用 Sway LSP 释放 Sway 编程语言的全部潜力！
 - [安装](./installation)
 - [特征](./features)
+- [故障排除](./troubleshooting.md)

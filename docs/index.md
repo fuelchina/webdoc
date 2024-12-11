@@ -8,11 +8,11 @@ hero:
   tagline: 与我们一起了解、加入、热爱、建设 Fuel ！
   actions:
     - theme: brand
+      text: FuelBook 中文教程
+      link: /fuel-book/about
+    - theme: brand
       text: SwayBook 中文教程
       link: /swaybook/introduction
-    - theme: alt
-      text: TypeScript SDK 中文教程
-      link: /typescript-sdk/get-start
     - theme: alt
       text: Sway Example 中文教程
       link: /sway-example/
@@ -20,8 +20,8 @@ hero:
       text: Sway 实战案例
       link: /sway-applications/
     - theme: alt
-      text: FuelBook 中文教程
-      link: /fuel-book/about
+      text: TypeScript SDK 中文教程
+      link: /typescript-sdk/get-start
       
 features:
   - icon: 🎉

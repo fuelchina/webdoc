@@ -21,6 +21,15 @@ const members = [
     ]
   },
   {
+    avatar: 'https://avatars.githubusercontent.com/u/177317268?v=4&size=400',
+    name: 'Jeason Zhang',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/jeasonzhang-eth' },
+      { icon: 'twitter', link: 'https://x.com/jeason52' }
+    ]
+  },
+  {
     avatar: 'https://avatars.githubusercontent.com/u/84056084?v=4',
     name: 'Finch Ren',
     title: 'Developer',
@@ -63,4 +72,4 @@ const members = [
 
 Say hello 👋 to our awesome contributors 🧑‍💻.
 
-<VPTeamMembers size="small" :members="members" />
+<VPTeamMembers size="small" :members="members"></VPTeamMembers>
