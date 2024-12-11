@@ -11,4 +11,5 @@ Sway 从根本上来说是一种区块链语言。因此，它具有一些您在
 - [原生资产](./native_assets)
 - [访问控制](./access_control)
 - [调用合约](./calling_contracts)
+- [外部代码执行](./external_code.md)
 

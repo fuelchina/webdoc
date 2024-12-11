@@ -6,3 +6,5 @@
 - [Fuel 工具链](./fuel_toolchain)
 - [Forc 项目](./forc_project)
 - [标准库](./standard_library)
+- [核心库](./core_library)
+- [sway标准](./sway_standards.md)

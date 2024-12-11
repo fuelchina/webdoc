@@ -8,3 +8,4 @@ Advanced concepts.
 - [关联类型](./associated_types.md)
 - [泛型和特征约束](./generics_and_trait_constraints.md)
 - [组装](./assembly.md)
+- [never类型](./never_type.md)

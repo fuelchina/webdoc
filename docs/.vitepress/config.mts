@@ -65,7 +65,9 @@ export default defineConfig({
             { text: '1.1 入门指南', link: '/swaybook/introduction/getting_started' },
             { text: '1.2 Fuel 工具链', link: '/swaybook/introduction/fuel_toolchain' },
             { text: '1.3 Forc 项目', link: '/swaybook/introduction/forc_project' },
-            { text: '1.4 标准库', link: '/swaybook/introduction/standard_library' }
+            { text: '1.4 标准库', link: '/swaybook/introduction/standard_library' },
+            { text: '1.5 核心库', link: '/swaybook/introduction/core_library' },
+            { text: '1.6 sway标准', link: '/swaybook/introduction/sway_standards' }
           ],
 
         },
@@ -119,7 +121,8 @@ export default defineConfig({
             {text: '5.4 标识符', link: '/swaybook/blockchain-development/identifiers'},
             {text: '5.5 原生资产', link: '/swaybook/blockchain-development/native_assets'},
             {text: '5.6 访问控制', link: '/swaybook/blockchain-development/access_control'},
-            {text: '5.7 调用合约', link: '/swaybook/blockchain-development/calling_contracts'}
+            {text: '5.7 调用合约', link: '/swaybook/blockchain-development/calling_contracts'},
+            {text: '5.8 外部代码执行', link: '/swaybook/blockchain-development/external_code'}
           ]
         },
         {
@@ -132,7 +135,8 @@ export default defineConfig({
             {text: '6.3 特征', link: '/swaybook/advanced/traits'},
             {text: '6.4 关联类型', link: '/swaybook/advanced/associated_types'},
             {text: '6.5 泛型和特征约束', link: '/swaybook/advanced/generics_and_trait_constraints'},
-            {text: '6.6 组装', link: '/swaybook/advanced/assembly'}
+            {text: '6.6 组装', link: '/swaybook/advanced/assembly'},
+            {text: '6.7 never类型', link: '/swaybook/advanced/never_type'}
           ]
         },
         {
@@ -155,88 +159,98 @@ export default defineConfig({
           ]
         },
         {
-          text: '9. 应用程序前端',
+          text: '9.  调试 ',
+          collapsed: false,
+          link: '/swaybook/debugging/',
+          items: [
+            { text: '9.1 使用命令行进行调试', link: '/swaybook/debugging/debugging_with_cli' },
+            { text: '9.2 使用集成开发环境进行调试', link: '/swaybook/debugging/debugging_with_ide' },
+          ]
+        },
+        {
+          text: '10. 应用程序前端',
           collapsed: false,
           link: '/swaybook/frontend/',
           items: [
-            { text: '9.1 TypeScript SDK', link: '/swaybook/frontend/typescript_sdk' },
+            { text: '10.1 TypeScript SDK', link: '/swaybook/frontend/typescript_sdk' },
           ]
         },
         {
-          text: '10.  Sway LSP ',
+          text: '11. Sway LSP ',
           collapsed: false,
           link: '/swaybook/lsp/',
           items: [
-            { text: '10.1 安装', link: '/swaybook/lsp/installation' },
-            { text: '10.2 特点', link: '/swaybook/lsp/features' },
+            { text: '11.1 安装', link: '/swaybook/lsp/installation' },
+            { text: '11.2 特点', link: '/swaybook/lsp/features' },
+            { text: '11.3 故障排除', link: '/swaybook/lsp/troubleshooting' },
           ]
         },
         {
-          text: '11.  Sway 参考 ',
+          text: '12.  Sway 参考文献 ',
           collapsed: false,
           link: '/swaybook/reference/',
           items: [
-            {text: '11.1 编译器内部函数', link: '/swaybook/reference/compiler_intrinsics'},
-            {text: '11.2 属性', link: '/swaybook/reference/attributes'},
-            {text: '11.3 风格指南', link: '/swaybook/reference/style_guide'},
-            {text: '11.4 已知问题和解决方法', link: '/swaybook/reference/known_issues_and_workarounds'},
-            {text: '11.5 与Solidity的区别', link: '/swaybook/reference/solidity_differences'},
-            {text: '11.6 与 Rust 的区别', link: '/swaybook/reference/rust_differences'},
-            {text: '11.7 为 Sway 做贡献', link: '/swaybook/reference/contributing_to_sway'},
-            {text: '11.8 关键字', link: '/swaybook/reference/keywords'},
+            {text: '12.1 编译器内部函数', link: '/swaybook/reference/compiler_intrinsics'},
+            {text: '12.2 属性', link: '/swaybook/reference/attributes'},
+            {text: '12.3 风格指南', link: '/swaybook/reference/style_guide'},
+            {text: '12.4 已知问题和解决方法', link: '/swaybook/reference/known_issues_and_workarounds'},
+            {text: '12.5 与Solidity的区别', link: '/swaybook/reference/solidity_differences'},
+            {text: '12.6 与 Rust 的区别', link: '/swaybook/reference/rust_differences'},
+            {text: '12.7 为 Sway 做贡献', link: '/swaybook/reference/contributing_to_sway'},
+            {text: '12.8 关键字', link: '/swaybook/reference/keywords'},
           ]
         },
         {
-          text: '12. Forc参考 ',
+          text: '13. Forc参考文献',
           collapsed: false,
           link: '/swaybook/forc/',
           items: [
-            {text: '12.1 清单参考', link: '/swaybook/forc/manifest_reference'},
-            {text: '12.2 工作区', link: '/swaybook/forc/workspaces'},
-            {text: '12.3 依赖项', link: '/swaybook/forc/dependencies'},
+            {text: '13.1 清单参考', link: '/swaybook/forc/manifest_reference'},
+            {text: '13.2 工作区', link: '/swaybook/forc/workspaces'},
+            {text: '13.3 依赖项', link: '/swaybook/forc/dependencies'},
             {
-              text: '12.4 命令',
+              text: '13.4 命令',
               collapsed: false,
               link: '/swaybook/forc/commands/',
               items: [
-                {text: '12.4.1 forc addr 2 line', link: '/swaybook/forc/commands/forc_addr2line'},
-                {text: '12.4.2 强制构建', link: '/swaybook/forc/commands/forc_build'},
-                {text: '12.4.3 强制检查', link: '/swaybook/forc/commands/forc_check'},
-                {text: '12.4.4 强制清理', link: '/swaybook/forc/commands/forc_clean'},
-                {text: '12.4.5 forc 补全', link: '/swaybook/forc/commands/forc_completions'},
-                {text: '12.4.6 forc 合约编号', link: '/swaybook/forc/commands/forc_contract-id'},
-                {text: '12.4.7 强制初始化', link: '/swaybook/forc/commands/forc_init'},
-                {text: '12.4.8 forc new', link: '/swaybook/forc/commands/forc_new'},
-                {text: '12.4.9 forc 解析字节码', link: '/swaybook/forc/commands/forc_parse-bytecode'},
-                {text: '12.4.10 forc 插件', link: '/swaybook/forc/commands/forc_plugins'},
-                {text: '12.4.11 forc 谓词根', link: '/swaybook/forc/commands/forc_predicate-root'},
-                {text: '12.4.12 forc 测试', link: '/swaybook/forc/commands/forc_test'},
-                {text: '12.4.13 强制更新', link: '/swaybook/forc/commands/forc_update'},
-                {text: '12.4.14 forc 模板 ', link: '/swaybook/forc/commands/forc_template'},
+                {text: '13.4.1 forc addr 2 line', link: '/swaybook/forc/commands/forc_addr2line'},
+                {text: '13.4.2 强制构建', link: '/swaybook/forc/commands/forc_build'},
+                {text: '13.4.3 强制检查', link: '/swaybook/forc/commands/forc_check'},
+                {text: '13.4.4 强制清理', link: '/swaybook/forc/commands/forc_clean'},
+                {text: '13.4.5 forc 补全', link: '/swaybook/forc/commands/forc_completions'},
+                {text: '13.4.6 forc 合约编号', link: '/swaybook/forc/commands/forc_contract-id'},
+                {text: '13.4.7 强制初始化', link: '/swaybook/forc/commands/forc_init'},
+                {text: '13.4.8 forc new', link: '/swaybook/forc/commands/forc_new'},
+                {text: '13.4.9 forc 解析字节码', link: '/swaybook/forc/commands/forc_parse-bytecode'},
+                {text: '13.4.10 forc 插件', link: '/swaybook/forc/commands/forc_plugins'},
+                {text: '13.4.11 forc 谓词根', link: '/swaybook/forc/commands/forc_predicate-root'},
+                {text: '13.4.12 forc 测试', link: '/swaybook/forc/commands/forc_test'},
+                {text: '13.4.13 强制更新', link: '/swaybook/forc/commands/forc_update'},
+                {text: '13.4.14 forc 模板 ', link: '/swaybook/forc/commands/forc_template'},
               ]
             },
             {
-              text: '12.5 插件',
+              text: '13.5 插件',
               collapsed: false,
               link: '/swaybook/forc/plugins/',
               items: [
                 {
-                  text: '12.5.1 forc 客户端',
+                  text: '13.5.1 forc 客户端',
                   collapsed: false,
                   link: '/swaybook/forc/plugins/forc_client/',
                   items: [
-                    {text: '12.5.1.1 强制部署', link: '/swaybook/forc/plugins/forc_client/forc_deploy'},
-                    {text: '12.5.1.2 强制运行', link: '/swaybook/forc/plugins/forc_client/forc_run'},
-                    {text: '12.5.1.3 强制提交', link: '/swaybook/forc/plugins/forc_client/forc_submit'},
+                    {text: '13.5.1.1 强制部署', link: '/swaybook/forc/plugins/forc_client/forc_deploy'},
+                    {text: '13.5.1.2 强制运行', link: '/swaybook/forc/plugins/forc_client/forc_run'},
+                    {text: '13.5.1.3 强制提交', link: '/swaybook/forc/plugins/forc_client/forc_submit'},
 
                   ]
                 },
-                {text: '12.5.2 强制加密', link: '/swaybook/forc/plugins/forc_crypto'},
-                {text: '12.5.3 强制调试', link: '/swaybook/forc/plugins/forc_debug'},
-                {text: '12.5.4 forc文档', link: '/swaybook/forc/plugins/forc_doc'},
-                {text: '12.5.5 forc探索', link: '/swaybook/forc/plugins/forc_explore'},
-                {text: '12.5.6 forc 格式', link: '/swaybook/forc/plugins/forc_fmt'},
-                {text: '12.5.7 forc lsp', link: '/swaybook/forc/plugins/forc_lsp'},
+                {text: '13.5.2 强制加密', link: '/swaybook/forc/plugins/forc_crypto'},
+                {text: '13.5.3 强制调试', link: '/swaybook/forc/plugins/forc_debug'},
+                {text: '13.5.4 forc文档', link: '/swaybook/forc/plugins/forc_doc'},
+                {text: '13.5.5 forc探索', link: '/swaybook/forc/plugins/forc_explore'},
+                {text: '13.5.6 forc 格式', link: '/swaybook/forc/plugins/forc_fmt'},
+                {text: '13.5.7 forc lsp', link: '/swaybook/forc/plugins/forc_lsp'},
               ]
 
             },
